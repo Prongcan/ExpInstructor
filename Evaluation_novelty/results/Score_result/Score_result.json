@@ -1,0 +1,2041 @@
+{
+  "metrics": {
+    "accuracy_exact": 0.2403560830860534,
+    "accuracy_within_1": 0.6528189910979229,
+    "accuracy_within_2": 0.9020771513353115,
+    "pearson_correlation": 0.8086382182598886,
+    "pearson_p_value": 3.5303453435336737e-79,
+    "spearman_correlation": 0.8127925043900648,
+    "spearman_p_value": 1.3058766684522035e-80,
+    "cohen_kappa": 0.7551287112901294,
+    "valid_samples": 337,
+    "total_samples": 337,
+    "mean_absolute_error": 1.2195845697329377,
+    "rmse": 1.5589313847358837
+  },
+  "total_time_seconds": 49.31079292297363,
+  "samples": [
+    {
+      "id": "Multilingual_9_AI",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation indicates that the proposed method of using pure prompting is considered inferior to existing methods for studying semantic change. It mentions that more sophisticated and novel approaches, such as tracking embedding shifts, are already in use. The evaluator's attitude is negative, suggesting that the proposed method lacks novelty compared to existing work.\n\nScore: 1"
+    },
+    {
+      "id": "Multilingual_9_AI",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation suggests that the proposed idea of a temporal semantic graph is not significantly novel. It implies that the method is merely an extension of existing concepts by including current meanings of phrases, indicating a lack of substantial innovation. The evaluator's language does not express enthusiasm or recognition of novelty.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_1_AI",
+      "true_label": 1,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation indicates that the proposed method is very similar to existing works, specifically CoT-SC, Tree of Thoughts, and Graph of Thoughts. It highlights that the evaluation step in the pipeline is already present in ToT, suggesting minimal novelty. The evaluator's attitude is clearly negative regarding the uniqueness of the proposed method.\n\nScore: 1"
+    },
+    {
+      "id": "Factuality_1_AI",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation clearly states that the proposed work lacks novelty, as it closely resembles an existing paper titled \"Answering Questions by Meta-Reasoning over Multiple Chains of Thought.\" The evaluator points out that the proposed work does not present novelty in terms of the prompt, structure, or datasets. This indicates a negative attitude towards the novelty of the work.\n\nScore: 2"
+    },
+    {
+      "id": "Bias_1_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluator acknowledges not finding similar works and expresses confidence that the proposed approach is different from existing works. However, they also mention a similarity to debiasing LLMs with counter-factual descriptions, indicating some resemblance to existing methods. The overall tone is neutral to slightly positive, suggesting moderate novelty.\n\nScore: 6"
+    },
+    {
+      "id": "Bias_1_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that the specific prompt proposed is novel, but it also highlights that the broader idea of using reflective prompts has been thoroughly explored. The evaluator expresses skepticism about the proposed method's ability to significantly differ from existing approaches or to achieve better results. The mention of several related papers suggests that the novelty is limited to the specific prompt rather than the overall concept.\n\nScore: 4"
+    },
+    {
+      "id": "Bias_1_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation does not address the novelty of the idea but rather critiques its correctness. The absence of a comparison to existing works or a discussion of novelty suggests that the evaluator is focused on the validity rather than the originality. Since the evaluation does not provide any positive indication of novelty, the score should be low.\n\nScore: 1"
+    },
+    {
+      "id": "Factuality_2_Human",
+      "true_label": 4,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation acknowledges that the proposed method is interesting but expresses doubt about its novelty for a research paper. The evaluator suggests that with sufficient engineering efforts, it might be suitable for a demo paper, indicating that the idea lacks significant novelty in its current form. The overall tone is neutral to slightly negative regarding the novelty aspect.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_2_Human",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that the proposed idea is a synthetic generation pipeline specifically for SRS. While there is a large body of work around synthetic data, the novelty is limited to its application within the SRS domain. This suggests that the idea is not fundamentally new but offers some novelty in its specific application. The evaluation reflects a somewhat neutral attitude, acknowledging limited novelty.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_2_Human",
+      "true_label": 4,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that the application of the prompting design to SRS Document defects detection is somewhat new, indicating some level of novelty. However, it also points out that the divide-and-conquer idea for prompting is not novel and has been explored in previous literature. This suggests that while there is some innovation in the specific application, the core method is not entirely original.\n\nScore: 6"
+    },
+    {
+      "id": "Uncertainty_4_AI_Rerank",
+      "true_label": 2,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation clearly states that the proposed idea is not novel, as there are likely many existing papers on similar experiments. The evaluator mentions that the novelty would be even more limited if the only difference is the version of GPT being used. Additionally, the evaluation highlights that there has been significant effort in the field of uncertainty quantification, suggesting that the idea is not new. The overall tone is negative regarding the novelty of the idea.\n\nScore: 1"
+    },
+    {
+      "id": "Uncertainty_4_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluator indicates unfamiliarity with existing work that specifically guides an LLM through a reasoning process to determine uncertainty in the described manner. They mention other methods that are more common, such as asking questions multiple times or analyzing output logits. The evaluator acknowledges the possibility of missing relevant literature, suggesting some uncertainty about the novelty. Overall, the evaluation leans towards recognizing novelty but with some reservations.\n\nScore: 7"
+    },
+    {
+      "id": "Multilingual_5_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that the idea of using an LLM to identify key aspects and generate text is not novel. Additionally, the use of LLMs and graphs for low-resource languages is also not considered novel, as existing work is cited. However, the evaluator suggests that constructing a semantic network might be novel. This mixed evaluation suggests some novelty in one aspect but lacks novelty in others.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_5_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator mentions a lack of familiarity with the literature but notes that the closest work found is still quite different from the proposed idea, as it focuses on a translation task. This suggests that the evaluator perceives the proposed idea as novel within the context of the existing literature they reviewed. The evaluation leans towards a positive attitude regarding the novelty of the idea.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_5_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that the work is \"pretty novel\" compared to others in the area, indicating a positive attitude towards its originality. However, it also notes some similarities with existing research on building a \"Multilingual Knowledge Graph.\" This suggests that while the work is innovative, it shares some commonalities with existing studies, which slightly tempers the novelty.\n\nScore: 8"
+    },
+    {
+      "id": "Safety_2_AI",
+      "true_label": 8,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation describes the idea as \"interesting,\" which suggests a positive attitude towards its novelty. However, it lacks strong language or detailed comparison to existing methods, making it difficult to determine the extent of its novelty. The evaluation does not mention any existing works that are similar, nor does it provide a detailed explanation of why the idea is novel. Therefore, the score reflects a moderately positive view but not an overwhelmingly strong endorsement.\n\nScore: 7"
+    },
+    {
+      "id": "Safety_2_AI",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that the proposed idea and framework are novel, particularly in the use of a \"fog of phrases\" inspired by red-teaming techniques from vision. This indicates a positive attitude towards the novelty of the approach. However, it also notes that the fundamental concept of modifying adversarial prompts is similar to existing studies, specifically citing Su et al., 2024. This suggests that while the approach is innovative, it shares some similarities with prior work. The evaluator's decision to give a score of 7 reflects a medium-high level of novelty, recognizing both the novel aspects and the similarities to existing research.\n\nScore: 7"
+    },
+    {
+      "id": "Math_2_AI",
+      "true_label": 3,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates that the proposed concept-aware prompting is beneficial for mathematical reasoning. However, it also points out that there are already several existing works that address similar ideas, such as step-back prompting and self-discover prompting. This suggests that while the approach may have some merit, it is not entirely novel, as similar methods have been explored in the field.\n\nScore: 3"
+    },
+    {
+      "id": "Math_2_AI",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluator acknowledges that there is no similar work to the \"hierarchical concept,\" suggesting some level of novelty. However, they also express that it feels like a more complicated version of an existing method, \"chain of thought,\" which implies that the core idea may not be entirely new. This mixed evaluation suggests a moderate level of novelty.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_10_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation describes the approach of combining neural methods with symbolic reasoning as novel, particularly in the context of parsing low-resource languages and vernaculars. It acknowledges that while neuro-symbolic methods have been explored in other areas, their application to this specific domain is not widely covered. The evaluator's positive attitude towards the novelty and potential advancements in the field suggests a high novelty score.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_10_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation indicates that there hasn't been prior work using symbolic grammar rules for vernacular parsing in an in-context learning setting. This suggests a novel approach, as it highlights a gap in existing research. The statement implies a positive attitude towards the novelty of the idea.\n\nScore: 9"
+    },
+    {
+      "id": "Bias_3_AI",
+      "true_label": 8,
+      "predicted_score": 10,
+      "response": "Analysis: The evaluator uses strongly positive language, describing the idea as \"wildly novel\" and expressing excitement about the experiment. This indicates a high recognition of the novelty of the approach, despite the framework being well known.\n\nScore: 10"
+    },
+    {
+      "id": "Bias_3_AI",
+      "true_label": 4,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that using different personas as role-playing prompts for LLMs is a widely used approach, suggesting limited novelty in that aspect. However, the potential application for bias mitigation is noted, which could be a novel angle. The evaluation also points out limitations in the datasets and the use of only close-source LLMs, which might restrict the perceived novelty. Overall, the evaluation presents a mixed view, acknowledging some potential novelty but also highlighting commonality with existing methods and limitations.\n\nScore: 5"
+    },
+    {
+      "id": "Bias_3_AI",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that the concept of \"pivot prompts\" is similar to in-context learning, indicating some overlap with existing methods. However, the evaluator notes a key difference in how it is applied, specifically in addressing bias issues in LLM responses, which they haven't seen before. This suggests a novel application of an existing concept, showing a moderately positive attitude towards its novelty.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_8_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation describes the construction of a Temporal Graph as novel and highlights that the research question is relatively underexplored but necessary. The use of \"novel\" and \"underexplored\" indicates a positive attitude towards the originality and necessity of the work, suggesting a high level of novelty.\n\nScore: 9"
+    },
+    {
+      "id": "Coding_8_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation suggests that the proposed method is similar to existing works in the field of code generation with intermediate state reasoning. The evaluator mentions that similar ideas might be found in software engineering and provides references to several works that explore multi-step, conversational code generation. This indicates that the proposed method lacks significant novelty, as it aligns closely with existing research.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_8_AI_Rerank",
+      "true_label": 10,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation describes the problem as \"very novel\" and emphasizes the importance of studying temporal dependencies in code generation within the context of LLMs. The use of the phrase \"very novel\" indicates a strong positive attitude towards the novelty of the idea.\n\nScore: 9"
+    },
+    {
+      "id": "Coding_4_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation indicates that the proposed method shares similarities with Execution-Guided Neural Program Synthesis but is not identical. The focus on tracking execution states and using robust test cases to ensure code behavior suggests some level of novelty. However, the mention of similar methodologies implies that the core idea is not entirely new. The evaluation reflects a moderately positive attitude toward the novelty of the approach.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_4_Human",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation highlights that the proposed idea, while inspired by Chain of Thought (CoT), introduces novel elements such as combining tool use with compilers, iterative code improvement, and multi-step reasoning. The potential to exceed existing coding benchmarks further emphasizes its novelty. The evaluator's positive attitude towards the innovation and potential impact suggests a high novelty score.\n\nScore: 9"
+    },
+    {
+      "id": "Coding_4_Human",
+      "true_label": 2,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates that the proposed work is quite similar to an existing paper, specifically mentioning a related method for training models. Although there are some differences in implementation details, such as zero-shot prompting and test case generation, the core idea appears to be closely related to existing work. This suggests a low level of novelty.\n\nScore: 3"
+    },
+    {
+      "id": "Coding_3_AI",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges the timeliness and importance of the research topic, indicating a positive attitude. It notes that existing works focus on enhancing language models through data-driven methods, but the proposed exploration of symbolic methods is seen as a worthwhile and potentially novel approach. The evaluator's agreement with the exploration of symbolic methods suggests a recognition of novelty in the approach.\n\nScore: 8"
+    },
+    {
+      "id": "Coding_3_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation describes the combination of neural and symbolic methods as \"interesting\" and \"suitable for coding applications.\" However, it does not explicitly mention novelty or uniqueness compared to existing works. The positive tone suggests some level of innovation, but without strong emphasis on novelty, it indicates a moderate level of newness.\n\nScore: 6"
+    },
+    {
+      "id": "Factuality_10_Human",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that the proposed idea is similar to an existing work by Zhang et al. (2024), which also involves self-refinement and self-evaluation techniques. However, the proposed idea introduces a variation by using multiple choice questions with different contexts. This suggests some level of novelty, but the core concept remains closely related to existing research. The evaluator's attitude is somewhat neutral, acknowledging both similarity and a slight difference.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_10_Human",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation clearly indicates that the proposed method lacks novelty, as it is described as a common \"voting trick\" already in use. The evaluator mentions that the approach is similar to existing methods involving sampling and rating, either externally or through self-assessment. This suggests a low level of novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_10_Human",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges the novelty of the idea but suggests that its novelty may be due to its infeasibility with current models and parameters. The evaluator finds the concept interesting but notes that it relies on subjective factors not grounded in existing literature. This indicates a recognition of novelty but with significant reservations about its practicality and theoretical foundation.\n\nScore: 5"
+    },
+    {
+      "id": "Bias_2_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that the idea is only marginally novel. While multilinguality as a debiasing method has been explored in existing literature, its application within the prompt engineering framework is not explicitly mentioned. This suggests some level of novelty, but the core concept has been addressed in previous works. The evaluator's attitude is neutral to slightly positive, acknowledging some novelty but also pointing out existing similar research.\n\nScore: 5"
+    },
+    {
+      "id": "Bias_2_Human",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation expresses difficulty in understanding the novelty of the proposed idea due to unclear problem formulation and motivation. The evaluator questions the logic behind certain steps and the expectations of the model's behavior. They also mention that some relevant work exists, although it lacks parallel questions in multiple languages. Overall, the evaluation reflects a negative attitude towards the novelty of the proposal, highlighting issues with clarity and motivation.\n\nScore: 3"
+    },
+    {
+      "id": "Multilingual_1_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation indicates that the proposed idea is novel in its use of structural and functional features. However, it lacks novelty in its approach to building effective few-shot methods. This suggests a mixed evaluation, with some aspects being recognized as novel while others are not. The overall attitude is neutral to slightly positive, as it acknowledges novelty in certain areas.\n\nScore: 6"
+    },
+    {
+      "id": "Multilingual_1_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator acknowledges that the idea of creating vectors to cluster typologically similar languages has been explored before, but primarily in a different context. They note that the specific application of typological prompting seems relatively novel and interesting. The evaluation reflects a positive attitude towards the novelty of the work, although it is not entirely unprecedented.\n\nScore: 8"
+    },
+    {
+      "id": "Uncertainty_1_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges an interesting aspect of the idea, specifically the interplay between neural and lattice structures. However, the evaluator expresses uncertainty about the actual benefits due to a lack of description and examples. This suggests a moderate level of novelty, as the idea is intriguing but not fully substantiated.\n\nScore: 5"
+    },
+    {
+      "id": "Uncertainty_1_AI",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluator indicates unfamiliarity with existing work that specifically guides an LLM through a reasoning process to determine uncertainty using a lattice of concepts. They mention that most existing papers focus on different methods, such as asking questions multiple times or analyzing output logits. However, the evaluator also acknowledges the possibility of missing relevant literature. This suggests a moderate level of novelty, as the proposed approach appears different from commonly known methods, but there is some uncertainty about its uniqueness.\n\nScore: 7"
+    },
+    {
+      "id": "Multilingual_8_AI",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation acknowledges that there have been only 1-2 recent papers on the topic, indicating that it is a relatively new area of research. The emphasis on collecting new data, especially in lower-resource languages, and the inclusion of human evaluation are highlighted as important and novel steps. The evaluator's positive attitude towards these aspects suggests a recognition of the novelty in addressing this emerging problem.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_8_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation suggests that while \"Culturally-Specific Task\" is a trending topic, the methods like CoT are not considered novel. The use of \"not very noble\" indicates a lack of novelty in the approach. This reflects a negative attitude towards the novelty of the methods discussed.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_4_AI",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluator expresses surprise at the lack of existing work in this specific area, indicating that the proposed idea is quite novel. The use of phrases like \"quite novel overall\" and the acknowledgment of the task's specificity and unusual domain suggest a positive attitude towards the novelty of the work.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_4_AI",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that the use of chain-of-thought (CoT) in low-resource languages is not widely explored, indicating a gap in the research. The proposed method of using phonetic cues instead of transfer learning is described as a novel approach to improve CoT quality. However, the evaluation also notes that the approach relies on certain assumptions, which may limit its applicability. Overall, the evaluation presents a positive attitude towards the novelty of the approach, despite some limitations.\n\nScore: 8"
+    },
+    {
+      "id": "Math_3_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses skepticism about the novelty of the proposed idea. It mentions that the concept of \"multiple perspective\" is already covered in existing work (Self Refine) and describes the addition of a final check as a trivial engineering trick. This indicates a negative attitude towards the novelty of the idea.\n\nScore: 2"
+    },
+    {
+      "id": "Math_3_Human",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that the idea is \"reasonably novel\" and highlights the addition of an error taxonomy as a novel aspect. However, it also notes that the idea does not bring a fundamental change to solving mathematical reasoning tasks. This suggests a moderate level of novelty, as there are new elements but not a groundbreaking shift in approach.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_9_Human",
+      "true_label": 7,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the idea is quite similar to a recently released paper, which suggests limited novelty. However, the evaluator expresses confidence in the idea due to its recent acceptance for an oral presentation at a prestigious conference (ACL). The evaluator also notes the effectiveness of the approach in a specific application, indicating potential value. The overall tone is positive, but the similarity to a very recent work limits the novelty score.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_9_Human",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation highlights that the proposed method leverages property-based testing to generate comprehensive test cases, which is distinct from existing methods that rely on human annotation or model synthesis. The evaluator notes the absence of similar works and suggests that this approach could significantly impact the field. The positive tone and emphasis on the method's potential success and novelty indicate a high level of novelty.\n\nScore: 9"
+    },
+    {
+      "id": "Coding_9_Human",
+      "true_label": 6,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation highlights the adaptation of property-based testing (PBT) from software engineering to the LLM code generation domain as a novel approach. Additionally, it mentions the novelty of applying PBT in the context of Natural Language. The positive tone and recognition of novelty in both the adaptation and application suggest a high level of innovation.\n\nScore: 9"
+    },
+    {
+      "id": "Factuality_6_AI",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates that there is a lot of similar work in the area of prompting VLMs/LMs, suggesting that the proposed method is not significantly different from existing methods. The mention of \"some slight differences\" implies minimal novelty, and the need for considerable performance gain to justify the method further suggests that the novelty is not inherently strong. The reference to an existing work reinforces the idea that the proposed method is not groundbreaking.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_6_AI",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that the statement seems novel but also points out its relation to a well-studied field, multimodal QA like VQA. This indicates that while there may be some new aspects, the core idea is closely related to existing research. The evaluator's attitude is somewhat neutral, recognizing novelty but also highlighting its connection to established work.\n\nScore: 6"
+    },
+    {
+      "id": "Uncertainty_6_Human",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation suggests that the proposed idea lacks clarity and is not entirely novel, as it should build upon existing work (https://arxiv.org/abs/2302.13439). However, the evaluator acknowledges that the Clinical Diagnosis Scenario is novel, indicating some potential for originality. The suggestion to focus on scenario-based uncertainty expression rather than individual preference implies that the current approach may not be the most effective or novel. Overall, the evaluation reflects a mixed attitude, recognizing some novelty but also pointing out significant areas for improvement.\n\nScore: 5"
+    },
+    {
+      "id": "Uncertainty_6_Human",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator acknowledges the novelty of the proposal by stating they are not aware of any existing works that learn user preferences for uncertainty expression. The use of \"reasonably novel\" indicates a positive attitude towards the uniqueness of the idea, suggesting it is somewhat new in the field.\n\nScore: 8"
+    },
+    {
+      "id": "Coding_2_Human",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the proposed method has a novel two-step approach, but it also notes that all elements of the method have been studied before, which limits its novelty. The evaluator is not aware of any work doing exactly the same thing, but the connection to existing studies suggests that the novelty is not groundbreaking. The overall attitude is neutral, recognizing some uniqueness but also pointing out the limited novelty due to previously studied elements.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_2_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed idea is similar to existing works, specifically mentioning Structured CoT and other prompting techniques like self-reflection. The evaluator's quick search found prior works that resemble the proposed method, suggesting a lack of novelty. The overall tone is negative regarding the uniqueness of the idea.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_6_AI",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation highlights that the idea of recursively expanding dialectal variations within prompts is novel and not extensively explored in current literature. It contrasts with existing works that treat dialects as discrete entities or rely on limited corpora. The approach is recognized for offering a fresh perspective, particularly in enhancing LLM performance for low-resource languages. The positive language and emphasis on novelty suggest a high level of originality.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_6_AI",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator states that they have not heard of another work using a chain of dialect prompts to improve LLM applications in different dialects. This suggests a positive attitude towards the novelty of the idea, as it implies a lack of existing similar work. However, the evaluation does not use strongly positive language or provide additional context to suggest a high level of excitement or recognition of novelty.\n\nScore: 8"
+    },
+    {
+      "id": "Bias_4_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the problem of crafting emotionally resonant dialogues is well studied, suggesting that the proposed plan lacks novelty in this area. The use of a multi-agent system is described as more of an application rather than a novel technical contribution. Additionally, the evaluator mentions finding a very similar existing paper, further diminishing the perceived novelty of the proposed work.\n\nScore: 2"
+    },
+    {
+      "id": "Bias_4_Human",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluator expresses unfamiliarity with the specific area of dialogues and conversational agents but suggests that the idea seems incremental. They speculate that similar works likely exist, indicating a lack of perceived novelty. The evaluation leans towards a negative attitude regarding the uniqueness of the proposed idea.\n\nScore: 3"
+    },
+    {
+      "id": "Bias_4_Human",
+      "true_label": 6,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluator expresses unfamiliarity with any previous work using this approach, indicating a perception of novelty. The integration of agents corresponding to different emotions is described as a novel and potentially effective method. The positive language and lack of known similar works suggest a high level of novelty.\n\nScore: 9"
+    },
+    {
+      "id": "Uncertainty_3_AI",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges the existence of other papers using a similar approach with LLMs to draft multiple plausible answers. However, it highlights a key difference in the proposed method: the use of a \"counterfactual\" operator to perturb the input, which the evaluator finds interesting and is not aware of any existing work trying this. This suggests a novel aspect in the method, although it is built on a known framework.\n\nScore: 8"
+    },
+    {
+      "id": "Uncertainty_3_AI",
+      "true_label": 6,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation highlights that the proposed method involves a novel prompting technique that systematically builds a tree of alternative scenarios. Additionally, it introduces a new scoring mechanism for weighing the plausibility of each counterfactual branch. The evaluator finds this approach convincing and different from previous ideas, suggesting that with rigorous analysis, it could be developed into a new paper. The positive tone and acknowledgment of novelty in both the technique and scoring mechanism indicate a high level of novelty.\n\nScore: 9"
+    },
+    {
+      "id": "Factuality_4_AI",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluator expresses a positive attitude towards the novelty of the idea, stating that the use of semantic similarity to constrain CoT-styled generation is \"very new\" and that they have not seen similar work on it. This indicates a recognition of the idea's originality and uniqueness.\n\nScore: 9"
+    },
+    {
+      "id": "Factuality_4_AI",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed method is similar to existing literature on \"constrained decoding\" for improving factuality. It specifically mentions two prior works that have similar approaches. The evaluator's language suggests that the method is not significantly different from these existing studies, indicating a low level of novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_4_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed idea is very similar to existing methods, particularly in the context of multi-step reasoning problems and solving math problems. It mentions that different versions of this approach are already commonly used, suggesting a lack of novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_8_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the idea of using pruned context for improving relevance and conciseness in long-form generation is interesting. However, it points out that the authors have a limited understanding of existing work in retrieval, and the proposed method can be seen as a retrieval and re-ranking framework, which is already explored in the retrieval community. The evaluation suggests that the idea needs to be refined with a better understanding of retrieval techniques. While there is some novelty in the application, the core method is not new, leading to a mixed evaluation.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_8_AI",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator indicates that they couldn't find similar works, suggesting a level of novelty. They mention existing works in network pruning but have not seen similar applications in summarization. This implies that the proposed work is novel in its specific application, although the concept of pruning itself is not new. The evaluation shows a positive attitude towards the novelty of applying pruning to summarization.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_4_Human",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates that the idea of showing both positive and negative ideas is not novel, as it has been covered in previous work. However, it suggests potential areas for novelty, such as exploring complex argument structures and designing detailed prompts. The evaluator provides specific directions for enhancing novelty, indicating that while the current idea lacks originality, there is room for innovative development. The overall tone is constructive, acknowledging the potential for novelty if further explored.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_4_Human",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation clearly states that there are many similar works to the proposed idea, specifically citing two existing papers. This indicates that the proposed work lacks novelty and is closely related to existing research.\n\nScore: 1"
+    },
+    {
+      "id": "Factuality_4_Human",
+      "true_label": 4,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates uncertainty about whether the specific application of using LLMs for factuality has been done before. The evaluator acknowledges the existence of multiple works using LLMs for discussion or debate but is unsure about their application in factuality. This suggests a moderate level of novelty, as the evaluator does not definitively state that the idea is unoriginal.\n\nScore: 5"
+    },
+    {
+      "id": "Bias_1_AI",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that the proposal addresses a known problem but introduces a novel angle by considering how biases shift over time. The evaluator finds this perspective interesting and notes that it builds on existing works, applying it to debiasing in a new way. The overall tone is positive, highlighting the novelty of the approach.\n\nScore: 8"
+    },
+    {
+      "id": "Bias_1_AI",
+      "true_label": 7,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluator acknowledges the novelty of the idea, specifically highlighting the unique approach of prompting an LLM to leverage historical changes and imagine future trends for debiasing. While they mention that language models have been used to study social biases over time, they emphasize that the proposed method offers a dynamic approach not commonly seen in existing methods. The overall tone is positive, recognizing the innovation and potential impact of the idea.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_9_Human",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that leveraging related languages and multilingual resources is a known strategy. However, it highlights the novelty in combining this approach with Chain-of-Thought prompting and Cross-Lingual Thought Prompting techniques. The use of the phrase \"adds a novel dimension\" indicates a positive attitude towards the innovation introduced by the proposed method.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_9_Human",
+      "true_label": 3,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that the method is not novel in its approach to finding close language and using a dictionary, which suggests similarity to existing methods. However, it is considered novel in the context of prompting, which implies some degree of innovation. The evaluation presents a mixed view, recognizing both a lack of novelty in one aspect and novelty in another.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_9_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed idea lacks novelty as it merely combines existing prompting methods from two different papers without providing any rationale for why this combination is necessary or superior. The mention of past works exploring similar areas further suggests that the proposed idea does not offer significant new insights or advancements.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_6_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation highlights that the idea of recursively expanding dialectal variations within prompts is novel and not extensively explored in current literature. It contrasts with existing works that treat dialects as discrete entities or rely on limited corpora. The approach is recognized for offering a fresh perspective, particularly in enhancing LLM performance for low-resource languages. The positive language and acknowledgment of novelty suggest a high level of innovation.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_6_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluator states that they have not heard of another work using a chain of dialect prompts to improve LLM applications in different dialects. This suggests a positive attitude towards the novelty of the idea, as it appears to be unique or not widely covered in existing literature. The absence of known similar works indicates a fresh approach, contributing to a higher novelty score.\n\nScore: 9"
+    },
+    {
+      "id": "Safety_1_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the work primarily follows existing literature on harmfulness, suggesting a lack of novelty. Additionally, the critique about scalability issues further implies limitations in the proposed approach. The overall tone is negative, highlighting similarities with existing work and practical constraints.\n\nScore: 2"
+    },
+    {
+      "id": "Safety_1_Human",
+      "true_label": 5,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that the rationale behind the proposal is good and highlights the novelty of applying the idea to LLM agents. While the method might have been explored in traditional machine-learning models, its application to LLM agents is considered a novel attempt. This suggests a positive attitude towards the novelty of the proposal, particularly in the context of LLMs.\n\nScore: 8"
+    },
+    {
+      "id": "Safety_1_Human",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation expresses skepticism about the novelty and effectiveness of the proposed framework. The evaluator doubts that the agent-based pipeline will outperform existing methods, such as designing sophisticated prompts. This indicates a negative attitude towards the novelty of the idea.\n\nScore: 3"
+    },
+    {
+      "id": "Coding_1_AI",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that the iterative part of the method is not novel, but highlights that the conceptual compression aspect seems unexplored. Additionally, the use of LLM for algorithm complexity analysis is noted as a new topic. This suggests a positive attitude towards the novelty of certain components of the work, despite some elements being familiar.\n\nScore: 8"
+    },
+    {
+      "id": "Coding_1_AI",
+      "true_label": 3,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation indicates that the proposed method involves combining the coding optimization process into LLMs through iterative prompting. However, it also mentions that there are already existing works that train LLMs to optimize code, as referenced by the provided links. This suggests that while the approach may have some novel aspects, it is not entirely unique due to the presence of similar existing research.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_3_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that the specific focus on \"adversarial rephrases\" in the context of uncertainty estimation from LLMs is novel. Although there are some unspecified issues with the proposal, the evaluator highlights the novelty of the adversarial aspect. This indicates a positive attitude towards the novelty of this particular focus, suggesting a medium-high novelty score.\n\nScore: 7"
+    },
+    {
+      "id": "Uncertainty_3_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation indicates that the approach is reasonably different from existing work in uncertainty calibration. While there are related works in prompting for uncertainty estimation, the core aspect of the proposed approach is distinct. It focuses on calibrating in contrast to other queries rather than maintaining uniform confidence across paraphrases. This suggests a novel angle in the methodology, showing a positive attitude towards its uniqueness.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_6_Human",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that the proposed idea is not currently sufficient for publication, suggesting that it lacks depth and breadth. The evaluator acknowledges not being aware of similar works using the exact strategy, which implies some level of novelty. However, the suggestion to include a variety of strategies and a thorough analysis indicates that the current proposal is not seen as particularly innovative or comprehensive. The overall tone is neutral to slightly negative, as the evaluator sees potential but not in its current form.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_6_Human",
+      "true_label": 1,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation references multiple existing works on prompting LLMs for low-resource translation, specifically mentioning few-shot demos. It also cites research explaining why few-shot prompts are effective. This indicates that the proposed work is not significantly different from existing studies, suggesting a lack of novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_8_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator expresses a positive attitude towards the novelty of the paper, particularly appreciating the generation of both infractual and factual statements. They highlight that this approach is different from most existing methods, which typically rely on external data sources for factuality. Although there is some uncertainty about the usefulness, the novelty in using encoded non-factual tendencies is recognized. The overall tone is positive, indicating a novel contribution.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_8_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation describes the proposed methods as \"simple\" and lacking \"well-motivated intuition.\" This suggests a negative attitude towards the novelty of the idea, indicating that it may not offer significant new insights or advancements. The lack of motivation and simplicity implies that the methods are not seen as innovative or groundbreaking.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_8_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea of learning from contrastive examples has already been explored in both training and prompting. The evaluator explicitly states that they do not see much novelty in the proposed idea. This suggests a negative attitude towards the novelty of the work.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_2_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that there are already existing works exploring the same area of prompting LLMs to generate code-switched text. The evaluator expresses doubt about the viability of the proposed method, suggesting that it may not offer significant novelty. The mention of specific relevant works further supports the notion that the proposed method is not substantially different from existing research.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_2_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation suggests that the contribution of using steps to generate better code-mixed sentences is minor. However, it acknowledges that if there is no previous work using LLM to augment the code-switching dataset, it could be worth exploring. This indicates a potential for novelty, but the evaluator's language is cautious and not strongly positive. The novelty is conditional on the absence of prior work, leading to a moderate score.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_9_Human",
+      "true_label": 1,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea has already been tested in an existing paper, \"Are You Sure? Challenging LLMs Leads to Performance Drops in The FlipFlop Experiment.\" This suggests that the concept of challenging LLMs and observing performance drops is not novel, as it has been previously explored and documented. The evaluation does not mention any new aspects or unique contributions beyond what has already been studied, indicating a lack of novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_9_Human",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator acknowledges the existence of past work using LLMs as judges for factuality errors and fine-tuning. However, they highlight that the specific approach of using questioning as a prompting strategy to increase factuality is not something they are aware of in existing literature. The evaluator conducted a search and did not find similar work, leading them to consider the idea reasonably novel. This indicates a positive attitude towards the novelty of the proposed approach, though it is not described as groundbreaking.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_9_Human",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation indicates that the proposed method is similar to existing work that uses LLMs for \"self-refinement.\" However, it also notes that this exact strategy has not been seen in other papers. This suggests a degree of novelty, as the specific approach has not been documented, even though it aligns with a known line of work. The evaluator's attitude is somewhat positive, recognizing a unique aspect in the strategy.\n\nScore: 7"
+    },
+    {
+      "id": "Multilingual_10_AI",
+      "true_label": 8,
+      "predicted_score": 10,
+      "response": "Analysis: The evaluator clearly states that the approach of relying on an iteratively refined etymological map is \"completely novel.\" This indicates a strong recognition of the novelty of the idea, with no mention of similar existing works. The use of the phrase \"to the best of my knowledge\" suggests confidence in the uniqueness of the approach.\n\nScore: 10"
+    },
+    {
+      "id": "Multilingual_10_AI",
+      "true_label": 8,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluator states that they couldn't find any similar methods, which suggests a potential novelty. However, they also acknowledge a lack of expertise in the sub-field and the possibility of having missed relevant literature. This indicates a cautious attitude towards the novelty, as the evaluator is not fully confident in their assessment.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_3_Human",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that the first highlight of the idea is quite similar to an existing method, FactScore, suggesting low novelty in that aspect. The second highlight, the multi-perspective evaluation, is acknowledged as somewhat novel but still bears resemblance to the popular multi-agent collaboration concept. This suggests a moderate level of novelty, as there is some newness but also significant overlap with existing ideas.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_3_Human",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that the idea is somewhat similar to an existing concept, \"self consistency,\" but notes a difference in making the sampling objective more explicit. The use of \"kind of similar\" suggests some novelty, but the core idea appears to be closely related to existing work. This reflects a neutral to slightly positive attitude towards novelty.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_3_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation describes the work as \"reasonably novel\" and acknowledges \"some differences\" with other works in the areas of multistep generation and fact-checking. The use of \"reasonably\" suggests a moderate level of novelty, while \"some differences\" indicates that there are distinct aspects compared to existing works. This reflects a moderately positive attitude towards the novelty of the work.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_1_AI_Rerank",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed idea follows a self-verification manner, which is already present in many related works. Although it applies this approach to code generation, it does not offer any novel modifications or improvements. The lack of novelty in the method itself and the absence of significant advancements in its application result in a low novelty score.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_1_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the idea targets an underexplored area, which suggests some level of novelty. However, it also mentions that the idea has \"some serious problem,\" indicating potential issues that might affect its perceived novelty. The evaluation presents a mixed attitude, recognizing the novelty in the target area but expressing concerns about the idea's execution or feasibility.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_8_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation acknowledges that there have been only 1-2 recent papers on the topic, indicating that it is a relatively new area of research. The emphasis on collecting new data, especially in lower-resource languages, and the inclusion of human evaluation as an important step, suggests that the proposed work addresses significant gaps in existing research. The evaluator highlights the novelty in both the problem area and the methodology, showing a positive attitude towards the work's originality.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_8_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation suggests that while \"Culturally-Specific Task\" is a trending topic, the methods like CoT are not considered very novel. The use of \"not very noble\" implies a lack of originality or innovation in the methods being discussed. This indicates a negative attitude towards the novelty of the methods.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_2_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation suggests that the proposed idea is not very novel, as it is described as merely iteratively prompting a model to output more specific answers. The phrase \"not something very novel\" indicates a negative attitude towards the novelty of the idea, implying it lacks originality and is similar to existing methods.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_2_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed idea is a combination of existing methods, specifically self-refinement, data diversification, and semantic entropy for hallucination detection. The evaluator explicitly states that they do not find the idea sufficiently novel, suggesting a low level of novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Math_1_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluator indicates that the proposed method is distinct from existing strategies, specifically mentioning that it differs from known approaches like chain of thought. The phrase \"to the best of my knowledge\" suggests a strong belief in the novelty of the method, and the evaluation does not mention any similar existing works. This reflects a positive attitude towards the novelty of the idea.\n\nScore: 9"
+    },
+    {
+      "id": "Math_1_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation describes the proposed method as \"moderately novel,\" indicating that while the approach of using prompting is somewhat new, it is not entirely groundbreaking. The use of the word \"moderately\" suggests a balanced view, recognizing some novelty but not to a high degree.\n\nScore: 5"
+    },
+    {
+      "id": "Bias_3_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposal addresses a well-known problem and does not introduce a novel approach. The method described, which involves asking the model to rephrase responses, is not presented as innovative. The evaluator's comments suggest that the proposal lacks novelty both in the problem it addresses and the method it employs.\n\nScore: 2"
+    },
+    {
+      "id": "Bias_3_Human",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation expresses interest in the overall idea and sees potential for it to develop into multiple papers, indicating a positive attitude towards its novelty. However, the evaluator also notes that the idea is still high-level and vague, with many uncertainties, particularly regarding the implementation of cultural contexts in prompts. This suggests that while the concept is intriguing, it lacks clarity and specificity at this stage.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_5_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that while adversarial generation is not a new topic, the application to code generation with LLMs is considered reasonably novel. The use of the word \"innovatively\" indicates a positive attitude towards the novelty of the approach, suggesting that it offers fresh insights within a specific context.\n\nScore: 8"
+    },
+    {
+      "id": "Coding_5_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that the idea of building a constraint generator to play against code generation is novel and not widely explored, indicating a positive attitude towards its originality. However, it also notes that the method's implementation is less surprising and lacks programming insights, which diminishes the overall interest. This mixed evaluation suggests a balance between novelty and lack of depth in execution.\n\nScore: 7"
+    },
+    {
+      "id": "Bias_2_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator acknowledges the existence of related works in LM-based counterfactual generation and reference-based evaluation but notes that the specific application to fairness and intersectional bias is not thoroughly studied. The evaluator also finds the problem setup to be realistic and less explored, indicating a positive attitude towards the novelty of the idea.\n\nScore: 8"
+    },
+    {
+      "id": "Bias_2_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea of contrastive debiasing is not novel, as similar methods have been implemented previously. The evaluator references specific works that have already explored this concept, suggesting that the proposed idea lacks originality. Although the evaluator mentions not finding an exact match for the proposed idea, they describe it as \"not a creative idea overall\" and \"quite cliché,\" indicating a negative attitude towards its novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_2_AI",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that the idea of finding a translation not available in the target language is not novel. However, it acknowledges some novelty in suggesting prompting methods with LLM. The evaluation shows a mixed attitude, recognizing a novel aspect but also pointing out a lack of novelty in another part. This suggests a medium level of novelty.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_2_AI",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation describes the idea as \"interesting\" and suggests that it offers a potentially improved method for translation by breaking down concepts into semantic primitives. This indicates a positive attitude towards the novelty of the approach, as it implies a new way of handling translation that could provide better contextual understanding in the target language. However, the evaluation does not use strongly positive language or explicitly state that the method is novel compared to existing works.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_6_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation indicates that the proposed idea is novel, as there are no existing approaches specifically on Bayesian Belief Update Prompting. While Bayesian approaches have been explored, this specific application appears to be new. The evaluator's statement suggests a positive attitude towards the novelty of the idea.\n\nScore: 9"
+    },
+    {
+      "id": "Factuality_6_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator notes that the proposed method involves explicitly prompting the model to output a probability of a fact being true given evidence, which they have not seen before. This indicates a positive attitude towards the novelty of the approach, as it suggests a new application or technique that hasn't been encountered in existing literature.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_11_Human",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that the idea is straightforward but appreciates its structured approach to legal analysis using LLMs. The mention of an \"interesting finding\" if the method doesn't work suggests a positive attitude towards the novelty of the approach. However, the evaluation does not express strong enthusiasm or highlight any groundbreaking aspects, indicating a moderate level of novelty.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_11_Human",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluator acknowledges the existence of a related work but notes that the specific setup of the proposed idea appears to be new. However, the evaluator also mentions limited expertise in the problem domain, which introduces some uncertainty. The evaluation leans towards recognizing novelty but with some reservations due to the evaluator's limited familiarity.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_11_Human",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluator acknowledges that the concept of breaking a reasoning task into smaller sub-tasks is not new. However, there is a possibility that applying this method to the field of law might be novel. The evaluator expresses limited confidence in this assessment, indicating uncertainty about the novelty. This suggests a neutral to slightly positive attitude towards the potential novelty of the application.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_5_Human",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation compares the proposed idea to an existing method, Knowledge Soup. It notes that the retrieval step is similar but highlights a difference in the source of retrieval. The evaluation acknowledges an improvement in the form of a high-level plan but expresses uncertainty about its effectiveness. The overall tone is mixed, recognizing some novelty but also expressing doubt about its impact.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_5_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the proposal addresses an important issue and suggests that the approach has merit. However, it also notes that the idea of decomposing the plan for implementation is not entirely new, as it could be implemented by existing AI or LLM agents. This indicates that while there is some novelty, it is not groundbreaking.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_5_AI",
+      "true_label": 5,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges the novelty of the general idea, particularly in the integration of complex API documentation into prompts. However, it also raises concerns about the scalability and feasibility of the approach, specifically questioning how an LLM would manage API selection and documentation integration. The positive recognition of novelty is tempered by these concerns, suggesting a medium-high level of novelty.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_5_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed method's components are largely derived from existing literature. The API-specific prompt design can be borrowed from works like AutoPrompt, and the evaluation of API usage quality in code has been explored in other studies. The evaluator notes that both components can be readily adopted from existing research, and it is unclear what unique aspects are introduced by the proposed method. This suggests a lack of novelty in the approach.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_10_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges the existence of similar works focusing on meta-cognitive confidence and self-consistency in question answering. However, it highlights that the proposed work's focus on factuality is different and, in the evaluator's opinion, better. This suggests a positive attitude towards the novelty of the approach, as it offers a distinct and potentially improved focus compared to existing methods.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_10_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation describes the idea as \"interesting and reasonable,\" indicating a positive attitude. It highlights that the proposed approach is \"clearly different from previous works of confidence calibration,\" suggesting a novel contribution. The use of terms like \"clearly different\" implies a recognition of distinctiveness and innovation in the proposed method.\n\nScore: 9"
+    },
+    {
+      "id": "Factuality_10_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges the existence of related work on quantifying uncertainty in models. However, it highlights that the specific method proposed for dealing with uncertainty appears to be novel. This suggests a positive attitude towards the novelty of the specific approach, even though the general concept has been explored before.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_1_Human",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the area of hallucination detection is well-explored, and specifically mentions that detecting hallucinations post-hoc with LLMs has been addressed by several works. The reference to three specific papers from 2023 suggests that the proposed work is not novel, as similar research already exists. The evaluator's attitude is negative regarding the novelty of the proposed idea.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_1_Human",
+      "true_label": 4,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that using negative examples is not a novel approach, indicating familiarity with existing methods. However, it highlights that the use of \"hallucination\" is perceived as new. This suggests a positive attitude towards the novelty of this specific aspect, though it is not overwhelmingly enthusiastic.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_2_AI",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates skepticism about the novelty of the proposed method. The evaluator mentions existing works that explore similar concepts and expresses doubt about the connection to a fractal structure. The statement \"It is unclear to me what the novelty is compared to the prior works\" suggests a lack of perceived innovation. Overall, the evaluation leans towards a negative assessment of novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_2_AI",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation is negative, highlighting that the idea is not well-motivated and questioning the reliability of using LLM to verify its output. This suggests a lack of novelty and originality in the proposed idea.\n\nScore: 1"
+    },
+    {
+      "id": "Factuality_2_AI",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluator acknowledges that the idea of checking at different levels as a nested prompt is new and hasn't been done before, indicating some level of novelty. However, they express reservations about the novelty due to the use of the same model for both generation and verification, which they believe reduces its novelty. This mixed evaluation suggests a moderate level of novelty, as the idea itself is new, but its implementation may not be as innovative.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_9_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation lists three similar works, indicating that the proposed idea is not significantly different from existing research. The mention of these works suggests that the novelty is limited, as the core concept appears to be already explored in other studies.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_9_AI",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed idea is similar to existing studies in the field of code generation. It references multiple works that have explored similar concepts, such as iterative refinement, self-debugging, and multi-agent collaboration. This suggests that the proposed idea lacks distinct novelty, as it aligns closely with established methods.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_9_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges some novelty in the area of code generation, indicating a positive aspect. However, it also notes that the idea is similar to existing reasoning papers and chain of thought approaches, suggesting that it is not entirely novel. This mixed evaluation suggests a medium level of novelty, as there are both new and familiar elements.\n\nScore: 6"
+    },
+    {
+      "id": "Safety_3_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation clearly indicates that the proposed idea is not novel. It mentions that the manipulation of input context for mitigating adversarial attacks has been a popular research direction even before the release of ChatGPT-3.5. Additionally, the approach of using follow-up questions and consistency checking is already widely recognized in the field. The evaluator also notes that the concept of self-reflection for LLMs is actively studied. The statement \"it is not that hard to expect there will be some combination of these ideas\" further emphasizes the lack of novelty. Overall, the evaluation expresses a negative attitude towards the novelty of the idea.\n\nScore: 1"
+    },
+    {
+      "id": "Safety_3_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation expresses a positive attitude towards the novelty of the idea, highlighting its focus on dynamic contexts as opposed to the more commonly studied static contexts. The evaluator finds the idea interesting and notes its potential practical value, indicating a recognition of its novelty in the field.\n\nScore: 9"
+    },
+    {
+      "id": "Math_4_AI",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation describes the idea as \"reasonably novel,\" indicating a positive attitude towards its originality. The combination of breaking down problems into sub-problems with LLMs and using a confidence score is noted as a novel approach. The use of \"reasonably novel\" suggests that while the idea is not groundbreaking, it offers a fresh perspective or combination that hasn't been widely explored.\n\nScore: 7"
+    },
+    {
+      "id": "Math_4_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation indicates that the proposed method introduces an additional step to iteratively generate solutions, which differentiates it from previous work. This suggests some level of novelty, as it builds upon existing methods by adding a new component. However, the evaluation does not express strong enthusiasm or highlight a significant departure from existing methods, suggesting a moderate level of novelty.\n\nScore: 6"
+    },
+    {
+      "id": "Safety_4_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation indicates that the proposed work is related to existing research on generating attacks against safety classifiers. However, it highlights differences in the details, specifically the use of related scenarios to create new types of attacks. This suggests some level of novelty, as the approach involves composing scenarios in a new way. The evaluation does not express strong enthusiasm or use highly positive language, but it acknowledges a novel aspect in the method.\n\nScore: 6"
+    },
+    {
+      "id": "Safety_4_AI",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges some novelty in the proposed idea but also notes its similarity to existing research in prompt-driven LLM safeguarding. The use of \"somewhat similar\" suggests that while there are new elements, the core concept aligns with existing studies. This indicates a moderate level of novelty.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_8_Human",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed method is similar to existing works, specifically referencing two papers. This suggests a lack of novelty, as the method does not appear to offer significant differences from these existing studies.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_8_Human",
+      "true_label": 7,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation expresses a positive attitude towards the proposed idea, highlighting its impact and interesting nature. The focus on autoprompting and the automatic process with system checks is appreciated. The evaluator notes a related work but emphasizes that the proposed work is distinguished by its ability to add natural language functionality to any application without changing the code. This suggests a novel approach with significant potential, indicating a high level of novelty.\n\nScore: 9"
+    },
+    {
+      "id": "Math_2_Human",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed idea is a straightforward application of an existing method (Tree-of-Thought prompting) in a specific domain (mathematical proofs). It mentions that similar strategies have already been explored in related areas, such as math word problems, and references existing work that has applied tree search strategies to enhance mathematical reasoning. The evaluator suggests that the approach is not novel, as it relies on known techniques and concepts.\n\nScore: 2"
+    },
+    {
+      "id": "Math_2_Human",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed approach is largely based on an existing method from the \"Tree of Thoughts\" paper, with only a minor distinction in the form of a \"stop current thought\" action. This distinction is considered minor and likely to result in similar behavior to the original method. The evaluation explicitly states that there is no novelty, as the approach is merely an application of an existing solution without introducing a novel concept.\n\nScore: 2"
+    },
+    {
+      "id": "Safety_4_AI_Rerank",
+      "true_label": 9,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation describes the approach of combining concept embeddings into diffracted patterns as unique, suggesting a novel method of preserving information while obscuring specific identifiers. The mention of difficulty in reverse engineering the PII without knowing the applied filter indicates a positive view of the novelty and effectiveness of the method. The evaluator's language reflects a positive attitude towards the innovation, suggesting a high novelty score.\n\nScore: 9"
+    },
+    {
+      "id": "Safety_4_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the method is similar to an auto-encoder process and mentions that semantic space disentangling has been applied in many other tasks. This suggests that the proposed method lacks novelty, as it relies on existing techniques that have been used in similar contexts.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_10_AI",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges the existence of similar works focusing on meta-cognitive confidence and self-consistency. However, it highlights that the proposed work's focus on factuality is different and, in the evaluator's opinion, better. This indicates a recognition of novelty in the specific focus area, suggesting a positive attitude towards the uniqueness of the approach.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_10_AI",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation describes the idea as \"interesting and reasonable,\" indicating a positive attitude. It highlights that the proposed approach is \"clearly different from previous works,\" suggesting a recognition of novelty. The use of an \"adaptive strategy\" for different confidence scales further emphasizes the innovative aspect of the work.\n\nScore: 9"
+    },
+    {
+      "id": "Factuality_10_AI",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges the existence of related work on quantifying uncertainty in models. However, it highlights that the specific method proposed for dealing with uncertainty appears to be novel. This suggests a positive attitude towards the novelty of the specific approach, even though the general concept is not new.\n\nScore: 8"
+    },
+    {
+      "id": "Coding_3_Human",
+      "true_label": 5,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation indicates that the novelty arises from combining Debate and Self-critic, which seems to be a new approach. However, it also mentions that using a multi-agent system for coding is not new. This suggests that while there is some novelty in the combination of techniques, part of the method is already established. The evaluation reflects a moderately positive attitude towards the novelty of the idea.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_3_Human",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that the proposed idea combines two widely-adopted concepts: multi-agent code generation and multi-agent debate. However, it highlights that there is no specific paper focusing on multi-agent debate in code generation, suggesting a gap in the research. The evaluator sees value in the idea, noting that previous works have only conducted proof-of-concept experiments and that there is potential for further exploration. Additionally, the evaluator believes that the domain of code generation is suitable and timely, especially with the use of language models for generating high-quality unit tests. The overall tone is positive, recognizing the novelty and potential impact of the proposed work.\n\nScore: 8"
+    },
+    {
+      "id": "Coding_7_AI",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges some similarities with an existing work but highlights that the proposed idea is specifically tailored for the coding domain, which adds a degree of novelty. The evaluator's use of \"reasonably novel\" indicates a positive attitude towards the uniqueness of the adaptation, suggesting a medium-high level of novelty.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_7_AI",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator finds the idea interesting and somewhat novel, indicating a positive attitude. They mention not having seen substantially similar works, which suggests a degree of novelty. Additionally, the mention of interesting related ideas further supports the uniqueness of the approach. However, the use of \"somewhat novel\" implies that while the idea is novel, it may not be groundbreaking.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_5_Human",
+      "true_label": 1,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed approach is not significantly different from existing methods, specifically mentioning that grounding each generation step has been widely explored. The mention of similarity to other AUG pipelines suggests a lack of novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_5_Human",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that there are already several papers addressing the concept of teaching models to cite or quote, specifically mentioning two examples. This suggests that the proposed idea is not novel, as similar work already exists in the field.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_5_Human",
+      "true_label": 3,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation suggests that the proposed idea initially appears novel but lacks true novelty upon closer examination. The evaluator points out a significant flaw in the assumption about LLMs' capabilities, which is not supported by current models. Additionally, the evaluation references existing research that addresses similar issues, indicating that the proposed idea is not unique. The overall tone is critical, highlighting the lack of novelty.\n\nScore: 3"
+    },
+    {
+      "id": "Coding_2_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges some novelty in the idea, particularly in the exploration part where the LLM generates code snippets. However, it also notes similarities to existing works such as Creator and Craft, especially in the \"iterative learning from execution\" and \"exploration + retrieval augmented generation\" aspects. The evaluator suggests that while there is some novelty, there are also significant overlaps with existing methods.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_2_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the idea of semantic playground exploration (SPE) is interesting, indicating some level of novelty. However, it also points out that the implementation process is somewhat similar to existing methods involving APIs with test case demonstrations. This suggests that while the concept may have novel elements, the execution is not entirely unique. The evaluator's attitude is mixed, recognizing some novelty but also noting similarities to existing methods.\n\nScore: 5"
+    },
+    {
+      "id": "Uncertainty_1_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the idea of applying Fisher information to quantify sensitivity is interesting. However, it also notes that this approach is largely a direct application of existing methods from the vision domain, which diminishes its intrinsic novelty. The evaluator's attitude is mixed, recognizing some interest but also pointing out a lack of originality due to its reliance on established methods.\n\nScore: 5"
+    },
+    {
+      "id": "Uncertainty_1_Human",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that using Fisher information for uncertainty measurement is not new. However, it highlights that applying it successfully in the context of LLMs (Large Language Models) would require technical contributions, which adds a degree of novelty. The evaluator describes the work as \"reasonably novel,\" indicating a positive attitude towards its uniqueness, though not overwhelmingly so.\n\nScore: 7"
+    },
+    {
+      "id": "Math_4_Human",
+      "true_label": 7,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation describes the idea of Focal-Contrast Tree Search as novel and mentions that the closest related works are Tree-of-Thoughts and Graph-of-Thoughts. It highlights the unique aspects of the proposal, such as utilizing the paraphrasing capabilities of LLMs and including specific designs for Math Word Problems. The evaluator's positive attitude towards the novelty of the idea is evident, suggesting a high novelty score.\n\nScore: 9"
+    },
+    {
+      "id": "Math_4_Human",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed idea is very similar to existing methods, specifically MCTS and Self-consistency. The evaluator points out that focal-contrast branching resembles MCTS, and the rest of the approach is akin to Self-consistency. This suggests a lack of novelty, as the core components are compared directly to well-known methods.\n\nScore: 2"
+    },
+    {
+      "id": "Math_2_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that introducing constraints to LLM math reasoning is an interesting and clear idea, indicating some level of novelty. However, it also points out potential challenges and limitations, such as the complexity of validation and efficiency issues. The evaluator's attitude is somewhat neutral, recognizing the idea's potential but also highlighting concerns that could affect its success.\n\nScore: 6"
+    },
+    {
+      "id": "Math_2_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation indicates that the approach is novel in its application to LLM reasoning for ensuring constraint consistency. The evaluator notes that there doesn't seem to be an existing approach that applies this specific method, suggesting a positive attitude towards its novelty. However, the description of the method as a well-studied CSP indicates that the foundational concept is not new, but its application in this context is.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_1_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that breaking claims into sub-claims is not new, which suggests a lack of novelty in that aspect. However, it highlights that breaking a question into hierarchical questions is less prevalent, indicating some novelty. Additionally, the aggregation of confidence scores is described as an \"interesting statistical question,\" suggesting a positive view of its novelty. Overall, the evaluation presents a moderately positive attitude toward the novelty of the proposed idea.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_1_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea is very similar to existing methods such as Tree-of-thoughts and self-check techniques like step-by-step prompting with NLI or least-to-most prompting. This suggests a lack of novelty, as the proposed idea closely resembles well-known approaches.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_7_Human",
+      "true_label": 6,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation expresses a positive attitude towards the novelty of the idea, highlighting that relying on the LLM to adapt generations to specific dialects is a novel concept. The evaluator acknowledges uncertainty about achieving state-of-the-art (SoTA) status but still emphasizes the novelty aspect. The use of phrases like \"certainly a novel idea\" and \"it certainly seems novel\" indicates a strong recognition of the idea's uniqueness.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_7_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the use case of dialect-aware translation is novel. However, it points out that the proposed technique has been previously applied to a similar area (machine translation of rare words), which limits its novelty. The method is described as fairly simple, involving only a change in instruction to LLMs, which may not be sufficient for a standalone paper. The evaluation highlights the main novelty as the automatic identification of words differing between dialects, suggesting potential value if properly validated. Overall, the evaluation presents a mixed view, recognizing some novel aspects but also noting limitations.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_6_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges some similarities with an existing work but highlights that the proposed idea is specifically tailored for the coding domain, suggesting a reasonable level of novelty. The evaluator's attitude is moderately positive, indicating that while there are similarities, the adaptation to a new domain adds a novel aspect.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_6_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator finds the idea interesting and somewhat novel, indicating a positive attitude. They mention not having seen substantially similar works, which suggests a degree of novelty. Additionally, the mention of interesting related ideas, such as using axioms for code evaluation, supports the notion of innovation. Overall, the evaluation leans towards a positive recognition of novelty.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_8_Human",
+      "true_label": 8,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation highlights a common problem with models not handling negation properly, specifically mentioning proprietary language models like claude-35-sonnet. It does not mention any novel approach or solution to this problem, nor does it express any positive attitude towards a new idea. The focus is on the prevalence of the issue rather than any innovative method to address it.\n\nScore: 1"
+    },
+    {
+      "id": "Factuality_8_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation indicates that the overall prompting pipeline is not very novel, but its application to negation is under-explored, suggesting a reasonable level of novelty. The evaluator acknowledges some novelty in the specific application, showing a moderately positive attitude.\n\nScore: 6"
+    },
+    {
+      "id": "Factuality_8_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that the concept of query rewrite is not novel, but applying it to address the specific problem of negation is considered a fresh perspective. The evaluator notes that the overall approach follows a standard NLP pipeline, which may limit its novelty. However, the evaluator expresses a positive attitude towards the approach, describing it as somewhat novel and valuable. This suggests a medium level of novelty, as the idea brings a new application to an existing method.\n\nScore: 6"
+    },
+    {
+      "id": "Uncertainty_5_AI",
+      "true_label": 1,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation indicates that the work is very similar to existing research in a Multi-Agent setting, specifically referencing two papers. This suggests a lack of novelty, as the evaluator points out that similar work has already been done.\n\nScore: 1"
+    },
+    {
+      "id": "Uncertainty_5_AI",
+      "true_label": 4,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation mentions existing works that explore the idea of Socratic dialogue for improving performance, indicating that the proposed idea is not entirely novel. The reference to specific related works suggests that the novelty is limited, as similar concepts have already been explored.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_5_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates that the core idea of leveraging \"self-consistency\" and \"self-verification\" of LLMs is not new in the community, suggesting limited novelty. The mention of \"semantic\" conditions being purely based on LLMs further implies a lack of innovation. However, the evaluator notes there is some room for exploration with controllable external tools, which provides a slight positive aspect.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_5_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluator finds the idea of generating alternative claims and verifying their factuality to be novel. However, they express some uncertainty due to their lack of familiarity with existing works. This indicates a positive attitude towards the novelty, but with some reservations.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_6_Human",
+      "true_label": 2,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation clearly states that the proposed idea is not novel due to the existence of a very similar paper, RepoCoder, published in 2023. The related work is described as having a similar motivation but being more solid and sophisticated, particularly with the introduction of a repo-level benchmark. This indicates a low level of novelty for the proposed idea.\n\nScore: 1"
+    },
+    {
+      "id": "Coding_6_Human",
+      "true_label": 1,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the second idea of correcting model generations is not novel, as it has been explored in many papers. The first idea of adding context is deemed irrelevant for the specific tasks mentioned (HumanEval or MBPP), suggesting a lack of applicability and novelty. Overall, the evaluation reflects a negative attitude towards the novelty of the proposed ideas.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_6_Human",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation highlights that focusing on improving context awareness in LLM-based coding assistants or automated researchers is a \"concrete and novel problem.\" The evaluator acknowledges the potential for significant improvements, indicating a positive attitude towards the novelty of the idea. The use of terms like \"concrete and novel\" suggests a recognition of the uniqueness and potential impact of the approach.\n\nScore: 8"
+    },
+    {
+      "id": "Safety_1_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator acknowledges that the proposal of using a mixture-of-expert strategy for LLM robustness is a reasonably novel idea in the context of LLM Safety. However, the evaluator also admits to having limited knowledge in AI safety, which introduces some uncertainty about the novelty claim. Despite this, the overall tone is positive, suggesting a belief in the novelty of the approach.\n\nScore: 8"
+    },
+    {
+      "id": "Safety_1_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation clearly states that the idea of using a multi-agent council for safeguarding is novel and that similar ideas have not been observed in related work. This indicates a strong recognition of the novelty of the proposed idea, showing a positive attitude.\n\nScore: 9"
+    },
+    {
+      "id": "Factuality_7_AI",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges the novelty of the first two steps in the proposed three-step approach, highlighting their innovative contribution. However, it also notes that the final step, self-refine, is overused in academia, which slightly diminishes the overall novelty. The evaluator's attitude is generally positive, recognizing significant novel aspects while pointing out a common element.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_7_AI",
+      "true_label": 6,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluator describes the idea of providing temporal context to activate LLMs as novel and states that they are not aware of similar prompting techniques. This indicates a positive attitude towards the novelty of the idea, suggesting that it is perceived as new and innovative in the field.\n\nScore: 9"
+    },
+    {
+      "id": "Factuality_7_AI",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluator describes the idea as \"reasonably novel\" and highlights its uniqueness in the space of temporal reasoning. The approach of priming the model for factually resonant ideas is noted as somewhat new and interesting. However, the evaluator also mentions some limitations, indicating a balanced view. The overall tone is positive, acknowledging novelty with some reservations.\n\nScore: 7"
+    },
+    {
+      "id": "Multilingual_5_AI",
+      "true_label": 6,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates skepticism about the novelty of the approach, noting that it is not particularly different from existing work on using LLMs to simulate responses from different demographics. The evaluator references known limitations and existing literature, suggesting a lack of novelty. However, there is a mention of an interesting aspect involving recruiting native speakers, which could add some novelty if emphasized. Overall, the evaluation leans towards a negative view of the novelty, with a slight acknowledgment of a potentially interesting component.\n\nScore: 3"
+    },
+    {
+      "id": "Multilingual_5_AI",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation describes the proposed idea as novel, particularly highlighting the addition of a new dimension by incorporating detailed sociolinguistic role-play into prompts. While acknowledging that previous works have explored related areas, the evaluator emphasizes the uniqueness of explicitly framing tasks within specific social contexts, relationships, and norms. This positive attitude towards the novelty of the approach suggests a high novelty score.\n\nScore: 9"
+    },
+    {
+      "id": "Safety_5_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation describes the idea as \"interesting,\" which indicates a positive attitude towards its novelty. However, it lacks strong language or detailed comparison to existing methods, making it difficult to determine the extent of its novelty. The evaluation suggests some level of novelty but does not provide enough detail to warrant a very high score.\n\nScore: 7"
+    },
+    {
+      "id": "Safety_5_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that the proposed idea and framework are novel, particularly in their inspiration from red-teaming techniques from vision, which makes major differences from existing ideas. However, it also notes that the fundamental notion of modifying adversarial prompts is similar to existing studies, specifically citing Su et al., 2024. This suggests a medium-high level of novelty, as the core method has similarities to prior work, but there are novel aspects in the approach.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_2_AI",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that multi-modalities have been discussed in existing works, such as InSynth and Photocode. However, it also notes that the proposed idea is somewhat novel due to its incorporation of LLM reasoning. This suggests a recognition of novelty in the specific approach, despite similarities to existing research.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_2_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the proposed approach of training a language model to understand math and code images, and generating images to assist reasoning, is straightforward but potentially interesting to the community. However, it also points out technical flaws and uncertainties, particularly regarding the integration of CLIP with the language model. The mention of a possible llava-style fine-tuning method suggests some novelty, but the overall tone is mixed due to the technical concerns.\n\nScore: 5"
+    },
+    {
+      "id": "Math_1_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that breaking down into subtasks is a well-regarded approach, indicating that this aspect is not novel. However, the retrieval from an existing pool of similar subtasks is noted as somewhat novel and interesting. This suggests a moderate level of novelty, as one part of the method is recognized as new and intriguing, while the other is not.\n\nScore: 5"
+    },
+    {
+      "id": "Math_1_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges the presence of some novel ideas, specifically in using retrieval to aid reasoning. However, it also highlights significant issues with the proposal's clarity and coherence, suggesting that many aspects do not make sense. The evaluator's attitude is mixed, recognizing novelty but also expressing concerns about the execution and presentation.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_4_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea lacks sufficient novelty and motivation. It highlights that the method retrieves information from itself rather than an external database, and the rationale for this approach is unclear. Additionally, the evaluation points out that the proposal does not adequately address or discuss the reasons for hallucinations or how the proposed methods might circumvent them. This suggests a negative attitude towards the novelty of the idea.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_4_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed method is similar to existing multi-hop approaches used in tasks like question answering and fact-checking. Additionally, the use of a language model as a judge is not clearly differentiated from previous work on model-based evaluation or language models as fact-checkers. This suggests that the proposed idea lacks significant novelty, as it closely resembles existing methods and applications.\n\nScore: 2"
+    },
+    {
+      "id": "Uncertainty_4_Human",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator describes the idea as novel to them, indicating a positive attitude towards its originality. However, the evaluation does not use strongly positive language or provide extensive context about its novelty in the broader field. This suggests a recognition of novelty but not at the highest level.\n\nScore: 8"
+    },
+    {
+      "id": "Uncertainty_4_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that the idea is related to existing works in the selfgptcheck series, which use consistency-based methods. However, it highlights a novel aspect: the connection between consistency-based methods and fact-verification methods that involve providing references. The use of the phrase \"somehow novel\" indicates a recognition of novelty, though not overwhelmingly positive. This suggests a moderate level of novelty.\n\nScore: 6"
+    },
+    {
+      "id": "Safety_5_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that similar defenses have been attempted recently, suggesting that the proposed idea is not novel. The statement lacks any positive language or indication of uniqueness, implying a low level of novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Safety_5_Human",
+      "true_label": 4,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that similar ideas have already been explored in the safety literature, indicating that the core concept is not entirely new. However, it also notes that the jailbreak field, particularly for LLM safety, is relatively new, and the proposal could promote a less-explored branch. The evaluator suggests that the proposal deserves some novelty credit for fostering diversity in the field, showing a moderately positive attitude towards its novelty.\n\nScore: 5"
+    },
+    {
+      "id": "Safety_5_Human",
+      "true_label": 7,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluator indicates that in-context jailbreaking is a relatively new idea and mentions not having encountered literature on prompt-driven safeguards for such adversarial techniques. This suggests a positive attitude towards the novelty of the idea, as it appears to be unexplored in existing research.\n\nScore: 9"
+    },
+    {
+      "id": "Coding_7_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that the building block of the idea is somewhat existing, with a specific comparison to the reflection mechanism in a known paper. The evaluator acknowledges not having seen the exact iterative prompting method in the specific context of long-form code generation, but also suggests that similar methodologies might already exist. This reflects a neutral to slightly positive attitude, recognizing some novelty but also potential similarities with existing work.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_7_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that the idea addresses a real-world problem and is different from existing methods like task-decomposition or multi-agent approaches. However, the effectiveness of the idea still needs experimental verification. The evaluator notes that the proposed global context is similar to an existing feature (Claude's artifact feature), but since no paper has been published on it, the idea is considered reasonably novel. The overall tone is cautiously optimistic, recognizing some novelty while also pointing out similarities to existing concepts.\n\nScore: 7"
+    },
+    {
+      "id": "Math_3_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation describes the idea as \"reasonably novel,\" indicating a positive attitude towards its originality. The combination of breaking down problems into sub-problems with LLMs and using a confidence score is noted as a novel approach. The use of \"reasonably novel\" suggests that while the idea is not groundbreaking, it does offer some new insights or methods.\n\nScore: 7"
+    },
+    {
+      "id": "Math_3_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation indicates that the proposed method introduces an additional step to iteratively generate solutions, which differentiates it from previous work. However, it does not strongly emphasize the novelty or uniqueness of this approach. The evaluation suggests some level of innovation but does not express a highly positive attitude or excitement about the novelty.\n\nScore: 6"
+    },
+    {
+      "id": "Bias_2_AI",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that the idea is unique in its application of human empathy and bias reduction to LLMs, which is not commonly explored. However, it also notes that the method used (multi-stage prompting) is not unique, which limits its potential for being considered a new paper. The evaluation presents a mixed view, recognizing some novelty in the application but not in the method itself.\n\nScore: 6"
+    },
+    {
+      "id": "Bias_2_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that the focus on improving model empathy is not commonly seen, suggesting some novelty. However, it also mentions that the approach is very similar to the chain-of-thoughts method, which has been explored in debiasing. This suggests that while the specific application might be new, the core method is not. The evaluation reflects a mixed attitude, recognizing some novelty but also pointing out similarities to existing methods.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_3_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that the conceptual idea of multiple agents taking on multiple perspectives is not entirely new. However, it highlights that applying this concept specifically to the coding domain, with a focus on different personas valuing outcomes like performance, readability, and security, is not covered by existing works. The evaluator notes that the technical approach is well thought out, particularly in sourcing advice from experts and reaching consensus. Despite this, there is a concern about whether these aspects are necessary and if other optimization techniques could achieve similar objectives. Overall, the evaluation suggests some novelty in the application and technical approach, but also raises questions about its necessity and potential alternatives.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_3_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that the idea draws inspiration from existing work in compound AI and test-time inference, particularly in chat tasks. However, it highlights the novelty in applying these concepts to code tasks. Additionally, the unique inspiration from actual code review processes on platforms like Github adds to its originality. The evaluator's positive attitude towards the novel application and unique inspiration suggests a high level of novelty.\n\nScore: 8"
+    },
+    {
+      "id": "Coding_3_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation indicates that similar papers exist, which adopt multiple roles for revising LLM outputs, including for code. However, it also notes that the specific \"code review\" setting is not identical to the related work found. This suggests that while there are similarities, the proposed idea has a unique aspect in its specific application, showing some level of novelty.\n\nScore: 6"
+    },
+    {
+      "id": "Safety_3_AI",
+      "true_label": 9,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation describes the approach of combining concept embeddings into diffracted patterns as \"unique,\" indicating a positive view of its novelty. The method is seen as innovative in preserving information while obscuring specific identifiers, and the difficulty in reverse engineering adds to its distinctiveness. The use of terms like \"unique\" and the explanation of its innovative aspects suggest a high level of novelty.\n\nScore: 9"
+    },
+    {
+      "id": "Safety_3_AI",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation suggests that the proposed method is similar to an auto-encoder process and mentions that the concept of disentangling in the semantic space has been applied in many other tasks. This indicates that the method lacks novelty, as it relies on well-established techniques and ideas that have been used in other contexts.\n\nScore: 3"
+    },
+    {
+      "id": "Bias_4_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 10,
+      "response": "Analysis: The evaluator uses strongly positive language, describing the idea as \"wildly novel\" and expressing excitement about the experiment. This indicates a high recognition of the novelty, similar to Example 6, where the evaluator was very enthusiastic about the new approach.\n\nScore: 10"
+    },
+    {
+      "id": "Bias_4_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that using different personas as role-playing prompts for LLMs is a widely used approach, suggesting limited novelty in that aspect. However, the potential application for bias mitigation is noted, which could offer some novelty. The evaluation also points out limitations in the datasets and the use of only closed-source LLMs, which might restrict the perceived novelty. Overall, the evaluation reflects a mixed attitude, recognizing some potential novelty but also highlighting significant limitations.\n\nScore: 5"
+    },
+    {
+      "id": "Bias_4_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation indicates that the concept of \"pivot prompts\" is similar to in-context learning, suggesting some overlap with existing methods. However, the evaluator notes a key difference in the approach, specifically its application to addressing bias issues in LLM responses, which they haven't seen before. This suggests a degree of novelty in the specific application, though not in the broader context.\n\nScore: 7"
+    },
+    {
+      "id": "Math_3_AI",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation expresses a positive attitude towards the novelty of the idea, highlighting that it remains largely unexplored and aligns with human learning processes. The evaluator finds the approach interesting and intuitive, indicating a recognition of its innovative potential. However, there are concerns about the quality of metaphor generation and the integration of compositionality, which slightly temper the enthusiasm. Overall, the evaluation leans towards a positive assessment of novelty, but with some reservations.\n\nScore: 8"
+    },
+    {
+      "id": "Math_3_AI",
+      "true_label": 5,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator mentions not having seen metaphor-related works for mathematical reasoning, suggesting a lack of existing similar research. They express a positive opinion about the intuitiveness and potential effectiveness of using metaphors to help GPT understand math-related concepts. This indicates a recognition of novelty in the approach, though the language is not as strongly positive as in the highest scoring examples.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_2_Human",
+      "true_label": 7,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation indicates that the evaluator is not aware of existing work on the topic, suggesting a potential novelty. Additionally, the mention of multilingual research being undervalued implies that the proposed work might address an underexplored area. However, the evaluation lacks strong positive language or specific details about the novelty of the approach itself, leading to a moderate score.\n\nScore: 6"
+    },
+    {
+      "id": "Multilingual_2_Human",
+      "true_label": 2,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation is negative, highlighting the simplicity of the idea and the absence of technical contributions. It also points out the lack of sufficient baselines and questions the applicability of the method in real-life scenarios. These criticisms suggest a lack of novelty and innovation in the proposed idea.\n\nScore: 1"
+    },
+    {
+      "id": "Multilingual_2_Human",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that the work is novel for the multilingual research community, as it addresses an area that hasn't been formally studied before—automatic prompt generation for multiple languages. However, the evaluator also notes that the work may not be inspiring enough for the broader community. This suggests a recognition of novelty in a specific context, but not a groundbreaking impact overall.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_7_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluator expresses that they have not seen similar work addressing the factuality problem in long documents, indicating a perception of novelty. They acknowledge the approach as sensible and likely to succeed, suggesting a positive attitude towards the work. The mention of a \"clear accept\" further reinforces the evaluator's positive view of the novelty and potential impact.\n\nScore: 9"
+    },
+    {
+      "id": "Factuality_7_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges the novelty of using text-based hierarchical context distillation to improve LLMs' question-answering performance. However, it also points out that augmenting LLMs Q&A with compressed context or summaries has been widely explored in existing literature, specifically citing a related work. This suggests that while there is some novelty in the specific approach, the broader concept has been addressed before. The evaluation reflects a medium-high level of novelty due to the novel aspect of the specific method, but it is tempered by the existing exploration of similar ideas.\n\nScore: 7"
+    },
+    {
+      "id": "Math_4_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation expresses a positive attitude towards the novelty of the idea, highlighting that it remains largely unexplored and aligns with human learning processes. The evaluator finds the approach interesting and intuitive, suggesting a recognition of its innovative potential. However, there are concerns about the quality of metaphor generation and the inclusion of compositionality, indicating areas for improvement. Despite these concerns, the overall tone is positive, suggesting a medium-high level of novelty.\n\nScore: 8"
+    },
+    {
+      "id": "Math_4_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator indicates that they have not encountered metaphor-related works for mathematical reasoning, suggesting a lack of existing similar research. They express a positive attitude towards the idea, describing it as \"intuitive\" and potentially \"effective.\" This implies a recognition of novelty in the approach of using metaphors for mathematical reasoning.\n\nScore: 8"
+    },
+    {
+      "id": "Coding_4_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea is a combination of two existing methods: decomposition-based code generation and self-refine/self-debug. The evaluator notes that there are many previous works on these topics individually and expresses the opinion that merely combining them does not demonstrate novelty. This suggests a negative attitude towards the novelty of the idea.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_4_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates that the proposed method involves a classic strategy (divide and conquer) and a widely used practice (adversarial critic). The evaluator acknowledges the potential value of investigating the divide and conquer strategy but notes that the adversarial critic is not novel. The overall tone suggests that while there might be some interest in the approach, the novelty is limited due to the use of well-known techniques.\n\nScore: 3"
+    },
+    {
+      "id": "Bias_3_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that the proposal addresses a known problem but introduces a novel angle by considering how biases shift over time. The evaluator finds this perspective interesting and notes that it builds on existing works while applying it to debiasing, which is seen as a fresh approach. The positive language and recognition of a novel angle suggest a favorable view of the proposal's novelty.\n\nScore: 8"
+    },
+    {
+      "id": "Bias_3_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluator acknowledges the novelty of the idea, specifically highlighting the unique approach of prompting an LLM to leverage historical changes and imagine future trends for debiasing. While they mention that language models have been used to study social biases over time, they emphasize that the proposed method is more dynamic than existing approaches. The evaluator expresses interest in the idea, indicating a positive attitude towards its novelty.\n\nScore: 9"
+    },
+    {
+      "id": "Factuality_6_Human",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses a positive attitude towards the idea, noting that it is \"worthy to explore\" and highlights the value of the proposed fallback plan. The evaluator appreciates the potential for better understanding and improving LLMs, indicating a recognition of novelty and potential impact. However, the evaluation does not use strongly positive language or emphasize groundbreaking novelty, suggesting a moderate level of novelty.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_6_Human",
+      "true_label": 3,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates that the proposed idea is quite similar to an existing concept, program-of-thought (PoT). The only noted difference is an additional step involving an LLM decision, which suggests limited novelty. The evaluator's attitude appears to be neutral to slightly negative regarding the novelty.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_6_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea is not novel, as there are many existing papers on similar topics, specifically mentioning ToolFormer and other specialized methods. This suggests that the proposed idea lacks originality and is similar to existing research.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_9_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates skepticism about the novelty of the approach, noting that it is not particularly different from existing work on using LLMs to simulate responses from different demographics. The mention of known limitations further suggests a lack of novelty. However, the evaluator finds the analysis involving recruiting native speakers interesting, which could add some novelty if made central to the project. Overall, the evaluation leans towards a low novelty score due to the perceived similarity to prior work.\n\nScore: 3"
+    },
+    {
+      "id": "Multilingual_9_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation acknowledges the novelty of incorporating detailed sociolinguistic role-play into prompts, highlighting that it adds a new dimension to existing methods. While context-based prompting and cultural adaptation have been explored, the explicit framing within specific social contexts, relationships, and norms is recognized as a novel contribution. The positive language and recognition of a new dimension indicate a high level of novelty.\n\nScore: 9"
+    },
+    {
+      "id": "Factuality_3_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation highlights the novelty of the proposed method in using hypothetical scenarios for hallucination detection, contrasting it with the more common fact-checking methods. Although there are some similarities to existing multi-model collaboration approaches, the application to hallucination detection is considered novel. The evaluator's positive attitude towards the novelty of the application suggests a high score.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_3_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation expresses uncertainty about the effectiveness of the counterfactuals in reducing hallucination and notes that the overall pipeline and method are not significantly different from other work. This suggests a lack of perceived novelty, as the evaluator does not highlight any unique or innovative aspects of the idea.\n\nScore: 3"
+    },
+    {
+      "id": "Safety_1_AI",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that the proposed idea has limited novelty because using auxiliary calls to LLMs for performance improvements is common knowledge. However, it also notes that the specific implementation of using the LLM to review and sanitize input prompts is somewhat novel, as the reviewer is not aware of existing implementations of this exact approach. This suggests a moderate level of novelty, as the idea is not entirely new but offers a specific application that hasn't been widely explored.\n\nScore: 6"
+    },
+    {
+      "id": "Safety_1_AI",
+      "true_label": 7,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation describes the idea as \"relatively novel,\" indicating some degree of originality. However, it also mentions similar ideas in existing work, specifically referencing a design for an instruction hierarchy. The mention of Eric's ideal scenario suggests a potential area of novelty, but the presence of similar ideas tempers the overall assessment. The evaluator's attitude is moderately positive, recognizing some novelty but also acknowledging existing similarities.\n\nScore: 6"
+    },
+    {
+      "id": "Factuality_5_AI",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that the general idea of decomposing tasks is not novel, referencing existing work. However, it highlights the use of confidence scores for verification and refinement as a novel aspect. This indicates a positive attitude towards the novelty of this specific component, suggesting that while the overall concept isn't new, there is a novel element in the approach.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_5_AI",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation indicates that the proposed method is very similar to existing works, specifically mentioning self-ask, decomposed prompting, and self-refine. The evaluator highlights that the method breaks down complex questions into sub-questions and iteratively refines answers, which are approaches already present in the cited works. This suggests a low level of novelty.\n\nScore: 1"
+    },
+    {
+      "id": "Multilingual_4_Human",
+      "true_label": 6,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluator acknowledges not being familiar with recent work in story generation but finds the proposed idea of using large-scale sampling for top-down story generation novel. They compare it to the human writing process, indicating a positive view of its originality. Additionally, the evaluator notes the potential benefits for low-resource languages and mentions not finding much similar work on this topic, further supporting the novelty of the approach. The overall tone is positive, suggesting a high level of novelty.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_4_Human",
+      "true_label": 4,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates that the core components of the idea—constraining an LLM to generate a story based on a narrative prompt and generating Q&A about a story—are not novel, as they have been covered in existing research. The only potential novelty is in applying these methods in a multilingual setting. This suggests that while there is some new contribution, it is limited to a specific aspect, and the overall novelty is low.\n\nScore: 3"
+    },
+    {
+      "id": "Safety_2_AI_Rerank",
+      "true_label": 2,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation indicates that there are already many works using a self-refine loop, as evidenced by the references provided. This suggests that the proposed idea is not particularly novel, as it aligns closely with existing research. The lack of any positive or unique aspects mentioned in the evaluation further supports a low novelty score.\n\nScore: 1"
+    },
+    {
+      "id": "Safety_2_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation states that the idea of bootstrapping LLM's generation to improve adversarial robustness is \"relatively new to the literature.\" This suggests a positive attitude towards the novelty of the approach, indicating that it is not widely covered or explored in existing research. The use of \"relatively new\" implies that while there might be some related work, the concept is still emerging and offers fresh insights.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_9_AI",
+      "true_label": 3,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates that the proposed work builds on existing studies by expanding with a more sophisticated pipeline design. However, it explicitly states that the work is \"not very novel.\" This suggests that while there may be some incremental improvements, the core idea lacks significant novelty.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_9_AI",
+      "true_label": 7,
+      "predicted_score": 5,
+      "response": "Evaluation: \"I think the idea of asking models to explore the origins of hallucinations is interesting. But the proposed method...\"\n\nAnalysis: The evaluation begins with a positive note, describing the idea as \"interesting.\" However, it is incomplete and lacks further context or details about the method's novelty compared to existing works. Without additional information, it's challenging to determine the overall attitude towards the novelty of the method. The initial positive remark suggests some level of novelty, but the absence of further elaboration tempers this impression.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_7_AI",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation describes the combination of neural methods with symbolic reasoning as a novel approach for parsing low-resource languages and vernaculars. It acknowledges that while neuro-symbolic methods have been explored in other contexts, their specific application to these language forms is not widely covered. This indicates a positive attitude towards the novelty of the work, highlighting fresh insights and potential advancements in the field.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_7_AI",
+      "true_label": 6,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation indicates that there hasn't been any work leveraging symbolic grammar rules for vernacular parsing in an in-context learning setting. This suggests that the proposed idea is novel, as it introduces a new approach that hasn't been explored before. The absence of similar works implies a positive attitude towards the novelty of the idea.\n\nScore: 9"
+    },
+    {
+      "id": "Uncertainty_2_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation suggests that the idea is primarily an adaptation of an existing concept, specifically \"self-reflection in the scenario of uncertainty estimation.\" The use of the word \"largely\" implies that there is little deviation from the established method, indicating a low level of novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Uncertainty_2_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluator expresses uncertainty about the novelty due to limited knowledge in the specific literature, indicating a lack of awareness of similar works. They acknowledge that the combination of uncertainty and multi-perspectives could explore a new aspect of \"uncertainty.\" However, they also express skepticism about the practical effectiveness of the approach, suggesting it might not achieve the intended goal due to inherent model limitations. The evaluation reflects a mix of potential novelty and practical concerns, leading to a moderate score.\n\nScore: 5"
+    },
+    {
+      "id": "Uncertainty_2_AI",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates that the idea is related to existing concepts such as LLM debate and Self-Critique, suggesting that there are already a few papers on these topics. This implies that the proposed idea may not be highly novel, as it is connected to established areas of research.\n\nScore: 3"
+    },
+    {
+      "id": "Uncertainty_2_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation indicates that the general idea of using alternative reasoning chains is not novel, as there are existing research efforts in this area. However, the evaluator is uncertain about prior work specifically applying this approach to measure model confidence and evaluate uncertainty. This suggests a potential novelty in the specific application, but not in the overall method. The evaluation reflects a somewhat positive attitude towards the novelty of the specific application, though it acknowledges the broader method is not new.\n\nScore: 6"
+    },
+    {
+      "id": "Factuality_11_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that using pruned context for improving relevance and conciseness in Long-Form Generation is an interesting idea, indicating some level of novelty. However, it also points out that the authors have a limited understanding of previous work in retrieval, and the proposed method can be seen as a retrieval and re-ranking framework, which is already explored in the retrieval community. The evaluation suggests that the idea needs to be refined with a better understanding of retrieval techniques. Overall, the evaluation is mixed, recognizing some novelty but also highlighting significant overlap with existing methods.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_11_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator mentions not finding similar works and highlights a specific application (summarization using pruning) that hasn't been seen before. This indicates a positive attitude towards the novelty of the idea, as it suggests a new application of an existing concept.\n\nScore: 8"
+    },
+    {
+      "id": "Uncertainty_2_Human",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the modification is minor and unlikely to be considered a novel contribution worthy of a new paper. The suggestion that it might serve as a baseline rather than a standalone method implies a lack of significant novelty. The evaluator's attitude is clearly negative regarding the novelty of the proposed idea.\n\nScore: 2"
+    },
+    {
+      "id": "Uncertainty_2_Human",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation clearly states that the proposed idea is not novel in the context of uncertainty quantification and step-by-step reasoning. It mentions that numerous researches have already demonstrated similar concepts, and both verbalized uncertainty and chain-of-thought reasoning are established topics. The evaluator highlights that these areas have been extensively explored, indicating a lack of novelty.\n\nScore: 1"
+    },
+    {
+      "id": "Uncertainty_2_Human",
+      "true_label": 3,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that the proposed approach is somewhat different from existing methods by requiring LLMs to output uncertainty during decoding, rather than using a different prompt. However, the core idea of decomposing multi-step reasoning problems and quantifying uncertainty has been explored in previous works. This suggests that while there is some novelty in the approach, it is not entirely groundbreaking.\n\nScore: 5"
+    },
+    {
+      "id": "Safety_3_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that the core idea of using an adjacent application to elicit a harmful response from an LLM is not new, describing it as a \"bait and switch.\" However, the evaluator notes that this approach has not been applied in the specific setting mentioned. This suggests some level of novelty due to the unique application, but the fundamental concept is recognized as existing.\n\nScore: 5"
+    },
+    {
+      "id": "Safety_3_Human",
+      "true_label": 2,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation indicates that there are already many works in the area of LLM-based jailbreak prompts generation. It references specific sections and papers that cover similar techniques, suggesting that the proposed work is not novel. The evaluator does not express any positive remarks about the uniqueness or innovation of the proposed idea.\n\nScore: 1"
+    },
+    {
+      "id": "Bias_1_Human",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed work is largely a combination of existing methods—counterfactual data augmentation and few-shot prompting—both of which are not novel. The evaluator suggests that the combination does not constitute a significant or novel contribution. While there is a mention of potential novelty in task selection, it is undermined by concerns about ecological validity. Overall, the evaluation leans towards a negative assessment of novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Bias_1_Human",
+      "true_label": 1,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation clearly states that the concept of name bias is not novel, as similar works are easily found on Google Scholar. This indicates a lack of originality and novelty in the proposed idea.\n\nScore: 1"
+    },
+    {
+      "id": "Coding_7_Human",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation describes the idea of simulating novice coding as novel, with a real-world impact. It highlights that most existing works focus on generating correct code, whereas this project explores generating code errors. The evaluation also notes the potential insights into how LLMs understand code errors, their application in novice programmer education, and cognitive differences between humans and LLMs in coding. The positive language and emphasis on new insights suggest a high level of novelty.\n\nScore: 9"
+    },
+    {
+      "id": "Coding_7_Human",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges some novelty in the topic of generating noise codes, but it expresses skepticism about the clarity and effectiveness of the methods. The evaluator points out that the methods might not be necessary since LLMs could already perform the task with specific instructions. Additionally, the two-phase generation approach is criticized as not making much sense. This indicates a mixed to negative attitude towards the novelty of the methods, suggesting limited innovation.\n\nScore: 4"
+    },
+    {
+      "id": "Coding_7_Human",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the idea of having models mimic novice, imperfect programmers is not commonly explored, indicating some level of novelty. However, the evaluator expresses uncertainty about the motivation and potential applications of this idea, suggesting that while the concept is new, it lacks a clear purpose or practical use. This results in a mixed evaluation, recognizing novelty but questioning its value and applicability.\n\nScore: 5"
+    },
+    {
+      "id": "Safety_5_AI",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation suggests that using LLM to critique its reasoning process as a defense technique is a novel idea. The statement implies a positive attitude towards the novelty of the approach, as it highlights a new application of LLMs. However, the evaluation does not provide strong language or detailed comparisons to existing methods, which would further emphasize its uniqueness.\n\nScore: 8"
+    },
+    {
+      "id": "Safety_5_AI",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation clearly states that the proposed idea of prompting LLMs to judge, critique, and refine their own responses is not novel, referencing existing work such as \"self-refine.\" Additionally, extending this concept to chain-of-thought is also considered not very novel by the evaluator. This indicates a negative attitude towards the novelty of the idea.\n\nScore: 2"
+    },
+    {
+      "id": "Bias_4_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that the proposed adversarial approach offers a more novel take on bias mitigation compared to prior work. However, it also notes that the work is only a small step away from existing methods, such as model self-reflection and debates between adversarial and base models. While there are notable differences, such as a more nuanced and complex prompting approach, the evaluator suggests that it still resembles existing prompt-based approaches. The overall tone is somewhat positive but tempered by the recognition of similarities to prior work.\n\nScore: 6"
+    },
+    {
+      "id": "Bias_4_AI",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates that the proposal has a slightly different approach by using a specific test bed, but overall, it is seen as fairly incremental to existing work. The novelty is not clearly evident in its current form, suggesting that the differences are minor and not groundbreaking. The evaluator's attitude is neutral to slightly negative regarding the novelty.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_1_Human",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation indicates that while there is existing work on multilingual hallucinations and reasoning in language models, the specific use of translation-based approaches outside of machine translation (MT) tasks appears to be novel. The evaluator notes that the only similar work found was explicitly for MT tasks, suggesting that the proposed approach may offer a new perspective or application. This reflects a moderately positive attitude towards the novelty of the idea.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_1_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation indicates that the proposed work addresses a gap in existing research by focusing on the multilingual scenario, which previous works have not explored. However, the idea of aligning answers in different languages is noted to resonate with existing work in machine translation and multilingual NLP. This suggests that while there is some novelty in the specific application, the core concept is not entirely new.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_4_AI",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation highlights that fairness is rarely discussed in the context of code generation. This implies that the topic itself is not widely covered, suggesting a potential gap in the existing literature. However, the evaluation does not explicitly state whether the proposed work addresses this gap in a novel way or if it offers new insights or methods. The lack of detailed comparison to existing works or methods makes it difficult to assess the novelty fully. Therefore, the evaluation suggests some novelty due to the underexplored nature of the topic but does not provide enough information to determine a high level of novelty.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_4_AI",
+      "true_label": 6,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation suggests that the idea involves applying a common concept, ethical prompting, to a specific subarea or modality, which is described as \"pretty straightforward.\" This indicates that the approach may not be highly novel, as it is applying an existing idea in a somewhat predictable manner. The evaluator does not express any strong positive sentiment or excitement about the novelty of the idea.\n\nScore: 3"
+    },
+    {
+      "id": "Coding_8_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation indicates that the building block of the idea is somewhat existing, referencing a similar mechanism in another work. However, the evaluator notes not having seen the exact iterative prompting method in the specific context of long-form code generation, though it is suggested that similar methodologies might exist. This reflects a neutral to slightly positive attitude towards the novelty, acknowledging some uniqueness but also potential overlap with existing methods.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_8_AI",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that the idea is different from existing methods like task-decomposition and multi-agent approaches, indicating some level of novelty. However, it also notes that the proposed global context is similar to an existing feature (claude's artifact feature), though it hasn't been formally published. The evaluator considers the idea \"reasonably novel,\" suggesting a positive but cautious attitude towards its uniqueness. The need for experimental verification also tempers the novelty claim.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_9_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the idea is interesting and different in its approach by proposing a new prompting method. However, it also notes that there is prior work studying similar setups, indicating that the core concept is not entirely novel. The evaluator does not express a strongly positive or negative attitude, suggesting a moderate level of novelty.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_9_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluator notes that the idea is related to existing methods involving generation sampling and voting, which have been explored. However, there is uncertainty about whether this specific application—generating multilingual responses and verification—has been attempted before. This suggests a potential for novelty in the specific case, but the overall approach is not entirely new.\n\nScore: 5"
+    },
+    {
+      "id": "Uncertainty_5_Human",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed method is similar to existing work, specifically mentioning a study by Zhang et al. (2024). The use of a similar method to address conflict evidence suggests a lack of novelty. The evaluation does not express any positive or unique aspects of the proposed work, implying a low novelty score.\n\nScore: 2"
+    },
+    {
+      "id": "Uncertainty_5_Human",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation indicates that the proposal introduces a new method for addressing knowledge conflicts by decomposing reasoning about conflicting passages. This approach is distinct from existing works that focus on characterizing model preferences or abstaining from answering. The evaluator does not mention any similar existing methods, suggesting a positive view of the novelty. The focus on reducing biases in the single-step setting adds to the novelty.\n\nScore: 8"
+    },
+    {
+      "id": "Uncertainty_5_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that the specific application of the idea to solve the problem is not found in existing works, suggesting some novelty. However, it also points out that the concept of prompting language models with personas is not new, as it has been explored in previous research. The evaluator does recognize a moderately novel aspect in combining person-driven generation with a deterministic algorithm grounded in social theory. This indicates a mix of familiar and somewhat innovative elements, leading to a moderately positive assessment of novelty.\n\nScore: 6"
+    },
+    {
+      "id": "Multilingual_3_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed idea is very similar to an existing work, as referenced by the provided link. The phrase \"not exactly the same prompting steps, but very similar idea\" suggests a lack of significant novelty, as the core concept closely resembles an existing study.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_3_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that the idea of using intermediate states in machine translation has been explored before. However, the specific approach of using synthetic code-switched texts as intermediate states is considered novel. The evaluator notes some similarities to existing methods, such as those using bilingual dictionaries, but emphasizes that the motivation and implementation of the proposed idea are still novel and could provide valuable insights. This reflects a positive attitude towards the novelty of the approach.\n\nScore: 8"
+    },
+    {
+      "id": "Uncertainty_6_AI",
+      "true_label": 5,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges existing work linking permutated sentence groups and uncertainty, as well as uncertainty and prompts. However, it highlights the novelty of testing how prompt uncertainty sensitivity relates to model calibration. The evaluator notes a potential challenge in choosing sentence groups, which could impact performance. Overall, the evaluation suggests a positive attitude towards the novelty of the proposed idea, particularly in its specific application to model calibration.\n\nScore: 8"
+    },
+    {
+      "id": "Uncertainty_6_AI",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation suggests that the method is related to prompt optimization with a specific goal concerning model confidence. However, it does not provide any indication of novelty or uniqueness compared to existing methods. The lack of detailed comparison or mention of novel aspects implies a neutral to slightly negative attitude towards the novelty of the method.\n\nScore: 3"
+    },
+    {
+      "id": "Safety_4_Human",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that using LLMs to generate synthetic data is an existing technique, which suggests some familiarity with the method. However, the proposal introduces a novel aspect by disentangling the pipeline into role-based LLMs specific to the application. This indicates a new approach within the existing framework, suggesting a moderate level of novelty. The evaluation does not express strong enthusiasm but recognizes a distinct contribution.\n\nScore: 7"
+    },
+    {
+      "id": "Safety_4_Human",
+      "true_label": 4,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges some novelty in the method, particularly in avoiding fine-tuning and using multi-LLMs collaboration for unlearning tasks. The evaluator finds the approach of compounding several LLMs for different roles to be novel. However, they also express skepticism about the method's originality, noting that it resembles existing safety works like LlamaGuard, which involves detecting keywords and responding with templates. This mixed evaluation suggests some innovative aspects but also significant similarities to existing methods.\n\nScore: 6"
+    },
+    {
+      "id": "Uncertainty_2_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation indicates that the idea appears distinct from existing work, suggesting some level of novelty. However, the absence of important baselines like ensemble and consistency-based methods is noted, which might imply a lack of comprehensive comparison or consideration of existing techniques. This suggests a moderate level of novelty, as the idea is distinct but not thoroughly contextualized within the existing body of work.\n\nScore: 6"
+    },
+    {
+      "id": "Uncertainty_2_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator describes the idea as novel, particularly highlighting the use of a LLM-based iterative approach for exploring ambiguities in open-ended QA. While they acknowledge some loose inspiration from existing literature, they emphasize the novelty of the approach overall. The mention of only one somewhat similar paper suggests that the idea is relatively unique. The evaluator's positive attitude towards the novelty of the approach supports a high score.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_3_AI",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation indicates that the ability for language models to generate American English dialects is not well-explored, and resource collection in this area is modest. This suggests that the proposed idea is entering a relatively unexplored domain, which implies a high level of novelty. The evaluator's statement reflects a positive attitude towards the novelty of the work.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_3_AI",
+      "true_label": 7,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluator admits a lack of familiarity with the existing literature, which suggests uncertainty about the novelty. However, they mention that the approach \"could be new\" due to its aim to provide more fine-grained control based on a linguistic spectrum. This indicates a tentative recognition of potential novelty, but without strong confidence or evidence.\n\nScore: 5"
+    },
+    {
+      "id": "Uncertainty_6_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation highlights that while there are existing ideas similar to the proposed one, the novel aspect lies in applying the method at the input level rather than the output level. Additionally, the use of a graph-based method to extract confidence scores is emphasized as a novel approach. The evaluator clearly states that it is a \"clearly novel idea,\" indicating a positive attitude towards its originality.\n\nScore: 9"
+    },
+    {
+      "id": "Uncertainty_6_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation indicates uncertainty about the novelty of the proposed method. The evaluator mentions existing work related to creating variants to probe confidence/difficulty, suggesting a lack of novelty in that aspect. However, there is some ambiguity regarding domain variants, as the evaluator finds it hard to think of similar existing methods. This suggests a potential for novelty, but the overall evaluation leans towards a lack of clarity and existing similarities.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_6_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluator expresses a positive attitude towards the novelty of the idea, stating that they are not aware of any previous works using the specific method of contrastive prompting for calibrating model confidence estimation. The use of \"reasonably novel\" indicates a recognition of originality, though not with the strongest language. This suggests a medium-high level of novelty.\n\nScore: 7"
+    },
+    {
+      "id": "Multilingual_3_Human",
+      "true_label": 3,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that transliteration is a natural and cost-effective idea for overcoming script barriers, particularly with English-centric tokenizers in LLMs. However, it also notes the existence of similar works, such as RomanSetu, which has already explored this concept with Hindi. The evaluation suggests that while the idea is practical, it is not entirely novel due to the presence of similar research. The evaluator's attitude is somewhat neutral, recognizing the utility but also the lack of uniqueness.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_3_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluator expresses uncertainty about the existing literature but suggests that similar approaches may exist, specifically mentioning translation-based methods for multilingual problems. The proposed transliteration-based approach is noted as sharing similar ideas with existing methods, implying some novelty but not a groundbreaking difference. The evaluation reflects a neutral to slightly positive attitude, recognizing some potential novelty in the transliteration aspect.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_7_AI_Rerank",
+      "true_label": 9,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator expresses that they have not encountered the idea of using a linguistic similarity matrix for constructing prompts to improve cross-lingual transfer before. They describe it as an \"interesting way\" to leverage existing information, indicating a positive attitude towards the novelty of the approach. The evaluation suggests that the idea is new to the evaluator and potentially innovative in the field of NLP.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_7_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation describes the LPC method as introducing a \"novel way\" and a \"fresh and innovative approach\" to leveraging related languages and dialects for cross-lingual transfer. Although cross-lingual transfer and language similarity have been explored before, the specific method of dynamically creating a constellation of prompts using pivot languages is highlighted as new. The use of positive language such as \"novel,\" \"fresh,\" and \"innovative\" indicates a strong recognition of the method's originality.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_7_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that leveraging language similarity is a well-studied area in machine translation. However, it highlights that using similar languages as demonstrations in multilingual in-context learning has not been explored. The evaluator expresses interest in seeing how model behavior changes with different pivots, indicating a positive attitude towards the novelty of the idea.\n\nScore: 8"
+    },
+    {
+      "id": "Uncertainty_1_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator acknowledges that the proposed idea is related to existing work but highlights a novel aspect—constructing a resonance graph and using its properties to estimate uncertainty. The evaluator has not seen this specific approach before, indicating a positive attitude towards its novelty. The evaluation suggests that while the concept of using consistency among solutions is not new, the specific method of applying graph properties is innovative.\n\nScore: 8"
+    },
+    {
+      "id": "Uncertainty_1_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that the proposed approach shares some similarities with existing ideas, specifically self-consistency. However, it highlights that the approach is more generalized and fine-grained, particularly with the use of \"mutual support evaluation,\" which suggests a novel advancement beyond simply comparing final answers. This indicates a positive attitude towards the novelty of the approach, as it offers a more advanced method than existing work.\n\nScore: 8"
+    },
+    {
+      "id": "Uncertainty_1_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the idea is reasonable and addresses some limitations of current works, which suggests some level of novelty. However, it also notes that the reasoning path is similar to existing methods from Google and SelfCheckGPT. This indicates that while there are novel aspects, the core approach has similarities to existing works.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_8_Human",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that there are existing works on using lexicons to improve translation capabilities of LLMs. However, it highlights a novel aspect: the lexicon is generated by the LM itself and specifically targets ambiguity. This indicates a positive attitude towards the novelty of the approach, as it introduces a new element to the existing methods.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_8_Human",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges that while there are existing works on improving translation of ambiguous words using prompt engineering, the proposed work is different. It mentions a relatively close work but implies that the proposed idea has distinct elements. The evaluator's attitude suggests a recognition of novelty, though not at the highest level, as there is a mention of a similar work.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_7_Human",
+      "true_label": 1,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation clearly states that the idea is extremely similar to an existing work, \"GenDec: A robust generative Question-decomposition method for Multi-hop reasoning\" by Wu et al. (2024). This indicates a lack of novelty, as the proposed idea does not differentiate itself from the referenced work.\n\nScore: 1"
+    },
+    {
+      "id": "Factuality_7_Human",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation suggests that both query decomposition and RAG are well-studied individually. However, the evaluator is not aware of existing work that combines both, indicating a potential novelty in this combination. The use of \"reasonably novel\" suggests a moderately positive attitude towards the novelty of the idea, but it is not strongly emphasized.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_7_Human",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation suggests that the proposed idea is a specialized version of an existing method, CoT with RAG. This implies that while there might be some specialization, the core concept is not significantly different from existing methods. The evaluation does not express strong novelty or excitement, indicating a lower novelty score.\n\nScore: 3"
+    },
+    {
+      "id": "Multilingual_1_AI",
+      "true_label": 9,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator expresses that they have not encountered the idea of using a linguistic similarity matrix for constructing prompts to improve cross-lingual transfer before. They describe it as an \"interesting way\" to leverage existing information, indicating a positive attitude towards the novelty of the approach. The evaluation suggests that the idea is new to the evaluator and potentially innovative for NLP tasks.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_1_AI",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation describes the LPC method as introducing a novel approach by leveraging related languages and dialects for cross-lingual transfer. Although cross-lingual transfer and language similarity have been explored before, the specific idea of dynamically creating a constellation of prompts using pivot languages is highlighted as fresh and innovative. The evaluator's positive language indicates a recognition of novelty in the approach.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_1_AI",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation indicates that while language similarity is a well-studied area in machine translation, the specific application of using similar languages as demonstrations in multilingual in-context learning has not been explored. The evaluator expresses interest in seeing how model behavior changes with different pivots, suggesting a positive attitude towards the novelty of the idea.\n\nScore: 8"
+    },
+    {
+      "id": "Coding_9_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges the timeliness and importance of the research topic, suggesting a positive attitude towards the novelty of exploring symbolic methods for handling large-scale APIs. While it mentions existing works that enhance language models in a data-driven manner, the evaluator agrees that exploring symbolic methods is worthwhile, indicating a novel approach in this context.\n\nScore: 8"
+    },
+    {
+      "id": "Coding_9_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation describes the combination of neural and symbolic methods as \"interesting\" and \"suitable for coding applications.\" However, it does not explicitly mention novelty or compare it to existing works. The positive tone suggests some level of novelty, but without strong emphasis or comparison, it indicates moderate novelty.\n\nScore: 6"
+    },
+    {
+      "id": "Uncertainty_4_AI",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation highlights that while there are existing ideas like P(True) and self-contrast, the proposed idea is distinct because it applies contrastive comparisons at the input level rather than the output level. Additionally, it introduces a novel graph-based method to extract confidence scores. The evaluator clearly states that it is a \"clearly novel idea,\" indicating a positive attitude towards its novelty.\n\nScore: 9"
+    },
+    {
+      "id": "Uncertainty_4_AI",
+      "true_label": 4,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation expresses uncertainty about the novelty of the proposed method. It mentions existing work related to creating variants to probe confidence/difficulty, suggesting a lack of novelty in that aspect. However, the evaluator also indicates difficulty in thinking of existing methods for creating domain variants, which implies some potential novelty. Overall, the evaluation leans towards a lack of novelty but acknowledges some uncertainty.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_4_AI",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator expresses a positive attitude towards the novelty of the idea, stating that they are not aware of any previous works using contrastive prompting for the specific purpose mentioned. The use of \"reasonably novel\" suggests a moderate level of novelty, but the absence of similar known works indicates a positive evaluation.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_4_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluator finds the prompting technique interesting and notes not having encountered similar works, which suggests some level of novelty. However, there is skepticism about the method's effectiveness, as the evaluator does not perceive a significant difference with or without the technique. Additionally, the evaluator believes the model may already perform the proposed breakdown process implicitly. This mixed evaluation indicates some novelty but also significant doubts about its impact.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_4_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation describes the idea as \"quite novel,\" particularly in the context of in-context learning. The use of \"quite novel\" indicates a positive attitude towards the novelty of the idea. The focus on contrast between expression and explanation in different language resource settings suggests a fresh perspective in this specific domain.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_3_AI",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation indicates that the motivation and problem have been extensively studied in both NLP and Education, suggesting a lack of novelty. Additionally, the methods and experiment plans are described as general, vague, and cliché, further diminishing the perceived novelty. The overall tone is negative, highlighting a significant lack of originality.\n\nScore: 1"
+    },
+    {
+      "id": "Factuality_3_AI",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluator expresses a neutral stance, indicating they are not an expert in the field and find the idea \"median novel.\" They acknowledge not being aware of any exact implementations but suggest that similar ideas might exist with further research. This suggests a moderate level of novelty, as the evaluator neither strongly supports nor dismisses the uniqueness of the idea.\n\nScore: 5"
+    },
+    {
+      "id": "Uncertainty_5_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed method is not very novel, as it closely resembles existing approaches like CoT with self-consistency and Kadavath et al.'s method. The evaluator acknowledges a minor difference in drafting arguments, but does not find it significantly novel. Additionally, there is confusion about the use of semantic embedding, suggesting a lack of clarity or innovation in that aspect. Overall, the evaluation reflects a negative attitude towards the novelty of the idea.\n\nScore: 2"
+    },
+    {
+      "id": "Uncertainty_5_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation is brief but clearly expresses a positive attitude towards the novelty of the idea. The phrase \"seems novel to me\" indicates that the evaluator perceives the idea as new and different from existing works, though it lacks detailed justification or strong enthusiasm.\n\nScore: 8"
+    },
+    {
+      "id": "Uncertainty_5_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation expresses interest in the idea and acknowledges its potential effectiveness by introducing argument graph mining to prompting. However, it also notes that this concept has been shown effective in previous work, suggesting that the novelty may not be entirely groundbreaking. The concern about the title indicates a minor issue but does not significantly impact the perceived novelty. Overall, the evaluation shows a moderately positive attitude towards the novelty of the idea.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_1_Human",
+      "true_label": 5,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges some novelty in the approach of using LLM-based evaluators with counterfactual edits to verify code. Although the proposal is described as \"vague and confusing,\" the evaluator recognizes the innovative aspect of evaluating language model code verifiers with counterfactual edits. The mention of requiring a golden code as a reference suggests some limitations, but the overall tone leans towards recognizing novelty in the method.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_1_Human",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluator acknowledges the potential novelty of using multiple reasoners for self-generation/debugging but notes that it may borrow from the idea of multi-agent systems. The evaluator is unsure if any existing papers have the same idea, indicating some uncertainty about its uniqueness. This suggests a moderate level of novelty, as the concept might be somewhat similar to existing ideas but not clearly documented in current literature.\n\nScore: 6"
+    },
+    {
+      "id": "Math_1_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation highlights that the research problem is essential and underexplored, which suggests potential novelty in addressing a real-world issue. However, the proposed solution is described as \"easy and intuitive,\" which might imply that the approach itself is not particularly novel or groundbreaking. The evaluation does not express strong positive or negative sentiments about the novelty of the solution itself.\n\nScore: 5"
+    },
+    {
+      "id": "Math_1_AI",
+      "true_label": 3,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation suggests that the approach of adding a domain-specific inductive bias is not particularly novel, as it is described as a standard practice by domain experts. Additionally, it mentions that existing methods like few-shot prompting and chain-of-thought (COT) can achieve similar results without explicitly prompting for consistency. This indicates that the proposed approach lacks novelty since similar outcomes can be achieved with established methods.\n\nScore: 3"
+    },
+    {
+      "id": "Multilingual_5_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that the idea combines prompt-based techniques with the integration of common sense knowledge from ConceptNet, which is not widely explored. This suggests a level of novelty. However, it also mentions similar works like adaptMLLM and LLaMAX, indicating that while the approach is somewhat novel, it is not entirely unique. The evaluator's rating of 6 reflects a recognition of novelty but also acknowledges existing related works.\n\nScore: 6"
+    },
+    {
+      "id": "Multilingual_5_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed work is not novel, as several prior works have already addressed each component of the proposal. The evaluator lists specific references that cover prompting for commonsense reasoning, identifying better prompts, finetuning for multilingual performance, and training on concept-net. Additionally, the proposal does not build upon or improve these existing works but instead suggests an alternative prompting strategy that is described as \"somewhat unfounded.\" This suggests a lack of novelty and originality in the approach.\n\nScore: 2"
+    },
+    {
+      "id": "Uncertainty_3_Human",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation acknowledges that the focus on the long-form setting is novel and highlights the underexplored nature of obtaining modular confidence estimates for different claims. While the idea is described as \"not that complicated,\" the evaluator still recognizes its novelty due to the lack of exploration in this area. This suggests a positive attitude towards the novelty of the approach.\n\nScore: 8"
+    },
+    {
+      "id": "Uncertainty_3_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that while the problem of calibration in long-form answers has been explored, the specific method proposed is different. It also notes a relation to FactScore, where a similar idea of breaking down long-form generations is used, but for a different task. This suggests that the proposed method has some novel aspects, particularly in its specific application, but also shares similarities with existing works.\n\nScore: 6"
+    },
+    {
+      "id": "Safety_2_Human",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that the proposed idea is interesting and offers a novel approach by explicitly and controllably guiding an LLM to determine if an input is malicious. This is contrasted with the standard Chain of Thought (CoT) method, which is less controlled. However, the evaluation also points out that the idea is fundamentally similar to existing model-based filters, which limits its novelty. The evaluator notes potential flaws in feasibility and effectiveness, indicating a balanced view of the idea's originality.\n\nScore: 6"
+    },
+    {
+      "id": "Safety_2_Human",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluator expresses a positive attitude towards the novelty of the idea, describing it as \"novel and interesting.\" They mention not finding similar works, although they acknowledge the possibility of having missed some. This suggests a generally positive view of the idea's originality, but with a slight reservation due to the potential existence of related works.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_10_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that the idea introduces a culturally-aware machine translation paradigm, which is not widely explored, indicating a level of novelty. However, it also notes that there are existing works focusing on improving multilingual LLMs for low-resource languages, suggesting that the core concept is not entirely new. The evaluator's rating of 6 reflects a recognition of some novel aspects, particularly in considering cultural nuances, but also an awareness of existing related works.\n\nScore: 6"
+    },
+    {
+      "id": "Multilingual_10_Human",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluator references existing work on culturally-aware machine translation and expresses confusion about the proposed method. They explicitly state that they do not find the method novel. This indicates a negative attitude towards the novelty of the idea, suggesting that it lacks originality or distinction from existing work.\n\nScore: 1"
+    },
+    {
+      "id": "Coding_6_AI",
+      "true_label": 6,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation expresses a positive attitude towards the novelty of the proposed idea, specifically highlighting the construction of Temporal Graph as novel. Additionally, it mentions that the research question is relatively underexplored but necessary, indicating a fresh approach in a specific domain. This suggests a recognition of novelty and potential impact.\n\nScore: 9"
+    },
+    {
+      "id": "Coding_6_AI",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation suggests that the proposed method is similar to existing works in the field of code generation with intermediate state reasoning. The evaluator mentions that similar ideas might be found in software engineering and provides specific references to works that explore multi-step, conversational code generation. This indicates that the proposed method lacks significant novelty, as it aligns closely with existing research.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_6_AI",
+      "true_label": 10,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation describes the idea as addressing a \"very novel problem\" in the context of LLM-based code generation. The emphasis on temporal dependencies as a specific area of study suggests that this is a new and unexplored aspect within the field. The use of the word \"novel\" indicates a positive attitude towards the originality of the idea.\n\nScore: 9"
+    },
+    {
+      "id": "Factuality_11_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Evaluation: The mention of similar related works, such as \"Enabling Large Language Models to Generate Text with Citations\" by Tianyu Gao, suggests that the proposed idea may not be entirely novel. The reference to an existing work indicates that there are already studies in this area, which could imply limited novelty.\n\nAnalysis: The evaluation points out that there are similar works already existing, which suggests that the proposed idea might not offer significant new insights or advancements. The reference to a specific related work indicates that the novelty is likely low.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_11_AI",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea is not very novel, as similar approaches have been effective in many domains. Additionally, there is a concern that the proposed method could lead to issues such as hallucination. The overall tone of the evaluation is negative, suggesting a lack of novelty.\n\nScore: 2"
+    }
+  ]
+}

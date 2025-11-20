@@ -1,0 +1,40 @@
+# Project ignores
+/data3/guofang/peirongcan/graph-idea/data
+/data3/guofang/peirongcan/graph-idea/RAG_baseline_review_sentence/embeddings
+/data3/guofang/peirongcan/graph-idea/RAG_baseline_review_sentence/all_evidence_embeddings.json
+/data3/guofang/peirongcan/graph-idea/RAG_baseline_review_sentence/embedding_index.json
+/data3/guofang/peirongcan/graph-idea/RAG_baseline_review_sentence/embedding_stats.json
+/data3/guofang/peirongcan/graph-idea/result_v2
+/data3/guofang/peirongcan/graph-idea/Retrive_Generate/.embeddings
+
+# Large data and outputs
+data/
+result/
+result_v2/
+Retrive_Generate/.embeddings
+RAG_baseline_review_sentence/embeddings
+RAG_baseline_review_sentence/all_evidence_embeddings.json
+RAG_baseline_review_sentence/embedding_index.json
+RAG_baseline_review_sentence/embedding_stats.json
+
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.python-version
+.venv/
+venv/
+
+# Editors/OS
+.DS_Store
+.idea/
+.vscode/
+
+# Caches
+.cache/
+.mypy_cache/
+.pytest_cache/
+
+

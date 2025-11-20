@@ -1,0 +1,21 @@
+## ============================================================
+
+## Performance Evaluation Report for `eval_significance.py`
+
+## ============================================================
+
+**Evaluation Time:** 2025-11-12 08:19:44
+**Total Samples:** 337
+**Valid Predictions:** 336
+**Total Runtime:** 53.5 seconds
+
+### **Evaluation Metrics:**
+
+* **Accuracy (Exact Match):** 0.2649 (26.49%)
+* **Accuracy (±1 Error Tolerance):** 0.7232 (72.32%)
+* **Accuracy (±2 Error Tolerance):** 0.9345 (93.45%)
+* **Pearson Correlation Coefficient:** 0.8220 (p = 0.0000)
+* **Spearman Correlation Coefficient:** 0.8473 (p = 0.0000)
+* **Cohen’s Kappa:** 0.7760
+* **Mean Absolute Error (MAE):** 1.0893
+* **Root Mean Square Error (RMSE):** 1.4058

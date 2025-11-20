@@ -1,0 +1,1687 @@
+[
+  {
+    "id": "Multilingual_9_AI",
+    "text": "There is a lot of existing work on semantic change that uses more sophisticated methods than prompting, see works in the LChange Workshop (https://aclanthology.org/venues/lchange/). I think pure prompting is a strictly worse way of studying semantic change than previous works that use novel ideas like tracking embedding shift over time, across several pretrained models.",
+    "label": 3
+  },
+  {
+    "id": "Multilingual_9_AI",
+    "text": "(Only an educated guess). The temporal semantic graph thing does not seem to be too much a new thing in addition to just including the current meaning of the phrases in the prompts.",
+    "label": 5
+  },
+  {
+    "id": "Factuality_1_AI",
+    "text": "The proposed method is not very different from CoT-SC (Wang et al., 2023, https://arxiv.org/pdf/2203.11171), Tree of Thoughts (Yao et al., 2023, https://arxiv.org/pdf/2305.10601), and Graph of Thoughts (Besta et al., 2024, https://arxiv.org/pdf/2308.09687). Especially, ToT also has an evaluation step in the pipeline, but on the node level.",
+    "label": 1
+  },
+  {
+    "id": "Factuality_1_AI",
+    "text": "\"Multiple Chains of Reasoning\" is a paper that already exists, focusing on meta-reasoning over multiple chains. It emphasizes divergent thinking rather than a linear thought structure concerning these inputs. Therefore, the proposed work does not appear to present novelty in terms of the prompt, the described structure, or the datasets on which it is tested on. Exactly related work: Answering Questions by Meta-Reasoning over Multiple Chains of Thought by Ori Yoran, Tomer Wolfson, Ben Bogin, Uri Katz, Daniel Deutch, Jonathan Berant",
+    "label": 2
+  },
+  {
+    "id": "Bias_1_AI_Rerank",
+    "text": "Personally, I am not aware of similar works that describe an imaginary world where the stereotype or polarity is reversed. I do not find closely related works after a quick search on google scholar or ACL anthology using keywords \"Conceptual Polarity Reversal\" or \"Stereotype Inverse.\" I'm fairly confident that the proposed approach is different from the existing works.   After thinking further about the idea, I think it is similar to debiasing LLMs with some counter-factual descriptions in the input prompt. However, I do not know similar papers off the top of my mind now. ",
+    "label": 6
+  },
+  {
+    "id": "Bias_1_AI_Rerank",
+    "text": "The specific prompt proposed here (“Imagine a world where…”) is novel, but the idea of using prompts that get the model to be more reflective has been thoroughly explored. I’m skeptical that this is sufficiently different from these previous approaches to have either a much better result or to apply to a broader class of problems. See, for example (a somewhat random sample, as there are many of these papers): https://arxiv.org/abs/2407.02030 https://arxiv.org/pdf/2404.17218 https://arxiv.org/abs/2403.08743 https://arxiv.org/abs/2407.18786",
+    "label": 3
+  },
+  {
+    "id": "Bias_1_AI_Rerank",
+    "text": "I cannot name a paper but this idea is simply wrong. ",
+    "label": 5
+  },
+  {
+    "id": "Factuality_2_Human",
+    "text": "The method proposed is to break down a long document (case study: Requirements Analysis of an Industrial SRS Document) into subsections smaller in size, and prompt an LLM for each of the subsections for defects. Then, the prompt defects are rephrased into questions which will then be used to prompt an LLM for verifying whether the defect is a false positive.  While this is an interesting idea, I don't think it will make enough novelty for a research paper. If sufficient Engineering efforts are involved to this project, it might make an useful demo paper.",
+    "label": 4
+  },
+  {
+    "id": "Factuality_2_Human",
+    "text": "The idea is essentially a synthetic generation pipeline specifically for SRS. There is a large body of work around synthetic data so the novelty is mostly limited to just the domain of SRS.",
+    "label": 5
+  },
+  {
+    "id": "Factuality_2_Human",
+    "text": "This work proposes to reduce the false positives in SRS Document defects detection with LLMs by generating relevant yes/no question prompts on potential defects for each section of the document and prompt the LLM with them to simplify the task and the verification process, which aims to overcome the long-context challenge when directly feeding the SRS document to the LLM. The application of such prompting design to SRS Document defects detection is somewhat new, however, such divide-and-conquer idea for prompting in general is not novel and there are many similar ideas in previous literature.",
+    "label": 4
+  },
+  {
+    "id": "Uncertainty_4_AI_Rerank",
+    "text": "I am confident there should be many papers doing this human-inspired bi-extreme placement experiments to quantify model uncertainty (though not necessarily for GPT-4, but if the difference is only in GPT-3.5/4/x, the novelty would be even more limited) or, generally, multi-extreme placement as in many cases (e.g., multi-choice QA), there won't be just two extremes. In this sense, role-playing/debates would be another more general scenarios for that uncertainty quantification and there has been significant amount of efforts in this field. So this idea is not novel at all. ",
+    "label": 2
+  },
+  {
+    "id": "Uncertainty_4_AI_Rerank",
+    "text": "I'm not familiar with existing work that focuses on guiding an LLM through a reasoning process to determine uncertainty (in this case, considering two poles and then deciding). I've seen more papers that focus on asking the question multiple times (perhaps with paraphrasing) and pooling, asking for a uncertainty value directly, looking at distribution of output logits, etc. But I could be missing part of the literature here.",
+    "label": 7
+  },
+  {
+    "id": "Multilingual_5_AI_Rerank",
+    "text": "The notion of asking an LLM to identify key aspects of the input text and then use them for further analysis/text generation is not novel. Asking the LLM to construct a semantic network might be novel. Using LLM + graphs for low resource languages is not novel (e.g., https://arxiv.org/pdf/2402.11804).",
+    "label": 5
+  },
+  {
+    "id": "Multilingual_5_AI_Rerank",
+    "text": "I am not very familiar with the literature in this field but after some literature search, the closest one I can find is [1]. I think the proposed idea is still quite different from this since it focuses on translation task.  [1] Teaching Large Language Models to Translate on Low-resource Languages with Textbook Prompting, IREC-COLING 2024",
+    "label": 7
+  },
+  {
+    "id": "Multilingual_5_AI_Rerank",
+    "text": "This work is pretty novel compared to the other works in this area. However, it has some similarities with research in building a \"Multilingual Knowledge Graph.",
+    "label": 7
+  },
+  {
+    "id": "Safety_2_AI",
+    "text": "The idea to use perceptibility using LLM is interesting.",
+    "label": 8
+  },
+  {
+    "id": "Safety_2_AI",
+    "text": "The proposed idea and framework of using a fog of phrases with varied semantics, inspired by red-teaming techniques from vision, which is clearly novel and makes major differences from all existing ideas. However, fundamentally, the notion of stochastically modifying adversarial prompts by substituting similar concepts is very similar to existing studies, such as: (Su et al., 2024) https://arxiv.org/abs/2408.01420. Therefore a score of 7 (between 6 and 8) is given.",
+    "label": 7
+  },
+  {
+    "id": "Math_2_AI",
+    "text": "The concept-aware prompting can be beneficial to conduct reasoning in accordance with the hierarchical nature of mathematical knowledge. However, there are already several works that derive high-level concepts and first principles to enhance mathematical reasoning. For example, [1] propose step-back prompting which uses concepts and principles to guide reasoning. [2] propose self-discover prompting to conduct hierarchical reasoning following self-composed reasoning structures of LLMs.  [1] Zheng H., Mishra S., Chen X., et al. Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models. ICLR 2024 [2] Zhou P., Pujara J., Ren X., et al. SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures. arXiv preprint arXiv:2402.03620, 2024.",
+    "label": 3
+  },
+  {
+    "id": "Math_2_AI",
+    "text": "I don't think there is a similar work to this \"hierarchical concept\". But to be honest I feel this is basically just a more complicated version of chain of thought (before cot, let's first output some concepts).",
+    "label": 5
+  },
+  {
+    "id": "Multilingual_10_AI_Rerank",
+    "text": "Combining neural methods with symbolic reasoning to improve parsing for low-resource languages and vernaculars is a novel approach. While neuro-symbolic methods have been explored in other contexts, their application to parsing these specific language forms is not widely covered, offering fresh insights and potential advancements in the field.",
+    "label": 8
+  },
+  {
+    "id": "Multilingual_10_AI_Rerank",
+    "text": "There hasn't been a work leveraging symbolic grammar rules for vernacular parsing in in-context learning setting. ",
+    "label": 6
+  },
+  {
+    "id": "Bias_3_AI",
+    "text": "While the framework of debiasing based by prompt engineering is well known, the idea of trying to reach deeply embedded stereotypes in models by bringing up pretty unrelated analogies about the bias concepts in questions seems wildly novel! I would be very excited to see the results of this experiment.",
+    "label": 8
+  },
+  {
+    "id": "Bias_3_AI",
+    "text": "Using different persona as role-playing prompt for LLMs is widely used. However, potentially, it can be effective in bias mitigation. The selected datasets are limited. Only close-source LLMs are used.",
+    "label": 4
+  },
+  {
+    "id": "Bias_3_AI",
+    "text": "The idea proposed by the paper is called \"pivot prompts.\" It is very similar to in-context learning, but the key difference is that you are not learning from the examples. Instead, you are using certain sentences to drive the latent space from which you generate responses. While this concept may not be entirely novel in the broader context of using LLMs, it is something I haven't previously seen used to address bias issues in LLM responses. ",
+    "label": 6
+  },
+  {
+    "id": "Coding_8_AI_Rerank",
+    "text": "The construction of Temporal Graph sounds novel.  The research question is also relatively under explored, but necessary for coding in domains like distributed system.",
+    "label": 6
+  },
+  {
+    "id": "Coding_8_AI_Rerank",
+    "text": "Although I am not entirely familiar with the field of generating temporally adaptive programs, I suspect some similar ideas can be found in software engineering works (e.g., ICSE). More concretely on the method, it is rather similar to code generation with intermediate state reasoning, which has been explored in several multi-step, conversational code generation works, e.g., [1,2,3] [1] Zheng, Tianyu, et al. \"Opencodeinterpreter: Integrating code generation with execution and refinement.\" [2] Cao, Liuwen, et al. \"Beyond Code: Evaluate Thought Steps for Complex Code Generation.\" Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024). 2024. [3] Nijkamp, Erik, et al. \"Codegen: An open large language model for code with multi-turn program synthesis.\" ",
+    "label": 5
+  },
+  {
+    "id": "Coding_8_AI_Rerank",
+    "text": "This idea studies a very novel problem in LLM-based code generation. Temporal dependencies in code generation should be specifically studied in era if LLMs.",
+    "label": 10
+  },
+  {
+    "id": "Coding_4_Human",
+    "text": "incorporating the tracking of execution states and using robust example test cases to improve code generation focuses on ensuring the generated code not only compiles but also behaves as expected in various scenarios. Execution-Guided Neural Program Synthesis has similar methodologies but not the same.",
+    "label": 6
+  },
+  {
+    "id": "Coding_4_Human",
+    "text": "While it draws inspiration from Chain of Thought (CoT), it represents a novel idea by combining tool use with compilers, iterative improvement of the code, and multi-step reasoning. Additionally, it has the potential to exceed on existing coding benchmarks which rely primarily on additional sampling.",
+    "label": 8
+  },
+  {
+    "id": "Coding_4_Human",
+    "text": "After doing some googling, this paper seems to be quite related, and also includes a method to train models to reason through execution traces: https://arxiv.org/abs/2404.14662. I don't think there are a few implementation details that are different though (e.g. whether the model is zero-shot prompted or not, how the test cases are generated, etc.)",
+    "label": 2
+  },
+  {
+    "id": "Coding_3_AI",
+    "text": "The research topic of using large, poorly documented, or rapidly evolving APIs for code generation is timely and important. While existing works try to enhance LMs ability in handling large-scale APIs via a data-driven fashion, I agree it's worth exploring symbolic methods to somewhat deterministically handle large-scale APIs.",
+    "label": 7
+  },
+  {
+    "id": "Coding_3_AI",
+    "text": "Combining neural and symbolic methods is an interesting direction and based on the descriptions it is suitable for coding applications.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_10_Human",
+    "text": "The idea falls under the self-refine category of works. This work reminds me of https://arxiv.org/pdf/2402.09267 (Self-alignment for factuality: Mitigating hallucinations in llms via self-evaluation, Zhang et al. 2024). They also perform sampling and ask questions. However, one difference is that the proposed idea asks multiple choice questions with different contexts.",
+    "label": 5
+  },
+  {
+    "id": "Factuality_10_Human",
+    "text": "The novelty is lacking as it is simply the voting trick that people are using currently (i.e., sampling a bunch of generations, and get the majority vote, or sampling a bunch of generations, and use external models to rate, or self-rate)",
+    "label": 4
+  },
+  {
+    "id": "Factuality_10_Human",
+    "text": "While the idea is novel, I believe the novelty stems from the fact that it proposes something that is completely, or at least slightly, infeasible with the current models and parameters we have access to. This is likely why it hasn't been implemented before. Although the concept of basing hallucinations on confidence and non-consensus is interesting, both factors are very subjective and not grounded in literature. ",
+    "label": 5
+  },
+  {
+    "id": "Bias_2_Human",
+    "text": "The idea is marginally novel. Multilinguality as a debiasing method has already been considered in the literature, although not necessarily in the prompt engineering framework. Eg: Aha and Oh 2021 (Mitigating Language-Dependent Ethnic Bias in BERT), Levy et al. 2023 (Comparing Biases and the Impact of Multilingual Training across Multiple Languages).",
+    "label": 6
+  },
+  {
+    "id": "Bias_2_Human",
+    "text": "It's hard to comment on the novelty of the proposed idea because it is not clear to me what the exact problem the method is trying to address. It does not make sense to me in step (5) to \"mitigate inconsistencies by generating a new response that incorporates answers from different perspectives.\" Why would a user expect the model to describe wedding attires in a non-English speaking country when they ask the question in English and never specify the culture? Is the model supposed to tell me the wedding attire in every culture in the world to be considered fair? The problem is poorly formulated in the proposal and it is unclear what the ideal model behavior should be for cultural fairness and inclusiveness. Overall I don't think the proposal is well-motivated.   Some relevant work also compare the model's differential behavior towards various cultures. However, I don't think they have parallel questions in multiple languages.  Shramay Palta and Rachel Rudinger. 2023. FORK: A Bite-Sized Test Set for Probing Culinary Cultural Biases in Commonsense Reasoning Models. In Findings of the Association for Computational Linguistics: ACL 2023, pages 9952–9962, Toronto, Canada. Association for Computational Linguistics. Naous, Tarek, Michael J. Ryan, Alan Ritter, and Wei Xu. \"Having beer after prayer? measuring cultural bias in large language models.\" arXiv preprint arXiv:2305.14456 (2023).",
+    "label": 5
+  },
+  {
+    "id": "Multilingual_1_AI_Rerank",
+    "text": "Novel in the sense that it tries to use the structural and functional features. Not novel in the sense it tries to build effective few-shot methods.",
+    "label": 5
+  },
+  {
+    "id": "Multilingual_1_AI_Rerank",
+    "text": "This work is reasonably novel.  The idea of creating vectors to cluster typologically similar languages has been explored before: https://aclanthology.org/2020.emnlp-main.187.pdf but primarily used to select training data distributions for training a multilingual translation model that is better suited to particular low resource languages.  I have not found much related work on typological prompting and this idea seems relatively novel and interesting.",
+    "label": 7
+  },
+  {
+    "id": "Uncertainty_1_AI",
+    "text": "I think this idea is interesting in that it contains an interplay between neural and something more structure --- a lattice structure. However, due to the lack of both the description and missing generation example, it is hard for me to tell what actual benefit lattice brings to the game.",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_1_AI",
+    "text": "I'm not familiar with existing work that focuses on guiding an LLM through a reasoning process to determine uncertainty (in this case, creating a lattice of concepts related to the question and composing uncertainty on nodes/edges of the lattice). I've seen more papers that focus on asking the question multiple times (perhaps with paraphrasing) and pooling, asking for a uncertainty value directly, looking at distribution of output logits, etc. But I could be missing part of the literature here. ",
+    "label": 7
+  },
+  {
+    "id": "Multilingual_8_AI",
+    "text": "There have been (just) 1-2 recent papers on cultural awareness in LLMs. However, this is a relatively new problem, and both collecting new data and in new languages is very important, particularly lower-resource languages where this is unlikely to exist and harder to collect. In addition, including human evaluation here is an important step, as automatic metrics are unlikely to accurately to be able capture cultural awareness.",
+    "label": 8
+  },
+  {
+    "id": "Multilingual_8_AI",
+    "text": "Culturally-Specific Task is definitely a hot keyword, but the methods like CoT seems not very noble. ",
+    "label": 3
+  },
+  {
+    "id": "Multilingual_4_AI",
+    "text": "I don't think any work has tried this due to the specificity of the task and the unusual domain for using CoT in. I can't even find much work on CoT for machine translation, which surprised me! This seems quite novel overall.",
+    "label": 8
+  },
+  {
+    "id": "Multilingual_4_AI",
+    "text": "The use of chain-of-thought in low resource languages is not widely explored -- it is shown that CoT is less effective and lower quality in low-resource languages but there's not yet a standard way to improve performance. Using phonetic cues to increase the quality of the generated CoT, instead of transfer learning, seems to be a novel approach to tackle this issue. However, the approach relies on a few assumption, e.g., the ability to identify phonetic patterns and the connections between phonetic features. ",
+    "label": 8
+  },
+  {
+    "id": "Math_3_Human",
+    "text": "I don't quite get the novelty here. The idea of \"multiple perspective\" is already illustrated in Figure 2 of Self Refine (https://arxiv.org/pdf/2303.17651). Adding a round of final check is also a trivial engineering trick.",
+    "label": 3
+  },
+  {
+    "id": "Math_3_Human",
+    "text": "This idea is reasonably novel, but it does not bring a fundamental change to how the problem is solved in mathematical reasoning tasks. Having an error taxonomy add to its novelty.",
+    "label": 6
+  },
+  {
+    "id": "Coding_9_Human",
+    "text": "This shares a quite similar idea to: https://arxiv.org/pdf/2408.00994 however this paper was only released 6 days ago, and will be presented at ACL as an oral presentation, giving me great confidence in this idea!  This work found the approach quite effective when generating test cases about non-functional requirements and I suspect that this idea would see similar benefits.",
+    "label": 7
+  },
+  {
+    "id": "Coding_9_Human",
+    "text": "Most code generation method generate test cases via human annotation or model synthesis, neither of which can guarantee the comprehensiveness of unit tests. The proposed method, by leveraging property-based testing, offers a possible way to generate sufficient and high-coverage test cases for edge cases. To the best of my knowledge, there have not been any works proposing this method and proven its success. It would greatly affect the field on preparing executable coding examples. ",
+    "label": 8
+  },
+  {
+    "id": "Coding_9_Human",
+    "text": "This paper adapts property-based testing, a useful practice in software engineering, to the LLM code generation domain. The idea of  PBT in Natural Language also has its novelty.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_6_AI",
+    "text": "There's a lot of similar work that involves prompting VLMs/LMs in various ways to create new chains of thought. While this method has some slight differences from the others the performance gain would need to be considerable to justify.  Example: https://www.semanticscholar.org/paper/DDCoT%3A-Duty-Distinct-Chain-of-Thought-Prompting-for-Zheng-Yang/f8b8f926bbfa327c86c40796131fe2695db81126",
+    "label": 5
+  },
+  {
+    "id": "Factuality_6_AI",
+    "text": "The statement seems novel, but I feel like it's highly related to multimodal QA like VQA, which is a well studied field.",
+    "label": 5
+  },
+  {
+    "id": "Uncertainty_6_Human",
+    "text": "The proposed idea is vague to me. (https://arxiv.org/abs/2302.13439) has already invested how to express uncertainty beyond reporting portion. This idea should be built upon this work. Clinical Diagnosis Scenario is novel. The author can dig deeper into the scenario-based uncertainty expression, instead of the proposed individual preference, which is hard to measure nor detect.",
+    "label": 5
+  },
+  {
+    "id": "Uncertainty_6_Human",
+    "text": "The ideas presented in this proposal are reasonably novel. I am not aware of any works that learn user preferences for uncertainty expression. ",
+    "label": 7
+  },
+  {
+    "id": "Coding_2_Human",
+    "text": "The proposed method adopts a two-step approach, where the novelty is to prompt to model to first classify the underlying algorithm/math modeling category (e.g., dynamic programming, greedy, etc.), then generate the code based on the category template.  The method is somewhat relevant to https://arxiv.org/abs/2310.01714 in a sense that recalling examples from the same category may be helpful. While I'm not aware of any work doing exactly the same thing, I personally feel all the elements in the method are studies before and thus the novelty is limited. ",
+    "label": 5
+  },
+  {
+    "id": "Coding_2_Human",
+    "text": "Although I'm not the most familiar with this problem space, a quick search yielded similar prior works on prompting techniques for code generation such as Structured CoT: https://arxiv.org/pdf/2305.06599, which also prompts the LLM to generate a structure first similar to the step of generating the code template. In addition, this idea might involve other existing prompting techniques such as self-reflection, which is not novel either. ",
+    "label": 3
+  },
+  {
+    "id": "Multilingual_6_AI",
+    "text": "The idea of recursively expanding dialectal variations within prompts is novel and hasn't been extensively explored in current literature. Most existing works focus on treating dialects as discrete entities or relying on limited corpora. By addressing the continuous nature of dialectal variations, your approach offers a fresh perspective on enhancing LLM performance for low-resource languages.",
+    "label": 8
+  },
+  {
+    "id": "Multilingual_6_AI",
+    "text": "I have not heard of another work that uses a chain of dialect prompts to improve LLM applications in different dialects.",
+    "label": 8
+  },
+  {
+    "id": "Bias_4_Human",
+    "text": "According to 4.3.2 in https://arxiv.org/pdf/2309.07864, crafting emotionally resonant dialogues is a well studied problem. While this proposed plan uses a multi-agent system to generate diverse emotions it seems more of an application paper (applying agents to emotion diversity) rather than a novel technical contribution.  I also found a very similar paper (https://aclanthology.org/2021.eacl-main.255.pdf/).",
+    "label": 3
+  },
+  {
+    "id": "Bias_4_Human",
+    "text": "I'm not very familiar with works on dialogues and conversational agents. However, the idea seems to be incremental and I guess there will be similar works out there that generate a response for each emotional category and then combine them into an aggregated response.",
+    "label": 5
+  },
+  {
+    "id": "Bias_4_Human",
+    "text": "I'm not familiar with any previous work taking this approach. Integrating agents that correspond to different emotions seems like a novel and potentially effective way to generate responses corresponding to different emotions.",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_3_AI",
+    "text": "There are a few other papers that consider using an LLM to draft multiple plausible answers before generating an uncertainty score, e.g., Kadavath et al (Anthropic paper). The key difference in this approach is that the multiple plausible answers are generated by perturbing the input with a \"counterfactual\" operator, which is a sort of interesting primitive. I don't know of work trying this.",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_3_AI",
+    "text": "While this is just a prompting technique, it does seem more technical in that they build a tree of alternative scenarios by systematically varying key elements of the input. Their method also include a novel scoring mechanism that weighs the plausibility of each counterfactual branch. This is convincing enough to me to be different from previous ideas and with rigorous analysis could be enough to turn into a new paper.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_4_AI",
+    "text": "The use of semantic similarity to constrain CoT-styled generation is very new. I have not seen similar work on it.",
+    "label": 8
+  },
+  {
+    "id": "Factuality_4_AI",
+    "text": "Generally this method a way of rejection sampling to improve factuality. It is somewhat not too different from previous literature for \"constrained decoding\" for improving factuality:  - Constrained Abstractive Summarization: Preserving Factual Consistency with Constrained Generation - Don’t Say What You Don’t Know: Improving the Consistency of Abstractive Summarization by Constraining Beam Search",
+    "label": 4
+  },
+  {
+    "id": "Factuality_4_AI",
+    "text": "The idea of extracting key semantic concepts, measuring the relevance of the candidate next step, and possibly rejecting/revising the step is very similar to incorporating self-critique into multi-step reasoning problems. Different versions of this are already commonly used, especially for solving math problems.",
+    "label": 3
+  },
+  {
+    "id": "Factuality_8_AI",
+    "text": "Using pruned context to improve the relevance and conciseness in Long-Form Generation is in general an interesting idea. However, the authors seem to have limited understanding over the previous work on retrieval. The whole thing can be factored as an retrieval+re-ranking framework that has been explore in the retrieval community (sparsely score many chunks and ask the model to re-rank the top chunks).There are many things that are not easy in this scenarios: how to get a good retriever that can handle semantically rich and complex writing tasks? The idea should be re-factored with improved understanding on retrieval,. Yet TF-IDF can still be a baseline starting point.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_8_AI",
+    "text": "I couldn't find similar works. There are some works in network pruning (https://arxiv.org/abs/2306.11695), but I haven't seen works in summarization uses pruning.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_4_Human",
+    "text": "The idea of showing both positive and negative ideas is interesting but already appears in previous work (e.g., https://arxiv.org/abs/2305.14325). To ensure the novelty of the work, the authors should explore more on the complex argument strucutre, which is not simply pos/neg, but hierachical and nested (e.g., see https://arxiv.org/pdf/1906.11313). On the other hand, the authors can also desgin detailed (rounds of) prompts to guide the model generation, e.g., following the court debate agenda (potentially with multi-persona jury) or Oregon-style debate rules (https://www.osaa.org/docs/spe/CXDebateRules.pdf)",
+    "label": 5
+  },
+  {
+    "id": "Factuality_4_Human",
+    "text": "There are a lot of similar works: 1. Improving Factuality and Reasoning in Language Models through Multiagent Debate (https://arxiv.org/pdf/2305.14325), 2. Examining Inter-Consistency of Large Language Models Collaboration: An In-depth Analysis via Debate (https://arxiv.org/pdf/2305.11595)",
+    "label": 3
+  },
+  {
+    "id": "Factuality_4_Human",
+    "text": "There are multiple works using several LLMs to discuss/debate an idea. Not sure if the same has been done in factuality. ",
+    "label": 4
+  },
+  {
+    "id": "Bias_1_AI",
+    "text": "This proposal focuses on a known problem for not only LLMs but also past machine learning models — produced outputs will encode societal biases. I do think that this proposal introduces a novel angle: by taking into account how biases shift over time, we might assume that models can generate more “progressive” results. This builds on existing works that leverage the encoded world knowledge that LLMs have, but applying it to debasing is an interesting perspective. ",
+    "label": 6
+  },
+  {
+    "id": "Bias_1_AI",
+    "text": "To my best knowledge, the idea of prompting an LLM to leverage the historical changes and imagine the future trends on a certain type of social bias for the purpose of debiasing is novel, although I am aware that language models or other language technologies (e.g., word embeddings) could be used to study how social biases change over time by using training corpus from different times. I think this is an interesting idea because it prompts the model to reflect how a type of social bias has changed over time and it's possible that the generated content will be conditioned on the same trend as identified by the model. The proposed method addresses social biases in a more dynamic way than most existing approaches. ",
+    "label": 7
+  },
+  {
+    "id": "Multilingual_9_Human",
+    "text": "While leveraging related languages and multilingual resources is a known strategy, your approach of combining this with Chain-of-Thought prompting and Cross-Lingual Thought Prompting techniques adds a novel dimension to this problem.",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_9_Human",
+    "text": "not novel in the sense it tries to find close language and use dictioanry. but novel in the sense it is during the prompting.",
+    "label": 3
+  },
+  {
+    "id": "Multilingual_9_Human",
+    "text": "Several past works have explored optimal ways to prompt multilingual LLMs to improve performance on low-resource languages, including MEGA (https://arxiv.org/pdf/2303.12528) and LMs are multilingual CoT reasoners (https://arxiv.org/abs/2210.03057). The proposed idea also simply combines two different ways of prompting from 2 different papers, into a single prompt, without any intuition as to why that is necessary or may work better than either.",
+    "label": 3
+  },
+  {
+    "id": "Multilingual_6_AI_Rerank",
+    "text": "The idea of recursively expanding dialectal variations within prompts is novel and hasn't been extensively explored in current literature. Most existing works focus on treating dialects as discrete entities or relying on limited corpora. By addressing the continuous nature of dialectal variations, your approach offers a fresh perspective on enhancing LLM performance for low-resource languages.",
+    "label": 8
+  },
+  {
+    "id": "Multilingual_6_AI_Rerank",
+    "text": "I have not heard of another work that uses a chain of dialect prompts to improve LLM applications in different dialects.",
+    "label": 8
+  },
+  {
+    "id": "Safety_1_Human",
+    "text": "The work is mostly following the existing work on harmfulness literature. It is not scalable if we need to train classifier for each type.",
+    "label": 3
+  },
+  {
+    "id": "Safety_1_Human",
+    "text": "The rationale behind the proposal is good, which aims to construct diverse agents that can represent various subtypes of AI toxicities/risks and address specific safety issues with better performance. This method might be explored in traditional machine-learning models and applications before LLMs. However, applying the idea to LLM agents might be a novel attempt.",
+    "label": 5
+  },
+  {
+    "id": "Safety_1_Human",
+    "text": "Though the agent-based pipeline of generating more diverse toxic comments with more controllability, it is hard to believe that this framework would yield a much better result than designing sophisticated prompts. ",
+    "label": 5
+  },
+  {
+    "id": "Coding_1_AI",
+    "text": "While the iterative part is not novel, the conceptual compression seems unexplored to me. It also involves using LLM for algorithm complexity analysis, which seems a new topic.",
+    "label": 6
+  },
+  {
+    "id": "Coding_1_AI",
+    "text": "The methods are trying to combine the coding optimization process into llm through iterative prompting to allow the code optimization abilities of LLM.  Also there are already some work training llms to optimize the code (https://arxiv.org/abs/2104.04955, https://arxiv.org/abs/2309.03409).",
+    "label": 3
+  },
+  {
+    "id": "Uncertainty_3_AI_Rerank",
+    "text": "It's somewhat novel to consider adversarial rephrases of a prompt in the context of uncertainty estimation from LLMs. There are some other issues with the proposal, but the specific \"adversarial\" focus is novel.",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_3_AI_Rerank",
+    "text": "The approach seems reasonably different from existing work in uncertainty calibration. Some previous works in prompting for uncertainty estimation that are related, but not cited, study uncertainty calibration by consistency estimates variations of the same query (by paraphrasing, varying prompt). That said, the core aspect of the approach is different in that the proposed approach considers related, but different, queries and concerns calibrating in contrast to other queries, rather than having uniform confidence across paraphrases. ",
+    "label": 7
+  },
+  {
+    "id": "Multilingual_6_Human",
+    "text": "While I'm not aware of papers that have used this exact prompting strategy, I don't think that this proposal will be enough to justify a publication. I think that there should be a variety of strategies suggested + an analysis of multiple prompting strategies rather than suggesting one strategy. I think that a thorough analysis of the effects of additional context / langids could potentially turn this into a paper.",
+    "label": 5
+  },
+  {
+    "id": "Multilingual_6_Human",
+    "text": "There are multiple existing work on prompting LLMs on low-resource translation, usually using few-shot demo. https://proceedings.mlr.press/v202/garcia23a/garcia23a.pdf https://arxiv.org/pdf/2305.14857 Also work explaining why few-shot prompt would work: https://arxiv.org/pdf/2305.10266",
+    "label": 1
+  },
+  {
+    "id": "Factuality_8_AI_Rerank",
+    "text": "I do really like the idea of this paper. I like that the model is generating the  infractual statements as well as the factual statements. I think that is novel.  I'm unsure of how useful it would be but I do feel like most approaches either try to generate  factuality by referring to an external data source but not use the encoded non-factual  tendencies that can be hindered by the model weights during pre-training itself.",
+    "label": 8
+  },
+  {
+    "id": "Factuality_8_AI_Rerank",
+    "text": "Simple prompting methods with not well-motivated intuition. ",
+    "label": 4
+  },
+  {
+    "id": "Factuality_8_AI_Rerank",
+    "text": "The idea of learning from contrastive examples have been explored both in training and prompting. I don't see too much novelty.",
+    "label": 3
+  },
+  {
+    "id": "Multilingual_2_AI_Rerank",
+    "text": "There are a few works in the past that have explored prompting LLMs to generate fluent code-switched text in the recent past. These papers also show that multilinguality of a LLM is not a good indicator of its code-switching capabilities, which makes me doubt the viability of the proposed method. Relevant works include \"Prompting Multilingual Large Language Models to Generate Code-Mixed Texts: The Case of South East Asian Languages\" and \"Prompting Multilingual Large Language Models to Generate Code-Mixed Texts: The Case of South East Asian Languages\". ",
+    "label": 3
+  },
+  {
+    "id": "Multilingual_2_AI_Rerank",
+    "text": "The idea to using steps to generate better code-mixed sentence sounds minor contribution. However, if there is no previous work that is using LLM to augment the code-switching dataset, worth to try.",
+    "label": 3
+  },
+  {
+    "id": "Factuality_9_Human",
+    "text": "The idea is tested on the paper Are You Sure? Challenging LLMs Leads to Performance Drops in The FlipFlop Experiment(https://arxiv.org/pdf/2311.08596). The paper already evaluated challenging LLMs, and showed that it will lead to drop in the performance. ",
+    "label": 1
+  },
+  {
+    "id": "Factuality_9_Human",
+    "text": "I’m aware of past work that use LLMs themselves as judges to find factuality errors in the generations and use the crafted datasets for further fine-tuning/preference fine-tuning, but I’m not aware of any work that tries to make use of questioning as a prompting strategy to increase factuality. I searched the web with a few key word phrases I thought could be relevant, but couldn’t find other work resembling this idea, so I consider it to be reasonably novel.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_9_Human",
+    "text": "The proposed method is similar to the line of work which uses LLM to \"self-refine\" a given answer, yet I haven't seen a paper using this exact strategy to self-refine. (https://arxiv.org/pdf/2303.17651)",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_10_AI",
+    "text": "To the best of my knowledge, relying on an iteratively refined etymological map is completely novel.",
+    "label": 8
+  },
+  {
+    "id": "Multilingual_10_AI",
+    "text": "I couldn't find any similar methods, but since I'm not an expert in this sub-field I acknowledge that I might have missed something during my brief literature review. ",
+    "label": 8
+  },
+  {
+    "id": "Factuality_3_Human",
+    "text": "The idea contains two main highlights: (1) The hierarchical breakdown of a response into fine-grained facts, which is quite similar to the well-known FactScore (FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation). (2) The mult-perspective evaluation, which is somewhat novel but also similar to the popular multi-agent collaboration idea.",
+    "label": 5
+  },
+  {
+    "id": "Factuality_3_Human",
+    "text": "This idea is kind of similar to self consistency, although it makes the sampling objective more explicit. ",
+    "label": 5
+  },
+  {
+    "id": "Factuality_3_Human",
+    "text": "This work is reasonably novel and has some differences with other works in the multistep generation and fact checking.",
+    "label": 6
+  },
+  {
+    "id": "Coding_1_AI_Rerank",
+    "text": "The idea still follow the self-verification manner and there are already many related work (though not definitely for code generation) such as Chain-of-Verification, Self-Refine, Self-Verification, Cumulative Reason and etc. Yet it apply it to code generation, it does not provide any novel modification or improvements.",
+    "label": 2
+  },
+  {
+    "id": "Coding_1_AI_Rerank",
+    "text": "The idea targets keeping the invariant properties of data structures in code generation. This is largely under explored but the idea itself has some series problem.",
+    "label": 5
+  },
+  {
+    "id": "Multilingual_8_AI_Rerank",
+    "text": "There have been (just) 1-2 recent papers on cultural awareness in LLMs. However, this is a relatively new problem, and both collecting new data and in new languages is very important, particularly lower-resource languages where this is unlikely to exist and harder to collect. In addition, including human evaluation here is an important step, as automatic metrics are unlikely to accurately to be able capture cultural awareness.",
+    "label": 8
+  },
+  {
+    "id": "Multilingual_8_AI_Rerank",
+    "text": "Culturally-Specific Task is definitely a hot keyword, but the methods like CoT seems not very noble. ",
+    "label": 3
+  },
+  {
+    "id": "Factuality_2_AI_Rerank",
+    "text": "It sounds like juts iteratively prompt model to output more specific unanswer, not something very novel.",
+    "label": 5
+  },
+  {
+    "id": "Factuality_2_AI_Rerank",
+    "text": "I think this idea seems like a combination of the self-refinement and data diversification (e.g. https://arxiv.org/abs/2406.20094) methods and the idea of using semantic entropy for hallucination detection (https://www.nature.com/articles/s41586-024-07421-0). Thus, I don't think it is sufficiently novel.",
+    "label": 4
+  },
+  {
+    "id": "Math_1_AI_Rerank",
+    "text": "To the best of my knowledge, no one has tried this kind of \"proposing a strategy, trying it out, and evaluating the strategy\" method. It distinguishes itself from existing vanilla prompting strategies like chain of thought.",
+    "label": 6
+  },
+  {
+    "id": "Math_1_AI_Rerank",
+    "text": "Similar strategies for solving mathematical reasoning tasks with multiple steps most use different models. It's moderately novel to solve in a similar fashion with prompting.",
+    "label": 6
+  },
+  {
+    "id": "Bias_3_Human",
+    "text": "This proposal deals with a relatively well-charted problem: machine learning models (and particularly LLMs) will perform differently across languages. We have a priori expectations that performance for low resource languages will be worse compared to high resource languages. In addition to not tackling a novel problem, the method for reducing bias just seems to be asking the model to rephrase the response. ",
+    "label": 3
+  },
+  {
+    "id": "Bias_3_Human",
+    "text": "The overall idea seems interesting. Although it is still at a high-level, I do see potentials in this direction. If executed properly, I see a chance that this idea can be turned into one or several papers. However, there are still many uncertainties in this direction. For example, \"Develop prompts that include cultural context\" is still quite vague. There can be so many ways to include cultural contexts in prompts. ",
+    "label": 5
+  },
+  {
+    "id": "Coding_5_AI_Rerank",
+    "text": "Although the adversarial generation research is not a novel topic, this project innovatively proposes to apply it to code generation with LLMs, which is reasonably novel.",
+    "label": 7
+  },
+  {
+    "id": "Coding_5_AI_Rerank",
+    "text": "The idea of building a constraint generator (edge case generator) to play against the code generation is pretty novel, and has not been explored by many works. However, the method implementation is less surprising and only prompting engineering, which has little programming insights and make the idea less interesting.",
+    "label": 6
+  },
+  {
+    "id": "Bias_2_AI_Rerank",
+    "text": "The idea is bascially about generating a counterfactual reference in the test-time to evaluate and mitigate its fairness issue. While there are some related works in LM-based counterfactual generation and reference-based evaluation, I didn't read any paper throughly study this idea in the domain of fairness. I also think the proposed problem setup (i.e., intersectional bias) is realistic and less studied before.",
+    "label": 7
+  },
+  {
+    "id": "Bias_2_AI_Rerank",
+    "text": "The idea of contrastive debiasing is not novel. Researchers have implemented this kind of idea to debias BERT-like models previously. For example,  Cheng, Pengyu, Weituo Hao, Siyang Yuan, Shijing Si, and Lawrence Carin. \"FairFil: Contrastive Neural Debiasing Method for Pretrained Text Encoders.\" In International Conference on Learning Representations. Yue Guo, Yi Yang, and Ahmed Abbasi. 2022. Auto-Debias: Debiasing Masked Language Models with Automated Biased Prompts. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 1012–1023, Dublin, Ireland. Association for Computational Linguistics.  The study of intersectional bias also gains traction in recent years.   John Lalor, Yi Yang, Kendall Smith, Nicole Forsgren, and Ahmed Abbasi. 2022. Benchmarking Intersectional Biases in NLP. In Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 3598–3609, Seattle, United States. Association for Computational Linguistics. Weicheng Ma, Brian Chiang, Tong Wu, Lili Wang, and Soroush Vosoughi. 2023. Intersectional Stereotypes in Large Language Models: Dataset and Analysis. In Findings of the Association for Computational Linguistics: EMNLP 2023, pages 8589–8597, Singapore. Association for Computational Linguistics.  While I can't find any work that exactly does the proposed idea here, I think this is not a creative idea overall, and it's quite cliché. ",
+    "label": 4
+  },
+  {
+    "id": "Multilingual_2_AI",
+    "text": "Not novel to find a translation that does not exactly available in the target language. Somewhat novel as it suggest the prompting methods with LLM.",
+    "label": 5
+  },
+  {
+    "id": "Multilingual_2_AI",
+    "text": "The idea of breaking down a concept into semantic primitives for translation seems interesting. Translating semantic primitives seems easier than translating an abstract concept and reconstructing using translations may better paint the concept in context of how it is used in the target language. ",
+    "label": 6
+  },
+  {
+    "id": "Factuality_6_AI_Rerank",
+    "text": "To my knowledge, there are no existing approaches on this idea. Several papers have focuses on Bayesian approaches but not specifically Bayesian Belief Update Prompting.",
+    "label": 7
+  },
+  {
+    "id": "Factuality_6_AI_Rerank",
+    "text": "The paper seems to propose a method to update model's knowledge with in-context update / editing (https://arxiv.org/pdf/2305.14795) as the baseline by explicitly prompting the model to output a probability of a fact being true given a piece of evidence, which I haven't seen before.",
+    "label": 5
+  },
+  {
+    "id": "Factuality_11_Human",
+    "text": "The idea consists of simple steps, but it nicely sums a domain expert’s approach to legal analysis as a structured method that utilizes LLMs under the hood. If the proposed method doesn’t work, it would also be an interesting finding.",
+    "label": 7
+  },
+  {
+    "id": "Factuality_11_Human",
+    "text": "I found one existing work on augmenting LLMs for legal tasks with retrieval (https://arxiv.org/abs/2404.04302). However, this specific setup seems to be new. Granted, my expertise with the problem domain is quite limited. ",
+    "label": 7
+  },
+  {
+    "id": "Factuality_11_Human",
+    "text": "The idea of breaking a reasoning task in to small reasoning sub-tasks is not new, but perhaps applying them to law is new? I have limited confidence here.",
+    "label": 5
+  },
+  {
+    "id": "Coding_5_Human",
+    "text": "It involves a retrieval step, which Knowledge Soup has. The difference seems to be knowledge soup retrieves from internet (good), and this idea retrieve only from context (bad). Plus, this idea kinda improves upon knowledge soup by providing a high-level plan. I am not too sure how much help the high-level plan could provide.",
+    "label": 5
+  },
+  {
+    "id": "Coding_5_Human",
+    "text": "The proposal is addressing an important issue when humans interacting with AI systems, which is \"aligns humans' natural language intents with the code generation implementation\". Particularly, it proposes to decompose the plan for this implementation, which could been implemented by some existing AI or LLM agents -- which sounds to me is not brand novel but still contains merit. ",
+    "label": 6
+  },
+  {
+    "id": "Coding_5_AI",
+    "text": "The general idea is novel, especially in incorporating complicated api documentations in the prompt. However, I have some concerns about the prompts' scalability (or feasibility): How can a LLM automatically decide which api it will use, and connect it with the huge documentation? Is it going to fetch the docs in a RAG manner?",
+    "label": 5
+  },
+  {
+    "id": "Coding_5_AI",
+    "text": "The proposed method majorly highlights 2 uniqueness: 1. API-specific prompt design, which may focus on incorporating different information about APIs, and can easily borrow from existing literautre such as AutoPrompt [1]. 2. Evaluate the API usage quality in code: many works have explored using interpreter execution feedback [2] and human/model generated language feedback [2] to similarly improve the iterative code generation process.  In general, both components in the proposed method can be readily adopted from existing literature, and it is unclear what are the unique aspects particularly regarding this task.  [1] Shin, Taylor, et al. \"Autoprompt: Eliciting knowledge from language models with automatically generated prompts.\" [2] Shinn, Noah, et al. \"Reflexion: Language agents with verbal reinforcement learning.(2023).\" [3] Madaan, Aman, et al. \"Self-refine: Iterative refinement with self-feedback.\" Advances in Neural Information Processing Systems 36 (2024).",
+    "label": 3
+  },
+  {
+    "id": "Factuality_10_AI_Rerank",
+    "text": "There are some similar works on leveaging the meta-cognitive confidence (https://aclanthology.org/2024.naacl-long.106.pdf) or self-consistency (https://research.google/blog/zero-shot-adaptive-prompting-of-large-language-models/) in question answering, but the focus on factuality is different and (from my perspective) better.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_10_AI_Rerank",
+    "text": "The idea to separate the generation parts with different confidence scales is interesting and reasonable. For different confidences, an adaptive strategy is proposed to deal with them. This is clearly different from previous works of confidence calibration.",
+    "label": 8
+  },
+  {
+    "id": "Factuality_10_AI_Rerank",
+    "text": "I found some existing work on having models quantify the uncertainty in their answers, or measure uncertainty through some other way (https://arxiv.org/pdf/2406.03441, https://arxiv.org/html/2405.01563v1). However, the specific method of dealing with uncertainty seems to be novel.",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_1_Human",
+    "text": "Hallucination detection is a pretty rich area of work. Detecting hallucinations post-hoc, with LLMs, is something that several works have done. See for example these 3 papers from 2023:  https://aclanthology.org/2023.emnlp-main.557.pdf https://aclanthology.org/2023.findings-emnlp.68.pdf https://aclanthology.org/2023.emnlp-main.58/",
+    "label": 2
+  },
+  {
+    "id": "Multilingual_1_Human",
+    "text": "Using negative example to improve the performance is not new. However, using hallucination sounds new.",
+    "label": 4
+  },
+  {
+    "id": "Factuality_2_AI",
+    "text": "The idea is to conduct self-verification at different levels. There are existing works exploring multi-agent fact-checking with designed prompts such as https://arxiv.org/pdf/2305.13281 and https://arxiv.org/pdf/2309.11495. The authors call it fractal, yet it seems to me that the proposed method is a fixed, manually designed pipeline without strong connection to properties of a fractal structure. It is unclear to me what the novelty is compared to the prior works.",
+    "label": 5
+  },
+  {
+    "id": "Factuality_2_AI",
+    "text": "The idea is not well-motivated and use LLM to verify its output can not be reliable.",
+    "label": 3
+  },
+  {
+    "id": "Factuality_2_AI",
+    "text": "I think checking at different levels as a nested prompt is a good idea and hasn't been done before. However, I'm unsure whether this checking, given that it is being done by the same model that is actually generating the output, is a good idea. I feel that the combination of using the same model for both generation and verification makes it less novel than I would expect it to be. ",
+    "label": 5
+  },
+  {
+    "id": "Coding_9_AI",
+    "text": "The idea is basically chain-of-thought plus unit-test enhanced generation. Similar work: 1. TEACHING LARGE LANGUAGE MODELS TO SELFDEBUG 2. INTERVENOR : Prompting the Coding Ability of Large Language Models with the Interactive Chain of Repair 3. SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics",
+    "label": 3
+  },
+  {
+    "id": "Coding_9_AI",
+    "text": "Similar ideas are seen in many other studies in the realm of code generation. (Madaan et al., 2023) uses LLM to iteratively refine its own generated code, leading to significant performance over robustness. (Chen et al., 2023) uses LLM to generate extra test cases and bootstrap it for self-debugging. (Huang et al., 2024) explores multi-agent collaboration to improve code generation with test designer and test executor. ",
+    "label": 4
+  },
+  {
+    "id": "Coding_9_AI",
+    "text": "This work is somehow novel in the area of code generation. However, the idea is somehow similar to the reasoning papers and chain of thought approaches which makes it not fully novel.",
+    "label": 6
+  },
+  {
+    "id": "Safety_3_AI_Rerank",
+    "text": "Even before ChatGPT-3.5 was released (2022), the manipulation on input context to mitigate the influence from malicious or adversarial attack has been a popular research direction for LM safety (well, the LM at that time perhaps is not that \"Large\"). Asking follow-up questions, proposing answers to these questions and using these additional QA to do consistency checking is also a currently widely-recognized approach to avoid LLM generating hallucinations (in LLM faithfulness research). Moreover, this process can be thought of a self-reflection process for LLM, which is also currently actively studied. It is not that hard to expect there will be some combination of these ideas that may or may not work better. So of course this is not a novel idea.  ",
+    "label": 3
+  },
+  {
+    "id": "Safety_3_AI_Rerank",
+    "text": "I think the idea of calibrating the model towards dynamic contexts is very interesting. Most of the literature only focuses on robustness against static context. The proposed idea potentially has practical values.",
+    "label": 7
+  },
+  {
+    "id": "Math_4_AI",
+    "text": "The idea is reasonably novel. It attempts to break down problems into sub-problems with LLMs, and attempts to use confidence score as a measure. The combination of breaking down into sub problems and using confidence score is resonably novel.",
+    "label": 6
+  },
+  {
+    "id": "Math_4_AI",
+    "text": "Previous work has proposed a method for sketching the proof before generation. This proposal introduces an additional step to iteratively generate solutions, providing difference with previous work.",
+    "label": 6
+  },
+  {
+    "id": "Safety_4_AI",
+    "text": "There is work on trying to generate previously unseen types of attacks against safety classifiers (Automated Adversarial Discovery for Safety Classifiers, TrustNLP '24). There are differences in details since this idea aims to use related (adjacent to adversarial) scenarios and compose them together to form new types of attacks.",
+    "label": 6
+  },
+  {
+    "id": "Safety_4_AI",
+    "text": "The proposal describes a prompting pipeline at inference time to extrapolate possible adversarial scenarios before giving the answer. With some novelty, the idea is still somewhat similar to the existing prompt-driven LLM safeguarding research like (Zheng et al., 2024) ",
+    "label": 5
+  },
+  {
+    "id": "Coding_8_Human",
+    "text": "The proposed method is similar to https://arxiv.org/abs/2210.03493; https://aclanthology.org/2023.findings-acl.216/",
+    "label": 4
+  },
+  {
+    "id": "Coding_8_Human",
+    "text": "Mapping natural language to custom applications is a hugely impactful capability, and doing so automatically is really interesting. I like the focus on autoprompting for these types of translations, as the task is feasible since it builds off some of the \"few shot prompting\" that developers might normally do to add NL functionality, with a more automatic process that has real system checks/verifications (e.g., running the applications through containers).  A related work from HCI tries to enable individual developers to add such NL functionality to their  own applications via a DSL + NL program signatures (https://jackieyang.me/reactgenie/). This work is distinguished, as it would empower adding such NL functionality to any application, without changing the code.",
+    "label": 7
+  },
+  {
+    "id": "Math_2_Human",
+    "text": "The proposed idea seems a simple application of Tree-of-Thought prompting in the field of mathematical proofs. However, there are already a lot of works exploring the tree search strategies in complex tasks such as math word problems. For example, [1] conducted tree-structured proof search and augmented the success proofs in expert iteration for formal mathematical statement proving. Generally, it should be a known knowledge that the tree search strategies can enhance mathematical reasoning by enlarging the search space and utilising external tools. [1] Polu S., Han J., Zheng K., et al. Formal Mathematics Statement Curriculum Learning. ICLR 2023",
+    "label": 2
+  },
+  {
+    "id": "Math_2_Human",
+    "text": "The approach is just applying the approach specified in the paper: Tree of Thoughts: Deliberate Problem Solving with Large Language Models (https://arxiv.org/pdf/2305.10601) in the mathematical proof domain. The introduction of a \"stop current thought\" action to terminate unproductive thinking paths is different from the Tree of Thought approach, where they instead prompt the language model to evaluate each thought candidate as \"sure/maybe/impossible\". This is a minor distinction which will lead to similar behavior for the models as long as the model is robust to prompt formatting changes. There is no novelty as this is just applying a solution a paper has suggested and not coming up with a novel approach.",
+    "label": 2
+  },
+  {
+    "id": "Safety_4_AI_Rerank",
+    "text": "Combining concept embeddings and into diffracted patterns is a unique way of attempting to preserve the gist of the information while likely losing specific identifiers that may be present in the text itself. Further, it would be difficult to reverse engineer the PII from the transformed text itself unless one knows what filter has been applied (constellation).",
+    "label": 9
+  },
+  {
+    "id": "Safety_4_AI_Rerank",
+    "text": "I think the method is basically an auto-encoder process while trying to disentangle privacy concepts in the embedding space. The semantic space disentangling has been applied in many other tasks to control model outputs.",
+    "label": 5
+  },
+  {
+    "id": "Factuality_10_AI",
+    "text": "There are some similar works on leveaging the meta-cognitive confidence (https://aclanthology.org/2024.naacl-long.106.pdf) or self-consistency (https://research.google/blog/zero-shot-adaptive-prompting-of-large-language-models/) in question answering, but the focus on factuality is different and (from my perspective) better.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_10_AI",
+    "text": "The idea to separate the generation parts with different confidence scales is interesting and reasonable. For different confidences, an adaptive strategy is proposed to deal with them. This is clearly different from previous works of confidence calibration.",
+    "label": 8
+  },
+  {
+    "id": "Factuality_10_AI",
+    "text": "I found some existing work on having models quantify the uncertainty in their answers, or measure uncertainty through some other way (https://arxiv.org/pdf/2406.03441, https://arxiv.org/html/2405.01563v1). However, the specific method of dealing with uncertainty seems to be novel.",
+    "label": 6
+  },
+  {
+    "id": "Coding_3_Human",
+    "text": "The novelty is basically from Debate + Self-critic. It seems that no one has done this before. Meanwhile, using multi-agent system for coding is not a new thing.",
+    "label": 5
+  },
+  {
+    "id": "Coding_3_Human",
+    "text": "Previous works have extensively studied multi-agent code generation (e.g., problem analyzer, programmer, est case generator, code reviewer) and multi-agent debate in general domains (e.g., QA, math). But as far as I know, there is still not a specific paper focusing on multi-agent debate in code generation. While it seems this idea is just a combination of two widely-adopted ideas, I still think it would.be valuable because: (1) most previous works just conducted just proof-of-concept experiments, and I think there is still room for fully exploting the advantage of multi-agent debate (e.g., Akbir's ICML best paper). (2) I think code is a suitable domain to start with. In particular, using LMs to generate high-quality unit tests is a timely and important research topic. ",
+    "label": 6
+  },
+  {
+    "id": "Coding_7_AI",
+    "text": "The proposed idea has some similarities with https://arxiv.org/pdf/2402.05403, but it is tailored for coding domain so I think it is reasonably novel.",
+    "label": 6
+  },
+  {
+    "id": "Coding_7_AI",
+    "text": "This idea is interesting and somewhat novel based on my understanding of the problem space. I haven't seen any works that are substantially similar to the proposed idea. There are also some interesting related ideas in the Fallback Plan e.g. using the axioms for code evaluation instead of generation. ",
+    "label": 6
+  },
+  {
+    "id": "Factuality_5_Human",
+    "text": "Grounding each generation step (i.e. sentences) has been widely explored by the research community. This approach does not differ significantly from other AUG pipelines. ",
+    "label": 1
+  },
+  {
+    "id": "Factuality_5_Human",
+    "text": "There are several papers that I'm aware of that teaches the model to cite or quote. For example, [1] Teaching language models to support answers with verified quotes, [2] Enabling Large Language Models to Generate Text with Citations",
+    "label": 4
+  },
+  {
+    "id": "Factuality_5_Human",
+    "text": "While the proposed idea is kind of novel, when you look deeper into it, it is not  necessarily novel at all, especially considering that there is a step of  citing your sources that comes with a very huge assumption that LLM knows  where the inline source citation is coming from, which is untrue for any current  pure LLM models on the market and is a huge area of research trying to attribute  considerations or LLM outputs to the oration sources that come from pre-training data. Similar papers: Chain-of-Thought Improves Text Generation with Citations in Large Language Models",
+    "label": 3
+  },
+  {
+    "id": "Coding_2_AI_Rerank",
+    "text": "This idea has some novelty but also bears similarity to some existing works such as Creator (https://arxiv.org/pdf/2305.14318) and Craft (https://arxiv.org/pdf/2309.17428). The exploration part where the LLM generates code snippets to explore diverse functionalities of an API is somewhat novel to me (although it's likely that there are related works). The \"iterative learning from execution\" part is similar to existing works such as the two above, and the \"exploration + retrieval augmented generation\" part is also similar to Craft. ",
+    "label": 4
+  },
+  {
+    "id": "Coding_2_AI_Rerank",
+    "text": "The idea of semantic playground exploration (SPE) is very interesting, however, after checking the concrete implementation plans, the process of generating 5-10 usage cases and use them as context seems somewhat similar to existing methods that uses APIs with test case demonstrations.",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_1_Human",
+    "text": "The idea of applying Fisher information to quantify the sensitivity to input perturbation is interesting. Previous work mostly explores perturbing the text inputs and applying ensemble method to marginalize over the predictive distributions. However, the idea seems to be more or less a direct application of existing methods in vision, which would weaken its intrinsic novelty.",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_1_Human",
+    "text": "Using Fisher information for uncertainty measurement is not something new, but applying it successfully in LLM would require certain amount of technical contributions, which would make this work reasonably novel.",
+    "label": 6
+  },
+  {
+    "id": "Math_4_Human",
+    "text": "The idea of Focal-Contrast Tree Search is novel. The closest related works I can think is Tree-of-Thoughts and Graph-of-Thoughts. Compared to them, this proposal utilizes the paraphrasing capabilities of LLMs, and included specific designs for Math Word Problems.",
+    "label": 7
+  },
+  {
+    "id": "Math_4_Human",
+    "text": "The essence of this idea is actually very similar to MCTS and Self-consistency. Focal-contrast branching is similar to MCTS, while the rest paraphrasing and majority voting is similar to Self-consistency.",
+    "label": 4
+  },
+  {
+    "id": "Math_2_AI_Rerank",
+    "text": "Introducing constraints to LLM math reasoning is an interesting idea. I think the idea and steps are clear to me. However, some details might have an influence on if the method can successful, e.g., how to do the validation when the constraint is complex. Also, on the other hand, if you rely on the model to generate the verfication, the efficiency can be low when the problem require a lot of threads.",
+    "label": 7
+  },
+  {
+    "id": "Math_2_AI_Rerank",
+    "text": "This approach sets up solving a math problem as the well studied Constraint Satisfaction Program (CSP). The approach is able to use prompting to identify the variables, constraints and construct a relation graph. After this is constructed, they apply constraints in a sequential manner (forward-checking) and if a contradiction is found, then backtracking is occurred to return to a previous consistent state. From what I can tell, there doesn't seem to be an existing approach that applies this to LLM reasoning for ensuring constraint consistency, so there is some novelty here. ",
+    "label": 6
+  },
+  {
+    "id": "Factuality_1_AI_Rerank",
+    "text": "Breaking a claims into sub-claims is not new, but breaking a question into hierarchical questions is less prevalent. Also aggregating a sequence of confidence score to generate confidence for a higher level confidence is an interesting statistical question.  ",
+    "label": 7
+  },
+  {
+    "id": "Factuality_1_AI_Rerank",
+    "text": "This idea is probably very close to Tree-of-thoughts, and self-check techniques such as step-by-step prompting with NLI, or least-to-most prompting.",
+    "label": 5
+  },
+  {
+    "id": "Multilingual_7_Human",
+    "text": "Relying only on the LLM to adapt generations to specific dialect is certainly a novel idea, relying on the LLM \"knowing\" more about a dialect than it implicitly uses during generation -- it's basically prompting itself. I am not sure if this would achieve SoTA but it certainly seems novel.",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_7_Human",
+    "text": "Although the proposed use case (dialect-aware translation) is novel, the proposed technique has been applied to machine translation of rare words (https://arxiv.org/abs/2302.07856). The proposed method is fairly simple, which only involves changing the instruction to the LLMs, making it challenging to argue that the new use case is sufficient for another paper. The main interesting novelty from the proposed pipeline is automatically identifying the list of words that are different in two dialects. Although not currently stated in the proposal, if properly validated, the list-identification method and the resulting word list across all samples could be a valuable contribution.",
+    "label": 6
+  },
+  {
+    "id": "Coding_6_AI_Rerank",
+    "text": "The proposed idea has some similarities with https://arxiv.org/pdf/2402.05403, but it is tailored for coding domain so I think it is reasonably novel.",
+    "label": 6
+  },
+  {
+    "id": "Coding_6_AI_Rerank",
+    "text": "This idea is interesting and somewhat novel based on my understanding of the problem space. I haven't seen any works that are substantially similar to the proposed idea. There are also some interesting related ideas in the Fallback Plan e.g. using the axioms for code evaluation instead of generation. ",
+    "label": 6
+  },
+  {
+    "id": "Factuality_8_Human",
+    "text": "The problem of models not handling negation properly is a very common problem, especially among propriety LMs such as claude-35-sonnet. ",
+    "label": 8
+  },
+  {
+    "id": "Factuality_8_Human",
+    "text": "The overall prompting pipeline does not sound very novel (prompt expansion).However, applying such pipeline to negation is under-explored in literature, so I think it is reasonably novel.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_8_Human",
+    "text": "The idea of query rewrite is isn't novel, but the thought of using it to explicitly solve the long-challenging problem of negation is very likely a fresh take on the problem. Overall proposed approach, however, follows the straight-forward NLP pipeline of in-context learning approach. Nonetheless, I feel the overall approach holds value, is reasonable, and overall somewhat novel.",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_5_AI",
+    "text": "This work has been done very similarly in a Multi-Agent setting, see Du et al., 2023 (https://arxiv.org/pdf/2305.14325) and Zhang et al., 2024 (https://arxiv.org/pdf/2310.02124)",
+    "label": 1
+  },
+  {
+    "id": "Uncertainty_5_AI",
+    "text": "I have seen some other related works, which explore the idea of socratic dialogue for improving performance e.g. this blog - https://princeton-nlp.github.io/SocraticAI/, this paper - https://arxiv.org/abs/2303.08769 etc. ",
+    "label": 4
+  },
+  {
+    "id": "Factuality_5_AI_Rerank",
+    "text": "The essence of the idea is basically to leverage \"self-consistency\" and \"self-verification\" of LLMs, which is not quite new in the community. The \"semantic\" condition is also purely based on LLMs. At least there is some room for exploration with controllable external tools.",
+    "label": 4
+  },
+  {
+    "id": "Factuality_5_AI_Rerank",
+    "text": "The idea to generate alternative claims and verify their factuality by comparing their differences looks novel to me. However, I can miss something as I am not super familiar with existing works.",
+    "label": 6
+  },
+  {
+    "id": "Coding_6_Human",
+    "text": "The idea is not novel, because there is a very similar paper published in 2023: RepoCoder: Repository-Level Code Completion Through Iterative Retrieval and Generation. This related work has similar motivation, but is more solid than the proposed idea. Especially, they propose a repo-level benchmark, which is a more sophisticated and realistic setting.",
+    "label": 2
+  },
+  {
+    "id": "Coding_6_Human",
+    "text": "The two main ideas are (1) adding context, and (2) correcting the model generations. The second is not new (a lot of papers explored it). The first doesn't make sense at all for HumanEval or MBPP (those are simple python coding problems with no context).",
+    "label": 1
+  },
+  {
+    "id": "Coding_6_Human",
+    "text": "Although there are many LLM-based coding assistant or automated researcher, specifically focusing on improve context awareness is a concrete and novel problem. This could also potentially lead to significant improvements, depending on how important context-awareness is on the target dataset.",
+    "label": 6
+  },
+  {
+    "id": "Safety_1_AI_Rerank",
+    "text": "The proposal idea is leveraging a mixture-of-expert strategy to develop a more comprehensive defense method for improving the LLM robustness. Bringing a diverse expert council is a reasonably novel idea in LLM Safety based on my knowledge. But I'm not an AI safety expert -- might have limited knowledge on it.",
+    "label": 6
+  },
+  {
+    "id": "Safety_1_AI_Rerank",
+    "text": "Safeguarding using multi-agent council is clearly novel. Similar ideas have not be seen in the related work.",
+    "label": 8
+  },
+  {
+    "id": "Factuality_7_AI",
+    "text": "The work is novel as it tries to prime the model with relevant temporal context and then tries to navigate it generation to be more true temporally. It uses a three step-approach, out of which the first two steps are novel. The final step is basically self-refine, which is over used in academia.",
+    "label": 7
+  },
+  {
+    "id": "Factuality_7_AI",
+    "text": "The idea of providing temporal context to activate LLMs to generate accurate answer that is consistent with it is novel. I am not aware of similar prompting techniques.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_7_AI",
+    "text": "I found the generated idea to be reasonably novel. In the space of temporal reasoning, the idea of priming the model to farm factually resonant ideas is somewhat new. Instead of explicitly retrieving potentially relevant factors from a corpus, asking a LLM for temporally resonant ideas is interesting, although a bit infeasible with some limitations in my opinion.",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_5_AI",
+    "text": "It's unclear to me how this approach is particularly different from prior work on using LLMs to simulate responses from different demographics, which has known limitations (see this paper for lit review and analysis of caricatures: https://openreview.net/pdf?id=LGX5hFWPK2). I think the analysis that involves recruiting native speakers is interesting and could be made central to the project.",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_5_AI",
+    "text": "The idea of incorporating detailed sociolinguistic role-play into prompts to generate contextually appropriate language is novel. While previous works have explored context-based prompting and cultural adaptation, your approach adds a new dimension by explicitly framing the tasks within specific social contexts, relationships, and norms.",
+    "label": 8
+  },
+  {
+    "id": "Safety_5_AI_Rerank",
+    "text": "The idea to use perceptibility using LLM is interesting.",
+    "label": 8
+  },
+  {
+    "id": "Safety_5_AI_Rerank",
+    "text": "The proposed idea and framework of using a fog of phrases with varied semantics, inspired by red-teaming techniques from vision, which is clearly novel and makes major differences from all existing ideas. However, fundamentally, the notion of stochastically modifying adversarial prompts by substituting similar concepts is very similar to existing studies, such as: (Su et al., 2024) https://arxiv.org/abs/2408.01420. Therefore a score of 7 (between 6 and 8) is given.",
+    "label": 7
+  },
+  {
+    "id": "Coding_2_AI",
+    "text": "I believe multi-modalities has been discussed in multiple papers in InSynth and Photocode: A Multimodal Learning Framework for Generating Code from Images and Descriptions. But this is somewhat novel with LLM reasoning.",
+    "label": 5
+  },
+  {
+    "id": "Coding_2_AI",
+    "text": "This paper proposes training a language model to understand math and code images, and then further enabling it to generate images (via code) to assist its reasoning during intermediate steps for coding problems. This approach is straightforward, but a strong vision-language model (VLM) that can code could still be of interest to the community. There seem to be some technical flaws in the research idea. It’s unclear how CLIP is connected to the language model and how training a CLIP model would enable the LM to understand images. Maybe the author wants to use a llava-style fine-tuning method by integrating the LM and CLIP together.",
+    "label": 6
+  },
+  {
+    "id": "Math_1_Human",
+    "text": "The breaking down into subtask part has been widely regarded as a way to tackle complex problems, e.g., https://openreview.net/forum?id=_nGgzQjzaRy. The retrieving from existing pool of similar subtasks may be considered as somwhat novel and interesting.",
+    "label": 6
+  },
+  {
+    "id": "Math_1_Human",
+    "text": "I extracted some novel ideas of using retrieval to help with reasoning. However, the proposal is not very well written and I think a lot of things here don't make sense. I will elaborate later.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_4_AI_Rerank",
+    "text": "The idea is not sufficiently novel and well-motivated because it generates retrieves from itself rather from an external database. It is still unclear why we do that. The reasons of hallucinations like a lack of factual context etc. and the that the proposed methods can circumvent them are not clear or discussed in this proposal.",
+    "label": 4
+  },
+  {
+    "id": "Factuality_4_AI_Rerank",
+    "text": "1. Similar multi-hop approaches with language models have been applied in other tasks such as question answering, fact-checking, etc (e.g. https://arxiv.org/pdf/2304.13157). 2. The idea of using a language model as a judge, although for relevancy and reliability, is difficult to differentiate previous work on model-based evaluation, or language model as fact-checker (https://aclanthology.org/2020.fever-1.5/).",
+    "label": 5
+  },
+  {
+    "id": "Uncertainty_4_Human",
+    "text": "The idea to use the consistency of the generated references as the confidence measure is novel to me.",
+    "label": 8
+  },
+  {
+    "id": "Uncertainty_4_Human",
+    "text": "This idea is somehow related to the series of selfgptcheck works that use consistency-based methods to do uncertainty estimation. However, it connects consistency-based methods with other fact-verification methods that ask models to provide references and do fact-check based on the references. It is somehow novel.",
+    "label": 6
+  },
+  {
+    "id": "Safety_5_Human",
+    "text": "Similar defenses have been tried in the last year.",
+    "label": 3
+  },
+  {
+    "id": "Safety_5_Human",
+    "text": "Though perhaps not promoted enough, similar ideas of repeatedly adding clues that are adversarial against some defense mechanism haven already been explored in the safety literature. It is also not hard to imagine this can circumvent simple cautionary prompt defense. However, the jailbreak field (especially for LLM safety) itself is a relatively new field so it is normal that some branches not getting enough attentions. It is possible this proposal can help promote this branch. In this sense, I think this proposal deserves some novelty credits to foster diversity in safety research field. ",
+    "label": 4
+  },
+  {
+    "id": "Safety_5_Human",
+    "text": "In-context jailbreaking is a relatively new idea that works on models with long window size. I have not encountered literatures that do prompt-driven safeguard regarding such adversarial attacking techniques.",
+    "label": 7
+  },
+  {
+    "id": "Coding_7_AI_Rerank",
+    "text": "The building block of the idea is somewhat existing in the current work. For example, reflection mechanism in Generative Agent paper from Stanford is similar to the global context. I haven't seen this (exact) iterative prompting method in long-form code generation. But it's forseable that some similar methodology already exists.",
+    "label": 6
+  },
+  {
+    "id": "Coding_7_AI_Rerank",
+    "text": "This idea aims to resolve a real-world problem: when the code intent is complicated and requires a system-level development, LLMs can use the proposed APD to appropriately handle that chunk by chunk. The idea is different from the existing task-decomposition way or multi-agent way, but the effectiveness needs to be verified by the experiments. In addition, the proposed global context is very similar to claude's artifact feature, but since they did not publish any paper, I think this idea is reasonably novel.",
+    "label": 6
+  },
+  {
+    "id": "Math_3_AI_Rerank",
+    "text": "The idea is reasonably novel. It attempts to break down problems into sub-problems with LLMs, and attempts to use confidence score as a measure. The combination of breaking down into sub problems and using confidence score is resonably novel.",
+    "label": 6
+  },
+  {
+    "id": "Math_3_AI_Rerank",
+    "text": "Previous work has proposed a method for sketching the proof before generation. This proposal introduces an additional step to iteratively generate solutions, providing difference with previous work.",
+    "label": 6
+  },
+  {
+    "id": "Bias_2_AI",
+    "text": "There exist some work that explore multi-stage prompt tuning for political perspective detection (https://www.mdpi.com/2076-3417/13/10/6252) and other prompt based techniques to reduce social bias in LLMS (https://arxiv.org/pdf/2404.17218v1) which take inspiration from social pscyhology theories. This idea is unique in that it adopts lessons and complexities from the multi-faceted nature of human empathy and bias reduction to LLMs which to the best of my knowledge is unique, yet the method of doing so (multi-stage prompting) is not a unique technique which makes it difficult to turn it into a new paper.",
+    "label": 5
+  },
+  {
+    "id": "Bias_2_AI",
+    "text": "I have not seen papers focused on improving model empathy. However, the approach is very similar to chain-of-thoughts, which has been explored in terms of debiasing.",
+    "label": 6
+  },
+  {
+    "id": "Coding_3_AI_Rerank",
+    "text": "The conceptual idea of multiple agents taking on multiple perspectives, as applied to the coding domain is not the first.  However, for the coding task, no works based on my search has looked at multiple personas whom may value different outcomes, such as performance, code readability, security.   From a technical approach, it seems like it's thought through some idea for sourcing advices from the experts, and figuring out consensus, which might help with issues when its hard to meet competing perspectives.   However, one core issue I have is if we care about these things in the first place (AND we actually have automatic metrics to check these things in code), why can't we use other optimization techniques (e.g., MCTS) to search for solutions that best satisfy these multiple objectives?    Multi Agent/Perspectives https://paperswithcode.com/paper/mapcoder-multi-agent-code-generation-for https://paperswithcode.com/paper/enhancing-large-language-models-in-coding",
+    "label": 5
+  },
+  {
+    "id": "Coding_3_AI_Rerank",
+    "text": "It draws inspiration from other work in compound AI and test-time inference, especially around personas for chat tasks, but it is novel in applying it to code tasks. It also draws unique inspiration from how actual code review processes work on Github for pull requests and feature updates.",
+    "label": 7
+  },
+  {
+    "id": "Coding_3_AI_Rerank",
+    "text": "Some Googling found similar papers that adopt multiple roles for revising LLM outputs, including for code. Examples: https://arxiv.org/abs/2307.05300, https://arxiv.org/abs/2406.08979. They don't adopt this specific \"code review\" setting though, so it's not identical to the related work I've found.",
+    "label": 3
+  },
+  {
+    "id": "Safety_3_AI",
+    "text": "Combining concept embeddings and into diffracted patterns is a unique way of attempting to preserve the gist of the information while likely losing specific identifiers that may be present in the text itself. Further, it would be difficult to reverse engineer the PII from the transformed text itself unless one knows what filter has been applied (constellation).",
+    "label": 9
+  },
+  {
+    "id": "Safety_3_AI",
+    "text": "I think the method is basically an auto-encoder process while trying to disentangle privacy concepts in the embedding space. The semantic space disentangling has been applied in many other tasks to control model outputs.",
+    "label": 5
+  },
+  {
+    "id": "Bias_4_AI_Rerank",
+    "text": "While the framework of debiasing based by prompt engineering is well known, the idea of trying to reach deeply embedded stereotypes in models by bringing up pretty unrelated analogies about the bias concepts in questions seems wildly novel! I would be very excited to see the results of this experiment.",
+    "label": 8
+  },
+  {
+    "id": "Bias_4_AI_Rerank",
+    "text": "Using different persona as role-playing prompt for LLMs is widely used. However, potentially, it can be effective in bias mitigation. The selected datasets are limited. Only close-source LLMs are used.",
+    "label": 4
+  },
+  {
+    "id": "Bias_4_AI_Rerank",
+    "text": "The idea proposed by the paper is called \"pivot prompts.\" It is very similar to in-context learning, but the key difference is that you are not learning from the examples. Instead, you are using certain sentences to drive the latent space from which you generate responses. While this concept may not be entirely novel in the broader context of using LLMs, it is something I haven't previously seen used to address bias issues in LLM responses. ",
+    "label": 6
+  },
+  {
+    "id": "Math_3_AI",
+    "text": "The main idea of the proposal is to improve LLMs' understanding of mathematical concepts by creating metaphors. The idea is novel because it remains largely unexplored how to bridge the semantic capabilities and mathematical reasoning capabilities. I think the idea is intuitive (aligned with how humans learn new concepts), and interesting (leveraging semantic capabilities for math reasoning). My main concerns are 1) based on the example, it seems like the quality of metaphors generated can be improved, 2) it is not clear how we can include compositionality into this process, or is it not a major target?",
+    "label": 6
+  },
+  {
+    "id": "Math_3_AI",
+    "text": "I haven't seen metaphor-related works for mathematical reasoning. In my opinion, using metaphors to help GPT understand math-related concepts is intuitive and could be effective for some problems.",
+    "label": 5
+  },
+  {
+    "id": "Multilingual_2_Human",
+    "text": "I am unaware of work on this topic. Multilingual research is typically undervalued.",
+    "label": 7
+  },
+  {
+    "id": "Multilingual_2_Human",
+    "text": "The idea is so simple without any technical contribution. Lack enough baselines such as translation-based methods. Have no idea on how this method can be applied in real-life scenarios.",
+    "label": 2
+  },
+  {
+    "id": "Multilingual_2_Human",
+    "text": "This work is somehow novel for multilingual research community, since there haven't been a formal work studying automatic prompt generation for multiple language automatically. But this work seems not inspiring enough for the whole community. ",
+    "label": 6
+  },
+  {
+    "id": "Factuality_7_AI_Rerank",
+    "text": "I haven’t seen similar work dealing with the factuality problem when working with long documents (though it might have been that I’m not using the correct keywords) The approach is sensible, seems novel, and likely to work out fine, so I can see it being a clear accept.",
+    "label": 8
+  },
+  {
+    "id": "Factuality_7_AI_Rerank",
+    "text": "The idea of using text-based hierarchical context distillation to provide summary to improve LLMs question answering performance is novel. Meanwhile, augmenting LLMs Q&A with compressed context / summaries itself has been widely proposed and explored in existing literature, such as [1].  [1] LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression. Jiang et al. ACL 2024.",
+    "label": 5
+  },
+  {
+    "id": "Math_4_AI_Rerank",
+    "text": "The main idea of the proposal is to improve LLMs' understanding of mathematical concepts by creating metaphors. The idea is novel because it remains largely unexplored how to bridge the semantic capabilities and mathematical reasoning capabilities. I think the idea is intuitive (aligned with how humans learn new concepts), and interesting (leveraging semantic capabilities for math reasoning). My main concerns are 1) based on the example, it seems like the quality of metaphors generated can be improved, 2) it is not clear how we can include compositionality into this process, or is it not a major target?",
+    "label": 6
+  },
+  {
+    "id": "Math_4_AI_Rerank",
+    "text": "I haven't seen metaphor-related works for mathematical reasoning. In my opinion, using metaphors to help GPT understand math-related concepts is intuitive and could be effective for some problems.",
+    "label": 5
+  },
+  {
+    "id": "Coding_4_AI_Rerank",
+    "text": "This idea is basically a combination of decompostion-based code generation and self-refine/self-debug. There are a lot of previous works studying these two topics separately. And I don't think simply combining them shows any novelty.",
+    "label": 3
+  },
+  {
+    "id": "Coding_4_AI_Rerank",
+    "text": "This paper proposes to study how explicitly prompt the model with divide and conquer strategy + a critic step can improve its code generation quality. The idea of enforcing divide and conquer strategy is very classic and might worth a comprehensive investigation. Adversarial critic itself aren't novel and is a widely used prompting practice, such as LM-as-judge.",
+    "label": 6
+  },
+  {
+    "id": "Bias_3_AI_Rerank",
+    "text": "This proposal focuses on a known problem for not only LLMs but also past machine learning models — produced outputs will encode societal biases. I do think that this proposal introduces a novel angle: by taking into account how biases shift over time, we might assume that models can generate more “progressive” results. This builds on existing works that leverage the encoded world knowledge that LLMs have, but applying it to debasing is an interesting perspective. ",
+    "label": 6
+  },
+  {
+    "id": "Bias_3_AI_Rerank",
+    "text": "To my best knowledge, the idea of prompting an LLM to leverage the historical changes and imagine the future trends on a certain type of social bias for the purpose of debiasing is novel, although I am aware that language models or other language technologies (e.g., word embeddings) could be used to study how social biases change over time by using training corpus from different times. I think this is an interesting idea because it prompts the model to reflect how a type of social bias has changed over time and it's possible that the generated content will be conditioned on the same trend as identified by the model. The proposed method addresses social biases in a more dynamic way than most existing approaches. ",
+    "label": 7
+  },
+  {
+    "id": "Factuality_6_Human",
+    "text": "It's a good idea. I think it's worthy to explore. Even the final results is negative, the author also proposed the fallback plan. It can make us better understand llm and improve it.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_6_Human",
+    "text": "The overall idea share quite similar idea with program-of-thought (PoT). The only difference is that there is an additional step where an LLM is prompted to decide whether to use code or not.",
+    "label": 3
+  },
+  {
+    "id": "Factuality_6_Human",
+    "text": "The ideal is mostly not novel, because there are many papers in the last two years about teaching language models to use tools like code execution to enhance their reasoning abilities. ToolFormer is one prominent example, and there are others specialized in calling image analysis functions, search engines, etc. ",
+    "label": 3
+  },
+  {
+    "id": "Multilingual_9_AI_Rerank",
+    "text": "It's unclear to me how this approach is particularly different from prior work on using LLMs to simulate responses from different demographics, which has known limitations (see this paper for lit review and analysis of caricatures: https://openreview.net/pdf?id=LGX5hFWPK2). I think the analysis that involves recruiting native speakers is interesting and could be made central to the project.",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_9_AI_Rerank",
+    "text": "The idea of incorporating detailed sociolinguistic role-play into prompts to generate contextually appropriate language is novel. While previous works have explored context-based prompting and cultural adaptation, your approach adds a new dimension by explicitly framing the tasks within specific social contexts, relationships, and norms.",
+    "label": 8
+  },
+  {
+    "id": "Factuality_3_AI_Rerank",
+    "text": "The proposed method is novel in its usage of hypothetical scenarios to detect hallucination, opposed to the majority of prior work that use fact-checking methods. While one can see some similarities between this method and some multi-model collaboration approaches for abstention/conflict resolution, but the application to hallucination detection seems novel.",
+    "label": 7
+  },
+  {
+    "id": "Factuality_3_AI_Rerank",
+    "text": "Frankly I am not sure how the counterfactuals mentioned in this idea can help reduce the hallucination. But the overall pipeline and method seems not too different from other work.",
+    "label": 3
+  },
+  {
+    "id": "Safety_1_AI",
+    "text": "- The main idea is to use (another instance of) the LLM itself to review the input prompt, mask out bad chunks that may trigger undesirable behavior, before inputting - The masking is done by a form of \"self-bootstrap\": the model asks itself what are some potential harmful prompts relating to the input, and use that to help sanitize the input - The idea has limited novelty in that using it is common knowledge that auxiliary calls to LLMs can improve performance in general (utility-wise, safety-wise, robustness-wise, etc.); the proposed idea is an instance of trading off inference-time compute for performance. It is still somewhat novel in that the reviewer is not aware of such specific existing implementations.",
+    "label": 5
+  },
+  {
+    "id": "Safety_1_AI",
+    "text": "The idea is relatively novel. There are similar ideas in [1], in which they design an instruction hierarchy for the model to prioritize certain instructions. Eric said that ideally, he wanted the model to simply not see those harmful content in the user instructions.   https://arxiv.org/abs/2404.13208",
+    "label": 7
+  },
+  {
+    "id": "Factuality_5_AI",
+    "text": "The idea of decomposing a complex task/question into subparts is not novel per se (e.g., https://arxiv.org/abs/2210.02406). But to the best of my knowledge, using confidence scores for verification and refinement is novel.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_5_AI",
+    "text": "This method is very similar to previous work such as self-ask (https://arxiv.org/pdf/2210.03350) and decomposed prompting (https://arxiv.org/pdf/2210.02406), which breaks down a complex questions into sub-questions. It is also similar to self-refine which iteratively prompts the model to refine the answer (https://arxiv.org/pdf/2303.17651).",
+    "label": 3
+  },
+  {
+    "id": "Multilingual_4_Human",
+    "text": "(First of all, I will note I am not familiar with recent story generation work, but I have seen some work in the area that I found quite interesting at conferences, particularly on the literature analysis + compling side.)   The idea of combining large-scale sampling to generate a story top-down (filling in themes and plot structure before actual text) seems quite novel and even comparable to the human process of writing stories, where raw text (usually) follows ideation.  In terms of the multilingual side, I suppose that the hypothesis is that for low-resource languages, LMs suffer in maintaining long-range generation consistency which means stories won't be very coherent. Top-down planning is intended to improve this. That seems obvious in retrospect, but I can't find much similar work on this topic.",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_4_Human",
+    "text": "Constraining an LLM to generate story based on a narrative prompt is not novel (https://arxiv.org/pdf/2402.05435), not is generating Q&A about a story (https://arxiv.org/pdf/2404.02800). Using it in the multilingual setting might be the only novel contribution in this idea.  ",
+    "label": 4
+  },
+  {
+    "id": "Safety_2_AI_Rerank",
+    "text": "There are many works that try to use a self-refine loop. See [1] [2] [3].  [1] https://arxiv.org/abs/2303.17651 [2] https://arxiv.org/abs/2212.08073 [3] https://arxiv.org/abs/2407.04295",
+    "label": 2
+  },
+  {
+    "id": "Safety_2_AI_Rerank",
+    "text": "Bootstrapping LLM's generation to improve its adversarial robustness is relatively new to the literature.",
+    "label": 8
+  },
+  {
+    "id": "Factuality_9_AI",
+    "text": "Prompting the model to identify its own hallucination has been studied by previous work. While this work has expanded with some more sophisticated pipeline design, it is not very novel.",
+    "label": 3
+  },
+  {
+    "id": "Factuality_9_AI",
+    "text": "I think the idea of asking models to explore the origins of hallucinations is interesting. But the proposed method ",
+    "label": 7
+  },
+  {
+    "id": "Multilingual_7_AI",
+    "text": "Combining neural methods with symbolic reasoning to improve parsing for low-resource languages and vernaculars is a novel approach. While neuro-symbolic methods have been explored in other contexts, their application to parsing these specific language forms is not widely covered, offering fresh insights and potential advancements in the field.",
+    "label": 8
+  },
+  {
+    "id": "Multilingual_7_AI",
+    "text": "There hasn't been a work leveraging symbolic grammar rules for vernacular parsing in in-context learning setting. ",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_2_AI",
+    "text": "From my perspective, this idea is largely just adopting (multi-view) self-reflection in the scenario of uncertainty estimation.",
+    "label": 3
+  },
+  {
+    "id": "Uncertainty_2_AI",
+    "text": "I am not aware of any work combining uncertainty and multi-perspectives, although I have limited knowledge in the uncertainty literature, i.e., high uncertainty as a reviewer. By combining uncertainty and multi-perspectives, this project would explore a different sense of \"uncertainty\" that is more similar to considering ambiguity in the prompt/question. This approach, however, probably won't help with high confidence due to wrong associations learned by the model, i.e., if the model inherently store the knowledge wrong, which is the goal suggested in the Problem Statement.",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_2_AI",
+    "text": "I think this idea is related to LLM debate (there are already a few papers about this). Also, it's related to Self-Critique.",
+    "label": 5
+  },
+  {
+    "id": "Uncertainty_2_AI",
+    "text": "The idea of looking at alternative reasoning chains to answer a question isn't novel per say, and there exist a few existing research efforts that make use of this technique. However, for the specific case of measuring models confidence and evaluating uncertainity, I'm not sure if there exist any prior work with this specific approach.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_11_AI_Rerank",
+    "text": "Using pruned context to improve the relevance and conciseness in Long-Form Generation is in general an interesting idea. However, the authors seem to have limited understanding over the previous work on retrieval. The whole thing can be factored as an retrieval+re-ranking framework that has been explore in the retrieval community (sparsely score many chunks and ask the model to re-rank the top chunks).There are many things that are not easy in this scenarios: how to get a good retriever that can handle semantically rich and complex writing tasks? The idea should be re-factored with improved understanding on retrieval,. Yet TF-IDF can still be a baseline starting point.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_11_AI_Rerank",
+    "text": "I couldn't find similar works. There are some works in network pruning (https://arxiv.org/abs/2306.11695), but I haven't seen works in summarization uses pruning.",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_2_Human",
+    "text": "The modification seems really small -- prompt model to add its (uncalibrated) confidence after each reasoning step. I don't think someone would propose this method as a new paper but maybe make it as a baseline to their new method.",
+    "label": 4
+  },
+  {
+    "id": "Uncertainty_2_Human",
+    "text": "Let the model explain its confidence in generation is definitely not a novel topic in uncertainty quantification, and numerous researches have demonstrated that, even for simpler scenarios where chain-of-thought is not needed (imagine a very simple classification task), such verbalized uncertainty is not reliable. On the other hands, examining step-by-step reasoning (in chain-of-thought) itself is also not a novel topic especially considering procedural supervision and dense rewards has been a hot topic in human-LLM alignment. ",
+    "label": 3
+  },
+  {
+    "id": "Uncertainty_2_Human",
+    "text": "For multi-step reasoning problems, decomposing the problems into single steps and then verifying each step or quantifying the uncertainty of each step have been quite explored (e.g., Xie et al., NeurIPS 2023; Weng et al., EMNLP Findings 23). The proposed approach mostly differs in that it requires LLMs to output uncertainty while decoding on-the-fly (instead of using a different prompt). ",
+    "label": 3
+  },
+  {
+    "id": "Safety_3_Human",
+    "text": "The idea of using an adjacent application to bring out a harmful response from an LLM is not new. Indeed, it is a bait and switch. However, I have not seen it being used in this specific setting.",
+    "label": 6
+  },
+  {
+    "id": "Safety_3_Human",
+    "text": "There have been many works in this area. Check out Section 3.2.3 [1], which describes many LLM-based jailbreak prompts generation techniques. You can also check out [2], which trains an LLM to generate jailbreak prompts.  [1] https://arxiv.org/pdf/2407.04295 [2] https://arxiv.org/abs/2311.08685",
+    "label": 2
+  },
+  {
+    "id": "Bias_1_Human",
+    "text": "This feels like a combination of counterfactual data augmentation that far precede this work (a lot of prior work that tries to \"balance\" data by replacing identity terms, including names, with counterfactuals, i.e., terms belonging to other identities) and few-shot prompting, neither of which are novel, and the combination does not feel like a significant or novel contribution either. I guess the novelty could lie in the task selection (e.g., applying existing resume studies like the 2004 Bertrand & Mullainathan study), which could provide a more grounded application, but this feels like it lacks some ecological validity -- e.g., is any company really using a language model to write hiring decisions on the basis of name and one phrase about their qualifications alone? ",
+    "label": 2
+  },
+  {
+    "id": "Bias_1_Human",
+    "text": "Name bias is definitely not novel, I easily found a lot simlar works on google scholar.",
+    "label": 1
+  },
+  {
+    "id": "Coding_7_Human",
+    "text": "Simulate novice coding seems a novel idea with real-world impact, as most of the existing works try to generate correct code. This project can provide insight for how LLMs understand/generate code errors, how can we leverage them for novice programmer education, and how human is different from LLM cognitively in term of writing code.",
+    "label": 8
+  },
+  {
+    "id": "Coding_7_Human",
+    "text": "The topic seems novel in terms of generating noice codes while the methods are not so clear. It seems that the methods are going to collect human error samples and then design prompts based on these data and use it with LLM to generate these codes (while LLMs might can already generate those codes with specific instructions). Also, the two-phase generation approach does not make much sense.",
+    "label": 5
+  },
+  {
+    "id": "Coding_7_Human",
+    "text": "While the idea of having model to generate programs that align with certain types of users, the idea of having models to mimic novice, imperfect programmers is not commonly explored. That being said, it is unclear to me, what is the motivation of creating novice-style, buggy programs using language models. I couldn't think of any using scenarios other than using LMs to help students do homework, which is not ethical and should be discouraged. The idea is new but not well-motivated.",
+    "label": 5
+  },
+  {
+    "id": "Safety_5_AI",
+    "text": "The idea of using LLM to critique its reasoning process can serve as a better defense technique.",
+    "label": 6
+  },
+  {
+    "id": "Safety_5_AI",
+    "text": "Prompting LLMs to judge, critique, and refine their own generated response is not a novel idea (e.g. self-refine https://arxiv.org/abs/2303.17651). Extending this to chain-of-thought does not sound very novel to me.",
+    "label": 4
+  },
+  {
+    "id": "Bias_4_AI",
+    "text": "I agree with the general premise that \"language models typically focus on avoiding or counterbalancing stereotypes,\" so I think that this adversarial approach provides a more novel take on bias mitigation compared to other prior work. That said, this work feels like one small step away from prior work that has focused on either (i) model \"self-reflection and correction\" on its outputs (e.g., chain-of-thought approach in \"The Capacity for Moral Self-Correction in Large Language Models,\" https://arxiv.org/pdf/2302.07459), or (ii) \"debates\" between an adversarial and base model (e.g., \"DEXPERTS: Decoding-Time Controlled Text Generation with Experts and Anti-Experts,\" https://arxiv.org/pdf/2105.03023; \"Detoxifying Text with MARCO: Controllable Revision with Experts and Anti-Experts,\" https://aclanthology.org/2023.acl-short.21.pdf). There are still some notable differences in this work, namely that it is a more nuanced and complex prompting approach than the \"self-correction\" types of prior work, and is a simpler intervention than some of the \"adversarial v. base model\" prior work -- but at the end of the day, it's still just prompting, which feels a bit like a slight chain-of-thought-like variation of the existing prompt-based approaches that merely instruct models to avoid outputting biased responses (e.g., https://docs.mistral.ai/platform/guardrailing/).",
+    "label": 6
+  },
+  {
+    "id": "Bias_4_AI",
+    "text": "Previous works have studied prompting LLMs to generate counter-stereotypes for mitigating biases (https://arxiv.org/pdf/2303.16173). The propoal does have a slightly different test bed – using queries that elicit stereotypes and using counter-stereotypes to specifically reformulate stereotypical responses. However, novelty is not clearly in the proposal in the current form and the proposal seems fairly incremental to existing work. ",
+    "label": 5
+  },
+  {
+    "id": "Factuality_1_Human",
+    "text": "While there is a fair bit of work dealing with multilingual hallucinations and reasoning in LMs that I was able to find through a cursory search, it seems like the only work that used translation-based approaches were explicitly targeted for the MT task (eg., using multiple pivot languages and marginalizing over them).",
+    "label": 7
+  },
+  {
+    "id": "Factuality_1_Human",
+    "text": "Previous work show how locating/editing knowledge could alleviate hallucination, but have not focus on the multi-lingual scenario. In the meantime, the idea of aligning answers in different language resonates with a few other work in machine translation/multilingual NLP.",
+    "label": 6
+  },
+  {
+    "id": "Coding_4_AI",
+    "text": "Fairness is rarely discussed in code generation.",
+    "label": 5
+  },
+  {
+    "id": "Coding_4_AI",
+    "text": "The idea seems to be applying ethical prompting to code which is applying a common idea to a subarea or a specific modality which is pretty straightforward.",
+    "label": 6
+  },
+  {
+    "id": "Coding_8_AI",
+    "text": "The building block of the idea is somewhat existing in the current work. For example, reflection mechanism in Generative Agent paper from Stanford is similar to the global context. I haven't seen this (exact) iterative prompting method in long-form code generation. But it's forseable that some similar methodology already exists.",
+    "label": 6
+  },
+  {
+    "id": "Coding_8_AI",
+    "text": "This idea aims to resolve a real-world problem: when the code intent is complicated and requires a system-level development, LLMs can use the proposed APD to appropriately handle that chunk by chunk. The idea is different from the existing task-decomposition way or multi-agent way, but the effectiveness needs to be verified by the experiments. In addition, the proposed global context is very similar to claude's artifact feature, but since they did not publish any paper, I think this idea is reasonably novel.",
+    "label": 6
+  },
+  {
+    "id": "Factuality_9_AI_Rerank",
+    "text": "I thought this was an interesting idea, but it looks like there is prior work studying similar setups as in [1, 2] This idea is still different in that it is proposing a prompting method building on top of these papers, but I wouldn’t say it’s a quite novel idea.  [1] Libo Qin, Qiguang Chen, Fuxuan Wei, Shijue Huang, and Wanxiang Che. 2023. Cross-lingual Prompting: Improving Zero-shot Chain-of-Thought Reasoning across Languages. In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, pages 2695–2709, Singapore. Association for Computational Linguistics.  [2] Jirui Qi, Raquel Fernández, and Arianna Bisazza. 2023. Cross-Lingual Consistency of Factual Knowledge in Multilingual Language Models. In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, pages 10650–10666, Singapore. Association for Computational Linguistics.",
+    "label": 4
+  },
+  {
+    "id": "Factuality_9_AI_Rerank",
+    "text": "This idea again seems to be related to generation sampling + some kind of voting -- which has been explored. But, I am not sure if this very specific case (generating multilingual responses and then verify) has been tried before.",
+    "label": 5
+  },
+  {
+    "id": "Uncertainty_5_Human",
+    "text": "Identifying LLM hallucination and measuring uncertainty using multiple LLM generation has been studied (e.g., Zhang et al., 2024, https://arxiv.org/pdf/2311.01740). Similar method is used in this work to deal with conflict evidence.",
+    "label": 4
+  },
+  {
+    "id": "Uncertainty_5_Human",
+    "text": "The papers I'm familiar with in the space of dealing with knowledge conflicts focus on characterizing when models will prefer one piece of information over the other, or deciding when to abstain from answering. This proposal focuses on a method to decompose reasoning about conflicting passages to lessen biases seen in the single step setting (preferring passages that agree with parametric knowledge, have a high n-gram overlap with the question, have a similar embedding to the question, etc).",
+    "label": 7
+  },
+  {
+    "id": "Uncertainty_5_Human",
+    "text": "I haven't found any work using this idea to solve this specific problem, but \"prompt the language model to adopt the persona of the evidence author\" is definitely not new. Many works have explored using perspective or persona to guide LM output [1][2]. But I do think the idea of using the person-driven generation + leveraging a deterministic algorithm grounded in social theory could be moderately novel.   [1] Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models, NAACL 2024 [2] PersonaGym: Evaluating Persona Agents and LLMs, arxiv 2024 (this comes in July but many cited papers in the Related work sections came before July)",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_3_AI_Rerank",
+    "text": "Not exactly the same prompting steps, but very similar idea: https://arxiv.org/pdf/2302.07856.",
+    "label": 3
+  },
+  {
+    "id": "Multilingual_3_AI_Rerank",
+    "text": "The idea of using intermediate states between a high resource and low resource language in machine translation has been explored in prior research, but using (synthetic) code-switched  texts as intermediate states seems novel. While how to construct the nested prompts is not clearly described in the proposal, the high level idea of the proposed approach can be interpreted as relying on word/phrase-level translations first, then translate the sentence structure, which is similar to works that use bilingual dictionaries for MT (https://arxiv.org/abs/2302.07856, https://aclanthology.org/2022.amta-research.11/). Regardless of the similarity, the motivation and implementation of the idea is still novel and could provide insights to the community. ",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_6_AI",
+    "text": "There is previous work linking permutated sentence groups and uncertainty (https://arxiv.org/abs/2104.10343) or uncertainty and prompts (https://arxiv.org/pdf/2209.07661). From my knowledge, I think it is novel to test how the the pompt uncertainty sensitivity is related to model calibration. One thing that would influence the success is the choice of the sentence groups, which can be hard and largely influence the performance, as shown in (https://arxiv.org/abs/2407.12512)",
+    "label": 5
+  },
+  {
+    "id": "Uncertainty_6_AI",
+    "text": "The method sounds like a prompt optimization with a specifical goal related to model confidence.",
+    "label": 5
+  },
+  {
+    "id": "Safety_4_Human",
+    "text": "Using LLMs to generate synthetic data has been explored as an effective technique. However, the proposal disentangles the pipeline to role-based LLMs and the roles are specific to the application being focused on.",
+    "label": 7
+  },
+  {
+    "id": "Safety_4_Human",
+    "text": "This method investigates the multi-LLMs collaboration in pretending unlearning, using only prompting methods instead of fine-tuning. I think avoiding fine-tuning for unlearning is somehow interesting as currently fine-tuning has shown negative impacts to LLMs. Further, the way to compound several LLMs for different roles is novel for this unlearning task. However, based on the description, I felt like the method sounds just like involving a detector to detect whether an input query is related to some key words and then answer with templates 'Sorry I don't know' if it is. This is very close to some safety works like LlamaGuard.",
+    "label": 4
+  },
+  {
+    "id": "Uncertainty_2_AI_Rerank",
+    "text": "The idea seems distinct from existing work, however important baselines, such as ensemble methods, consistency-based methods are not mentioned. ",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_2_AI_Rerank",
+    "text": "The idea of exploring ambiguities in an open-ended QA using a LLM-based iterative approach is novel. Although it can be said to draw loose inspiration from existing literature on QA (including question decomposition). One paper with a somewhat similar idea I found while doing some background search was this one - https://arxiv.org/html/2403.09972v1  However, overall, it is quite a novel approach in my opinion. ",
+    "label": 7
+  },
+  {
+    "id": "Multilingual_3_AI",
+    "text": "To my knowledge, the ability for LMs to faithfully generate American English dialects has not been well-explored. Even resource collection in this area has been modest.",
+    "label": 8
+  },
+  {
+    "id": "Multilingual_3_AI",
+    "text": "I am not familiar with the literature in this space. This approach aims to provide more fine-grained control based on linguistic spectrum, which could be new.",
+    "label": 7
+  },
+  {
+    "id": "Uncertainty_6_AI_Rerank",
+    "text": "The closest existing ideas are P(True) and self-contrast which apply such contrastive comparisons at the output (answer) level. However, this idea is clearly different in that it applies at the input (question) level with a novel graph-based method to extract confidence scores. Therefore it is a clearly novel idea.",
+    "label": 8
+  },
+  {
+    "id": "Uncertainty_6_AI_Rerank",
+    "text": "The statement of creating contrastive variants that subtly alter the difficulty or domain is vague to me. If the method is about creating some variants to probe the confidnece/difficulty, there is already previous work (https://arxiv.org/abs/2104.10343). If the method focuses on domain variants, it is hard for me to directly think of some ways to create the same knowledge, different domain queries.",
+    "label": 4
+  },
+  {
+    "id": "Uncertainty_6_AI_Rerank",
+    "text": "The idea proposed in the paper seems reasonably novel. I am not aware of any previous works using contrastive prompting to calibrate model confidence estimation. ",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_3_Human",
+    "text": "Transliteration has for better or for worse been used in a number of settings to avoid script barriers and reduce costs associated with tokenization. With LLMs often having strong English-centric tokenizers and training data, this is a very natural idea, likely to provide at minimum cost-reduction for other scripts.   However, there are a few very similar papers out there, though they have worked on more limited languages and tasks.  For example, RomanSetu does precisely this, romanizing Hindi for LLM prompting, and find that a) as expected transliteration reduces fertility etc and b) it is necessary to continue training on romanized text for best performance, since this is unlikely to be well-represented in the original data.  https://arxiv.org/pdf/2401.14280v1",
+    "label": 3
+  },
+  {
+    "id": "Multilingual_3_Human",
+    "text": "I am not familiar with the literature. I think there are attempts that solves multilingual problems by translating problems in a certain language into another language that an LM is good at (e.g., English). This transliteration-based approach shares similar ideas but uses transliteration (I assume this makes sense when transliteration tools are better than translation tools on such kind of languages). ",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_7_AI_Rerank",
+    "text": "The idea of using a linguistic similarity matrix to form conceptual bridges when constructing prompts to improve cross-lingual transfer is one that I have not heard of before. I think this could be an interesting way of leveraging existing information about related languages for NLP tasks in general.",
+    "label": 9
+  },
+  {
+    "id": "Multilingual_7_AI_Rerank",
+    "text": "The LPC method introduces a novel way of leveraging related languages and dialects to improve cross-lingual transfer. While cross-lingual transfer and language similarity have been explored, the idea of dynamically creating a constellation of prompts using pivot languages for specific tasks is a fresh and innovative approach. ",
+    "label": 8
+  },
+  {
+    "id": "Multilingual_7_AI_Rerank",
+    "text": "Leveraging language similarity is often quite well studied in machine translation, but there hasn't been one studying using similar language as demonstration in multilingual in-context learning. It would be interesting to see how the model behavior change with different pivots. ",
+    "label": 8
+  },
+  {
+    "id": "Uncertainty_1_AI_Rerank",
+    "text": "I haven't seen (and couldn't find) any prior work which exactly has the same idea as in this proposal. The proposed idea is definitely related to using consistency among multiple solutions to estimate uncertainty (e.g. https://arxiv.org/abs/2405.18711 does this across solutions decoded from different layers) but I have not seen the idea of constructing resonance graph and using graph properties to estimate uncertainty. ",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_1_AI_Rerank",
+    "text": "The proposed approach shares some similar ideas with self-consistency (which suggests the consistency of sampled LLMs outputs is relatively well calibrated). But the approach is more generalized and fine-grained than existing work if the approach uses more advanced ` mutual support evaluation` beyond simply comparing the final answers.",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_1_AI_Rerank",
+    "text": "I think the idea is reasonable and indeed identifies some limitations of current works on uncertainty estimation. However, the consistency between reasoning path.is somehow similar to self-consistency reasoning from Google and SelfCheckGPT.",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_8_Human",
+    "text": "There are already existing works on using available lexicons to improve the translation capabilities of LLMs in general. The novel aspect that I see here is that, in this case, the lexicon is also generated by the LM itself, and it's supposed to target ambiguity specifically.",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_8_Human",
+    "text": "While there are works on improving translation of ambiguous words (also using prompt engineering), however, they are different. An example for a relatively close work is \"Interactive-Chain-Prompting: Ambiguity Resolution for Crosslingual Conditional Generation with Interaction\" (https://arxiv.org/pdf/2301.10309).",
+    "label": 7
+  },
+  {
+    "id": "Factuality_7_Human",
+    "text": "I find this idea is extremely similar to \"GenDec: A robust generative Question-decomposition method for Multi-hop reasoning\" by Wu et al. (2024). Link: https://arxiv.org/html/2402.11166v1",
+    "label": 1
+  },
+  {
+    "id": "Factuality_7_Human",
+    "text": "Query decomposition and RAG separately are well studied, if there is no existing work that combines both (which I'm not aware of), then it's reasonably novel",
+    "label": 6
+  },
+  {
+    "id": "Factuality_7_Human",
+    "text": "The idea aims to tackle a question by breaking it down and solve it one by one with RAG. But it seems to be a more specialized way of CoT with RAG. ",
+    "label": 5
+  },
+  {
+    "id": "Multilingual_1_AI",
+    "text": "The idea of using a linguistic similarity matrix to form conceptual bridges when constructing prompts to improve cross-lingual transfer is one that I have not heard of before. I think this could be an interesting way of leveraging existing information about related languages for NLP tasks in general.",
+    "label": 9
+  },
+  {
+    "id": "Multilingual_1_AI",
+    "text": "The LPC method introduces a novel way of leveraging related languages and dialects to improve cross-lingual transfer. While cross-lingual transfer and language similarity have been explored, the idea of dynamically creating a constellation of prompts using pivot languages for specific tasks is a fresh and innovative approach. ",
+    "label": 8
+  },
+  {
+    "id": "Multilingual_1_AI",
+    "text": "Leveraging language similarity is often quite well studied in machine translation, but there hasn't been one studying using similar language as demonstration in multilingual in-context learning. It would be interesting to see how the model behavior change with different pivots. ",
+    "label": 8
+  },
+  {
+    "id": "Coding_9_AI_Rerank",
+    "text": "The research topic of using large, poorly documented, or rapidly evolving APIs for code generation is timely and important. While existing works try to enhance LMs ability in handling large-scale APIs via a data-driven fashion, I agree it's worth exploring symbolic methods to somewhat deterministically handle large-scale APIs.",
+    "label": 7
+  },
+  {
+    "id": "Coding_9_AI_Rerank",
+    "text": "Combining neural and symbolic methods is an interesting direction and based on the descriptions it is suitable for coding applications.",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_4_AI",
+    "text": "The closest existing ideas are P(True) and self-contrast which apply such contrastive comparisons at the output (answer) level. However, this idea is clearly different in that it applies at the input (question) level with a novel graph-based method to extract confidence scores. Therefore it is a clearly novel idea.",
+    "label": 8
+  },
+  {
+    "id": "Uncertainty_4_AI",
+    "text": "The statement of creating contrastive variants that subtly alter the difficulty or domain is vague to me. If the method is about creating some variants to probe the confidnece/difficulty, there is already previous work (https://arxiv.org/abs/2104.10343). If the method focuses on domain variants, it is hard for me to directly think of some ways to create the same knowledge, different domain queries.",
+    "label": 4
+  },
+  {
+    "id": "Uncertainty_4_AI",
+    "text": "The idea proposed in the paper seems reasonably novel. I am not aware of any previous works using contrastive prompting to calibrate model confidence estimation. ",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_4_AI_Rerank",
+    "text": "The prompting technique introduced seems interesting and I haven't come across similar works in the past. However, I'm doubtful of the effectiveness of this method, since even in the given example, I don't see much of a difference in explanation with or without their technique. I believe the model implicitly carries out the breakdown process they propose anyway. ",
+    "label": 5
+  },
+  {
+    "id": "Multilingual_4_AI_Rerank",
+    "text": "The idea of contrast between expression&explanation between high and low resource language is quite novel in in-context learning setting. ",
+    "label": 5
+  },
+  {
+    "id": "Factuality_3_AI",
+    "text": "The motivation and problem have been studies and discussed in both NLP and Education for decades so I don't really think the idea is highly novel. Furthermore, it needs much more details in the prompting techniques to show the novelty in the methods, but the proposed methods and experiment plans are extremely general, vague and cliche, which plummets the novelty again. ",
+    "label": 3
+  },
+  {
+    "id": "Factuality_3_AI",
+    "text": "I am not expert on the prompting literatures. The idea seems median novel to me. I am not aware of any paper that exactly implements this concept identification and they draw connections. But it seems sufficiently natural to try. I suspect similar ideas may exact with a more detailed search.",
+    "label": 5
+  },
+  {
+    "id": "Uncertainty_5_AI_Rerank",
+    "text": "Not very novel -- an obvious baseline is CoT with self-consistency using majority vote as the confidence estimate, or Kadavath et al (Anthropic paper)'s approach to draft multiple plausible answers and then elicit a confidence score. The major difference here is the drafting of arguments for and against each possible answer, which practically could help but I don't consider to be very novel.   The semantic embedding stuff doesn't make sense to me -- not clear how it's even used in the algorithm.",
+    "label": 4
+  },
+  {
+    "id": "Uncertainty_5_AI_Rerank",
+    "text": "The idea seems novel to me",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_5_AI_Rerank",
+    "text": "I think this is an interesting idea. Mining the argument graph is shown effective in previous work (https://aclanthology.org/2022.emnlp-main.115.pdf). Introducing this idea to prompting can be effective. My only concern is the title: Multi-Perspective seems more like using multiple categories to measure the score for me.",
+    "label": 6
+  },
+  {
+    "id": "Coding_1_Human",
+    "text": "This proposal is a bit vague and confusing. But I can understand the main idea is to develop several LLM-based evaluators to propose unit tests for a complex code generation task. We can verify/calibrate these LLM-based evaluators by proposing some counterfactual code edits to the golden solution and see whether these LLM-based evaluators can catch these flawed code edits. The generated unit tests can then be used for evaluating or improving code generation (via self-debug).  I think evaluating LM code verifiers with counterfactual edits is somewhat novel, even if it requires a golden code as the reference.",
+    "label": 5
+  },
+  {
+    "id": "Coding_1_Human",
+    "text": "I assume the primary idea it to use multiple reasoners to self generate/debug. I think this borrows some idea of multi-agent but not sure if any paper has the same idea.",
+    "label": 5
+  },
+  {
+    "id": "Math_1_AI",
+    "text": "The research problem is an essential real-world problem but relatively underexplored.  The proposed solution is an easy and intuitive approach.",
+    "label": 6
+  },
+  {
+    "id": "Math_1_AI",
+    "text": "The approach is adding a domain specific inductive bias (dimensional analysis) to ensure consistency and improve solution consistency. If this is a standard practice by domain experts, approaches like fewshot prompting + COT can be used to recover this behavior without explicitly prompting for this consistency. ",
+    "label": 3
+  },
+  {
+    "id": "Multilingual_5_Human",
+    "text": "I rated this idea a 6 because it combines prompt-based techniques and the integration of common sense knowledge from ConceptNet, which is not widely explored. While similar works like adaptMLLM and LLaMAX enhance multilingual LLMs for low-resource languages, they do not utilize prompt-based common sense integration.",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_5_Human",
+    "text": "You can find several prior works that have done each part of this work before.  Prompting for commonsense reasoning in other languages: https://arxiv.org/pdf/2112.10668v3.  Identifying better prompts for commonsense reasoning: https://arxiv.org/pdf/2305.14569.  Finetuning for multilingual performance (including on commonsense reasoning): https://arxiv.org/pdf/2211.01786v2.  Training on concept-net to help with reasoning: https://arxiv.org/pdf/1909.09743  This proposal doesn't attempt to improve on the lessons of this prior work, but instead proposes a somewhat unfounded alternative prompting strategy.",
+    "label": 3
+  },
+  {
+    "id": "Uncertainty_3_Human",
+    "text": "Focus on the long-form setting is novel at the moment. The idea of obtaining modular confidence estimates for different claims in a long-form output, and synthesizing them into a single uncertainty estimate is not that complicated, but it does seem to be underexplored.",
+    "label": 6
+  },
+  {
+    "id": "Uncertainty_3_Human",
+    "text": "While existing works have explored the problem of calibration in long-form answers (e.g. https://arxiv.org/abs/2402.06544), the specific method for calibration is different. Also seems related to FactScore (https://arxiv.org/abs/2305.14251) where the task was different (getting a factuality score) but the idea of breaking long form generations into smaller units, evaluating each separately and then combing does seem related. ",
+    "label": 6
+  },
+  {
+    "id": "Safety_2_Human",
+    "text": "    - The essence of proposed idea is to bootstrap from the input query and extract additional signal, so that it is easier for an LLM to tell whether the input query is malicious.          - Specifically, we would make LLM calls to (1) extract metadata from the input query, (2) construct examples of input query matching that metadata, specifically with pre-defined malicious tasks, (3) check whether the victim LLM would respond to these examples.     - Overall, the proposed idea is interesting but potentially flawed (more in \"Feasibility\" and \"Expected effectiveness\" sections).      - Compared to prior work, it is a useful way to *explicitly* and *controllably* guide an LLM how to reason through whether the input is malicious, as opposed to a standard CoT which *uncontrollably* guides the model through its thinking process.     - On the other hand, while the idea is presented as an improvement over filtering, it is still fundamentally a model-based filter and such ideas exist and have been implemented in production. ",
+    "label": 5
+  },
+  {
+    "id": "Safety_2_Human",
+    "text": "The idea of simulating jailbreaking attacks given the prompt at inference time and evaluating the safety risks based on the simulation sound novel and interesting to me. I didn't find any similar related works by quickly looking up, but I could have missed some works",
+    "label": 8
+  },
+  {
+    "id": "Multilingual_10_Human",
+    "text": "I rated this idea a 6 because it introduces a culturally-aware machine translation paradigm that is not widely explored. While there are existing works focusing on improving multilingual LLMs for low-resource languages, few consider cultural nuances at word, sentence, and culture levels.",
+    "label": 6
+  },
+  {
+    "id": "Multilingual_10_Human",
+    "text": "I have seen some work on culturally-aware MT (e.g. https://aclanthology.org/2023.emnlp-main.603.pdf). The method does not make sense to me, and thus, I won't say the method is novel either. ",
+    "label": 3
+  },
+  {
+    "id": "Coding_6_AI",
+    "text": "The construction of Temporal Graph sounds novel.  The research question is also relatively under explored, but necessary for coding in domains like distributed system.",
+    "label": 6
+  },
+  {
+    "id": "Coding_6_AI",
+    "text": "Although I am not entirely familiar with the field of generating temporally adaptive programs, I suspect some similar ideas can be found in software engineering works (e.g., ICSE). More concretely on the method, it is rather similar to code generation with intermediate state reasoning, which has been explored in several multi-step, conversational code generation works, e.g., [1,2,3] [1] Zheng, Tianyu, et al. \"Opencodeinterpreter: Integrating code generation with execution and refinement.\" [2] Cao, Liuwen, et al. \"Beyond Code: Evaluate Thought Steps for Complex Code Generation.\" Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024). 2024. [3] Nijkamp, Erik, et al. \"Codegen: An open large language model for code with multi-turn program synthesis.\" ",
+    "label": 5
+  },
+  {
+    "id": "Coding_6_AI",
+    "text": "This idea studies a very novel problem in LLM-based code generation. Temporal dependencies in code generation should be specifically studied in era if LLMs.",
+    "label": 10
+  },
+  {
+    "id": "Factuality_11_AI",
+    "text": "Similar related works: Enabling Large Language Models to Generate Text with Citations (https://arxiv.org/abs/2305.14627) - Tianyu Gao - ArXiv 2023",
+    "label": 3
+  },
+  {
+    "id": "Factuality_11_AI",
+    "text": "This idea is less novel as providing explanations as well as the answer has been shown to be effective in many domains. And asking the model to rate the source could cause additional hallucination as well.",
+    "label": 4
+  }
+]

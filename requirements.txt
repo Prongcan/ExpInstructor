@@ -1,0 +1,10 @@
+sentence-transformers>=2.2.0
+scikit-learn>=1.0.0
+numpy>=1.21.0
+torch>=1.9.0
+transformers>=4.20.0
+graphrag
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langgraph>=0.2.0
+FlagEmbedding

@@ -1,0 +1,1249 @@
+============================================================
+eval_feasibility_score.py 性能评估报告
+使用 all_comments (完整的peer review评论文本) 作为输入
+============================================================
+
+测试时间: 2025-11-17 02:59:09
+总样本数: 147
+有效预测数: 147
+总用时: 24.5秒
+
+评估指标:
+  准确率 (精确匹配, ±0.1误差): 0.1497 (14.97%)
+  准确率 (±0.5误差): 0.6327 (63.27%)
+  准确率 (±1.0误差): 0.8980 (89.80%)
+  准确率 (±1.5误差): 0.9524 (95.24%)
+  准确率 (±2.0误差): 0.9796 (97.96%)
+  Pearson相关系数: 0.7714 (p=0.0000)
+  Spearman相关系数: 0.7698 (p=0.0000)
+  Cohen's Kappa: 0.6556
+  平均绝对误差 (MAE): 0.5620
+  均方根误差 (RMSE): 0.7460
+  真实分数均值: 5.9018 (标准差: 0.9171)
+  预测分数均值: 5.8963 (标准差: 1.1722)
+
+============================================================
+详细预测结果
+============================================================
+
+样本 1: Multilingual_9_AI
+  真实分数: 4.5
+  预测分数: 4.5
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation acknowledges some positive aspects, such as the potential contribution of the evaluation set and the straightforward implementation of the...
+
+样本 2: Factuality_1_AI
+  真实分数: 7.25
+  预测分数: 7.25
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating no execution issues and highlighting that the experiment is highly feasible and straightforward to imple...
+
+样本 3: Bias_1_AI_Rerank
+  真实分数: 5.0
+  预测分数: 5.0
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. While it acknowledges the ease of implementation, it expresses skepticism about the method's effectiveness in addre...
+
+样本 4: Factuality_2_Human
+  真实分数: 6.17
+  预测分数: 6.0
+  误差: 0.17
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed view. While the structure is clear and the implementation is straightforward, there are concerns about the effectiveness ...
+
+样本 5: Uncertainty_4_AI_Rerank
+  真实分数: 5.25
+  预测分数: 5.25
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents significant concerns about the feasibility and effectiveness of the proposed method. It highlights the dependency on the performa...
+
+样本 6: Multilingual_5_AI_Rerank
+  真实分数: 5.67
+  预测分数: 5.5
+  误差: 0.17
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed view. While the implementation is described as not too hard, there are significant concerns about the effectiveness and c...
+
+样本 7: Safety_2_AI
+  真实分数: 6.0
+  预测分数: 5.5
+  误差: 0.50
+  响应: Analysis:
+
+The evaluation presents a mixed assessment of the feasibility and effectiveness of the proposed idea. Here are the key points:
+
+1. **Implementation Feasibility**: 
+   - The collection of LL...
+
+样本 8: Math_2_AI
+  真实分数: 6.0
+  预测分数: 5.5
+  误差: 0.50
+  响应: Analysis:
+
+The evaluation presents a mixed assessment of the idea's feasibility and effectiveness:
+
+1. **Overall Tone and Assessment**: The evaluation acknowledges that the idea is straightforward wit...
+
+样本 9: Multilingual_10_AI_Rerank
+  真实分数: 5.75
+  预测分数: 6.5
+  误差: 0.75
+  响应: Analysis:
+
+The evaluation presents a generally positive outlook on the feasibility of the project, noting that it is manageable within an academic timeframe with proper planning and resource allocatio...
+
+样本 10: Bias_3_AI
+  真实分数: 7.17
+  预测分数: 6.5
+  误差: 0.67
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the experiment has potential to unlock new insights about biases in language models. It acknowledge...
+
+样本 11: Coding_8_AI_Rerank
+  真实分数: 5.17
+  预测分数: 3.5
+  误差: 1.67
+  响应: Analysis:
+
+The evaluation highlights several significant challenges related to the feasibility and effectiveness of the proposed method:
+
+1. **Data Collection Challenges**: The evaluation emphasizes t...
+
+样本 12: Coding_4_Human
+  真实分数: 7.0
+  预测分数: 7.0
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the idea is feasible and intuitively likely to work. The tone suggests confidence in the implementa...
+
+样本 13: Coding_3_AI
+  真实分数: 6.25
+  预测分数: 5.0
+  误差: 1.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. It acknowledges potential effectiveness in specific cases but highlights significant challenges in implementation.
+...
+
+样本 14: Factuality_10_Human
+  真实分数: 4.67
+  预测分数: 3.0
+  误差: 1.67
+  响应: Analysis:
+
+The evaluation presents several significant challenges and concerns regarding the feasibility and effectiveness of the proposed idea:
+
+1. **Implementation Feasibility**: 
+   - The project i...
+
+样本 15: Bias_2_Human
+  真实分数: 4.5
+  预测分数: 5.5
+  误差: 1.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. While the implementation steps are described as straightforward and feasible within a short timeframe, there are si...
+
+样本 16: Multilingual_1_AI_Rerank
+  真实分数: 5.25
+  预测分数: 5.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is mixed, with some positive aspects such as a good plan for extracting language-wise information and available datasets. However, there a...
+
+样本 17: Uncertainty_1_AI
+  真实分数: 5.75
+  预测分数: 5.0
+  误差: 0.75
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. While it acknowledges the potential effectiveness of using a well-known structure, it also highlights significant u...
+
+样本 18: Multilingual_8_AI
+  真实分数: 6.5
+  预测分数: 6.5
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that with careful planning, the project is feasible and could be effective. It acknowledges the novelty ...
+
+样本 19: Multilingual_4_AI
+  真实分数: 3.5
+  预测分数: 3.5
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is largely negative, highlighting significant challenges in both feasibility and effectiveness. It questions the core assumptions of the p...
+
+样本 20: Math_3_Human
+  真实分数: 6.0
+  预测分数: 6.0
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a generally positive tone regarding the feasibility of implementing the idea, noting that datasets are ready and the prompting pi...
+
+样本 21: Coding_9_Human
+  真实分数: 7.0
+  预测分数: 7.5
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, highlighting that the research approach has been proven effective by similar work. It mentions strong validation fr...
+
+样本 22: Factuality_6_AI
+  真实分数: 6.5
+  预测分数: 5.0
+  误差: 1.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation expresses concerns about data collection and evaluation, indicating challenges in defining discrete facts and selecting appropriate topics...
+
+样本 23: Uncertainty_6_Human
+  真实分数: 3.0
+  预测分数: 3.5
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is largely negative, highlighting vagueness and lack of clarity in the proposal. It points out that the proposal is too vague to be feasib...
+
+样本 24: Coding_2_Human
+  真实分数: 7.0
+  预测分数: 8.0
+  误差: 1.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the method is clear, straightforward, and highly feasible. The main concern is the vagueness in the...
+
+样本 25: Multilingual_6_AI
+  真实分数: 7.25
+  预测分数: 7.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the project is feasible within a typical academic timeframe. The main components are well-defined a...
+
+样本 26: Bias_4_Human
+  真实分数: 6.67
+  预测分数: 6.0
+  误差: 0.67
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the project, noting that it seems feasible within a 1-2 month timeframe. However, there are...
+
+样本 27: Uncertainty_3_AI
+  真实分数: 4.75
+  预测分数: 5.5
+  误差: 0.75
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is mixed, acknowledging that the idea is straightforward to execute but highlighting significant concerns about correctness, underspecific...
+
+样本 28: Factuality_4_AI
+  真实分数: 5.17
+  预测分数: 5.5
+  误差: 0.33
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation acknowledges that the pipeline is feasible and straightforward to implement, which is a positive indicator for feasibility. However, it al...
+
+样本 29: Factuality_8_AI
+  真实分数: 5.25
+  预测分数: 5.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. While the task is clearly proposed and implementation is not hard, there are significant concerns about the method'...
+
+样本 30: Factuality_4_Human
+  真实分数: 5.67
+  预测分数: 5.5
+  误差: 0.17
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. While it acknowledges that the prompt design and experimental setting are not hard for AI and that the project shou...
+
+样本 31: Bias_1_AI
+  真实分数: 5.5
+  预测分数: 6.0
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of execution, noting that known datasets and metrics can be adapted. However, there are concer...
+
+样本 32: Multilingual_9_Human
+  真实分数: 6.67
+  预测分数: 7.5
+  误差: 0.83
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the method is manageable and has a good chance of improving LLM performance on reasoning tasks in l...
+
+样本 33: Multilingual_6_AI_Rerank
+  真实分数: 7.25
+  预测分数: 7.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the project is feasible within a typical academic timeframe. The components are well-defined and ma...
+
+样本 34: Safety_1_Human
+  真实分数: 7.17
+  预测分数: 7.5
+  误差: 0.33
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the idea is feasible and likely effective. The implementation is described as straightforward, and ...
+
+样本 35: Coding_1_AI
+  真实分数: 5.0
+  预测分数: 5.0
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. While the plan is detailed and ready to implement, there are significant concerns about the limitations and challen...
+
+样本 36: Uncertainty_3_AI_Rerank
+  真实分数: 6.0
+  预测分数: 5.75
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation acknowledges that the project is feasible with some major changes. It suggests that the proposal could be effective if certain conditions ...
+
+样本 37: Multilingual_6_Human
+  真实分数: 6.0
+  预测分数: 6.5
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the project, noting that it can be executed quickly without much expertise. However, there ...
+
+样本 38: Factuality_8_AI_Rerank
+  真实分数: 5.83
+  预测分数: 6.0
+  误差: 0.17
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is mixed. It acknowledges the ease of implementation but raises concerns about the effectiveness of distinguishing factual from non-factua...
+
+样本 39: Multilingual_2_AI_Rerank
+  真实分数: 7.75
+  预测分数: 5.5
+  误差: 2.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. It acknowledges the straightforward implementation of the four-step prompting strategy but raises concerns about th...
+
+样本 40: Factuality_9_Human
+  真实分数: 6.5
+  预测分数: 5.5
+  误差: 1.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. It acknowledges the straightforward nature of the prompt design and pipeline but raises concerns about the logical ...
+
+样本 41: Multilingual_10_AI
+  真实分数: 4.5
+  预测分数: 4.0
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally skeptical about the effectiveness of the proposed idea. It questions the assumption that the method will lead to improvements...
+
+样本 42: Factuality_3_Human
+  真实分数: 7.33
+  预测分数: 6.5
+  误差: 0.83
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the idea, noting that it is straightforward to implement and run experiments. However, ther...
+
+样本 43: Coding_1_AI_Rerank
+  真实分数: 5.5
+  预测分数: 5.5
+  误差: 0.00
+  响应: Analysis:
+
+The evaluation indicates that the idea is easy to implement, as it primarily involves prompt-based experiments. This suggests a straightforward execution process, which is a positive factor...
+
+样本 44: Multilingual_8_AI_Rerank
+  真实分数: 6.5
+  预测分数: 6.0
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is cautiously optimistic. It acknowledges challenges in recruiting speakers and data elicitation but suggests that with careful planning, ...
+
+样本 45: Factuality_2_AI_Rerank
+  真实分数: 5.5
+  预测分数: 5.0
+  误差: 0.50
+  响应: Analysis: The evaluation indicates that the implementation is easy and straightforward, which suggests a high level of feasibility in terms of execution. However, there are significant concerns about ...
+
+样本 46: Math_1_AI_Rerank
+  真实分数: 5.75
+  预测分数: 5.5
+  误差: 0.25
+  响应: Analysis:
+
+The evaluation presents a mixed assessment of the feasibility and effectiveness of the proposed method. 
+
+1. **Overall Tone and Assessment**: The tone is somewhat skeptical, with concerns a...
+
+样本 47: Bias_3_Human
+  真实分数: 5.0
+  预测分数: 4.0
+  误差: 1.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally skeptical about the feasibility and effectiveness of the project. It highlights missing details and a lack of clarity in the ...
+
+样本 48: Coding_5_AI_Rerank
+  真实分数: 7.5
+  预测分数: 7.5
+  误差: 0.00
+  响应: Analysis:
+
+The evaluation presents a generally positive view of the project's feasibility. Key points include:
+
+1. **Overall Tone and Assessment**: The evaluation is positive, highlighting a clear exp...
+
+样本 49: Bias_2_AI_Rerank
+  真实分数: 6.0
+  预测分数: 6.5
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the method, noting that it is a pure prompting-based approach without the need for complex ...
+
+样本 50: Multilingual_2_AI
+  真实分数: 6.5
+  预测分数: 6.5
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the method makes sense and is feasible to execute methodologically. The examples are considered rea...
+
+样本 51: Factuality_6_AI_Rerank
+  真实分数: 5.5
+  预测分数: 5.5
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. It acknowledges that the steps for implementation are reasonably straightforward and segmented well, which is posit...
+
+样本 52: Factuality_11_Human
+  真实分数: 6.17
+  预测分数: 6.75
+  误差: 0.58
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the approach is expected to work better than baselines and is intuitively sensible, especially in s...
+
+样本 53: Coding_5_Human
+  真实分数: 5.75
+  预测分数: 6.5
+  误差: 0.75
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the solution is feasible and could work well, especially for short-context tasks. However, there ar...
+
+样本 54: Coding_5_AI
+  真实分数: 6.5
+  预测分数: 6.0
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mix of concerns and positive aspects. There are doubts about feasibility due to context window limitations and the complexity o...
+
+样本 55: Factuality_10_AI_Rerank
+  真实分数: 6.67
+  预测分数: 6.5
+  误差: 0.17
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the idea is feasible with a decent chance of improving performance if external knowledge retrieval ...
+
+样本 56: Multilingual_1_Human
+  真实分数: 5.5
+  预测分数: 6.0
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation suggests that the proposal is feasible due to its reliance on inference access to LLMs and prompt engineering. However, there are concerns...
+
+样本 57: Factuality_2_AI
+  真实分数: 4.83
+  预测分数: 4.5
+  误差: 0.33
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed view. While the core idea is technically feasible, there are significant concerns about the practicality and effectivenes...
+
+样本 58: Coding_9_AI
+  真实分数: 7.0
+  预测分数: 7.5
+  误差: 0.50
+  响应: Analysis:
+
+The evaluation presents a generally positive view of the project's feasibility:
+
+1. **Overall Tone and Assessment**: The tone is positive, highlighting the simplicity and straightforwardnes...
+
+样本 59: Safety_3_AI_Rerank
+  真实分数: 5.0
+  预测分数: 5.5
+  误差: 0.50
+  响应: Analysis:
+
+The evaluation highlights several key points regarding the feasibility and effectiveness of the proposed method:
+
+1. **Implementation Feasibility**: 
+   - The pipeline is described as not v...
+
+样本 60: Math_4_AI
+  真实分数: 6.5
+  预测分数: 7.5
+  误差: 1.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the idea is well-described and aligns with expert approaches. It suggests that the system could pot...
+
+样本 61: Safety_4_AI
+  真实分数: 6.75
+  预测分数: 5.75
+  误差: 1.00
+  响应: Analysis:
+
+The evaluation presents a mixed assessment of the feasibility and effectiveness of the proposed idea. 
+
+1. **Overall Tone and Assessment**: The evaluation acknowledges potential challenges ...
+
+样本 62: Coding_8_Human
+  真实分数: 5.5
+  预测分数: 5.75
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed view. While it acknowledges feasibility in terms of API access and dataset collection, it highlights vagueness in the pro...
+
+样本 63: Math_2_Human
+  真实分数: 6.25
+  预测分数: 5.75
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. It acknowledges the feasibility of the approach but highlights significant challenges related to computational cost...
+
+样本 64: Safety_4_AI_Rerank
+  真实分数: 4.5
+  预测分数: 3.5
+  误差: 1.00
+  响应: Analysis:
+
+The evaluation highlights several significant challenges related to the feasibility and effectiveness of the proposed SCD method:
+
+1. **Computational Resources and Time**: The method requir...
+
+样本 65: Factuality_10_AI
+  真实分数: 6.67
+  预测分数: 6.5
+  误差: 0.17
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the idea is feasible with a decent chance of performance improvement if external knowledge retrieva...
+
+样本 66: Coding_3_Human
+  真实分数: 6.25
+  预测分数: 5.5
+  误差: 0.75
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. It acknowledges that the plan is straightforward to implement and that the approach might work if the critic from b...
+
+样本 67: Coding_7_AI
+  真实分数: 6.5
+  预测分数: 6.5
+  误差: 0.00
+  响应: Analysis:
+
+The evaluation presents a generally positive outlook on the feasibility of the project. The experiment plan is detailed, and the reliance on APIs suggests that computational resources are n...
+
+样本 68: Factuality_5_Human
+  真实分数: 4.67
+  预测分数: 5.5
+  误差: 0.83
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is mixed, acknowledging feasibility in the execution plan but expressing doubts about the novelty and effectiveness of the approach. The l...
+
+样本 69: Coding_2_AI_Rerank
+  真实分数: 6.0
+  预测分数: 7.5
+  误差: 1.50
+  响应: Analysis:
+
+The evaluation presents a generally positive view of the idea's feasibility and effectiveness. Key points include:
+
+1. **Overall Tone and Assessment**: The idea is described as largely feas...
+
+样本 70: Uncertainty_1_Human
+  真实分数: 5.75
+  预测分数: 5.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. While acknowledging the feasibility of implementation within a reasonable timeframe, it expresses skepticism about ...
+
+样本 71: Math_4_Human
+  真实分数: 6.75
+  预测分数: 7.5
+  误差: 0.75
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the proposed method is quite feasible. The design choices are described as lightweight, suggesting ...
+
+样本 72: Math_2_AI_Rerank
+  真实分数: 7.0
+  预测分数: 8.5
+  误差: 1.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is positive, highlighting the clarity and simplicity of the idea. It suggests that the method is likely to be helpful and effective, espec...
+
+样本 73: Factuality_1_AI_Rerank
+  真实分数: 6.5
+  预测分数: 7.5
+  误差: 1.00
+  响应: Analysis:
+
+The evaluation presents a generally positive view of the feasibility of the proposed idea. Key points include:
+
+1. **Implementation Feasibility**: The method is described as very feasible a...
+
+样本 74: Multilingual_7_Human
+  真实分数: 6.75
+  预测分数: 7.5
+  误差: 0.75
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the method is feasible and has a reasonable chance of success. It acknowledges that while the metho...
+
+样本 75: Coding_6_AI_Rerank
+  真实分数: 6.5
+  预测分数: 6.5
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the plan is detailed and feasible. The motivation for the project is well-justified, and the propos...
+
+样本 76: Factuality_8_Human
+  真实分数: 6.0
+  预测分数: 5.5
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed view. It acknowledges the potential for improvement in handling negations but expresses skepticism about the approach's e...
+
+样本 77: Uncertainty_5_AI
+  真实分数: 7.5
+  预测分数: 8.5
+  误差: 1.00
+  响应: Analysis: The evaluation presents a positive outlook on the feasibility of the proposed method. It highlights that there are no issues with running the experiment and that the implementation is straig...
+
+样本 78: Factuality_5_AI_Rerank
+  真实分数: 6.5
+  预测分数: 7.5
+  误差: 1.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, highlighting clear and simple steps, and a straightforward experiment plan. This suggests a high level of feasibili...
+
+样本 79: Coding_6_Human
+  真实分数: 4.17
+  预测分数: 4.0
+  误差: 0.17
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation acknowledges the general feasibility of the idea but expresses significant concerns about the dataset and the running example's effectiven...
+
+样本 80: Safety_1_AI_Rerank
+  真实分数: 5.25
+  预测分数: 5.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation acknowledges that the solution sounds reasonable but expresses uncertainty about its effectiveness compared to an alternative method. This...
+
+样本 81: Factuality_7_AI
+  真实分数: 5.0
+  预测分数: 5.0
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mix of feasibility and challenges. While the implementation is described as straightforward, there are significant concerns abo...
+
+样本 82: Multilingual_5_AI
+  真实分数: 6.0
+  预测分数: 6.5
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the technical aspects are feasible. However, it highlights potential challenges related to data col...
+
+样本 83: Safety_5_AI_Rerank
+  真实分数: 6.0
+  预测分数: 5.5
+  误差: 0.50
+  响应: Analysis:
+
+The evaluation highlights several feasibility and effectiveness concerns:
+
+1. **Implementation Feasibility**: 
+   - Collection of LLM responses and human evaluation are noted as time-consum...
+
+样本 84: Coding_2_AI
+  真实分数: 3.75
+  预测分数: 3.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation expresses significant concerns about the feasibility of the project, particularly regarding the execution and model performance. It highli...
+
+样本 85: Math_1_Human
+  真实分数: 3.25
+  预测分数: 3.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is predominantly negative, highlighting significant concerns about the proposal's logic and feasibility. The reviewer expresses skepticism...
+
+样本 86: Factuality_4_AI_Rerank
+  真实分数: 5.5
+  预测分数: 5.5
+  误差: 0.00
+  响应: Analysis:
+
+The evaluation presents a mixed assessment of the feasibility and effectiveness of the proposed idea:
+
+1. **Implementation Feasibility**: The idea is described as easy to implement with exi...
+
+样本 87: Uncertainty_4_Human
+  真实分数: 5.5
+  预测分数: 5.0
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation expresses concerns about missing details, particularly regarding evaluation metrics and datasets. There is skepticism about the effectiven...
+
+样本 88: Safety_5_Human
+  真实分数: 5.67
+  预测分数: 5.5
+  误差: 0.17
+  响应: Analysis:
+
+The evaluation presents a mixed assessment of the proposed idea. 
+
+1. **Overall Tone and Assessment**: The evaluation acknowledges that the plan is simple and straightforward, with limited ...
+
+样本 89: Coding_7_AI_Rerank
+  真实分数: 6.25
+  预测分数: 6.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the method, noting that the datasets are readily available and the method involves prompt w...
+
+样本 90: Math_3_AI_Rerank
+  真实分数: 6.5
+  预测分数: 7.5
+  误差: 1.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, noting that the idea is well-described and aligns with expert approaches. It suggests that the system could potenti...
+
+样本 91: Bias_2_AI
+  真实分数: 6.0
+  预测分数: 6.5
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the experiment plan, noting that the step-by-step approach is highly feasible and that the ...
+
+样本 92: Coding_3_AI_Rerank
+  真实分数: 6.67
+  预测分数: 6.0
+  误差: 0.67
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed view. It acknowledges the feasibility of the experiments and the potential for easy adaptations and improvements. However...
+
+样本 93: Safety_3_AI
+  真实分数: 4.5
+  预测分数: 3.5
+  误差: 1.00
+  响应: Analysis:
+
+The evaluation highlights several significant challenges and uncertainties regarding the feasibility and effectiveness of the proposed method. Key concerns include:
+
+1. **Computational Reso...
+
+样本 94: Bias_4_AI_Rerank
+  真实分数: 7.17
+  预测分数: 6.5
+  误差: 0.67
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the experiment, noting that it is straightforward and has potential to unlock new insights ...
+
+样本 95: Math_3_AI
+  真实分数: 6.25
+  预测分数: 6.0
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of implementing the pipeline, noting that it does not require heavy engineering and is straigh...
+
+样本 96: Multilingual_2_Human
+  真实分数: 6.67
+  预测分数: 6.5
+  误差: 0.17
+  响应: Analysis:
+
+The evaluation indicates that the implementation is highly feasible due to the use of existing toolkits and datasets. The prompt engineering is described as easy to implement, and the datas...
+
+样本 97: Factuality_7_AI_Rerank
+  真实分数: 6.5
+  预测分数: 6.5
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the approach is structured and likely effective. It acknowledges the potential for improvement over...
+
+样本 98: Math_4_AI_Rerank
+  真实分数: 6.25
+  预测分数: 6.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of implementing the pipeline, noting that it does not require heavy engineering and is straigh...
+
+样本 99: Coding_4_AI_Rerank
+  真实分数: 6.25
+  预测分数: 6.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the method. It acknowledges that the basic code infrastructure might take some time to deve...
+
+样本 100: Bias_3_AI_Rerank
+  真实分数: 5.5
+  预测分数: 6.5
+  误差: 1.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of execution, noting that known datasets and metrics can be adapted. However, there are concer...
+
+样本 101: Factuality_6_Human
+  真实分数: 5.67
+  预测分数: 6.0
+  误差: 0.33
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the project, noting that the workflow is easy to understand and the experiments are feasibl...
+
+样本 102: Multilingual_9_AI_Rerank
+  真实分数: 6.0
+  预测分数: 6.5
+  误差: 0.50
+  响应: Analysis:
+
+The evaluation indicates that the technical aspects of the project are feasible, suggesting that the implementation is straightforward. However, there are concerns about the time-consuming ...
+
+样本 103: Factuality_3_AI_Rerank
+  真实分数: 6.25
+  预测分数: 6.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the proposed approach, noting that it is straightforward to execute and can be completed in...
+
+样本 104: Safety_1_AI
+  真实分数: 6.5
+  预测分数: 7.0
+  误差: 0.50
+  响应: Analysis:
+
+The evaluation indicates that the idea is fairly feasible, with components involving prompts to off-the-shelf LLMs and Python programs for pre/post-processing. The implementation is describ...
+
+样本 105: Factuality_5_AI
+  真实分数: 6.25
+  预测分数: 5.5
+  误差: 0.75
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents mixed feedback. There are concerns about the clarity of prompt design and the effectiveness of the proposed method. The evaluator...
+
+样本 106: Multilingual_4_Human
+  真实分数: 7.0
+  预测分数: 7.5
+  误差: 0.50
+  响应: Analysis:
+
+The evaluation presents a generally positive outlook on the feasibility of the project. Key points include:
+
+1. **Implementation Feasibility**: The project is described as straightforward t...
+
+样本 107: Safety_2_AI_Rerank
+  真实分数: 4.25
+  预测分数: 5.5
+  误差: 1.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. It highlights that the research plan relies on outdated techniques (BERT era) and lacks clarity in its approach to ...
+
+样本 108: Factuality_9_AI
+  真实分数: 5.0
+  预测分数: 4.0
+  误差: 1.00
+  响应: Analysis:
+
+The evaluation presents several concerns about the feasibility and effectiveness of the proposed idea. Key points include:
+
+1. **Effectiveness Concerns**: 
+   - The assumption that the mode...
+
+样本 109: Multilingual_7_AI
+  真实分数: 5.75
+  预测分数: 6.5
+  误差: 0.75
+  响应: Analysis:
+
+The evaluation presents a generally positive outlook on the feasibility of the project, highlighting that it is manageable within an academic timeframe with proper planning and resource all...
+
+样本 110: Uncertainty_2_AI
+  真实分数: 6.75
+  预测分数: 6.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the proposal is feasible and likely to achieve improvements. The introduction of self-reflection in...
+
+样本 111: Factuality_11_AI_Rerank
+  真实分数: 5.25
+  预测分数: 5.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. While the task is clearly proposed and implementation is not hard, there are significant concerns about the method'...
+
+样本 112: Uncertainty_2_Human
+  真实分数: 6.0
+  预测分数: 3.5
+  误差: 2.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is largely negative, highlighting significant doubts about the effectiveness of the proposed method. It mentions that the difference betwe...
+
+样本 113: Safety_3_Human
+  真实分数: 4.25
+  预测分数: 4.0
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. It acknowledges the potential effectiveness of the idea, drawing parallels with existing methods that have shown su...
+
+样本 114: Bias_1_Human
+  真实分数: 6.5
+  预测分数: 5.5
+  误差: 1.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is mixed. It acknowledges the ease of implementation but questions the generalizability and effectiveness of the intervention. The lack of...
+
+样本 115: Coding_7_Human
+  真实分数: 6.5
+  预测分数: 6.5
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the data collection and prompting experiment plan are straightforward to execute. It suggests that ...
+
+样本 116: Safety_5_AI
+  真实分数: 6.0
+  预测分数: 6.0
+  误差: 0.00
+  响应: Analysis: The evaluation presents a mixed assessment of the project's feasibility. On the positive side, it notes that most experiments are simple to run, primarily involving inference passes, and sug...
+
+样本 117: Bias_4_AI
+  真实分数: 7.25
+  预测分数: 7.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, highlighting that most steps are feasible with existing datasets and API access. The challenges identified are not ...
+
+样本 118: Factuality_1_Human
+  真实分数: 6.25
+  预测分数: 7.5
+  误差: 1.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the idea. It mentions that the datasets are available and that the process can be completed...
+
+样本 119: Coding_4_AI
+  真实分数: 5.75
+  预测分数: 6.5
+  误差: 0.75
+  响应: Analysis:
+
+The evaluation indicates that the idea is feasible, particularly in terms of implementation. The use of LLMs to generate ethical code through chain-of-thought reasoning is considered very f...
+
+样本 120: Coding_8_AI
+  真实分数: 6.25
+  预测分数: 6.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the method, noting that the datasets are readily available and the method primarily involve...
+
+样本 121: Factuality_9_AI_Rerank
+  真实分数: 6.0
+  预测分数: 6.5
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the idea is straightforward and feasible. However, it acknowledges that there are multiple steps in...
+
+样本 122: Uncertainty_5_Human
+  真实分数: 6.0
+  预测分数: 5.0
+  误差: 1.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents several concerns about the feasibility and effectiveness of the proposed method. It highlights issues with LLM inconsistency, the...
+
+样本 123: Multilingual_3_AI_Rerank
+  真实分数: 5.25
+  预测分数: 5.0
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation highlights major flaws in the experiment plan, particularly regarding fairness in baseline comparisons and clarity in downstream task eval...
+
+样本 124: Uncertainty_6_AI
+  真实分数: 6.25
+  预测分数: 7.5
+  误差: 1.25
+  响应: Analysis:
+
+The evaluation presents a generally positive outlook on the feasibility of the proposed idea. Key points include:
+
+1. **Implementation Feasibility**: The dataset choice and metrics are desc...
+
+样本 125: Safety_4_Human
+  真实分数: 4.5
+  预测分数: 4.0
+  误差: 0.50
+  响应: Analysis:
+
+The evaluation presents several concerns about the feasibility and effectiveness of the proposed method:
+
+1. **Implementation Feasibility**: While generating data using LLMs is described as...
+
+样本 126: Uncertainty_2_AI_Rerank
+  真实分数: 6.5
+  预测分数: 6.5
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the idea, noting that the plan is clearly laid out and actionable. However, there are conce...
+
+样本 127: Multilingual_3_AI
+  真实分数: 5.75
+  预测分数: 5.5
+  误差: 0.25
+  响应: Analysis:
+
+The evaluation highlights several challenges and concerns:
+
+1. **Underspecified Elements**: The project has many underspecified components, such as preprocessing into discrete dialects and ...
+
+样本 128: Uncertainty_6_AI_Rerank
+  真实分数: 5.0
+  预测分数: 4.5
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed view. While the idea is described as easy to implement, there are significant concerns about clarity and effectiveness, p...
+
+样本 129: Multilingual_3_Human
+  真实分数: 5.5
+  预测分数: 6.5
+  误差: 1.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the proposal. It highlights the availability of open-source tools and datasets, and describ...
+
+样本 130: Multilingual_7_AI_Rerank
+  真实分数: 6.5
+  预测分数: 5.75
+  误差: 0.75
+  响应: Analysis:
+
+The evaluation presents a mixed assessment of the idea's feasibility and effectiveness:
+
+1. **Overall Tone and Assessment**: The idea is considered sound and interesting, with potential ben...
+
+样本 131: Uncertainty_1_AI_Rerank
+  真实分数: 6.33
+  预测分数: 6.5
+  误差: 0.17
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of implementing the proposed method, SRUQ. It highlights that the method can be easily impleme...
+
+样本 132: Multilingual_8_Human
+  真实分数: 5.5
+  预测分数: 5.5
+  误差: 0.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. While the implementation is described as straightforward and accessible, there are significant concerns about data ...
+
+样本 133: Factuality_7_Human
+  真实分数: 6.5
+  预测分数: 7.5
+  误差: 1.00
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation suggests that the idea is technically feasible and can be reproduced quickly based on existing work. However, it notes that the idea is qu...
+
+样本 134: Multilingual_1_AI
+  真实分数: 6.5
+  预测分数: 6.0
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the concept, acknowledging its potential to improve cross-lingual performance, especially for low-resource lan...
+
+样本 135: Coding_9_AI_Rerank
+  真实分数: 6.25
+  预测分数: 4.5
+  误差: 1.75
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. While there are significant challenges mentioned, such as the complexity of infrastructure and the lack of a well-e...
+
+样本 136: Uncertainty_4_AI
+  真实分数: 5.0
+  预测分数: 4.5
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation presents a mixed tone. While the idea is described as easy to implement and executable, there are significant concerns about clarity and e...
+
+样本 137: Multilingual_4_AI_Rerank
+  真实分数: 6.25
+  预测分数: 5.5
+  误差: 0.75
+  响应: Analysis: The evaluation indicates that the implementation is fairly straightforward, with specific mention that prompt engineering and implementation shouldn't be too hard. However, there are signifi...
+
+样本 138: Factuality_3_AI
+  真实分数: 5.25
+  预测分数: 5.0
+  误差: 0.25
+  响应: Analysis:
+
+The evaluation highlights several significant concerns regarding the feasibility and effectiveness of the proposed prompting method:
+
+1. **Lack of Detail**: The method is described as vague...
+
+样本 139: Uncertainty_5_AI_Rerank
+  真实分数: 6.17
+  预测分数: 7.5
+  误差: 1.33
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the idea is viable and straightforward to implement. It acknowledges the potential effectiveness of...
+
+样本 140: Coding_1_Human
+  真实分数: 4.25
+  预测分数: 3.5
+  误差: 0.75
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally negative, expressing doubts about the feasibility and effectiveness of the proposed idea. The reviewer highlights challenges ...
+
+样本 141: Math_1_AI
+  真实分数: 6.25
+  预测分数: 6.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the approach is straightforward to implement and has potential to outperform existing methods. Howe...
+
+样本 142: Multilingual_5_Human
+  真实分数: 7.25
+  预测分数: 7.5
+  误差: 0.25
+  响应: Analysis: The evaluation provides a positive assessment of the project's feasibility. It highlights that the tasks involved, such as training adapter modules, designing prompts, and dataset preparatio...
+
+样本 143: Uncertainty_3_Human
+  真实分数: 7.0
+  预测分数: 6.75
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive, indicating that the project is feasible with some challenges, particularly in obtaining correctness annotations for...
+
+样本 144: Safety_2_Human
+  真实分数: 6.25
+  预测分数: 6.5
+  误差: 0.25
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility of the idea, noting that it is fairly executable with available resources and straightforward ...
+
+样本 145: Multilingual_10_Human
+  真实分数: 3.25
+  预测分数: 5.5
+  误差: 2.25
+  响应: Analysis:
+
+The evaluation presents several challenges and concerns regarding the feasibility and effectiveness of the proposed method:
+
+1. **Implementation Feasibility**: 
+   - The method involves mul...
+
+样本 146: Coding_6_AI
+  真实分数: 5.17
+  预测分数: 3.5
+  误差: 1.67
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally negative, highlighting significant challenges in data collection, human evaluation, and the complexity of the task. There is ...
+
+样本 147: Factuality_11_AI
+  真实分数: 6.0
+  预测分数: 6.5
+  误差: 0.50
+  响应: Analysis:
+
+1. **Overall Tone and Assessment**: The evaluation is generally positive about the feasibility, noting that the implementation is easy and feasible with API access to LLMs. However, there a...
+

@@ -1,0 +1,2041 @@
+{
+  "metrics": {
+    "accuracy_exact": 0.2648809523809524,
+    "accuracy_within_1": 0.7232142857142857,
+    "accuracy_within_2": 0.9345238095238095,
+    "pearson_correlation": 0.8220168495046641,
+    "pearson_p_value": 1.1214152975270029e-83,
+    "spearman_correlation": 0.8473109179312558,
+    "spearman_p_value": 8.304346629355436e-94,
+    "cohen_kappa": 0.7760022489734039,
+    "valid_samples": 336,
+    "total_samples": 337,
+    "mean_absolute_error": 1.0892857142857142,
+    "rmse": 1.4057704208690964
+  },
+  "total_time_seconds": 53.474027156829834,
+  "samples": [
+    {
+      "id": "Multilingual_9_AI",
+      "true_label": 3,
+      "predicted_score": 3,
+      "response": "Analysis: The reviewer finds the idea unexciting and believes the scope is too narrow to have a significant impact. They also feel that existing methods outperform the proposed idea. While the evaluation is not entirely dismissive, it indicates a lack of enthusiasm and perceived value. The main reason for the moderate score is the limited impact rather than poor quality.\n\nScore: 3"
+    },
+    {
+      "id": "Multilingual_9_AI",
+      "true_label": 2,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation expresses skepticism about the fundamental assumption of using the graph. The lack of conviction suggests a negative view of the idea's foundation, indicating low confidence in its validity or potential impact. The tone is dismissive, with no indication of interest or potential for further exploration.\n\nScore: 1"
+    },
+    {
+      "id": "Factuality_1_AI",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea lacks originality and does not provide new insights or conclusions. The reviewer acknowledges the existence of similar work and expresses a lack of excitement due to the marginal difference. The tone suggests minimal enthusiasm and contribution.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_1_AI",
+      "true_label": 3,
+      "predicted_score": 3,
+      "response": "Analysis: The reviewer acknowledges that there is potential for the idea to become interesting if approached differently, suggesting some merit in the concept. However, they express that the current implementation lacks excitement and impact. The tone indicates that while there is room for improvement, the present form is not compelling or significant.\n\nScore: 3"
+    },
+    {
+      "id": "Bias_1_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer expresses a lack of excitement due to the perceived ineffectiveness compared to existing methods and an incomplete execution plan. However, there is a recognition of potential value in exploring the idea, specifically in mitigating biases in LLMs. This indicates some room for exploration and possible utility, though the enthusiasm is limited.\n\nScore: 4"
+    },
+    {
+      "id": "Bias_1_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses skepticism about the novelty of the approach, noting its similarity to previous methods. The reviewer also highlights concerns about the applicability of the method to other demographic attributes, suggesting potential limitations and challenges. The tone indicates a lack of enthusiasm due to these issues, particularly in extending the approach without causing offense. Overall, the evaluation reflects a low level of excitement and confidence in the idea's significance.\n\nScore: 2"
+    },
+    {
+      "id": "Bias_1_AI_Rerank",
+      "true_label": 1,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation expresses clear skepticism and a lack of understanding or confidence in the idea. The tone is dismissive, indicating no interest or perceived novelty. The reviewer does not see value in the idea, leading to very low excitement.\n\nScore: 1"
+    },
+    {
+      "id": "Factuality_2_Human",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges the project's potential usefulness for industrial applications, indicating some practical value. However, the reviewer expresses reservations about the methodological novelty, suggesting that the approach may not be groundbreaking. The mention of existing long-context LLMs as an alternative implies that the proposed method might not be necessary or superior. Overall, the tone is moderately positive but tempered by concerns about the necessity and innovation of the approach.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_2_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges the potential usefulness of the trained models and methodology for SRS applications, indicating some practical value. However, the reviewer expresses concern about the lack of novelty in the approach for synthetic data. The tone is moderately positive, recognizing utility but tempered by the critique of originality.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_2_Human",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea is simple and lacks novelty, suggesting minimal research value. It is described as targeting a narrow and niche problem, with little potential for significant impact. The tone is dismissive, highlighting the incremental nature of the contribution.\n\nScore: 2"
+    },
+    {
+      "id": "Uncertainty_4_AI_Rerank",
+      "true_label": 1,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation expresses clear skepticism and a lack of enthusiasm for the idea. The reviewer notes that the idea does not make significant advancements, lacks novelty, and is unlikely to be effective in general applications. The tone is dismissive, indicating a low level of excitement and perceived value.\n\nScore: 1"
+    },
+    {
+      "id": "Uncertainty_4_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer acknowledges potential for follow-up work and sees some value in the method as a boundary object in human-AI decision-making. However, they express doubt about its major impact. The mention of the method aligning with human uncertainty calibration adds a layer of interest, particularly for specific subgroups. Overall, the evaluation is moderately positive, recognizing some potential but not groundbreaking impact.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_5_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The reviewer expresses skepticism about the feasibility of the idea, indicating a lack of confidence in its success. However, there is a hint of potential interest if the idea were to work, as it would reveal insights about LLMs. The tone is primarily doubtful, with a slight acknowledgment of possible intrigue if proven effective. Overall, the evaluation leans towards low significance due to the prevailing disbelief.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_5_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The reviewer expresses clear enthusiasm and recognizes the significance of addressing low-resource languages, which are challenging to process. They highlight the urgency and necessity of the proposed method, especially given the limitations of scaling with current LLMs. The evaluation indicates a strong relevance and potential impact, suggesting that the approach is a smart and necessary solution to an important problem.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_5_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The reviewer expresses excitement about the work, indicating a positive attitude towards its acceptance. However, they also mention that the work may not have a significant impact. This suggests that while the work is seen as valuable and interesting, it might not lead to substantial advancements or changes in the field. The tone is positive but tempered by the perceived lack of broader impact.\n\nScore: 6"
+    },
+    {
+      "id": "Safety_2_AI",
+      "true_label": 8,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation describes the approach as \"novel,\" which indicates originality and potential interest. The use of existing LLMs to generate \"semantic fog\" suggests a creative application of current technology. The tone is positive, highlighting innovation, which implies a significant contribution to the field.\n\nScore: 7"
+    },
+    {
+      "id": "Safety_2_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation indicates a positive reception of the paper, noting that it is well-formed and includes comprehensive studies such as ablation and human evaluation. The reviewer finds the paper exciting enough for acceptance, which suggests a solid contribution. However, the idea is perceived as somewhat similar to concurrent papers, which slightly tempers the enthusiasm. The score of 6 reflects a recognition of quality and potential utility, though not groundbreaking novelty.\n\nScore: 6"
+    },
+    {
+      "id": "Math_2_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed idea lacks novelty and does not offer significant new insights. The reviewer notes that similar concepts have already been explored extensively, suggesting that the contribution is incremental and not particularly impactful. The tone is critical, focusing on the lack of originality and limited contribution to the field.\n\nScore: 2"
+    },
+    {
+      "id": "Math_2_AI",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The reviewer expresses strong skepticism about the idea's feasibility and effectiveness. They view it as unnecessarily complex and unlikely to perform well in practical applications. The reference to outdated methods suggests a belief that the approach lacks relevance in the current context. The tone is dismissive, indicating a lack of confidence in the idea's potential impact or novelty.\n\nScore: 1"
+    },
+    {
+      "id": "Multilingual_10_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation is highly positive, highlighting the project's potential to significantly impact the field. The combination of neural and symbolic approaches is seen as a way to deepen understanding and improve applications, particularly for low-resource languages and vernaculars. The tone is enthusiastic, recognizing the project's potential to be both exciting and influential.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_10_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses a positive attitude towards the idea, describing it as \"pretty cool\" and \"meaningful\" for the domain. The use of positive adjectives indicates enthusiasm and appreciation for the concept's relevance and potential impact. However, the evaluation lacks specific details about novelty or groundbreaking contributions, suggesting moderate excitement rather than extreme enthusiasm.\n\nScore: 7"
+    },
+    {
+      "id": "Bias_3_AI",
+      "true_label": 8,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses a positive outlook on the idea, highlighting its potential to achieve high significance if executed well. The reviewer acknowledges the possibility of the idea being highly impactful (an 8 or 9) if it successfully functions as a debiasing technique and provides new insights. However, they also note that the final significance will depend on the actual results, suggesting a range that includes a lower score of 6 if the outcomes are less impressive. The tone is optimistic but cautious, reflecting a belief in the idea's potential with some reservation about its execution.\n\nScore: 7"
+    },
+    {
+      "id": "Bias_3_AI",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges potential effectiveness but highlights limited novelty and a lack of insights. This suggests that while the idea might have some practical application, it doesn't offer new understanding or innovation. The tone is moderately positive but tempered by the absence of originality and depth.\n\nScore: 4"
+    },
+    {
+      "id": "Bias_3_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation reflects a positive attitude towards the proposal, highlighting several areas of interest and potential exploration. The reviewer acknowledges the constraints but sees value in investigating the effectiveness of pivot prompts, necessary analogies, and the number of in-context examples. They express a desire for further comparisons and distinctions between different methods, indicating a constructive and engaged perspective. The tone is inquisitive and suggests moderate enthusiasm for the proposal's potential contributions, despite some noted limitations.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_8_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The reviewer expresses a positive attitude towards the idea, highlighting that it addresses a new problem, which suggests novelty and potential impact. The mention of the collected data being \"super useful\" indicates a belief in the practical value and applicability of the work. The tone is optimistic and suggests that the work stands out compared to other borderline papers, implying a higher level of excitement and significance.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_8_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer expresses skepticism about the method's potential for substantial improvements, indicating a lack of excitement. However, they acknowledge the problem's interest and the value of building a solid benchmark. The tone suggests that while the method itself may not be groundbreaking, the broader context of the problem holds some intrigue. This results in a moderate level of enthusiasm, as the focus shifts from the method to the problem's potential.\n\nScore: 4"
+    },
+    {
+      "id": "Coding_8_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges the novelty and potential significant impact of the idea, particularly in code generation cases involving temporal dependencies. However, it also highlights the need for further justification regarding the importance of these use cases and the centrality of temporal dependency as a problem. The tone is generally positive, recognizing the idea's promise, but it also calls for additional clarification to fully realize its potential impact.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_4_Human",
+      "true_label": 6,
+      "predicted_score": null,
+      "response": "I'm sorry, but I need the specific evaluation text to provide an analysis and score. Could you please provide the evaluation for me to assess?"
+    },
+    {
+      "id": "Coding_4_Human",
+      "true_label": 7,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation is highly positive, expressing clear excitement about the deployment of the approach. The reviewer appreciates that the method aligns well with current practices in solving software problems and highlights its robustness to errors within language models. This indicates a strong belief in the method's relevance, utility, and potential impact, suggesting a high level of enthusiasm and confidence in the idea.\n\nScore: 9"
+    },
+    {
+      "id": "Coding_4_Human",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The reviewer expresses skepticism about the practicality of the method, highlighting a significant limitation in not executing code, which is crucial for real-world applications. While there is some acknowledgment of research interest in the model's ability to simulate execution, the reviewer does not see this as a highly relevant or impactful finding. The tone is critical, focusing on the method's shortcomings rather than its potential contributions.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_3_AI",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The reviewer finds the research topic to be very exciting and impactful, indicating a strong interest in the area. However, there is some skepticism about the practical effectiveness of the proposed method. Despite this, the reviewer acknowledges the method as a reasonable baseline worth exploring, suggesting a positive attitude towards its potential as a foundational step. The tone is cautiously optimistic, reflecting both enthusiasm for the topic and a measured view of the method's current state.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_3_AI",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses interest in the idea of combining neural and symbolic methods, highlighting its potential to influence the understanding of the roles of LLMs and symbolic systems. The tone is positive, indicating that the idea has broader implications and relevance. However, the evaluation does not suggest groundbreaking novelty or immediate impact, but rather a promising direction for exploration.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_10_Human",
+      "true_label": 4,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation highlights a reliance on specific models, suggesting limited generalizability. The problem addressed is described as niche, indicating a narrow scope. While the issue of hallucinations in identities is acknowledged, the tone suggests limited excitement or perceived impact. The evaluation does not express strong enthusiasm or significant novelty, leading to a lower significance score.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_10_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges a lack of novelty but sees potential in the idea, particularly in demonstrating the model's reasoning capability. The tone is cautiously optimistic, suggesting that while the idea isn't groundbreaking, it could still be valuable if explored further. The reviewer is open to testing the concept, indicating moderate interest and potential usefulness.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_10_Human",
+      "true_label": 2,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation is quite critical, highlighting significant concerns about the feasibility and transparency of the idea. The reviewer doubts the effectiveness of the approach, particularly due to unexplained assumptions and a misunderstanding of LLM hallucinations. The tone is skeptical, and there is no indication of potential interest or novelty. The evaluation suggests a lack of confidence in the idea's validity and impact.\n\nScore: 1"
+    },
+    {
+      "id": "Bias_2_Human",
+      "true_label": 4,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer finds the idea somewhat interesting and expresses curiosity about the results, indicating a mild level of interest. However, they also describe the motivating examples as uninspiring and suggest that the effort involved may be unnecessary. The reviewer sees potential value if the method could address cultural bias in more subtle ways, but notes that the proposal does not address this. Overall, the evaluation reflects a mix of mild curiosity and skepticism, with limited enthusiasm due to perceived lack of depth and novelty.\n\nScore: 4"
+    },
+    {
+      "id": "Bias_2_Human",
+      "true_label": 1,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation is highly critical, expressing fundamental disagreement with the problem's design. The reviewer is prepared to advocate for rejection unless significant justification is provided. The critique highlights a perceived flaw in the research idea, particularly regarding cultural awareness and utility. The tone is strongly negative, indicating a lack of confidence in the idea's validity or relevance.\n\nScore: 1"
+    },
+    {
+      "id": "Multilingual_1_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The reviewer expresses skepticism about the method, indicating a lack of confidence in its quality. While there is a slight acknowledgment of potential improvement in structural diversity, the overall tone is doubtful and unenthusiastic. The evaluation suggests minimal excitement or perceived value, leading to a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_1_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer acknowledges the potential excitement if the idea works effectively, particularly in the context of low-resource translation. However, they express skepticism about the extent of the impact, suggesting it might be an incremental improvement rather than a groundbreaking change. The reviewer notes that the concept of using typological similarities is not novel, as it is already utilized in the field. The contribution is seen as potentially useful but not transformative, with the main novelty being the application within prompts.\n\nScore: 5"
+    },
+    {
+      "id": "Uncertainty_1_AI",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer finds the framing and example scenario somewhat interesting, indicating some level of engagement with the idea. However, they express that the example and description lack clarity and fail to effectively communicate the core value or \"punchline\" of the method. This suggests that while there is potential, the execution or presentation is lacking, leading to a moderate level of enthusiasm.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_1_AI",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer expresses a moderate level of interest, acknowledging that the work may not lead to major changes in the field but could inspire follow-up research. There is recognition of potential value, particularly if the work performs well. The mention of a proposed fallback plan and ablations suggests some depth and thoughtfulness in the proposal. However, the reviewer doubts the feasibility of fitting everything into a single paper, indicating some reservations about the scope and execution. Overall, the tone is cautiously optimistic, with an appreciation for the potential for future exploration.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_8_AI",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation expresses clear enthusiasm for the topic of cultural awareness, highlighting its importance. The mention of creating new data and evaluating models in new languages suggests a recognition of the potential for significant progress and impact. The tone is positive and indicates a belief in the relevance and potential contribution of the idea.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_8_AI",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer finds the topic interesting, indicating some level of engagement and potential value. However, they mention having seen similar work before, suggesting a lack of novelty. The main concern is the thoroughness of the evaluation, implying that the contribution might be limited by execution rather than concept. The tone is moderately positive but tempered by these concerns.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_4_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer expresses skepticism about the feasibility of the idea but acknowledges that if successful, it would be impressive. They find the domain interesting and recognize the novelty in applying CoT to it. The evaluation reflects a mix of doubt and intrigue, with potential for impact if the idea proves viable.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_4_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges the potential impact of the proposed method on low-resource language tasks and its ability to provide insights into LLMs' understanding of phonetic information. The reviewer sees the approach as incremental, primarily modifying a standard CoT prompt. However, they recognize the possibility of refinement and express interest in the potential of an ablation study. The tone is cautiously optimistic, indicating moderate enthusiasm for the method's future development and impact.\n\nScore: 6"
+    },
+    {
+      "id": "Math_3_Human",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation is dismissive and lacks enthusiasm, indicating that the reviewer finds the idea uninteresting and ineffective. There is no mention of potential value, novelty, or impact, suggesting a very low level of excitement or significance.\n\nScore: 1"
+    },
+    {
+      "id": "Math_3_Human",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges a potential contribution but highlights a significant limitation in the method's generalizability. The requirement for a specific error type suggests that the method may not be broadly applicable, which limits its impact. The tone is somewhat neutral, recognizing some value but also pointing out a critical drawback.\n\nScore: 4"
+    },
+    {
+      "id": "Coding_9_Human",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The reviewer begins with a lukewarm sentiment, indicating that they typically do not find prompting strategies for code generation particularly exciting. However, their attitude shifts positively upon acknowledging that the approach was validated and performed well. This success has sparked their interest, leading them to consider various follow-up questions and potential areas for exploration, such as property-driven test case development and considerations for aesthetic or maintainability preferences. The reviewer's curiosity about future possibilities and the constructive tone suggest a moderate to high level of enthusiasm.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_9_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges the interest and potential of using PBT (Property-Based Testing) for creating tests and conducting reasoning. However, it points out a significant shortcoming in the current experiment design, which fails to fully explore the method's potential. The reviewer suggests additional areas for exploration, such as dataset creation and program coverage, indicating that the idea has room for improvement and broader application. The tone is constructive, recognizing the idea's promise but also highlighting missed opportunities.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_9_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer acknowledges the usefulness of applying PBT to the LLM code generation domain and sees value in the message that PBT can aid the community. The topic of NL-based PBT is considered interesting. However, the reviewer notes limited novelty and technical contributions beyond this aspect and expresses uncertainty about the paper's overall impact. The evaluation is moderately positive, recognizing some merit but with reservations about broader significance.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_6_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer finds the idea exciting, indicating a level of interest and potential significance. However, they express skepticism about the results, which tempers their enthusiasm. The difficulty in separating the idea's promise from its potential outcomes suggests a mixed but not dismissive attitude. The evaluation reflects a balance between intrigue and doubt, leading to a moderate score.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_6_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The reviewer expresses uncertainty about the novelty of the idea, suggesting it might already be explored within the existing field of multimodal QA and VQA. There is no clear enthusiasm or recognition of originality, and the tone is cautious and questioning. The evaluation indicates skepticism about the contribution's distinctiveness, leading to a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Uncertainty_6_Human",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The reviewer finds the overall idea interesting and acknowledges the importance of the topic, particularly in making LLMs trustworthy in real-world applications. However, they express a need for the method to be more clearly built on previous work and to address specific research questions in the field. This indicates a positive attitude towards the idea's potential impact but highlights areas for improvement in execution and clarity.\n\nScore: 6"
+    },
+    {
+      "id": "Uncertainty_6_Human",
+      "true_label": 2,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that the general direction of the proposal is interesting and highlights the potential usefulness of developing solutions for adapting uncertainty expression to domain and user preference. However, the critique points out a lack of a clear solution plan, which limits the perceived effectiveness and impact of the proposal. The tone is moderately positive, recognizing the value of the idea but expressing concern about its execution.\n\nScore: 4"
+    },
+    {
+      "id": "Coding_2_Human",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The reviewer acknowledges that the method is not entirely novel, as all its elements have been studied before. This limits the perceived novelty and excitement. However, the reviewer does not express outright dismissal or negativity, suggesting that while the contribution may not be groundbreaking, it is not without some merit. The tone is neutral, indicating a moderate level of interest.\n\nScore: 3"
+    },
+    {
+      "id": "Coding_2_Human",
+      "true_label": 2,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates that the idea lacks significant impact due to its similarity to existing techniques. The reviewer acknowledges that it might be effective in some cases but finds it straightforward and not technically challenging. The tone suggests limited enthusiasm and sees the contribution as incremental rather than innovative.\n\nScore: 3"
+    },
+    {
+      "id": "Multilingual_6_AI",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation is highly positive, highlighting the project's potential to significantly impact the field by enhancing LLM performance in low-resource languages. The mention of addressing a critical gap and the novel approach suggests strong originality and relevance. The potential for broader applications adds to the excitement and perceived influence of the contribution.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_6_AI",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges some promise in the idea, particularly in improving generations in different dialects. However, the reviewer expresses reservations about its potential to be highly influential, citing reliance on parallel texts as a limitation. The tone is moderately positive but tempered by concerns about broader impact and adoption. This suggests a moderate level of enthusiasm, recognizing some value but not viewing it as groundbreaking.\n\nScore: 4"
+    },
+    {
+      "id": "Bias_4_Human",
+      "true_label": 4,
+      "predicted_score": 3,
+      "response": "Analysis: The reviewer finds the idea somewhat interesting but not particularly exciting. They express skepticism about the approach of focusing on specific emotions and averaging them, suggesting it may not be effective or appropriate for conversational agents. The mention of varying emotional weightings in different contexts indicates a perceived lack of depth or adaptability in the proposed method. The tone is not dismissive but reflects a lack of enthusiasm and confidence in the direction.\n\nScore: 3"
+    },
+    {
+      "id": "Bias_4_Human",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The reviewer expresses skepticism and a lack of understanding regarding the need for the proposed multi-agent system. They highlight a failure to motivate the idea effectively and mention unclear evaluation metrics. The reviewer also doubts the benefits to users, preferring the baseline response over the proposed approach. The tone is dismissive, indicating low excitement and confidence in the idea.\n\nScore: 1"
+    },
+    {
+      "id": "Bias_4_Human",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that the suggested approach is likely to perform well on a specific dataset, indicating some level of effectiveness. However, the reviewer expresses skepticism about its broader applicability and potential to outperform existing strong baselines in more general contexts. The tone is cautiously optimistic about its targeted application but lacks confidence in its overall impact and novelty. This suggests a moderate level of significance, with some positive aspects but also notable limitations.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_3_AI",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses skepticism about the idea's effectiveness, despite acknowledging some novelty. The reviewer doubts the reasonableness and utility of using counterfactuals for uncertainty estimates, indicating a lack of confidence in the approach. The tone suggests that the novelty might not translate into practical value, leading to a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Uncertainty_3_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the idea of using a tree to measure consistency and reliability in LLMs is interesting and could yield valuable insights. However, it also notes that the technical contribution is not as substantial as it could be to achieve greater impact. The tone is moderately positive, recognizing potential usefulness but suggesting room for improvement in terms of technical depth.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_4_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges the novelty of the idea of constraining CoT breakdowns and suggests that it deserves further exploration. While there are noted drawbacks, such as issues with semantic similarity, the reviewer still sees potential value in the results. The tone is moderately positive, recognizing both the innovative aspect and the practical challenges. This suggests a balanced view with an appreciation for the idea's potential impact despite its limitations.\n\nScore: 6"
+    },
+    {
+      "id": "Factuality_4_AI",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation expresses skepticism about both the novelty and effectiveness of the method. The reviewer doubts the method's ability to solve the problem, indicating a lack of confidence in its potential impact. The tone is dismissive, with no indication of enthusiasm or perceived value.\n\nScore: 1"
+    },
+    {
+      "id": "Factuality_4_AI",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposed method lacks novelty and does not offer significant improvements or new ideas. The reviewer finds it too similar to existing works and not exciting enough to warrant further exploration. The tone is dismissive, suggesting minimal enthusiasm or perceived value.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_8_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the idea is generally interesting, indicating a positive attitude. However, it suggests that the authors need to make comparisons with existing methods like KV-cache or embedding-based approaches and have a clearer understanding of retrieval and re-ranking processes. This implies that while the idea has potential, it requires further development and contextualization within the current state of the field. The tone is constructive, suggesting room for improvement but recognizing the idea's potential interest.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_8_AI",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer finds the idea interesting, indicating some level of novelty or potential. However, they express confusion and a need for more detailed explanation and results to be fully convinced. This suggests that while there is some promise, the current presentation lacks clarity or completeness. The tone is not dismissive but indicates that the idea is not yet fully developed or persuasive.\n\nScore: 4"
+    },
+    {
+      "id": "Factuality_4_Human",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses interest in the idea of using large language models to mimic human behavior, particularly in the context of debate and persuasion. It highlights the historical significance of these human activities and suggests that exploring how models can act as different personas is a valuable perspective. The tone is positive and acknowledges the relevance and potential impact of the research area, though it does not explicitly mention novelty or groundbreaking contributions.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_4_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea of using a red team strategy in multi-agent debate is not novel, as it has been frequently used and previously investigated. The mention of existing works that have already shown improvements in factuality suggests that the contribution is incremental. Additionally, the concept of adding a judge agent has also been explored, further reducing the originality of the idea. The tone is neutral, acknowledging prior work without expressing enthusiasm for new contributions or significant advancements.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_4_Human",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates skepticism about the novelty and effectiveness of the proposed method. The reviewer does not express enthusiasm or confidence in the idea's impact or utility. The tone suggests a lack of excitement and potential, with no clear indication of positive aspects or future promise.\n\nScore: 2"
+    },
+    {
+      "id": "Bias_1_AI",
+      "true_label": 4,
+      "predicted_score": 3,
+      "response": "Analysis: The reviewer expresses a lack of excitement due to perceived incorrect assumptions in the method. However, they acknowledge some interesting aspects, particularly in the fallback plans related to how language models handle societal changes and biases. The evaluation suggests that while the main idea may not be compelling, there are elements worth exploring. The tone is not entirely dismissive, indicating some potential for further investigation.\n\nScore: 3"
+    },
+    {
+      "id": "Bias_1_AI",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation is positive and highlights several aspects of the research idea. The reviewer sees it as a good idea worth implementing, with potential interest from the community. Even if the method is ineffective, the study could still provide valuable insights into how models perceive future scenarios, contributing to social science and informing policy. This indicates a recognition of both practical and theoretical value, suggesting a strong potential impact.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_9_Human",
+      "true_label": 7,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation is highly positive, highlighting the project's excitement and its focus on a real-world problem. The emphasis on accessibility and inclusivity suggests a significant potential impact, which is a strong indicator of the project's relevance and importance. The tone is enthusiastic and recognizes the project's implications for advancing AI technologies in meaningful ways.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_9_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the methods are not novel and seem to be an adaptation of existing methods into LLM prompting. The tone suggests a lack of originality and innovation, with the reviewer perceiving the idea as merely a transfer of existing techniques rather than a groundbreaking contribution. There is no indication of excitement or significant impact, leading to a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_9_Human",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea is seen as very incremental, merely combining existing concepts from two separate papers. The reviewer expresses skepticism about the potential for gaining new insights, particularly regarding the improvement of multilingual capabilities of LLMs. The tone suggests a lack of enthusiasm and perceived originality, leading to a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_6_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation is highly positive, highlighting the project's potential to significantly impact the field by improving LLM performance in low-resource languages. The reviewer notes the novelty of the approach and its potential for broader applications, indicating strong enthusiasm and recognition of its influence. This suggests a high level of excitement and perceived importance.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_6_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges some promise in the idea, particularly in improving generations in different dialects. However, the reviewer expresses reservations about its potential to be highly influential, citing the reliance on parallel texts as a limitation. The tone is moderately positive but tempered by concerns about broader impact and adoption. This suggests a moderate level of enthusiasm, recognizing some value but not viewing it as groundbreaking.\n\nScore: 4"
+    },
+    {
+      "id": "Safety_1_Human",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation is quite dismissive, indicating that the contribution lacks novelty entirely. There is no mention of potential usefulness, impact, or any redeeming qualities. The tone suggests a lack of interest or excitement about the idea, aligning with a very low significance score.\n\nScore: 1"
+    },
+    {
+      "id": "Safety_1_Human",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation is positive, highlighting the research problem and methodology as interesting to a broad audience of researchers focused on improving the responsibility of large language models (LLMs) and AI models. The proposal is seen as offering a potential solution to mitigate harms and risks associated with LLMs, indicating relevance and potential impact. The tone suggests enthusiasm and recognition of the proposal's importance in addressing a significant challenge.\n\nScore: 8"
+    },
+    {
+      "id": "Safety_1_Human",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges the novelty and potential improvement that the idea could bring to adversarial input detection, indicating a positive view on its contribution. However, it also notes a lack of fundamental difference from existing approaches, suggesting that while the idea is promising, it may not be groundbreaking. The tone is moderately positive, recognizing some innovation and potential impact, but tempered by the similarity to current methods.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_1_AI",
+      "true_label": 4,
+      "predicted_score": 3,
+      "response": "Analysis: The reviewer expresses skepticism about the impact of the idea, suggesting that real-world trials and learning from errors might be more effective. The mention of the idea being more like a \"self critique\" implies a lack of confidence in its novelty or utility. The tone is not entirely dismissive but indicates limited enthusiasm and perceived impact.\n\nScore: 3"
+    },
+    {
+      "id": "Coding_1_AI",
+      "true_label": 4,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that the problem setting is interesting, indicating some level of engagement and potential value. However, it also notes that there is existing work in the area, which suggests that the novelty or originality of the idea might be limited. The tone is neutral to slightly positive, recognizing the interest but also pointing out that similar efforts have been made.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_3_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that the adversarial paraphrasing to UQ angle is interesting, indicating some level of novelty or intrigue. However, the mention of issues with correctness and effectiveness suggests significant concerns that dampen enthusiasm. The tone is mixed, with recognition of potential but also notable drawbacks that prevent a higher level of excitement.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_3_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation is positive and expresses clear interest in the idea. The reviewer finds the concept intriguing and sees potential in exploring how LLMs can identify implicit assumptions and improve uncertainty estimates. The tone is enthusiastic, indicating a strong interest in the potential outcomes and implications of the research.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_6_Human",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation expresses uncertainty about the method's applicability to future models, which is seen as a potential limitation. However, the reviewer acknowledges that this is a common issue in prompting research, suggesting that the concern is not unique to this particular method. The tone is not dismissive, indicating that the method has some merit despite the limitation. The evaluation reflects a moderate level of concern but does not entirely dismiss the potential value of the research.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_6_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation suggests skepticism about the approach of solving the problem from the prompting space, indicating that it is inherently limited due to its dependence on training data. The reference to an external source reinforces the argument, implying that the issue is well-documented and not easily addressed by the proposed method. The tone is critical, highlighting a fundamental limitation rather than potential strengths or novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_8_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses interest in the potential of the idea, highlighting its relevance for research progress in identifying and generating non-factual statements. The reviewer sees the approach as potentially impactful for various research directions, particularly in moderation and content generation. The tone is optimistic about the project's utility and future applications, indicating a positive attitude towards the idea's significance.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_8_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation is negative, indicating that the idea lacks motivation and real-life applicability. The reviewer does not see any practical scenarios where the idea could be useful, suggesting a lack of relevance and impact. The tone is dismissive, reflecting a low level of enthusiasm and confidence in the idea's significance.\n\nScore: 1"
+    },
+    {
+      "id": "Factuality_8_AI_Rerank",
+      "true_label": 2,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation expresses low excitement due to the lack of novelty and anticipated ineffectiveness of the method. The tone is dismissive, indicating skepticism about the method's potential impact or usefulness. There is no indication of interest or potential for future exploration, leading to a low significance score.\n\nScore: 1"
+    },
+    {
+      "id": "Multilingual_2_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses skepticism about the idea's reliance on LLMs' existing capabilities, particularly in monolingual contexts. It suggests that the idea lacks innovation and does not extend beyond current knowledge. The breakdown of chain-of-thought prompting into steps is seen as a minimal contribution. The tone is dismissive, indicating low excitement and perceived significance.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_2_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Evaluation: \"However, the improvement of the quality is expected.\"\n\nAnalysis: The evaluation suggests that there is room for improvement, indicating that the current state of the idea or method may not meet expectations. The tone is neutral and lacks enthusiasm, focusing on the need for enhancement rather than recognizing any existing strengths or potential. This suggests a low to medium significance, as the reviewer does not express excitement or confidence in the current quality.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_9_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses skepticism about the effectiveness of the proposed pipeline, particularly in addressing issues like hallucination in LLMs. The reviewer highlights that the approach may not lead to performance improvements and points out potential flaws in the methodology. The tone is critical, focusing on the limitations and challenges without indicating any potential benefits or novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_9_Human",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The reviewer expresses uncertainty and skepticism about the idea's effectiveness and implementation. They highlight unclear aspects and express doubt about the expected success. However, there is a conditional interest if the idea were to work extremely well, indicating a slight openness to potential success. The tone is cautious and not very optimistic, reflecting low excitement.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_9_Human",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that the idea is not entirely novel and is seen as a subset of a previously proposed method. However, there is a suggestion that connecting the behavior of negative questioning with model uncertainty could be interesting, indicating some potential for further exploration. The tone is moderately constructive, recognizing a possible area for development, but the excitement is limited due to the lack of novelty.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_10_AI",
+      "true_label": 4,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation suggests that the reviewer finds the project somewhat interesting but feels it lacks clarity or actionable detail. The tone is not dismissive, indicating some potential, but the need for more concrete steps implies that the current presentation is insufficiently developed. This results in a moderate level of interest, as the idea is not fully realized in its current form.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_10_AI",
+      "true_label": 3,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges the potential significance of the approach in the field of linguistics, highlighting its potential to reveal interesting findings about etymology and common structures across languages. However, the contribution to NLP/AI/ML is seen as limited. The tone is moderately positive, recognizing the value in a different domain, which suggests some level of enthusiasm and interest.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_3_Human",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates that the idea lacks novelty and may not be inspiring, as similar ideas have already been proposed. The tone suggests a lack of enthusiasm and excitement, with the contribution seen as incremental rather than groundbreaking. The evaluation does not completely dismiss the idea but highlights its limited originality.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_3_Human",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The reviewer expresses skepticism about the novelty and clarity of the idea, comparing it unfavorably to an existing method (self-consistency). They highlight a need for additional evidence to demonstrate its superiority and express confusion about a key aspect (\"hierarchical\"). The tone suggests a lack of enthusiasm and confidence in the idea's distinctiveness or clarity.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_3_Human",
+      "true_label": 7,
+      "predicted_score": 6,
+      "response": "Analysis: The reviewer expresses excitement and interest in the idea, indicating a positive attitude towards its potential. However, they also note that the idea is unlikely to be transformative or highly influential within the field. This suggests that while the idea is promising and worth pursuing, it may not lead to groundbreaking changes or major advancements. The tone is optimistic but tempered by realistic expectations about the idea's impact.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_1_AI_Rerank",
+      "true_label": 1,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation suggests that the idea is limited in scope, focusing specifically on invariants in code within the code generation setting. The use of self-verification/improvements is noted, but there is no indication of novelty or broad impact. The tone is neutral and lacks enthusiasm, suggesting that the contribution is seen as incremental and not particularly exciting.\n\nScore: 3"
+    },
+    {
+      "id": "Coding_1_AI_Rerank",
+      "true_label": 1,
+      "predicted_score": 1,
+      "response": "Analysis: The reviewer expresses clear skepticism and confusion regarding the idea. They question the validity and relevance of the problem setting, indicating a lack of understanding or belief in its significance. The tone is dismissive, with no indication of potential interest or novelty. This aligns with a very low level of excitement and confidence in the idea.\n\nScore: 1"
+    },
+    {
+      "id": "Multilingual_8_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation expresses clear enthusiasm for the idea, highlighting the importance of cultural awareness and the potential for significant progress by creating new data and evaluating models in new languages. The tone is positive, recognizing both the relevance and potential impact of the work. This suggests a high level of excitement and perceived value in the proposed direction.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_8_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer finds the topic interesting, indicating some level of engagement and potential value. However, they mention having seen similar work before, suggesting a lack of novelty. The main concern is the thoroughness of the evaluation, which implies that the idea's significance may depend heavily on execution rather than inherent originality. The tone is moderately positive but tempered by these concerns.\n\nScore: 4"
+    },
+    {
+      "id": "Factuality_2_AI_Rerank",
+      "true_label": 2,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation indicates skepticism about the solution's ability to address a significant issue, namely the hallucination problem in large language models (LLMs). The tone suggests a lack of confidence in the effectiveness of the proposed solution. There is no mention of potential benefits or novelty, leading to a low significance score.\n\nScore: 1"
+    },
+    {
+      "id": "Factuality_2_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses skepticism about the novelty and effectiveness of the idea. The reviewer leans negative, indicating a lack of confidence in the potential success or impact of the proposal. The tone suggests limited enthusiasm and a dismissive attitude toward the idea's contribution.\n\nScore: 2"
+    },
+    {
+      "id": "Math_1_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The reviewer acknowledges that the proposed method makes intuitive sense, particularly for sophisticated tasks, which suggests some potential merit. However, they express significant reservations about its practical implementation, citing the need for more intelligent design in verification and strategy. The reviewer also has low confidence in the method's effectiveness and notes that it is not fundamentally different from existing approaches like the chain of thought. The tone is cautious and skeptical, indicating limited enthusiasm and a lack of confidence in the method's impact or novelty.\n\nScore: 3"
+    },
+    {
+      "id": "Math_1_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation suggests that the paper is adequate and has a successful prompt strategy, indicating a positive view of its execution. The mention of \"enough analysis\" implies that the paper is thorough and well-supported. However, the evaluation lacks strong enthusiasm or indication of novelty or groundbreaking impact. The tone is positive but not highly excited, suggesting moderate satisfaction with the work.\n\nScore: 6"
+    },
+    {
+      "id": "Bias_3_Human",
+      "true_label": 3,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer acknowledges the importance of the issue being addressed, which is bias mitigation in large language models (LLMs). There is a general excitement about the topic, indicating that it is relevant and significant. However, the reviewer expresses skepticism regarding the novelty and effectiveness of the proposed method, describing it as incremental and not substantially different from existing work. This suggests that while the topic is important, the specific contribution of the proposal is seen as limited in terms of innovation and impact.\n\nScore: 4"
+    },
+    {
+      "id": "Bias_3_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation reflects a conditional optimism. The reviewer acknowledges the potential for significant impact if the project is executed well and can be generalized. However, there is also a cautionary note about the possibility of the idea being implemented in a shallow manner, which would diminish its excitement and influence. The tone is balanced, showing both potential for high significance and risk of underwhelming execution.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_5_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation expresses a positive outlook on the project, highlighting its relevance due to the advancements in large language models (LLMs) and the growing interest in code generation. The reviewer believes the project will attract interest from many people, indicating a recognition of its potential impact and significance. However, the evaluation does not mention any specific novelty or groundbreaking aspects, which suggests moderate enthusiasm rather than high excitement.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_5_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation indicates that the idea addresses a significant problem in the field, specifically the insufficient testing for code generation. The reviewer anticipates that the proposed method will bring improvements and suggests that it could be of interest to many people in the field. This reflects a positive attitude towards the idea's relevance and potential impact, though it does not suggest groundbreaking novelty.\n\nScore: 7"
+    },
+    {
+      "id": "Bias_2_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 3,
+      "response": "Analysis: The reviewer perceives the idea as a minor, practical enhancement rather than a significant theoretical advancement. They express skepticism about its ability to deepen understanding or inspire future research. The tone suggests limited enthusiasm, recognizing some utility but not seeing it as a major contribution to the field.\n\nScore: 3"
+    },
+    {
+      "id": "Bias_2_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The reviewer finds the idea unexciting and straightforward, noting that it merely combines two mainstream research topics. There is no indication of novelty or significant contribution, as it is seen as a predictable approach within the current landscape of large language models (LLMs). The tone suggests a lack of enthusiasm and interest, with the idea perceived as lacking originality.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_2_AI",
+      "true_label": 8,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer expresses curiosity about the results, indicating some interest. However, they also note that the prompting aspect seems straightforward, while the verification of output quality is challenging. This suggests a recognition of potential difficulty in execution rather than novelty or impact. The tone is neutral, with neither strong enthusiasm nor dismissal.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_2_AI",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation highlights several concerns, including limitations in curating concepts and evaluating explanations automatically. There is also uncertainty about the method's effectiveness for culturally exclusive concepts. The tone suggests skepticism and a lack of confidence in the method's applicability and robustness. The concerns outweigh any potential positives, leading to a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_6_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation acknowledges some potential in the idea but ultimately expresses skepticism about its effectiveness and meaningfulness. The reviewer believes that current in-context learning approaches are superior, indicating a lack of confidence in the proposed idea's ability to outperform existing methods. The tone is not entirely dismissive but leans towards a lack of enthusiasm due to perceived ineffectiveness.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_6_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The reviewer acknowledges that the method is not entirely novel, as it involves adding a verification step to an existing process. They also point out that similar work has been done in the area of multi-hop reasoning, referencing specific prior studies. This suggests that the contribution is seen as incremental rather than groundbreaking. However, the reviewer does not dismiss the idea entirely, indicating some recognition of its potential relevance.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_11_Human",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The reviewer expresses clear enthusiasm for the paper, particularly among domain experts, indicating that it is well-regarded within a specific field. However, they also note that the impact may be limited outside this niche, suggesting that while the paper is significant within its domain, it may not have broad appeal across the entire AI/ML community. The tone is positive and acknowledges the paper's potential to be well-received by specialists.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_11_Human",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The reviewer expresses a positive attitude towards the idea, noting that it is \"quite cool\" to see the combination of LLMs and retrieval impacting the legal field. Although the reviewer admits that the intersection of law and LLMs is not their specialty, they appreciate the potential impact on a field that heavily relies on retrieving precedents and reasoning. The tone is enthusiastic and acknowledges the innovative application of technology in a specific domain.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_11_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The reviewer acknowledges the effectiveness of the idea, comparing it to the established chain of thought (CoT) methodology. While they note that the idea is incremental, they still see it as a valuable contribution, particularly if executed well. The mention of it being suitable for an AI conference indicates a positive view of its significance and potential impact. The tone is constructive, with moderate enthusiasm for its practical application.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_5_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the idea has some promising elements and potential for development. The mention of \"obvious improvement\" suggests that the current state is not fully realized but holds promise. The reviewer sees potential interest in the results if improvements are made, indicating moderate enthusiasm and a belief in the idea's potential impact.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_5_Human",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation highlights the critical nature of the research question, emphasizing its importance in bridging human intents with code generation. This suggests a recognition of the proposal's relevance and potential impact in addressing a significant challenge. The tone is positive and indicates enthusiasm for the research direction.\n\nScore: 8"
+    },
+    {
+      "id": "Coding_5_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation is generally positive, highlighting that the idea and example are strong. However, it points out the need for additional justifications and comparisons with existing methods (RAG baselines). The reviewer also suggests that the API usage style could be a contribution, but emphasizes the need for effective evaluation metrics. The tone is constructive, indicating potential and interest, but also notes areas for improvement to strengthen the work.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_5_AI",
+      "true_label": 3,
+      "predicted_score": 4,
+      "response": "Evaluation: \"There have been several works with similar ideas, so this project wouldn't be fully new to the world. But the domain of API\"\n\nAnalysis: The evaluation suggests that the idea lacks novelty due to the existence of similar works. However, the mention of the \"domain of API\" implies there might be some relevance or applicability in that specific area. The tone is neutral, recognizing the idea's presence but not expressing strong enthusiasm or excitement. The contribution seems incremental rather than groundbreaking.\n\nScore: 4"
+    },
+    {
+      "id": "Factuality_10_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer finds the idea of leveraging models' self-estimation of confidence to guide the use of external knowledge or self-reflection interesting, indicating some level of novelty and potential. However, there is skepticism about the effectiveness of this selective improvement compared to using external information or self-reflection from the start. The evaluation reflects curiosity but also uncertainty about the practical advantage, leading to a moderate level of enthusiasm.\n\nScore: 4"
+    },
+    {
+      "id": "Factuality_10_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation is positive and highlights the novelty of the idea, noting it as the first of its kind to explicitly separate parts based on confidence levels. The reviewer finds the approach interesting and sees it as a promising starting point in confidence calibration strategies. The mention of an adaptive generation strategy to enhance performance adds to the perceived value. The tone is enthusiastic and acknowledges both innovation and potential impact.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_10_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses optimism about the potential of the pipeline, highlighting its general applicability and innovative approach to handling uncertainty in LLM answers. The idea of switching modes based on confidence is seen as an interesting and potentially impactful method for interacting with models. The tone is positive and suggests a promising direction, though it hinges on the pipeline's effectiveness.\n\nScore: 7"
+    },
+    {
+      "id": "Multilingual_1_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the proposal lacks originality and transformative potential. The reviewer notes that similar work has been attempted with mixed results, and the current proposal does not offer additional analysis or insights. The tone suggests skepticism about the proposal's impact and novelty, leading to a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_1_Human",
+      "true_label": 3,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer expresses excitement about the potential to control the behavior of the LLM, indicating some positive interest. However, they also note a lack of excitement regarding the use of another prompting method with negative examples for low-resource machine translation, suggesting that this aspect is not novel or particularly impactful. The evaluation reflects a mix of enthusiasm for one aspect and a lack of novelty in another, leading to a moderate level of significance.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_2_AI",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses a lack of excitement and highlights practical concerns regarding cost and time inefficiency. The idea is described as straightforward, suggesting limited novelty. The critique focuses on the limitations in real-world applicability, indicating a low level of enthusiasm and perceived impact.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_2_AI",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation is quite negative, highlighting several critical issues with the idea. The lack of motivation and intuition suggests that the reviewer finds the concept poorly justified and difficult to grasp. The mention of unpromising effectiveness indicates skepticism about the practical success of the idea. Additionally, describing the method as over-simplified implies that it lacks the necessary complexity or depth to be impactful. Overall, the tone is dismissive, with little to no enthusiasm or recognition of potential value.\n\nScore: 1"
+    },
+    {
+      "id": "Factuality_2_AI",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses significant skepticism about the scalability and practicality of the idea. The reviewer highlights concerns about token limitations, potential issues with self-contradiction, and reliance on the model's internal knowledge. The tone is critical, focusing on limitations and challenges without acknowledging any potential strengths or benefits. This indicates a low level of enthusiasm and confidence in the idea's significance.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_9_AI",
+      "true_label": 3,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation suggests that the project lacks clarity in defining a key concept, \"semantic error,\" which limits its impact. The reviewer notes that the current approach is not significantly different from existing methods, indicating a lack of originality or innovation. While there is a suggestion for improvement, the overall tone reflects limited enthusiasm and a perception of incremental contribution.\n\nScore: 3"
+    },
+    {
+      "id": "Coding_9_AI",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea lacks originality and excitement because it closely resembles existing studies on code generation with LLM. The tone suggests a lack of enthusiasm due to the perceived redundancy and absence of novelty. The contribution is seen as incremental rather than innovative.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_9_AI",
+      "true_label": 6,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation expresses skepticism about the effectiveness of the idea, suggesting it won't significantly impact the field. However, there is a mention of fallback plans, such as ensemble models, which might have some potential for acceptance in conferences. This indicates a slight acknowledgment of possible utility, though the overall tone remains unenthusiastic and doubtful about the primary idea's impact.\n\nScore: 3"
+    },
+    {
+      "id": "Safety_3_AI_Rerank",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses skepticism about the contribution of the project due to the similarity with existing ideas and unclear implementation plans. The mention of increased burdens in inference time and the description of the project as merely an \"interesting 'finding'\" suggest a lack of enthusiasm and perceived impact. While the experiment results might be positive, the overall tone is dismissive regarding the project's significance to the community.\n\nScore: 2"
+    },
+    {
+      "id": "Safety_3_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer expresses cautious optimism about the idea, indicating a positive attitude if the method proves effective. However, there is a lack of full confidence in its effectiveness, which tempers the enthusiasm. The tone suggests potential value but with reservations, leading to a moderate level of excitement.\n\nScore: 5"
+    },
+    {
+      "id": "Math_4_AI",
+      "true_label": 7,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges the intuitive nature of the idea and suggests that it could be interesting for a specific sub-community if successful. The tone is cautiously optimistic, recognizing potential interest but not expressing strong enthusiasm or novelty. The idea is seen as having some merit, particularly within a niche area, but lacks broader excitement or groundbreaking impact.\n\nScore: 4"
+    },
+    {
+      "id": "Math_4_AI",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses optimism about the potential impact of the idea, particularly in the challenging area of theorem proving. The reviewer indicates that if the proposed method is successful, it would be exciting, suggesting a recognition of the method's potential significance. The tone is hopeful and anticipates a meaningful contribution to a difficult problem, indicating a positive attitude.\n\nScore: 7"
+    },
+    {
+      "id": "Safety_4_AI",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation is positive and highlights the novelty of the approach in adversarial attack generation. The reviewer appreciates the innovative method of using related scenarios to create diverse attacks, which is seen as a clever way to bypass safety filters and discover new scenarios. The mention of potential iterative or self-refining applications suggests excitement about the unpredictability and effectiveness of the outputs. The tone is enthusiastic, recognizing both the originality and potential impact of the idea.\n\nScore: 8"
+    },
+    {
+      "id": "Safety_4_AI",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges the potential contribution of the idea to LLM safeguarding, contingent on the significance of the improvement. However, it also expresses skepticism about its ability to inspire further research if the improvement is not substantial. The tone is cautious, recognizing possible value but also highlighting uncertainty about its broader impact. This suggests a moderate level of interest, with potential for significance if certain conditions are met.\n\nScore: 4"
+    },
+    {
+      "id": "Coding_8_Human",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses uncertainty and a lack of clarity regarding the proposed method's contributions and effectiveness. The reviewer's tone indicates skepticism and a lack of excitement, suggesting that the idea is not well-defined or compelling. This aligns with a low significance score, as the reviewer does not see clear value or impact.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_8_Human",
+      "true_label": 7,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation reflects a mix of curiosity and skepticism. The reviewer acknowledges the potential impact and ambition of the idea, indicating a positive outlook. However, there is some uncertainty regarding how the approach fits into existing frameworks and why current models can't achieve the same results. This suggests that while the idea is intriguing, there are questions about its novelty and clarity. The tone is cautiously optimistic, with interest in the potential outcomes.\n\nScore: 6"
+    },
+    {
+      "id": "Math_2_Human",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses skepticism about the originality and justification of the idea. The reviewer notes that the approach resembles existing works and lacks clear insights or novelty, particularly in its application to mathematical proofs. Additionally, the comparison with baselines is deemed unfair, and the idea requires further refinement. The tone suggests a need for significant improvement and does not convey enthusiasm or confidence in the current contribution.\n\nScore: 2"
+    },
+    {
+      "id": "Math_2_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea is seen as an incremental application of existing work, specifically the Tree of Thought, to a slightly different domain. The reviewer expresses doubt about the impact of the idea, suggesting a lack of novelty and limited potential for significant contribution. The tone is skeptical, with no indication of excitement or strong interest.\n\nScore: 2"
+    },
+    {
+      "id": "Safety_4_AI_Rerank",
+      "true_label": 9,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses optimism about the potential impact of the proposed method, particularly in handling sensitive data without revealing identifiers. This suggests a significant relevance to privacy and data security, which are important challenges. The phrase \"likely to impact\" indicates a positive outlook on the method's effectiveness and future utility. The tone is hopeful and acknowledges the potential for meaningful contributions.\n\nScore: 7"
+    },
+    {
+      "id": "Safety_4_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation highlights significant limitations, such as scalability issues and the need for manual effort, which dampens enthusiasm. The tone suggests that while the idea has some merit, these drawbacks significantly reduce its perceived impact and excitement. The critique is more focused on practical challenges rather than outright dismissal, indicating a low to medium significance.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_10_AI",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer finds the idea of leveraging models' self-estimation of confidence to guide external knowledge or self-reflection interesting, indicating some level of novelty and potential. However, there is skepticism about the effectiveness of this selective improvement compared to using external information or self-reflection from the start. The evaluation reflects curiosity but also uncertainty about the practical advantage or superiority of the proposed approach. The tone is moderately positive but tempered by doubts about the concept's efficacy.\n\nScore: 4"
+    },
+    {
+      "id": "Factuality_10_AI",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The reviewer expresses clear enthusiasm for the idea, noting its novelty and the interesting approach of explicitly separating parts in generation with respect to confidence levels. They highlight the adaptive generation strategy as a performance booster and see the work as an intriguing starting point in confidence calibration strategies. The tone is positive and acknowledges both innovation and potential impact.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_10_AI",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses optimism about the potential of the pipeline, highlighting its ability to address varying levels of uncertainty in LLM answers. The idea of switching modes based on confidence is seen as an interesting and potentially novel approach to interacting with models. The tone is positive, indicating a belief in the method's utility and innovation, though it stops short of declaring it revolutionary.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_3_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation suggests a conditional interest in the idea, contingent on the presence of convincing results. The mention of \"potential of iterative test case generation\" indicates some excitement and perceived value. However, the enthusiasm is not fully realized without evidence of effectiveness. The tone is cautiously optimistic, recognizing potential but awaiting validation.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_3_Human",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation is highly positive, highlighting the importance and high impact of the research topic. The reviewer emphasizes the connection to scalable oversight, indicating relevance and potential for significant contributions. Additionally, the possibility of generalizing the method to other domains suggests broad applicability and innovation. The tone is enthusiastic and recognizes both the current value and future potential of the idea.\n\nScore: 9"
+    },
+    {
+      "id": "Coding_7_AI",
+      "true_label": 6,
+      "predicted_score": 9,
+      "response": "Analysis: The reviewer expresses clear enthusiasm and excitement about the potential of LLMs to extract axioms or principles for specific programming paradigms and apply them to coding. They acknowledge the challenge and the need for strong reasoning abilities, indicating a belief in the significance and impact of the idea. The tone is optimistic and anticipates a meaningful contribution to the field.\n\nScore: 9"
+    },
+    {
+      "id": "Coding_7_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation expresses some uncertainty regarding the feasibility of the data collection step, which is a critical component of the project. However, the reviewer believes that if this challenge is overcome, the idea has the potential to be executed well and yield exciting results. This indicates a positive outlook on the project's potential impact and success, contingent on the availability of high-quality data. The tone is cautiously optimistic, suggesting moderate to high significance.\n\nScore: 6"
+    },
+    {
+      "id": "Factuality_5_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the research idea contributes only marginally to existing knowledge about RAG (Retrieval-Augmented Generation). The tone suggests a lack of enthusiasm and perceives the contribution as minimal. There is no indication of novelty or significant impact, leading to a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_5_Human",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation leans negative due to a perceived lack of novelty in the proposed idea. Additionally, there is confusion regarding the methodology, specifically how quotes are generated or retrieved. This uncertainty contributes to the reviewer's difficulty in assessing the idea's value. The tone suggests skepticism and a lack of clarity, leading to a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_5_Human",
+      "true_label": 4,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that the idea is interesting and has potential impact, but it is not novel due to similar existing concepts. The reviewer highlights several technical shortcomings, such as lack of clarity on technical details, evaluation of entailment, and handling of datasets. Additionally, there are concerns about measuring citations across large documents and managing latency issues. These limitations prevent the idea from achieving a higher score, despite its potential.\n\nScore: 4"
+    },
+    {
+      "id": "Coding_2_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that the idea is similar to existing works, suggesting a marginal contribution. However, there is an openness to potential insights from experiments that could pivot the idea to something more effective or impactful. This indicates a moderate level of interest and potential for development, though not immediate excitement or novelty.\n\nScore: 4"
+    },
+    {
+      "id": "Coding_2_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The reviewer finds the concept of SPE interesting, indicating a positive attitude towards the idea. However, they express skepticism about the extent of improvement it might bring. Despite this, they acknowledge that any enhancement in model performance would make the work interesting to read. The tone is cautiously optimistic, recognizing potential value without expecting groundbreaking results.\n\nScore: 6"
+    },
+    {
+      "id": "Uncertainty_1_Human",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges some potential interest in applying the idea to text domains, suggesting a willingness to explore its possibilities. However, there is skepticism about the novelty and effectiveness of directly transferring methods from the vision domain to the text domain. The tone is cautious, with recognition of potential but also significant doubts about its success and originality.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_1_Human",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer acknowledges the value in improving the quantification of uncertainty in large language models (LLMs), indicating some appreciation for the idea. However, they express skepticism about its potential to significantly impact the field. The tone is moderately positive but lacks enthusiasm for transformative change, suggesting limited excitement about the broader implications.\n\nScore: 4"
+    },
+    {
+      "id": "Math_4_Human",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation expresses a positive attitude towards the idea, highlighting its novelty and potential interest to the community. The reviewer anticipates that with strong empirical results, the idea could appeal to a broader audience, indicating a belief in its potential impact and relevance. The tone is optimistic and suggests excitement about the contribution.\n\nScore: 8"
+    },
+    {
+      "id": "Math_4_Human",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The reviewer expresses a lack of excitement due to the method being a combination of existing approaches. They do not anticipate any new insights or contributions from this method. The tone suggests that the idea lacks originality and does not offer significant advancement or novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Math_2_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation highlights the importance of studying how to introduce constraints to LLMs, indicating that it is a significant direction. The mention of math being a hard task with many new methods suggests a recognition of the complexity and challenge involved. The emphasis on achieving good performance to make the work exciting implies that there is potential for impact and interest if successful. The tone is generally positive, acknowledging the importance and potential of the research area.\n\nScore: 7"
+    },
+    {
+      "id": "Math_2_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer finds the idea of showing robustness to constraints in a multivariate math problem exciting, indicating a positive attitude towards the core concept. However, they express some reservations about the applicability, noting that some domains seem \"toyish\" and suggesting that the approach would be more compelling if it demonstrated efficacy in more complex domains. This indicates moderate enthusiasm, recognizing potential but also highlighting limitations.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_1_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation suggests that the idea is not groundbreaking or revolutionary in the field of machine learning. However, it is deemed suitable for presentation at a machine learning conference, indicating that it has some merit and relevance. The tone is moderately positive, recognizing the work as competent and conference-worthy, though not transformative.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_1_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer sees potential in the idea, particularly in its ability to build upon and improve existing work like ToT. The mention of taking inspiration from recent works suggests a recognition of the idea's relevance and potential for advancement. However, the enthusiasm is moderate, as the evaluation does not indicate a breakthrough or high excitement.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_7_Human",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses a positive attitude towards the idea, highlighting its relevance and potential interest. The reviewer acknowledges that even partial success would be valuable, indicating a recognition of the significance of exploring the gap between implicit and explicit knowledge in LLMs. The tone is optimistic and suggests that the work could contribute meaningfully to the field.\n\nScore: 7"
+    },
+    {
+      "id": "Multilingual_7_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges the potential interest and relevance of the proposed approach to the machine translation (MT) community, particularly for low-resource and dialect-specific systems. The reviewer appreciates the comprehensive analysis included in the paper, which could enhance its appeal. However, they note that the method is somewhat incremental due to the existing use of bilingual lexicons in LLM-based MT. The mention of a \"small nit-pick\" suggests minor concerns but does not significantly detract from the overall positive tone. The evaluation reflects moderate enthusiasm, recognizing both the practical potential and the incremental nature of the contribution.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_6_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 9,
+      "response": "Analysis: The reviewer expresses clear enthusiasm and excitement about the potential of LLMs to extract axioms or principles for specific programming paradigms or problem domains. They highlight the requirement for strong and comprehensive reasoning abilities, indicating that they see this as a significant and challenging advancement. The tone is very positive, suggesting a high level of interest and perceived impact.\n\nScore: 9"
+    },
+    {
+      "id": "Coding_6_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The reviewer expresses some uncertainty regarding the feasibility of the data collection step, which indicates a potential challenge. However, they also convey optimism about the project's potential to yield exciting results, provided that a large amount of high-quality code is available. This suggests that the idea is seen as promising and potentially impactful, contingent on overcoming the data collection hurdle. The tone is cautiously optimistic, recognizing both the potential and the challenges.\n\nScore: 6"
+    },
+    {
+      "id": "Factuality_8_Human",
+      "true_label": 8,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation highlights the importance of negation handling in prompt engineering and indicates a gap in the current literature, as the reviewer has not encountered a paper that satisfactorily addresses this issue. This suggests that the idea has potential significance and relevance. The tone is somewhat positive, as it implies that addressing this gap could be valuable.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_8_Human",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The reviewer expresses uncertainty about the motivation behind the idea and questions the necessity of using prompting for the classification step. This indicates skepticism and a lack of confidence in the approach's necessity or innovation. The tone is not dismissive but reflects doubt and a lack of enthusiasm, suggesting limited perceived significance.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_8_Human",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation suggests conditional optimism. The acceptance of the approach is contingent on its effectiveness, particularly in solving the issue of negation. The tone indicates that if the method proves successful, it has a strong chance of being accepted in a major AI venue. This implies potential significance and relevance, though the evaluation hinges on the outcome of the approach's application.\n\nScore: 7"
+    },
+    {
+      "id": "Uncertainty_5_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates skepticism and uncertainty about the novelty and utility of the idea. The mention of \"a lot of similar work\" suggests a lack of originality, and the reviewer is unsure about the specific application of the confidence score in the pipeline. The tone is not dismissive but reflects doubt and a lack of enthusiasm, leading to a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Uncertainty_5_AI",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The reviewer acknowledges the existence of the idea but expresses a lack of excitement due to its lack of originality. The tone suggests that the contribution is seen as incremental and not particularly inspiring. There is no indication of novelty or significant impact, leading to a low level of enthusiasm.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_5_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates a lack of excitement due to the idea being a combination of existing concepts, suggesting limited novelty. The reviewer also expresses doubts about the method's effectiveness and sees potential for improvement. The tone is not dismissive but reflects skepticism and a need for further development.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_5_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses a positive view of the proposed idea, highlighting its novelty and the clarity of the execution plan. The reviewer anticipates potential improvements, indicating a constructive and optimistic attitude. While the excitement level is not extremely high, the acknowledgment of novelty and potential impact suggests a significant level of interest.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_6_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea lacks originality, as the motivation is similar to existing work. Additionally, the running example is deemed unconvincing, suggesting that the practical demonstration of the idea is weak. The tone reflects skepticism and a lack of enthusiasm, with no mention of potential value or impact. This aligns with a low significance score due to the absence of novelty and effectiveness.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_6_Human",
+      "true_label": 1,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation is highly dismissive, indicating that the idea lacks coherence and relevance. The reviewer explicitly states that the idea doesn't make sense and provides a rationale by comparing it to simpler problems, suggesting a fundamental misunderstanding or misalignment with the intended context. There is no indication of novelty, potential, or interest, leading to a very low significance score.\n\nScore: 1"
+    },
+    {
+      "id": "Coding_6_Human",
+      "true_label": 8,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges the importance of improving context-awareness for a generalist coding assistant and its potential significance in advancing towards the AGI goal. The reviewer expresses optimism about the progress this could represent. However, they also caution that naive prompting without training or tuning might limit the achievement of this goal. The tone is generally positive, recognizing the potential impact, but tempered by concerns about the current approach's limitations.\n\nScore: 7"
+    },
+    {
+      "id": "Safety_1_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation highlights the importance of the research problem to the AI community, indicating that it addresses a significant issue. The mention of interest to many AI safety researchers suggests that the work is relevant and potentially impactful within a specialized field. The tone is positive, reflecting enthusiasm and recognition of the research's value.\n\nScore: 8"
+    },
+    {
+      "id": "Safety_1_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation is positive and highlights the novelty and excitement surrounding the proposed idea. The reviewer is particularly interested in the potential of the idea to address adversarial attacks, indicating a strong relevance and potential impact. The tone is enthusiastic and suggests that the idea could be both interesting and inspirational if successful.\n\nScore: 8"
+    },
+    {
+      "id": "Factuality_7_AI",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation is highly dismissive and critical of the idea. The reviewer expresses a strong preference for alternative approaches and criticizes the use of LLMs for the proposed purpose. The tone is negative, indicating a lack of interest or belief in the potential of the idea. There is no acknowledgment of novelty or utility, leading to a very low significance score.\n\nScore: 1"
+    },
+    {
+      "id": "Factuality_7_AI",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation acknowledges an interesting aspect of the idea, specifically the inspiration from human cognition. However, the reviewer expresses skepticism about its effectiveness for LLMs, indicating that the idea is not sufficiently convincing. The tone suggests some intrigue but lacks confidence in the practical application or impact, leading to a low–medium significance score.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_7_AI",
+      "true_label": 3,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges the idea's potential interest and broader implications, particularly in developing personalized learning with better temporal factual consistencies. However, it also notes a close similarity to existing RAG techniques and describes the contribution as somewhat incremental. The tone is moderately positive, recognizing some value but not seeing it as highly novel or groundbreaking.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_5_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The reviewer acknowledges known shortcomings in the idea but highlights a significant aspect that could be a major contribution—specifically, the analysis with real native speakers. This indicates a positive view of the potential impact and novelty in the sociolinguistic context. The excitement is more focused on this aspect, suggesting moderate to high enthusiasm for its contribution to the field.\n\nScore: 6"
+    },
+    {
+      "id": "Multilingual_5_AI",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation is highly positive, highlighting the project's potential to make a significant impact in the field of NLP. The focus on adapting language models to various social and cultural contexts is seen as a valuable contribution, especially in multilingual and low-resource language processing. The tone is enthusiastic and recognizes the project's potential to advance understanding and application in a meaningful way.\n\nScore: 9"
+    },
+    {
+      "id": "Safety_5_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation highlights the novelty of using existing LLMs to generate semantic fog. The term \"novel approach\" suggests originality and innovation, indicating a positive attitude towards the idea. However, the evaluation lacks detailed enthusiasm or specific potential impacts, which might limit the score from reaching the highest levels.\n\nScore: 7"
+    },
+    {
+      "id": "Safety_5_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation indicates that the paper is well-formed and includes important components like an ablation study and human evaluation, which are positive aspects. The reviewer finds the proposal exciting enough for acceptance, suggesting a generally favorable view. However, the idea is noted to be somewhat similar to concurrent papers, which slightly diminishes its perceived novelty. The score of 6 reflects a positive attitude with some reservations about originality, indicating moderate enthusiasm and recognition of value.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_2_AI",
+      "true_label": 3,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation suggests that the idea is conceptually straightforward but presents significant challenges in execution. This indicates a recognition of potential value, as the difficulty in implementation implies complexity and possible impact. However, the lack of enthusiasm or excitement about the idea's novelty or immediate applicability suggests a moderate level of significance. The tone is neutral, acknowledging the challenge without expressing strong positive or negative sentiment.\n\nScore: 4"
+    },
+    {
+      "id": "Coding_2_AI",
+      "true_label": 7,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation indicates a positive outlook on the proposed idea. The reviewer anticipates that the community will find the empirical paper on training and using multi-step multi-image reasoning VLMs to be very useful. This suggests that the idea is seen as relevant and potentially impactful. The tone is optimistic, highlighting the utility and applicability of the work.\n\nScore: 8"
+    },
+    {
+      "id": "Math_1_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The reviewer expresses curiosity and interest in the retrieval aspect of the project. They see potential value in understanding the specific cases where retrieval can bring improvements, indicating a positive attitude towards future exploration. The tone is inquisitive and open to further investigation, suggesting moderate enthusiasm and recognition of potential impact.\n\nScore: 6"
+    },
+    {
+      "id": "Math_1_Human",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The reviewer expresses significant skepticism about the idea, indicating that it largely does not make sense to them. However, they acknowledge a novel aspect related to retrieving relevant sub-tasks, which they believe could be developed into something reasonable. This recognition of novelty prevents the score from being the lowest possible, but the overall tone remains largely negative.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_4_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that the proposed method is more scalable and efficient than RAG, which indicates a positive aspect in terms of performance. However, the reviewer questions the motivation behind the approach, specifically why retrieving knowledge from the model itself is preferable to using external knowledge. This suggests a lack of clarity or justification in the conceptual framework, which tempers the enthusiasm. The evaluation reflects a mix of positive recognition for efficiency and scalability, but also significant skepticism regarding the underlying rationale.\n\nScore: 4"
+    },
+    {
+      "id": "Factuality_4_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation indicates that the approach is based on a widely adapted scheme and lacks novelty. The use of LLM as a backbone is not seen as introducing new methods. The tone suggests a lack of excitement due to the absence of originality, though it does not completely dismiss the approach. The contribution is seen as incremental rather than groundbreaking.\n\nScore: 3"
+    },
+    {
+      "id": "Uncertainty_4_Human",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer finds the idea interesting, indicating some level of novelty or appeal. However, they express concerns about the method's applicability, noting that it is limited to specific scenarios involving reference generation. Additionally, there is uncertainty about its effectiveness in improving general confidence estimation. The evaluation reflects a mix of interest and skepticism, suggesting moderate significance due to the method's limited scope and uncertain broader impact.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_4_Human",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer acknowledges the existence of many similar methods, suggesting that the idea may not become a standard practice or replace existing methods. However, they recognize some novelty and potential for further investigation in each step of the method. The tone is moderately positive, indicating that while the idea may not be groundbreaking, it has interesting aspects worth exploring.\n\nScore: 4"
+    },
+    {
+      "id": "Safety_5_Human",
+      "true_label": 1,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation is brief and indicates a lack of novelty in the idea. There is no mention of potential usefulness, impact, or any positive aspects. The tone is dismissive, suggesting that the idea does not contribute anything new or valuable to the field.\n\nScore: 1"
+    },
+    {
+      "id": "Safety_5_Human",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation expresses clear skepticism and fatigue regarding the research. The reviewer highlights that the work merely re-discovers well-known facts and follows a repetitive pattern in safety research. There is a lack of excitement and novelty, and the specific defense method mentioned is considered weak. The tone is dismissive, indicating low significance and impact.\n\nScore: 1"
+    },
+    {
+      "id": "Safety_5_Human",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation expresses clear interest and enthusiasm for the study's potential outcomes. The reviewer finds the research intriguing and sees it as inspirational for future work, regardless of the specific results. This indicates a recognition of the study's relevance and potential impact in the field. The tone is positive and anticipates meaningful contributions to ongoing research.\n\nScore: 8"
+    },
+    {
+      "id": "Coding_7_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the foundational elements of the idea are not entirely novel, as they are similar to existing work. However, it also highlights the importance of the problem being addressed, which is long-form code generation. This suggests that while the approach may not be groundbreaking in terms of methodology, it is tackling a significant and relevant issue. The tone is moderately positive, recognizing the potential impact of addressing an important problem despite the lack of novelty.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_7_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer acknowledges the potential of the idea but suggests that it could be more exciting with improvements, specifically by constructing a comprehensive benchmark. They see the current evaluation as under-exploited and suggest enhancements for more informative results. The tone is constructive, indicating that the idea has merit but requires further development to reach its full potential.\n\nScore: 4"
+    },
+    {
+      "id": "Math_3_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges the intuitive nature of the idea and suggests that it could be interesting for a specific sub-community if successful. The tone is cautiously optimistic, recognizing potential value but not expressing strong enthusiasm or novelty. The idea is seen as having niche appeal rather than broad impact.\n\nScore: 5"
+    },
+    {
+      "id": "Math_3_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses optimism about the potential impact of the idea, particularly in addressing a challenging task like theorem proving. The reviewer indicates that success in this area would be exciting, suggesting a recognition of the method's potential significance. However, the excitement is conditional on the method's success, implying some uncertainty. The tone is positive and anticipates a meaningful contribution if the method proves effective.\n\nScore: 7"
+    },
+    {
+      "id": "Bias_2_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses skepticism about the significance of prompting techniques in NLP, describing their contributions as marginal and incremental. The mention of brittleness further underscores the perceived limitations and lack of robustness. The tone is dismissive, indicating a lack of enthusiasm or belief in the potential impact of the idea.\n\nScore: 2"
+    },
+    {
+      "id": "Bias_2_AI",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The reviewer expresses a negative leaning due to a lack of clarity regarding the practical application of the idea. They suggest that the work is incomplete without addressing specific user scenarios, indicating a need for further research or validation. The tone is not entirely dismissive, as there is a suggestion for improvement, but the current contribution is seen as insufficient.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_3_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation is generally positive, highlighting the potential for significant advancement in code generation models and prompting. The reviewer sees the possibility of creating a valuable benchmark or environment for achieving multi-objective performance, provided that the infrastructure is well set up. There is an acknowledgment of the potential for a deeper understanding of prompting capabilities with stronger baselines. The tone is optimistic about the potential impact and utility, though it hinges on careful execution and setup.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_3_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The reviewer expresses clear excitement about the project, indicating a positive attitude. However, they also mention concerns about deployment and the potential limitations of the personas in eliciting novel responses. The suggestion to pursue additional training or multi-model approaches shows that the reviewer sees room for improvement but remains optimistic about the project's potential. The overall tone is constructive, with a balance of enthusiasm and caution.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_3_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer acknowledges that the idea is situated in a new and active area, which suggests potential relevance and interest. However, they also note the presence of many similar ideas, indicating limited novelty. The significance of the contribution is seen as contingent on the implementation details and the insights gained from detailed ablations. The tone is cautiously optimistic, recognizing potential value if certain conditions are met.\n\nScore: 5"
+    },
+    {
+      "id": "Safety_3_AI",
+      "true_label": 9,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation suggests a positive outlook on the proposed method, highlighting its potential impact on handling sensitive data without compromising identifiers. The reviewer sees the method as having future utility, particularly in improving the use of sensitive information. The tone is optimistic about the method's implications, indicating a recognition of its relevance and potential significance.\n\nScore: 7"
+    },
+    {
+      "id": "Safety_3_AI",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation highlights significant limitations, such as scalability issues and the need for manual intervention, which dampens enthusiasm. The tone suggests skepticism about the project's feasibility and impact. While the idea is not dismissed outright, the concerns about practicality and effort required indicate a low level of excitement and perceived significance.\n\nScore: 2"
+    },
+    {
+      "id": "Bias_4_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 7,
+      "response": "Analysis: The reviewer expresses a positive attitude towards the idea, acknowledging its potential to be highly significant if executed well. They see the possibility of the idea being impactful, particularly as a debiasing technique that could offer new insights into biases in language models. The evaluation suggests that the final significance depends on the execution and results, indicating a range of potential scores. The tone is optimistic and anticipates a meaningful contribution, though it remains contingent on future outcomes.\n\nScore: 7"
+    },
+    {
+      "id": "Bias_4_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges potential effectiveness but highlights limited novelty and a lack of insights. This suggests that while the idea might work, it doesn't offer new understanding or innovation. The tone is moderately neutral, recognizing some value but not expressing strong enthusiasm or excitement.\n\nScore: 4"
+    },
+    {
+      "id": "Bias_4_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation reflects a generally positive attitude towards the proposal, highlighting several areas of interest and potential exploration. The reviewer acknowledges the constraints but sees value in investigating specific aspects such as pivot prompts, analogies, and in-context examples. There is a constructive tone with suggestions for further comparison and analysis, indicating moderate enthusiasm and a belief in the proposal's potential to contribute meaningfully to the field. However, the lack of in-context examples and the need for additional comparisons suggest that the proposal is not seen as fully developed or groundbreaking.\n\nScore: 6"
+    },
+    {
+      "id": "Math_3_AI",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses a positive outlook on the idea's potential impact and pedagogical value. The reviewer appreciates the innovative approach of bridging semantic and mathematical capabilities, indicating interest from a broader community. The tone is constructive and acknowledges both practical and intellectual contributions, suggesting moderate to high enthusiasm.\n\nScore: 7"
+    },
+    {
+      "id": "Math_3_AI",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that using metaphor to help GPT understand math concepts is interesting, indicating some level of novelty or creativity. However, it also notes that this approach falls within the existing practice of adding more context or explanations for language models, which is not new in the community. The tone suggests that while the idea has some merit, it lacks originality and does not significantly advance the field.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_2_Human",
+      "true_label": 7,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that the idea may seem incremental, as it applies existing techniques to a new problem area. However, the reviewer finds it interesting enough to warrant attention. The main concern is demonstrating improvement over existing baselines, which suggests some skepticism about its impact. Despite this, the tone is not dismissive, and there is a recognition of potential interest in the idea.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_2_Human",
+      "true_label": 1,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation indicates a lack of novelty and insufficient motivation for the method. The mention of \"simple prompt engineering\" suggests that the approach is not seen as innovative or complex. The overall tone is dismissive, with no indication of potential interest or impact. This aligns with a low significance score due to the absence of enthusiasm or perceived value.\n\nScore: 1"
+    },
+    {
+      "id": "Multilingual_2_Human",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer acknowledges the usefulness of the idea and its potential benefits for the multilingual community, indicating some positive aspects. However, they express uncertainty about the motivation behind the problem, suggesting that existing machine translation models might already achieve similar results. This reflects a moderate level of enthusiasm, recognizing some value but questioning the necessity and novelty of the approach.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_7_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The reviewer expresses a positive outlook on the project, finding it exciting and potentially influential in guiding researchers towards LM systems. However, they also note that it wouldn't be transformative for the field. The evaluation suggests moderate enthusiasm due to its potential to influence research directions, though it lacks groundbreaking impact.\n\nScore: 6"
+    },
+    {
+      "id": "Factuality_7_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation acknowledges that the idea may offer some improvements over simple baselines, indicating a degree of merit. However, it is criticized for being shallow and lacking novelty, as it has been extensively explored in past literature. Additionally, the introduction of new overheads and slower inference due to generating summaries further diminishes its appeal. The tone suggests limited enthusiasm and highlights drawbacks that outweigh potential benefits.\n\nScore: 3"
+    },
+    {
+      "id": "Math_4_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation is positive, highlighting the potential reasonable impact and pedagogical value of the idea. The reviewer finds the concept of bridging semantic and mathematical capabilities of LLMs interesting and of potential interest to a wider community. The tone is constructive and shows moderate enthusiasm, recognizing both practical and broader community relevance.\n\nScore: 7"
+    },
+    {
+      "id": "Math_4_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that the idea of using metaphor to help GPT understand math concepts is interesting, indicating some level of novelty or creativity. However, it also points out that this approach falls within the existing practice of adding more context or explanations for language models, which is not new in the community. The tone suggests that while the idea has some merit, it lacks significant originality or groundbreaking contribution.\n\nScore: 4"
+    },
+    {
+      "id": "Coding_4_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer acknowledges limited novelty and some effectiveness in the idea, indicating a moderate level of interest. They see potential for improvement, particularly in optimizing outputs for human evaluation rather than just performance metrics. The tone suggests constructive feedback and a belief in the idea's potential, though it is not seen as groundbreaking.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_4_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The reviewer expresses a lack of excitement due to the absence of novelty in the strategy and critic mentioned. The evaluation suggests that the idea is not seen as innovative or groundbreaking. The potential for interest hinges on empirical results, which are not guaranteed. The tone is skeptical and indicates low enthusiasm, but not entirely dismissive.\n\nScore: 2"
+    },
+    {
+      "id": "Bias_3_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer expresses a lack of excitement due to perceived incorrect assumptions in the method. However, they acknowledge some interesting aspects in the fallback plans, such as insights into how language models handle societal changes and biases. The evaluation suggests that while the primary goal of debiasing may not be effectively addressed, there is value in understanding the encoded world views. The tone is not entirely dismissive, indicating some merit in the exploration.\n\nScore: 4"
+    },
+    {
+      "id": "Bias_3_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation is positive and highlights several aspects of the research idea. The reviewer sees it as a worthwhile endeavor with potential interest from the community, particularly in understanding debiasing effectiveness. Even if the method proves ineffective, the reviewer notes the value in studying the model's perspective on future scenarios, which could contribute to social science and inform policy-making. This indicates a recognition of both practical and theoretical significance, suggesting a meaningful contribution to the field.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_6_Human",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The reviewer expresses excitement about the novelty of the idea, noting that it hasn't been attempted before. While there is uncertainty about its effectiveness, the potential for exploration and discovery is highlighted. The tone is optimistic and open to experimentation, indicating a positive attitude toward the idea's potential.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_6_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea lacks originality, as it is similar to existing works. Additionally, the expected performance is described as unexciting, suggesting that the contribution is not seen as impactful or innovative. The tone is dismissive, with no indication of potential interest or novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_6_Human",
+      "true_label": 4,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer expresses a positive attitude towards the idea, finding it reasonable and suitable for educational purposes. However, they also note that the idea lacks originality, as similar concepts have already been explored. The evaluation suggests that while the idea is sound, it does not offer a novel contribution to the field. The tone is supportive but acknowledges the limitation in terms of originality and impact.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_9_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The reviewer acknowledges known shortcomings in the idea but highlights a significant aspect that could be a major contribution—specifically, the analysis with real native speakers. This indicates a positive view of the potential impact and novelty in the sociolinguistic context. The excitement is focused on this particular aspect, suggesting moderate to high enthusiasm for its contribution to the field.\n\nScore: 7"
+    },
+    {
+      "id": "Multilingual_9_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation is highly positive, highlighting the project's potential to significantly impact the field of NLP. The focus on adapting language models to various social and cultural contexts is seen as a substantial contribution, especially in multilingual and low-resource language processing. The tone is enthusiastic, recognizing both the relevance and the potential for meaningful advancements.\n\nScore: 9"
+    },
+    {
+      "id": "Factuality_3_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses a positive outlook on the idea, highlighting its potential to impact future research. The concept of using LLMs for explicit reasoning pathways is seen as exciting, particularly in generating better Chains of Thought (CoT). The reviewer acknowledges the potential for significant contributions if the ability to perform each step is improved. While there is enthusiasm, the suggestion for further enhancement indicates that the idea is promising but not yet fully realized in its impact.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_3_AI_Rerank",
+      "true_label": 2,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation expresses skepticism about the interest and applicability of the method, particularly in its ability to address the problem of reducing hallucination. The tone is dismissive, indicating a lack of confidence in the method's relevance or utility. There is no indication of potential novelty or excitement, leading to a low significance score.\n\nScore: 1"
+    },
+    {
+      "id": "Safety_1_AI",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates skepticism about the novelty and long-term relevance of the idea. The reviewer notes that similar ideas already exist and that the proposed approach may become obsolete as models improve. The tone suggests limited enthusiasm and a belief that the contribution is not significant in the context of ongoing advancements.\n\nScore: 2"
+    },
+    {
+      "id": "Safety_1_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses skepticism about the method's performance compared to existing techniques, indicating a lack of confidence in its effectiveness for the intended purpose. The reviewer notes potential utility in other areas, such as mitigating gender bias, but remains unconvinced of its superiority in jailbreaking defense. The tone is largely critical, with a slight acknowledgment of possible alternative applications, leading to a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_5_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The reviewer expresses a generally positive attitude but also highlights concerns that need to be addressed. This suggests that while the idea has potential, it is not yet fully convincing or ready for acceptance. The tone indicates moderate enthusiasm with a willingness to see improvements, reflecting a balanced view between optimism and caution.\n\nScore: 6"
+    },
+    {
+      "id": "Factuality_5_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation acknowledges the method's components but notes that both ideas are not novel. The reviewer expresses uncertainty about the method's ability to improve performance, indicating skepticism about its effectiveness. The tone suggests a lack of enthusiasm and confidence in the contribution's impact or originality.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_4_Human",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The reviewer expresses skepticism about the impact of the method due to the limited domain and the current reputation of AI-generated stories. They acknowledge that the method is promising but doubt its effectiveness compared to human-written stories, especially in low-resource languages. The evaluation suggests that the method is unlikely to significantly alter perceptions of AI, indicating a lack of enthusiasm and perceived impact.\n\nScore: 3"
+    },
+    {
+      "id": "Multilingual_4_Human",
+      "true_label": 2,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation expresses skepticism about the impact of the idea on the scientific community. The reviewer doubts the broader applicability and transferability of the insights gained from this approach, indicating a lack of perceived significance or excitement. The tone is dismissive, suggesting minimal enthusiasm or confidence in the contribution's value.\n\nScore: 1"
+    },
+    {
+      "id": "Safety_2_AI_Rerank",
+      "true_label": 1,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the research plan lacks clarity and originality, as it is highly similar to existing work in constitutional AI and its variants. The tone suggests skepticism and a lack of enthusiasm due to the perceived redundancy and lack of innovation. The absence of a clear plan further diminishes the perceived significance of the idea.\n\nScore: 2"
+    },
+    {
+      "id": "Safety_2_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges the novelty and potential excitement of the framework, highlighting its lightweight nature and effectiveness in utilizing the model's own knowledge to mitigate adversarial risks. However, it also notes that the method is not fundamentally transformative and does not completely resolve the issue of adversarial attacks. The tone is positive, recognizing the contribution's value and practical utility, but it stops short of being groundbreaking.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_9_AI",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation highlights a positive aspect of the idea, specifically the fallout plan, which is seen as more interesting and feasible than the original idea. The reviewer notes the potential for exploration and the identification of model errors, indicating a constructive and optimistic view. This suggests a moderate to high level of interest and potential impact, though it may not be entirely groundbreaking.\n\nScore: 6"
+    },
+    {
+      "id": "Factuality_9_AI",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation reflects a positive attitude towards the research question, highlighting its potential to contribute to understanding the source of hallucinations. The reviewer appreciates the value of the research regardless of the method's success, indicating that it could lead to further exploration and insights. This suggests a constructive and optimistic view of the research's significance, even if it is not entirely novel or guaranteed to succeed.\n\nScore: 7"
+    },
+    {
+      "id": "Multilingual_7_AI",
+      "true_label": 8,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation is highly positive, highlighting the project's potential to significantly impact the field. The combination of neural and symbolic approaches is seen as a way to deepen understanding and improve NLP applications for low-resource languages. The tone is enthusiastic, recognizing the project's potential to be both exciting and influential.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_7_AI",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses a positive attitude towards the idea, describing it as \"pretty cool\" and \"meaningful\" for the domain. The use of these terms indicates enthusiasm and recognition of the idea's relevance and potential impact within its field. The tone is supportive and suggests that the idea is both interesting and valuable.\n\nScore: 7"
+    },
+    {
+      "id": "Uncertainty_2_AI",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation suggests that the idea is not novel, as it is compared to the well-known concept of self-reflection. However, the reviewer acknowledges that the work could provide valuable baseline results for future research. This indicates some recognition of its utility, though it lacks new insights or originality. The tone is moderately appreciative of its potential as a reference point, but not excited about its innovation.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_2_AI",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation suggests that the proposed method has potential utility beyond its primary function of estimating uncertainty. It highlights an additional benefit in enhancing a model's ability to perform self-critique. This indicates a positive view of the method's versatility and practical application. However, the evaluation does not express strong enthusiasm or groundbreaking novelty, suggesting moderate excitement.\n\nScore: 6"
+    },
+    {
+      "id": "Uncertainty_2_AI",
+      "true_label": 3,
+      "predicted_score": 3,
+      "response": "Analysis: The reviewer expresses mixed feelings about the idea. They appreciate the motivation behind the need for confidence calibration but feel the method is too closely tied to an ongoing debate, which might limit its originality or relevance. Additionally, the reviewer believes the concept of confidence is not well analyzed, indicating a lack of depth in the proposal. The tone is somewhat critical, with limited enthusiasm.\n\nScore: 3"
+    },
+    {
+      "id": "Uncertainty_2_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation expresses a cautious interest in the work, noting that it could be interesting, particularly in terms of the conflicting rationales developed by the approach. However, the overall acceptability is contingent on how well the applications and effectiveness are portrayed. This indicates a moderate level of enthusiasm, with potential for impact if certain conditions are met. The tone is neither dismissive nor highly enthusiastic, suggesting a balanced view with room for potential.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_11_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the idea is generally interesting, indicating a positive attitude. However, it also suggests that the authors need to make comparisons with existing methods and have a clearer understanding of current state-of-the-art techniques. This implies that while the idea has potential, it requires further development and contextualization within the existing body of work. The tone is constructive, suggesting room for improvement but recognizing the idea's potential interest.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_11_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer finds the idea interesting, indicating some level of intrigue and potential. However, they express confusion and a need for more detailed explanation and results to be fully convinced. This suggests that while there is some merit, the current presentation lacks clarity and completeness. The tone is not dismissive, but rather suggests that with improvements, the idea could be more impactful. This places the evaluation in a medium range, as there is interest but also significant reservations.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_2_Human",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses skepticism about the contribution, noting it as small and preliminary. The reviewer suggests that unless the method performs exceptionally well, the significance will remain low. There is no indication of excitement or confidence in the idea's potential impact, and the tone is cautious and reserved.\n\nScore: 2"
+    },
+    {
+      "id": "Uncertainty_2_Human",
+      "true_label": 2,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation expresses a clear lack of interest and confidence in the topic. The reviewer anticipates that executing the plan would not yield any valuable or educational outcomes for the research or industry community. The tone is dismissive and indicates a strong belief that the idea lacks potential impact or relevance.\n\nScore: 1"
+    },
+    {
+      "id": "Uncertainty_2_Human",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates skepticism about the idea's novelty and execution. The core concept is not new, and the reliance on a prompting-based approach is seen as limiting. The reviewer expresses a lack of excitement and doubts about the potential for strong empirical results. The tone suggests minimal enthusiasm and a low expectation of impact.\n\nScore: 2"
+    },
+    {
+      "id": "Safety_3_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the idea is a solid scientific contribution, indicating a level of respect and recognition for its validity. However, the reviewer also notes that it may not excite most of the community, suggesting limited broad appeal or novelty. The mention of anecdotal evidence implies that the idea might not be groundbreaking but still holds value. Overall, the tone is moderately positive, recognizing the contribution's solidity but questioning its widespread impact.\n\nScore: 5"
+    },
+    {
+      "id": "Safety_3_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses skepticism about the novelty and effectiveness of the idea, noting that improvements are marginal and reliant on existing methods. The need for human intervention is highlighted, indicating a lack of innovation. Additionally, the critique mentions poorly designed experiments and missing details, further diminishing the perceived value. The tone is critical, with little enthusiasm or recognition of significant contribution.\n\nScore: 2"
+    },
+    {
+      "id": "Bias_1_Human",
+      "true_label": 3,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation expresses a lack of excitement due to the perceived lack of novelty and questionable ecological validity. The reviewer suggests that the fallback plan might offer more insights than the original idea, indicating a preference for an alternative approach. However, there is a hint that the reviewer's interest could increase if the focus were adjusted to a more central question. Overall, the tone is not dismissive but reflects moderate skepticism and a desire for a more compelling focus.\n\nScore: 3"
+    },
+    {
+      "id": "Bias_1_Human",
+      "true_label": 2,
+      "predicted_score": 3,
+      "response": "Analysis: The reviewer expresses skepticism about the value of the proposed mitigation method, indicating a lack of confidence in its potential impact. However, there is a specific interest in seeing empirical results, particularly in a realistic and potentially impactful scenario. This suggests some curiosity and openness to further exploration, though the overall tone remains cautious and not particularly enthusiastic.\n\nScore: 3"
+    },
+    {
+      "id": "Coding_7_Human",
+      "true_label": 7,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation suggests potential interdisciplinary impact, indicating that the idea could influence multiple areas, such as improving both LLM and human coding. The mention of correlation between these areas adds a layer of complexity and interest. However, the evaluation does not express strong enthusiasm or certainty about the outcome, focusing instead on potential rather than demonstrated results. The tone is cautiously optimistic, recognizing possible significance without being overly excited.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_7_Human",
+      "true_label": 3,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer finds the topic somewhat interesting, indicating a mild level of engagement. However, they express concerns about the approach or scope being limited, suggesting that the current idea lacks depth or breadth. The mention of an alternative framework implies that the reviewer sees potential for improvement and greater excitement with a different approach. The tone is not dismissive but suggests that the current proposal is not fully compelling.\n\nScore: 4"
+    },
+    {
+      "id": "Coding_7_Human",
+      "true_label": 1,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation expresses significant skepticism and concern regarding the motivation and potential implications of the idea. The reviewer questions the usefulness of generating buggy code and highlights ethical and bias-related issues. The tone is critical, with no indication of potential benefits or excitement about the idea. The concerns about ethical problems and malicious use further diminish the perceived significance.\n\nScore: 1"
+    },
+    {
+      "id": "Safety_5_AI",
+      "true_label": 6,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses skepticism about the current capability of LLMs (Large Language Models) to effectively support the idea. The tone suggests a lack of confidence in the foundational technology, indicating that the idea may not be feasible or impactful at this time. There is no mention of potential interest or novelty, leading to a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Safety_5_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses concerns about both the novelty and effectiveness of the idea, leading to a low excitement score. The tone suggests skepticism and a lack of confidence in the contribution's originality and impact. The absence of positive remarks or potential interest indicates a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Bias_4_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer acknowledges that the idea is an incremental improvement over existing methods, suggesting limited novelty. However, they also recognize the potential impact if the approach works well, noting that it is an easy intervention to apply post-hoc. The evaluation reflects a balance between skepticism about novelty and optimism about practical utility, leading to moderate enthusiasm.\n\nScore: 5"
+    },
+    {
+      "id": "Bias_4_AI",
+      "true_label": 4,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation acknowledges that the proposal is interesting, indicating some level of engagement. However, the contributions are described as \"fairly marginal,\" and there is a lack of clarity in distinguishing the proposal from existing work, specifically the \"counter-evidence\" component of the Allaway et al. paper. The reviewer expresses uncertainty about how the approach would enhance existing knowledge, suggesting limited originality and impact. The tone is not dismissive but reflects skepticism about the proposal's significance.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_1_Human",
+      "true_label": 6,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation suggests that there is some potential in the idea, but it is overshadowed by the risk of being merely incremental. The reviewer acknowledges the presence of an idea but expresses concern about its originality and impact. The tone is cautious, indicating limited enthusiasm and a moderate level of interest.\n\nScore: 3"
+    },
+    {
+      "id": "Factuality_1_Human",
+      "true_label": 6,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation highlights significant limitations in the idea's applicability, specifically pointing out that it is restricted to language models with multilingual capabilities. Additionally, concerns are raised about the unbalanced pre-training data and varying knowledge levels across languages, which complicate the claims being made. The tone suggests skepticism and highlights substantial challenges, indicating a lack of enthusiasm or confidence in the idea's impact or novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Coding_4_AI",
+      "true_label": 2,
+      "predicted_score": 1,
+      "response": "Analysis: The reviewer expresses confusion and skepticism about the need to treat ethical issues differently in code generation compared to other instructions. The tone suggests a lack of understanding or agreement with the premise, indicating minimal enthusiasm or perceived significance. The evaluation does not acknowledge any novelty or potential impact, leading to a low significance score.\n\nScore: 1"
+    },
+    {
+      "id": "Coding_4_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation suggests that the problem has potential excitement if approached correctly, particularly through proper problem formulation. The reviewer sees value in practical applications, such as assessing the ethics of a GitHub repository or real-time code evaluation. However, the excitement is contingent on addressing these specific aspects, indicating that the current state lacks full realization. The tone is cautiously optimistic, recognizing potential but requiring further development.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_8_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the foundational concept of the idea is not entirely novel, as it resembles existing work. However, it also highlights the importance of the problem being addressed, which is long-form code generation. This suggests that while the approach may not be groundbreaking in terms of methodology, it tackles a significant and relevant challenge. The tone is moderately positive, recognizing the value in addressing an important issue despite the lack of novelty.\n\nScore: 5"
+    },
+    {
+      "id": "Coding_8_AI",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer acknowledges potential in the idea but suggests that it lacks depth due to the absence of a comprehensive benchmark. They see room for improvement in the data and evaluation methods, indicating that the idea is not fully developed. The tone is constructive, suggesting that with enhancements, the idea could become more exciting and impactful. The evaluation is neither dismissive nor highly enthusiastic, placing it in the medium range.\n\nScore: 4"
+    },
+    {
+      "id": "Factuality_9_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation expresses conditional excitement, indicating that the idea has potential if successful. The reviewer is open to the possibility of the work being exciting, either as a method or an analysis paper. However, there is some uncertainty about its current state as a method paper. The tone is cautiously optimistic, suggesting moderate enthusiasm with room for impact.\n\nScore: 6"
+    },
+    {
+      "id": "Factuality_9_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses optimism about the potential impact of the study. It highlights the possibility of gaining insights into the strengths and weaknesses of large language models (LLMs) based on language, which could be valuable for informing pretraining data strategies. The tone is positive and suggests that the study addresses a relevant and potentially impactful area, though it hinges on the condition of the study's success.\n\nScore: 7"
+    },
+    {
+      "id": "Uncertainty_5_Human",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses skepticism about the proposed idea, highlighting concerns about introducing additional noise and randomness. The tone suggests a lack of confidence in the method's effectiveness due to these potential drawbacks. There is no indication of enthusiasm or recognition of significant value, which aligns with a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Uncertainty_5_Human",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges the identification of a relevant issue and appreciates the attempt to address it by separating parts of the reasoning process. However, the reviewer expresses skepticism about the effectiveness of the proposed decomposition in solving the problem. While there is potential for the proposal to inspire further research, it is not seen as having a major impact on the field. The tone is moderately positive but tempered by doubts about the proposal's effectiveness.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_5_Human",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation expresses uncertainty and skepticism about the feasibility of the idea. The reviewer questions whether the proposed approach will work as intended, indicating a lack of confidence in its practicality or effectiveness. There is no indication of enthusiasm or recognition of potential impact, suggesting a low level of excitement.\n\nScore: 1"
+    },
+    {
+      "id": "Multilingual_3_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer acknowledges the lack of novelty in the idea but expresses curiosity about its potential effectiveness. The interest in exploring whether gradual learning might be more effective than direct learning for LLMs indicates some level of intrigue and potential value. However, the excitement is tempered by the acknowledgment of the idea's lack of originality.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_3_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation expresses skepticism about the theoretical foundation of the method, noting a lack of clarity in what contributes to its success if it outperforms existing methods. The comparison to existing data augmentation techniques suggests limited novelty. However, there is an implicit acknowledgment that the method could potentially outperform current approaches, indicating some room for empirical exploration. The tone is cautious and somewhat critical, with limited enthusiasm.\n\nScore: 3"
+    },
+    {
+      "id": "Uncertainty_6_AI",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges the novelty of the idea, which is a positive indicator. The reviewer believes that existing successful ideas in a related area could be applicable, suggesting potential for effectiveness. However, the excitement is contingent on the development quality of the method, indicating some uncertainty. Overall, the tone is cautiously optimistic, recognizing potential but awaiting further validation.\n\nScore: 7"
+    },
+    {
+      "id": "Uncertainty_6_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation suggests that the idea is perceived as lacking originality, as it is described as merely applying an existing method (prompt optimization) to a specific task. The tone indicates a lack of enthusiasm and novelty, implying that the contribution is seen as incremental rather than innovative. There is no mention of potential impact or excitement, leading to a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Safety_4_Human",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation highlights the importance of the idea, emphasizing its potential to enable significant changes in model parameters at the topic or concept level. The phrase \"IF it works\" suggests some uncertainty about its feasibility, but the overall tone is optimistic about its potential impact. The focus on a crucial aspect of model editing indicates a recognition of its relevance and possible utility.\n\nScore: 7"
+    },
+    {
+      "id": "Safety_4_Human",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer finds the core idea of leveraging collaboration among multiple LLMs intriguing, indicating some level of interest and potential. However, they criticize the current method of prompting as naive and trivial, suggesting that the execution lacks sophistication or depth. The evaluation reflects a mix of curiosity about the concept and disappointment with its current implementation. This results in a moderate score, as the idea has potential but requires significant refinement.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_2_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation expresses interest in the idea, highlighting its potential value as an analysis paper. The reviewer is intrigued by the exploration of semantic interpretations and model coverage, even if the primary goal of confidence calibration is not achieved. This indicates a positive attitude towards the conceptual exploration and potential insights the idea could provide, suggesting moderate enthusiasm and recognition of its intellectual merit.\n\nScore: 6"
+    },
+    {
+      "id": "Uncertainty_2_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The reviewer expresses clear interest and fascination with the problem statement and approach, indicating a positive attitude. However, they note a shortcoming in the motivation of future use cases, suggesting room for improvement. Despite this, the overall tone is enthusiastic and constructive, highlighting the potential for exploration and impact.\n\nScore: 7"
+    },
+    {
+      "id": "Multilingual_3_AI",
+      "true_label": 5,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses concern and skepticism about the potential usefulness of the contribution. The tone suggests doubt about the impact and value of the idea, indicating a lack of enthusiasm. The reviewer does not see a clear path to a meaningful contribution, which aligns with a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Multilingual_3_AI",
+      "true_label": 7,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation is moderately positive, highlighting that the idea is well motivated and has potential utility in improving generation quality for vernacular languages. The effectiveness is conditional, but there is an acknowledgment of its potential impact. The tone is cautiously optimistic, indicating a recognition of value if the idea proves successful.\n\nScore: 6"
+    },
+    {
+      "id": "Uncertainty_6_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges the novelty and interest of the idea, indicating a positive attitude towards its potential. However, it also points out some drawbacks, such as missing pieces in the method and computational overhead, which temper the enthusiasm. The overall tone suggests a balanced view, recognizing both the innovative aspects and the challenges that need to be addressed.\n\nScore: 7"
+    },
+    {
+      "id": "Uncertainty_6_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the authors have a good idea, indicating a positive view of the concept. However, it suggests that further work is needed, particularly in reviewing related work and refining the methodology. The mention of a fallback plan and the need for clearer definitions and experiments implies that the idea has potential but requires more development to reach its full impact. The tone is constructive, showing moderate enthusiasm but also highlighting areas for improvement.\n\nScore: 5"
+    },
+    {
+      "id": "Uncertainty_6_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges the potential usefulness of the proposal in the field of model calibration, indicating some positive aspects. However, it also highlights a lack of clarity in the proposal's overall innovation, aside from the contrastive prompting. This suggests that while there is some promise, the contribution may not be entirely groundbreaking or fully developed. The tone is cautiously optimistic but tempered by uncertainty regarding the proposal's novelty.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_3_Human",
+      "true_label": 4,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation indicates that the idea currently lacks a clear new contribution and requires further analysis and experimentation to become impactful. The reviewer acknowledges the potential for improvement through well-done analysis, suggesting some merit in the proposal. However, the current stage does not allow for a full assessment of its significance. The tone is constructive but cautious, reflecting a need for further development.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_3_Human",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer expresses skepticism about the likelihood of the idea working well, indicating a lack of confidence in its success. However, they acknowledge that if it does work, it would be interesting, suggesting some potential value. The tone is cautious but open to the possibility of success, leading to a moderate level of interest.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_7_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation expresses interest in the idea's potential applicability beyond its initial context, suggesting a broader relevance. The mention of pivot languages in traditional machine translation indicates that the reviewer sees value and possible innovation in the approach. The tone is positive, highlighting the idea's potential to contribute to other areas, which suggests moderate to high significance.\n\nScore: 6"
+    },
+    {
+      "id": "Multilingual_7_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation is highly positive, highlighting the LPC method's potential to address a critical challenge in multilingual NLP. The focus on improving performance for low-resource languages is seen as a significant contribution, with the potential to enhance AI accessibility and usability across diverse linguistic contexts. The tone is enthusiastic and recognizes the method's relevance and impact, particularly for underrepresented languages.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_7_AI_Rerank",
+      "true_label": 8,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation expresses a positive outlook on the potential informative value of the idea, regardless of its success. The reviewer sees merit in the exploration and analysis, suggesting that the work could contribute valuable insights to the community. The tone is constructive and acknowledges the potential for learning, indicating moderate enthusiasm.\n\nScore: 6"
+    },
+    {
+      "id": "Uncertainty_1_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer acknowledges the novelty and feasibility of the method but expresses a lack of excitement due to the existence of simpler, effective alternatives. The complexity of SRUQ is seen as a potential drawback unless it significantly outperforms existing methods. The tone is moderately critical, recognizing some merit but questioning the impact due to complexity.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_1_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that the idea could provide new insights into confidence estimation, which suggests some level of novelty and potential contribution. However, the reviewer also notes that the idea is somewhat incremental due to existing methods that already address similar issues. The tone is cautiously optimistic, recognizing some value but not expressing strong enthusiasm or seeing it as a major breakthrough.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_1_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that the idea addresses a good research question, which indicates some level of significance and relevance. However, the method itself is not found to be particularly exciting by the reviewer. This suggests that while the research question is valued, the approach may lack novelty or innovation. The tone is moderately positive due to the identification of a worthwhile question, but the lack of excitement about the method tempers the overall enthusiasm.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_8_Human",
+      "true_label": 4,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer expresses skepticism about the significance of the issue being addressed and doubts about the feasibility of the proposed solution. While there is some acknowledgment of effort, the overall tone is cautious and reserved. The score reflects a moderate level of interest, indicating that the idea has some merit but is not seen as particularly impactful or convincing.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_8_Human",
+      "true_label": 2,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges that the idea could make a valuable contribution if it outperforms current baselines. The reviewer appreciates the potential to direct LLMs to focus on relevant information, indicating a positive view of its practical application. However, the novelty is limited as it has been shown before, and the impact is not seen as field-changing. The tone is moderately positive, recognizing potential usefulness without groundbreaking innovation.\n\nScore: 6"
+    },
+    {
+      "id": "Factuality_7_Human",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation suggests skepticism regarding the originality and novelty of the idea. The reviewers are likely to find it unexciting, indicating a lack of enthusiasm or perceived impact. The tone is dismissive, with an expectation of criticism if submitted to a venue. This aligns with a low significance score, as there is no indication of potential interest or novelty.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_7_Human",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer acknowledges the effectiveness of the proposed method, indicating a positive view of its core functionality. However, they express concern about high latency compared to existing baselines, suggesting that this is a significant drawback. The recommendation to train an end-to-end model to address this issue implies that the method has potential if improvements are made. The tone is constructive, recognizing value but also highlighting a critical area for enhancement.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_7_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation reflects a mix of excitement and caution. The reviewer finds the idea exciting due to its potential to prevent LLMs from shortcutting questions and hallucinating, indicating a recognition of its relevance and potential impact. However, they also express concerns about the need for further methodological development, suggesting that the current implementation might not be sufficiently novel and could overlap with existing Chain of Thought (CoT) methods. The tone is cautiously optimistic, acknowledging potential but also highlighting areas for improvement.\n\nScore: 6"
+    },
+    {
+      "id": "Multilingual_1_AI",
+      "true_label": 7,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation indicates a positive outlook, suggesting that the idea has potential applications beyond its initial context. The mention of \"interesting beyond the context of prompting\" and its relevance to \"traditional machine translation\" implies that the reviewer sees broader applicability and value. This reflects a moderate level of enthusiasm and recognition of potential impact, though it doesn't suggest groundbreaking novelty.\n\nScore: 6"
+    },
+    {
+      "id": "Multilingual_1_AI",
+      "true_label": 7,
+      "predicted_score": 9,
+      "response": "Analysis: The evaluation is highly positive, highlighting the LPC method's potential to address a critical challenge in multilingual NLP. The focus on improving performance for low-resource languages is seen as a significant contribution, with the potential to enhance AI accessibility and usability across diverse linguistic contexts. The tone is enthusiastic and acknowledges the method's relevance and impact, particularly for underrepresented languages.\n\nScore: 9"
+    },
+    {
+      "id": "Multilingual_1_AI",
+      "true_label": 8,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation expresses a positive outlook on the potential informative value of the idea, regardless of its success. The reviewer acknowledges that the demonstration could contribute valuable insights to the community, indicating a recognition of its potential impact. The tone is constructive and open to exploration, suggesting moderate enthusiasm for the idea's contribution to understanding in-context learning.\n\nScore: 6"
+    },
+    {
+      "id": "Coding_9_AI_Rerank",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The reviewer finds the research topic to be very exciting and impactful, indicating a strong interest in the area. However, there is some skepticism about the practical effectiveness of the proposed method. Despite this, the reviewer acknowledges that the method is a reasonable baseline and worth exploring as a first step. The tone is cautiously optimistic, recognizing potential value and the importance of the research direction.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_9_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation expresses interest in the idea of combining neural and symbolic methods, highlighting its potential to influence the understanding of the roles of large language models (LLMs) and symbolic systems. The tone is positive, indicating that the idea could have broader implications. However, it does not suggest groundbreaking novelty or immediate impact, but rather a promising direction for exploration.\n\nScore: 6"
+    },
+    {
+      "id": "Uncertainty_4_AI",
+      "true_label": 7,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation acknowledges the novelty and interest of the idea, indicating a positive attitude towards its potential. However, it also notes some concerns regarding missing pieces in the method and computational overhead, which could be seen as drawbacks. The tone suggests a balanced view, recognizing both the innovative aspects and the challenges that need to be addressed. This leads to a moderate level of enthusiasm, as the idea is promising but requires further refinement.\n\nScore: 6"
+    },
+    {
+      "id": "Uncertainty_4_AI",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges that the authors have a good idea, indicating a positive view of the concept. However, it suggests that the authors need to refine their focus and explore related work more thoroughly. The mention of a fallback plan that makes sense and the suggestion to define and experiment with variants show constructive feedback. The tone is supportive but indicates that further development is needed for clarity and focus.\n\nScore: 5"
+    },
+    {
+      "id": "Uncertainty_4_AI",
+      "true_label": 6,
+      "predicted_score": 5,
+      "response": "Analysis: The evaluation acknowledges potential usefulness in the area of model calibration, indicating some positive aspects. However, the lack of clarity in the proposal's details makes it difficult to assess its overall novelty. The mention of \"contrastive prompting\" suggests some innovative elements, but the uncertainty about the rest of the proposal limits the enthusiasm. The tone is cautiously optimistic but tempered by the need for more information.\n\nScore: 5"
+    },
+    {
+      "id": "Multilingual_4_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer finds the idea interesting but expresses concerns about its clarity and practical application. The lack of guidance on data selection and evaluation reduces confidence in its effectiveness. While there is some intrigue, the uncertainty about its advantages over simpler methods limits enthusiasm. The tone suggests moderate interest but significant reservations.\n\nScore: 4"
+    },
+    {
+      "id": "Multilingual_4_AI_Rerank",
+      "true_label": 5,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation expresses a positive attitude towards the idea, highlighting its general interest and potential to inspire relevant research. The use of terms like \"interesting\" and \"inspiring\" indicates a favorable view, suggesting that the idea has merit and could contribute meaningfully to the field. However, the evaluation does not suggest groundbreaking novelty or a revolutionary impact, which places it in the medium-high range.\n\nScore: 6"
+    },
+    {
+      "id": "Factuality_3_AI",
+      "true_label": 5,
+      "predicted_score": 5,
+      "response": "Analysis: The reviewer expresses a neutral stance, indicating that the idea has potential if the topics, scopes, and domains align well. There is an acknowledgment of possible positive impact, but it is contingent on the development of completely new methods. The tone suggests a middle-ground perspective, with neither strong enthusiasm nor dismissal. The evaluation implies that the idea is promising but requires significant innovation to realize its potential.\n\nScore: 5"
+    },
+    {
+      "id": "Factuality_3_AI",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The reviewer expresses skepticism about the proposed idea, primarily due to concerns about its efficiency and practicality. They doubt its effectiveness compared to existing methods and highlight the increased inference cost as a significant drawback. The tone suggests a lack of confidence in the idea's potential for widespread adoption. The evaluation is largely negative, with no indication of enthusiasm or perceived value.\n\nScore: 2"
+    },
+    {
+      "id": "Uncertainty_5_AI_Rerank",
+      "true_label": 3,
+      "predicted_score": 1,
+      "response": "Analysis: The reviewer expresses significant skepticism about the paper's innovation, describing it as \"very marginal.\" They also highlight a lack of clarity or correctness in a key component of the method, which further diminishes their confidence. The tone is critical, with no indication of enthusiasm or perceived value. The evaluation suggests a low level of significance due to the perceived lack of novelty and clarity.\n\nScore: 1"
+    },
+    {
+      "id": "Uncertainty_5_AI_Rerank",
+      "true_label": 4,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation expresses skepticism about the idea of using LLMs for confidence scoring. The reviewer highlights a lack of guarantee and over-reliance on the LLM's capabilities, indicating a lack of confidence in the approach. The tone is dismissive, suggesting minimal enthusiasm or perceived value.\n\nScore: 1"
+    },
+    {
+      "id": "Uncertainty_5_AI_Rerank",
+      "true_label": 6,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer believes the idea is likely to work, indicating a level of confidence in its feasibility. However, they express that the results may not be surprising, suggesting limited novelty or impact. The recommendation for a closer examination and qualitative analysis implies that the current presentation lacks excitement or depth. The tone is constructive but not highly enthusiastic, reflecting moderate interest with potential for improvement.\n\nScore: 4"
+    },
+    {
+      "id": "Coding_1_Human",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses a positive outlook on the potential impact of an LLM-based code evaluator in complex code generation domains. It highlights the significance of the research topic within the community, suggesting that the idea is both relevant and timely. The tone indicates enthusiasm for the potential large impact, though it does not explicitly mention novelty or specific methodological strengths.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_1_Human",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea lacks novelty and comprehensive rationale. The tone suggests a lack of enthusiasm and highlights deficiencies in originality and depth. While not entirely dismissive, the critique points to significant shortcomings, resulting in a low significance score.\n\nScore: 2"
+    },
+    {
+      "id": "Math_1_AI",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation expresses a positive attitude towards the research question, highlighting its novelty and importance. The reviewer sees the direction as significant for the application of large language models (LLMs) in engineering and science, indicating a recognition of potential impact and relevance. The tone is optimistic and suggests a meaningful contribution to the field.\n\nScore: 7"
+    },
+    {
+      "id": "Math_1_AI",
+      "true_label": 1,
+      "predicted_score": 3,
+      "response": "Analysis: The evaluation describes the idea as \"very incremental,\" indicating limited novelty. The potential for performance improvement is acknowledged, but the contribution is not seen as significant enough for a conference publication. This suggests some practical value but lacks the impact or originality needed for higher recognition. The tone is moderately dismissive, focusing on the insufficiency for a higher-level venue.\n\nScore: 3"
+    },
+    {
+      "id": "Multilingual_5_Human",
+      "true_label": 8,
+      "predicted_score": 8,
+      "response": "Analysis: The evaluation is highly positive, highlighting the idea's ability to address a significant limitation in multilingual LLMs. The novel combination of ConceptNet and prompt-based techniques is seen as innovative and potentially influential, inspiring further research and setting new standards. The mention of broader societal impact, such as better accessibility and inclusivity, adds to the excitement and perceived importance of the contribution. The tone is enthusiastic and recognizes both the technical and societal value of the idea.\n\nScore: 8"
+    },
+    {
+      "id": "Multilingual_5_Human",
+      "true_label": 2,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses a lack of excitement and novelty. The reviewer acknowledges that the proposal might work but feels it doesn't offer new insights or learning. The mention of fine-tuning on commonsense reasoning data improving performance is seen as expected rather than innovative. The tone is somewhat dismissive, indicating that the contribution is not seen as significant or groundbreaking.\n\nScore: 2"
+    },
+    {
+      "id": "Uncertainty_3_Human",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges that the project provides a straightforward method for obtaining uncertainty estimates, which could lead to useful engineering outcomes. However, the reviewer feels that the idea lacks depth and excitement, as it doesn't fully explore its potential. The mention of using uncertainty estimates for conditioning on more information is seen as an area that could be more developed. The suggestion to use fine-grained uncertainty estimates for retrieving factual information indicates a potential for greater impact, but this aspect is not sufficiently explored in the current proposal. Overall, the evaluation reflects moderate interest due to practical utility but highlights a lack of innovation and depth.\n\nScore: 4"
+    },
+    {
+      "id": "Uncertainty_3_Human",
+      "true_label": 6,
+      "predicted_score": 7,
+      "response": "Analysis: The reviewer expresses excitement about the potential impact of the method if it successfully addresses calibration for long-form answers. They see the approach as promising and relevant. However, the evaluation notes a limitation in the proposal, specifically the lack of consideration for partial correctness in long-form answers, which prevents a higher score. The tone is positive, with a recognition of both potential and a significant area for improvement.\n\nScore: 7"
+    },
+    {
+      "id": "Safety_2_Human",
+      "true_label": 5,
+      "predicted_score": 4,
+      "response": "Analysis: The evaluation acknowledges potential flaws and limited novelty, indicating that the idea may not generate high excitement. However, it also recognizes that the idea is worth exploring due to its potential to improve the ROC curve compared to other techniques. This suggests some practical value and a moderate level of interest, though not groundbreaking.\n\nScore: 4"
+    },
+    {
+      "id": "Safety_2_Human",
+      "true_label": 7,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation expresses excitement due to the simplicity and ease of implementation of the approach. While it highlights these positive aspects, it does not mention novelty or broader impact. The enthusiasm is based on practicality rather than groundbreaking innovation. This suggests a moderate to moderately high significance.\n\nScore: 6"
+    },
+    {
+      "id": "Multilingual_10_Human",
+      "true_label": 6,
+      "predicted_score": 6,
+      "response": "Analysis: The evaluation is positive, highlighting the interesting concept of integrating cultural nuances into machine translation. The reviewer acknowledges the potential for notable contributions and improvements in understanding cultural context, which could lead to more inclusive and accurate models. However, the idea is not seen as groundbreaking or transformative enough to be considered for a best paper award. The tone is constructive and moderately enthusiastic, recognizing the value and potential impact of the idea.\n\nScore: 6"
+    },
+    {
+      "id": "Multilingual_10_Human",
+      "true_label": 1,
+      "predicted_score": 1,
+      "response": "Analysis: The evaluation expresses clear skepticism and a lack of understanding or confidence in the method. The phrase \"does not make sense\" indicates a fundamental issue with the concept, leading to a lack of excitement. The tone is dismissive, suggesting very low significance.\n\nScore: 1"
+    },
+    {
+      "id": "Coding_6_AI",
+      "true_label": 7,
+      "predicted_score": 7,
+      "response": "Analysis: The reviewer expresses enthusiasm about the novelty of the problem being addressed, indicating that it stands out compared to other borderline papers. The mention of the collected data being \"super useful\" suggests a strong potential impact and utility. The tone is positive and indicates excitement about the contribution.\n\nScore: 7"
+    },
+    {
+      "id": "Coding_6_AI",
+      "true_label": 4,
+      "predicted_score": 4,
+      "response": "Analysis: The reviewer expresses skepticism about the method's potential for substantial improvements, indicating a lack of excitement. However, they acknowledge the problem's interest and the value of building a solid benchmark. The tone suggests that while the method itself may not be groundbreaking, the problem area holds some intrigue. The evaluation reflects a moderate level of interest due to the potential for future exploration, but the current method does not inspire high enthusiasm.\n\nScore: 4"
+    },
+    {
+      "id": "Coding_6_AI",
+      "true_label": 8,
+      "predicted_score": 7,
+      "response": "Analysis: The evaluation acknowledges the novelty and potential significant impact of the idea, particularly in code generation cases involving temporal dependencies. However, it also highlights the need for further justification regarding the importance of these use cases and the centrality of temporal dependency as a problem. The tone is positive and recognizes the potential for substantial contribution, but it also calls for additional clarification to fully realize its significance.\n\nScore: 7"
+    },
+    {
+      "id": "Factuality_11_AI",
+      "true_label": 4,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation indicates that the idea is not novel, as similar methods and benchmarks have already been proposed in other papers. This suggests a lack of originality and potential redundancy in the contribution. The tone is neutral and lacks enthusiasm, implying that the idea does not offer significant new insights or advancements.\n\nScore: 2"
+    },
+    {
+      "id": "Factuality_11_AI",
+      "true_label": 3,
+      "predicted_score": 2,
+      "response": "Analysis: The evaluation expresses a lack of excitement due to the idea's similarity to previous attempts and concerns about potential issues, such as hallucination. The reviewer acknowledges that the approach is not novel and highlights specific drawbacks. The tone is critical, indicating limited enthusiasm and perceived value.\n\nScore: 2"
+    }
+  ]
+}
