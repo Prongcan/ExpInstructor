@@ -8,15 +8,15 @@ from GPT_single import generate_concerns_for_idea, compare_coverage_via_llm
 
 def process_single_item(item_data):
     """
-    处理单个数据项的函数
-    每个进程将运行此函数
+    Function to process a single data item.
+    Each process will run this function.
     """
     try:
         item_id = item_data["id"]
         raw_idea = item_data["idea"]
         concerns = item_data["concerns"]
         
-        # 检查idea是否为空
+        # Check if idea is empty
         if not raw_idea or raw_idea.strip() == "":
             return {
                 "id": item_id,
@@ -28,13 +28,13 @@ def process_single_item(item_data):
                 "error": None
             }
         
-        # 生成LLM concerns
+        # Generate LLM concerns
         gen_concerns, raw_resp_idea = generate_concerns_for_idea(raw_idea)
-        print(f"生成数量: {len(gen_concerns)}")
+        print(f"Generated count: {len(gen_concerns)}")
         
-        # 进行concern比对
+        # Compare concerns coverage
         coverage_result, coverage_raw_resp = compare_coverage_via_llm(concerns, gen_concerns)
-        print("coverage计算完毕！")
+        print("Coverage computed!")
 
         return {
             "id": item_id,
@@ -61,49 +61,49 @@ def process_single_item(item_data):
 
 def parallel_process_items(data_items, num_processes=4):
     """
-    使用多进程并行处理数据项
+    Process data items in parallel using multiprocessing.
     """
     with mp.Pool(processes=num_processes) as pool:
         results = list(tqdm(
             pool.imap(process_single_item, data_items),
             total=len(data_items),
-            desc="处理数据项",
-            unit="项"
+            desc="Processing items",
+            unit="items"
         ))
     return results
 
 
 def save_results(results, output_dir):
     """
-    保存结果到指定目录
+    Save results to the specified directory.
     """
-    # 确保输出目录存在
+    # Ensure the output directory exists
     os.makedirs(output_dir, exist_ok=True)
     
-    # 保存完整结果
+    # Save full results
     full_results_file = os.path.join(output_dir, "full_results.json")
     with open(full_results_file, 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     
-    # 保存成功的结果
+    # Save successful results
     success_results = [r for r in results if r["status"] == "success"]
     success_file = os.path.join(output_dir, "success_results.json")
     with open(success_file, 'w', encoding='utf-8') as f:
         json.dump(success_results, f, ensure_ascii=False, indent=2)
     
-    # 保存错误的结果
+    # Save error results
     error_results = [r for r in results if r["status"] == "error"]
     error_file = os.path.join(output_dir, "error_results.json")
     with open(error_file, 'w', encoding='utf-8') as f:
         json.dump(error_results, f, ensure_ascii=False, indent=2)
     
-    # 保存跳过的结果
+    # Save skipped results
     skipped_results = [r for r in results if r["status"] == "skipped"]
     skipped_file = os.path.join(output_dir, "skipped_results.json")
     with open(skipped_file, 'w', encoding='utf-8') as f:
         json.dump(skipped_results, f, ensure_ascii=False, indent=2)
     
-    # 生成统计报告
+    # Generate statistics
     stats = {
         "total_items": len(results),
         "successful": len(success_results),
@@ -120,33 +120,33 @@ def save_results(results, output_dir):
 
 
 def main():
-    # 输入文件路径
+    # Input file path
     input_file = "Evaluation_feasibility/feasibility_data/Stanford_comments_with_ideas_with_concerns.json"
     
-    # 输出目录
+    # Output directory
     output_dir = "Evaluation_feasibility/results/GPT"
     
-    # 并行进程数
+    # Number of parallel processes
     num_processes = 147
     
-    # 读取JSON数据
+    # Read JSON data
     with open(input_file, 'r', encoding='utf-8') as f:
         data_items = json.load(f)
     
-    # 并行处理所有数据项
+    # Process all items in parallel
     results = parallel_process_items(data_items, num_processes)
     
-    # 保存结果
+    # Save results
     stats = save_results(results, output_dir)
     
-    # 输出处理统计信息
-    print(f"处理完成！")
-    print(f"总项目数: {stats['total_items']}")
-    print(f"成功处理: {stats['successful']}")
-    print(f"处理错误: {stats['errors']}")
-    print(f"跳过项目: {stats['skipped']}")
-    print(f"成功率: {stats['success_rate']:.2%}")
-    print(f"结果已保存到: {output_dir}")
+    # Print processing statistics
+    print(f"Processing completed!")
+    print(f"Total items: {stats['total_items']}")
+    print(f"Succeeded: {stats['successful']}")
+    print(f"Errors: {stats['errors']}")
+    print(f"Skipped: {stats['skipped']}")
+    print(f"Success rate: {stats['success_rate']:.2%}")
+    print(f"Results saved to: {output_dir}")
 
 
 if __name__ == "__main__":

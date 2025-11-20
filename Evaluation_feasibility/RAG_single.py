@@ -1,4 +1,4 @@
-# 确保可以导入到项目根下的 service 包
+# Ensure the service package at the project root can be imported
 import sys
 import os
 import typing as t
@@ -15,9 +15,9 @@ from RAG_baseline_review_sentence.retrieval_system import EvidenceRetrievalSyste
 from Evaluation_utils.test_idea import concerns, raw_idea
 
 def get_keywords(prompt: str):
-    """Prompt1: 从用户输入中提取检索关键词"""
+    """Prompt1: Extract search keywords from user input"""
     system_prompt = (
-        "You are a research idea evaluator. I will provide you with an academic idea, and you need to output 10 keywords for searching related evidence sentences..\n"
+        "You are a research idea evaluator. I will provide you with an academic idea, and you need to output 10 keywords for searching related evidence sentences.\n"
         "The output format should be a comma-separated list of keywords.\n"
         "Only return keywords, no explanations."
     )
@@ -28,15 +28,15 @@ def get_keywords(prompt: str):
 
 
 def search_evidence_with_retrieval_system(keywords, retrieval_system, top_k=5):
-    """使用 retrieval system 搜索相关 evidence sentences"""
+    """Use the retrieval system to search for related evidence sentences"""
     
     all_results = []
     
     for i, keyword in enumerate(keywords, 1):
-        print(f"[🔍 Searching Evidence] Keyword {i}/{len(keywords)}: '{keyword}'")
+        print(f"[🔍 Searching evidence] Keyword {i}/{len(keywords)}: '{keyword}'")
         
         try:
-            # 使用 retrieval system 进行语义搜索
+            # Semantic search using the retrieval system
             results = retrieval_system.cosine_similarity_search(keyword, top_k=top_k)
             
             keyword_results = []
@@ -48,19 +48,19 @@ def search_evidence_with_retrieval_system(keywords, retrieval_system, top_k=5):
             all_results.extend(keyword_results)
             print(f"[📄 Found] {len(keyword_results)} evidence sentences for '{keyword}'")
             
-            # 添加延迟以避免API限制
-            if i < len(keywords):  # 不是最后一个关键词
-                time.sleep(0.1)  # 较短的延迟，因为不需要调用外部API
+            # Add a short delay to avoid potential rate limits
+            if i < len(keywords):  # not the last keyword
+                time.sleep(0.1)
                 
         except Exception as e:
             print(f"[❌ Error] Failed to search '{keyword}': {e}")
             continue
     
-    # 去重（基于 evidence_id）
+    # Deduplicate (based on evidence_id)
     seen_evidence = set()
     unique_results = []
     for result in all_results:
-        # 提取 evidence_id (从 Paper ID 和 Review ID 组合)
+        # Extract evidence_id (from Paper ID and Review ID combination)
         paper_id = result.split('|')[0].strip().replace('📘 Paper ID: ', '')
         review_id = result.split('|')[1].strip().replace('Review ID: ', '')
         evidence_id = f"{paper_id}_{review_id}"
@@ -80,13 +80,13 @@ def _fallback_parse_list(text: str) -> list:
 
 def _extract_first_json_array(text: str) -> t.List[str]:
     """
-    从任意文本中提取首个 JSON 数组并解析为字符串列表。
-    容错：如果提取失败，返回空列表。
+    Extract the first JSON array from any text and parse it into a list of strings.
+    Fault tolerance: return an empty list if extraction fails.
     """
-    # 1) 直接找平衡的 [...]
+    # 1) Directly find balanced [...]
     start = text.find("[")
     if start != -1:
-        # 简单括号计数
+        # Simple bracket counting
         depth = 0
         for i in range(start, len(text)):
             if text[i] == '[':
@@ -102,31 +102,31 @@ def _extract_first_json_array(text: str) -> t.List[str]:
                         pass
                     break
 
-    # 2) 尝试剥离```json ... ```或``` ... ```
+    # 2) Try to strip ```json ... ``` or ``` ... ``` blocks
     fence_match = re.search(r"```(?:json)?\n([\s\S]+?)```", text)
     if fence_match:
         inner = fence_match.group(1)
         return _extract_first_json_array(inner)
 
-    # 3) 失败返回空
+    # 3) Fail and return empty list
     return []
 
 
 def rag_pipeline_with_retrieval_system(user_query: str, embeddings_dir: str, retrieval_system=None):
-    """使用 retrieval system 的完整 RAG 流程"""
-    # Step 1: 初始化 retrieval system（如果未提供）
+    """Full RAG pipeline using the retrieval system"""
+    # Step 1: Initialize the retrieval system (if not provided)
     if retrieval_system is None:
         print("[🔧 Initializing] Evidence Retrieval System...")
         retrieval_system = EvidenceRetrievalSystem(embeddings_dir)
         
-        # 显示统计信息
+        # Show statistics
         stats = retrieval_system.get_statistics()
         print(f"[📊 Stats] Total evidence embeddings: {stats['total_embeddings']}, Papers: {stats['total_papers']}")
     
-    # Step 2: 关键词提取
+    # Step 2: Keyword extraction
     keywords = get_keywords(user_query)
 
-    # Step 3: 检索 evidence 结果（循环直到找到结果）
+    # Step 3: Retrieve evidence results (loop until results are found)
     max_attempts = 10
     attempt = 1
     
@@ -135,14 +135,14 @@ def rag_pipeline_with_retrieval_system(user_query: str, embeddings_dir: str, ret
         print(f"[📚 Attempt {attempt}] Found {len(evidence_sentences)} evidence sentences:")
         
         if len(evidence_sentences) > 0:
-            # 找到结果，输出 evidence 信息
+            # Results found, print evidence information
             for i, evidence in enumerate(evidence_sentences, 1):
                 first_line = evidence.split('\n')[0]
                 print(f"  {i}. {first_line}")
             print()
             break
         else:
-            # 没找到结果，重新生成关键词
+            # No results found, regenerate keywords
             print("  ⏳ No evidence sentences found, regenerating keywords...")
             keywords = get_keywords(user_query)
             print(f"[🔍 Regenerated Keywords] {keywords}")
@@ -155,16 +155,16 @@ def rag_pipeline_with_retrieval_system(user_query: str, embeddings_dir: str, ret
                 print()
             time.sleep(2)
 
-    # Step 4: 打印检索到的结果
+    # Step 4: Print retrieved results
     print(f"\n{'='*80}")
-    print("检索到的 Evidence Sentences 结果详情")
+    print("Retrieved Evidence Sentences - Details")
     print(f"{'='*80}")
     for i, evidence in enumerate(evidence_sentences, 1):
         print(f"\n--- Evidence {i} ---")
         print(evidence)
         print("-" * 50)
     
-    # Step 4.5: 保存 query 和检索结果到文件
+    # Step 4.5: Save query and retrieval results to file
     output_file = os.path.join(os.path.dirname(__file__), "evidence_retrieval_results.txt")
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(f"Query: {user_query}\n")
@@ -180,7 +180,7 @@ def rag_pipeline_with_retrieval_system(user_query: str, embeddings_dir: str, ret
     
     print(f"\n[💾 Saved] Query and retrieval results saved to: {output_file}")
     
-    # Step 5: 构建 Prompt2
+    # Step 5: Build Prompt2
     context = "\n\n".join(evidence_sentences)
     prompt2 = (
         "You are a rigorous peer-reviewer.\n"
@@ -198,11 +198,11 @@ def rag_pipeline_with_retrieval_system(user_query: str, embeddings_dir: str, ret
         f"Return JSON array only."
     )
 
-    # Step 5: 最终回答
+    # Step 5: Final answer
     final_answer = chat_simple(prompt2)
     concerns_list = _extract_first_json_array(final_answer)
     
-    # Step 6: 将生成的 concerns 也追加到文件中
+    # Step 6: Append the generated concerns to the file as well
     with open(output_file, 'a', encoding='utf-8') as f:
         f.write("\n" + "=" * 80 + "\n")
         f.write("Generated Concerns\n")
@@ -223,20 +223,20 @@ def rag_pipeline_with_retrieval_system(user_query: str, embeddings_dir: str, ret
 
 
 if __name__ == "__main__":
-    print("[1/3] 生成 LLM concerns (使用 Evidence Retrieval System) ...") 
-    # 设置 embeddings 目录
+    print("[1/3] Generating LLM concerns (using Evidence Retrieval System) ...") 
+    # Set embeddings directory
     embeddings_dir = 'RAG_baseline_review_sentence'
     
     gen_concerns = rag_pipeline_with_retrieval_system(raw_idea, embeddings_dir)
-    print(f"生成数量: {len(gen_concerns)}")
+    print(f"Generated count: {len(gen_concerns)}")
     print(gen_concerns)
 
-    print("[2/3] 语义向量匹配评估 ...")
+    print("[2/3] Semantic vector matching evaluation ...")
     print(json.dumps({
         "generated_concerns": gen_concerns,
         "semantic_match": semantic_match_scores(concerns, gen_concerns)
     }, ensure_ascii=False, indent=2))
 
-    print("[3/3] 原始的concern比对 ...")
+    print("[3/3] Original concern comparison ...")
     final = compare_coverage_via_llm(concerns, gen_concerns)
     print(final)

@@ -11,33 +11,33 @@ from langgraph.prebuilt import create_react_agent
 from Retrive_Generate.graph_retrieval_system import GraphRetrievalSystem
 from service import ChatGPT
 
-# 延迟初始化图检索系统
+# Lazy initialization of the graph retrieval system
 graph_file = "result_v2/all_graphs_cleaned.json"
 retrieval_system = None
 _retrieval_system_lock = threading.Lock()
 
 def get_retrieval_system():
-    """获取图检索系统实例（延迟初始化，线程安全）"""
+    """Get an instance of the graph retrieval system (lazy initialization, thread-safe)"""
     global retrieval_system
     if retrieval_system is None:
         with _retrieval_system_lock:
-            # 双重检查锁定模式
+            # Double-checked locking
             if retrieval_system is None:
-                print("正在初始化图检索系统...")
+                print("Initializing the graph retrieval system...")
                 
-                # 预加载BGE-M3模型，确保只加载一次
+                # Preload the BGE-M3 model, ensuring it loads only once
                 try:
                     from service.BGE_M3 import preload_model
                     preload_model("BAAI/bge-m3")
                 except ImportError:
-                    print("BGE-M3预加载失败，将使用ChatGPT embedding")
+                    print("BGE-M3 preload failed, will use ChatGPT embedding")
                 
-                # 先不构建索引，只加载图数据
+                # Load graph data without building the index immediately
                 retrieval_system = GraphRetrievalSystem(graph_file, build_index_immediately=False)
-                print("图数据加载完成，开始构建索引...")
-                # 延迟构建索引，这样embedding模型只会加载一次
+                print("Graph data loaded, starting to build the index...")
+                # Build the index lazily so the embedding model only loads once
                 retrieval_system.build_index()
-                print("图检索系统初始化完成")
+                print("Graph retrieval system initialized")
     return retrieval_system
 
 @tool
@@ -75,7 +75,7 @@ def search_similar_node_and_edge(
         data = response.json()
         if "result" in data:
             results = data["result"]
-            # 8. 调用 LLM 进行最终重排序和总结
+            # Call LLM for final re-ranking and summarization
             prompt = f"""
             You are a helpful assistant. 
             Sort these graph results by combined node and edge similarity and provide a summary.
@@ -94,7 +94,7 @@ def search_similar_node_and_edge(
             
             Output JSON with the same structure as the input results, but add a "summary" field at the end containing the analysis.
             """
-            print("LLM重排序和总结中...")
+            print("LLM re-ranking and summarization in progress...")
             chat_simple = ChatGPT.chat_simple(prompt)
 
             #print(chat_simple)
@@ -102,11 +102,11 @@ def search_similar_node_and_edge(
             
             return chat_simple
         elif "error" in data:
-            return f"服务报错: {data['error']}"
+            return f"Service error: {data['error']}"
         else:
-            return "未知错误"
+            return "Unknown error"
     except Exception as e:
-        return f"调用服务失败: {str(e)}"
+        return f"Failed to call service: {str(e)}"
 
 @tool
 def get_original_review_text(paper_id: Annotated[str, "Paper ID"], review_id: Annotated[str, "Review ID"]) -> str:
@@ -128,7 +128,7 @@ def get_original_review_text(paper_id: Annotated[str, "Paper ID"], review_id: An
         # Search for matching paper_id and review_id
         for entry in data:
             if entry.get("paper_id") == paper_id:
-                # 查找匹配的review_id
+                # Find the matching review_id
                 for review in entry.get("review_contents", []):
                     if review.get("review_id") == review_id:
                         content = review.get("content", {})
@@ -164,10 +164,10 @@ def build_agent_user_prompt(research_idea: str) -> str:
         - Do NOT include any code fences, markdown, comments, labels, or extra text.
         - No leading bullets, numbering, or trailing commas inside items.
         - Aim for 8-12 high-quality, non-duplicative items covering: feasibility, feasibility doubts, missing evaluations.
-        idea to be process： 
+        Idea to process: 
 
         You can use two tools to understand how existing methods address this problem, what are the positive and negative characteristics of the method proposed in the idea?, what are the characteristics of the dataset?: search_similar_node_and_edge and get_original_review_text.
-        You **MUST** perform at least 20 tool calls（including at least 5 get_original_review_text calls and at least 15 search_similar_node_and_edge calls） before providing the final "concerns" answer.
+        You **MUST** perform at least 20 tool calls (including at least 5 get_original_review_text calls and at least 15 search_similar_node_and_edge calls) before providing the final "concerns" answer.
         Iteration & Tool Scheduling:
         - Prefer making only 1 tool call per step; absolutely no more than 2 in any single step.
         - If multiple queries are needed, split them into multiple steps/rounds to collect evidence gradually.
@@ -249,7 +249,7 @@ Output Policy (STRICT):
        - Prefer making only 1 tool call per step; absolutely no more than 2 in any single step.
        - If multiple queries are needed, split them into multiple steps/rounds to collect evidence gradually.
        - After each tool result, briefly reflect and plan the next single tool call.
-       """, # 这个prompt是给agent的，用来指导agent的行为
+       """, # This prompt is for the agent to guide its behavior
         version="v2" # Use the latest version
     )
     
@@ -275,39 +275,39 @@ def demo_basic_usage(prompt):
     tool_call_count = 0
     review_text_calls = 0
     
-    # 设置步数限制为50步
+    # Set step limit to 50
     config = {"recursion_limit": 50}
     for step in agent.stream({"messages": [input_message]}, config=config, stream_mode="values"):
         step_count += 1
-        print(f"=== 步骤 {step_count} ===")
+        print(f"=== Step {step_count} ===")
         if step["messages"]:
             last_message = step["messages"][-1]
-            print(f"消息类型: {type(last_message).__name__}")
-            print(f"内容: {last_message.content}")
+            print(f"Message type: {type(last_message).__name__}")
+            print(f"Content: {last_message.content}")
             if hasattr(last_message, 'tool_calls') and last_message.tool_calls:
                 tool_call_count += len(last_message.tool_calls)
-                print(f"工具调用: {last_message.tool_calls}")
+                print(f"Tool calls: {last_message.tool_calls}")
                 for i, tool_call in enumerate(last_message.tool_calls):
-                    print(f"  工具调用 {i+1}: {tool_call['name']}({tool_call['args']})")
+                    print(f"  Tool call {i+1}: {tool_call['name']}({tool_call['args']})")
                     if tool_call['name'] == 'get_original_review_text':
                         review_text_calls += 1
-                print(f"📊 当前总工具调用次数: {tool_call_count}")
-                print(f"📊 get_original_review_text调用次数: {review_text_calls}")
+                print(f"📊 Current total tool calls: {tool_call_count}")
+                print(f"📊 get_original_review_text calls: {review_text_calls}")
         print("-" * 50)
     
-    print(f"\n🎯 最终统计:")
-    print(f"总步骤数: {step_count}")
-    print(f"总工具调用次数: {tool_call_count}")
-    print(f"get_original_review_text调用次数: {review_text_calls}")
+    print(f"\n🎯 Final statistics:")
+    print(f"Total steps: {step_count}")
+    print(f"Total tool calls: {tool_call_count}")
+    print(f"get_original_review_text calls: {review_text_calls}")
     
     if tool_call_count >= 12 and review_text_calls >= 5:
-        print("✅ 成功完成要求: 至少12次工具调用，其中至少5次get_original_review_text!")
+        print("✅ Requirement met: At least 12 tool calls with at least 5 get_original_review_text calls!")
     elif tool_call_count >= 12:
-        print(f"⚠️  达到12次工具调用要求，但get_original_review_text调用次数不足5次 (当前: {review_text_calls})")
+        print(f"⚠️  Reached 12 tool calls, but get_original_review_text calls fewer than 5 (current: {review_text_calls})")
     elif review_text_calls >= 5:
-        print(f"⚠️  达到5次get_original_review_text调用要求，但总工具调用次数不足12次 (当前: {tool_call_count})")
+        print(f"⚠️  Reached 5 get_original_review_text calls, but total tool calls fewer than 12 (current: {tool_call_count})")
     else:
-        print(f"❌ 未达到要求: 需要至少12次工具调用(当前: {tool_call_count})，其中至少5次get_original_review_text(当前: {review_text_calls})")
+        print(f"❌ Requirements not met: Need at least 12 tool calls (current: {tool_call_count}), including at least 5 get_original_review_text calls (current: {review_text_calls})")
 
 def main():
     """

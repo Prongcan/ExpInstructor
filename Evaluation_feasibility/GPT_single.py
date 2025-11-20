@@ -4,7 +4,7 @@ import time
 import typing as t
 from dataclasses import dataclass
 
-# 确保可以导入到项目根下的 service 包
+# Ensure the service package under the project root can be imported
 import sys
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if PROJECT_ROOT not in sys.path:
@@ -14,7 +14,7 @@ from service.ChatGPT import chat_simple as chat_simple_service
 from Evaluation_utils.test_idea import concerns
 from Evaluation_utils.test_idea import raw_idea
 from Evaluation_utils.eval_feasibility import semantic_match_scores, compare_coverage_via_llm
-# ================== 生成 idea concerns ==================
+# ================== Generate idea concerns ==================
 _IDEA_SYSTEM_PROMPT = """
 You are a rigorous peer-reviewer.
 Task: Critically evaluate the given idea/proposal and GENERATE potential 'concerns' of feasibility
@@ -59,18 +59,18 @@ def generate_concerns_for_idea(idea_text: str) -> t.Tuple[t.List[str], str]:
     return concerns_llm, content
 
 def main() -> None:
-    print("[1/3] 生成 LLM concerns ...")
+    print("[1/3] Generating LLM concerns ...")
     gen_concerns, raw_resp_idea = generate_concerns_for_idea(raw_idea)
-    print(f"生成数量: {len(gen_concerns)}")
+    print(f"Generated count: {len(gen_concerns)}")
     print(gen_concerns)
 
-    print("[2/3] 语义向量匹配评估 ...")
+    print("[2/3] Semantic vector matching evaluation ...")
     print(json.dumps({
         "generated_concerns": gen_concerns,
         "semantic_match": semantic_match_scores(concerns, gen_concerns)
     }, ensure_ascii=False, indent=2))
 
-    print("[3/3] 原始的concern比对 ...")
+    print("[3/3] Original concern comparison ...")
     final = compare_coverage_via_llm(concerns ,gen_concerns)
     print(final)
 

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-三模型Coverage对比工具
-对比GPT、RAG_evidence_retrieval和Instructor三个模型的concern coverage率和precision
+Three-Model Coverage Comparison Tool
+Compare concern coverage ratio and precision across three models: GPT, RAG_evidence_retrieval, and Instructor
 
-作者: AI Assistant
-日期: 2024
+Author: AI Assistant
+Date: 2024
 """
 
 import json
@@ -18,21 +18,21 @@ from typing import Dict, List, Tuple, Any
 import argparse
 from itertools import combinations
 
-# 设置字体
+# Font settings
 plt.rcParams['font.sans-serif'] = ['DejaVu Sans']
 plt.rcParams['axes.unicode_minus'] = False
 
 class CoverageComparator:
-    """Coverage对比器 - 支持三个模型对比"""
+    """Coverage comparator - supports three-model comparisons"""
     
     def __init__(self, gpt_file: str, rag_file: str, instructor_file: str):
         """
-        初始化比较器
+        Initialize comparator
         
         Args:
-            gpt_file: GPT结果文件路径
-            rag_file: RAG_evidence_retrieval结果文件路径
-            instructor_file: Instructor结果文件路径
+            gpt_file: Path to GPT results file
+            rag_file: Path to RAG_evidence_retrieval results file
+            instructor_file: Path to Instructor results file
         """
         self.gpt_file = gpt_file
         self.rag_file = rag_file
@@ -43,8 +43,8 @@ class CoverageComparator:
         self.model_names = ['GPT', 'RAG', 'Instructor']
         
     def load_data(self):
-        """加载三个JSON文件的数据"""
-        print("正在加载数据...")
+        """Load data from the three JSON files"""
+        print("Loading data...")
         
         with open(self.gpt_file, 'r', encoding='utf-8') as f:
             self.gpt_data = json.load(f)
@@ -55,26 +55,26 @@ class CoverageComparator:
         with open(self.instructor_file, 'r', encoding='utf-8') as f:
             self.instructor_data = json.load(f)
             
-        print(f"GPT数据: {len(self.gpt_data)} 条记录")
-        print(f"RAG数据: {len(self.rag_data)} 条记录")
-        print(f"Instructor数据: {len(self.instructor_data)} 条记录")
+        print(f"GPT records: {len(self.gpt_data)}")
+        print(f"RAG records: {len(self.rag_data)}")
+        print(f"Instructor records: {len(self.instructor_data)}")
         
     def extract_coverage_stats(self, data: List[Dict]) -> pd.DataFrame:
         """
-        从数据中提取coverage统计信息
+        Extract coverage statistics from data
         
         Args:
-            data: JSON数据列表
+            data: List of JSON result entries
             
         Returns:
-            包含coverage统计的DataFrame
+            DataFrame containing coverage statistics
         """
         stats = []
         
         for item in data:
             if 'coverage_result' in item and 'summary' in item['coverage_result']:
                 summary = item['coverage_result']['summary']
-                # 计算精确率：命中的concerns数量 / AI生成的concerns总数
+                # Compute precision: number of covered concerns / total generated concerns
                 gen_concerns_count = len(item.get('gen_concerns', []))
                 precision = summary['covered_count'] / gen_concerns_count if gen_concerns_count > 0 else 0
                 
@@ -91,17 +91,17 @@ class CoverageComparator:
     
     def calculate_overall_coverage(self) -> Dict[str, Dict[str, float]]:
         """
-        计算整体coverage率
+        Calculate overall coverage statistics
         
         Returns:
-            包含三个模型整体统计的字典
+            Dictionary containing overall statistics for the three models
         """
         gpt_df = self.extract_coverage_stats(self.gpt_data)
         rag_df = self.extract_coverage_stats(self.rag_data)
         instructor_df = self.extract_coverage_stats(self.instructor_data)
         
         def calculate_stats(df, model_name):
-            """计算单个模型的统计信息"""
+            """Compute statistics for a single model"""
             return {
                 'total_covered': df['covered_count'].sum(),
                 'total_items': df['total'].sum(),
@@ -128,16 +128,16 @@ class CoverageComparator:
     
     def head_to_head_comparison(self) -> pd.DataFrame:
         """
-        进行同一idea的三方比较
+        Head-to-head comparison for the same idea across three models
         
         Returns:
-            包含比较结果的DataFrame
+            DataFrame containing comparison results
         """
         gpt_df = self.extract_coverage_stats(self.gpt_data)
         rag_df = self.extract_coverage_stats(self.rag_data)
         instructor_df = self.extract_coverage_stats(self.instructor_data)
         
-        # 重命名列以避免冲突
+        # Rename columns to avoid conflicts
         gpt_df_renamed = gpt_df.rename(columns={
             'coverage_ratio': 'coverage_ratio_gpt',
             'precision': 'precision_gpt',
@@ -160,7 +160,7 @@ class CoverageComparator:
             'gen_concerns_count': 'gen_concerns_count_instructor'
         })
         
-        # 合并数据，基于id进行匹配
+        # Merge data on id
         merged = pd.merge(
             gpt_df_renamed, 
             rag_df_renamed, 
@@ -174,19 +174,19 @@ class CoverageComparator:
             how='inner'
         )
         
-        # 计算每个模型在coverage ratio上的排名
+        # Ranking for coverage ratio
         coverage_cols = ['coverage_ratio_gpt', 'coverage_ratio_rag', 'coverage_ratio_instructor']
         merged['coverage_rank_gpt'] = merged[coverage_cols].apply(lambda x: (x >= x['coverage_ratio_gpt']).sum(), axis=1)
         merged['coverage_rank_rag'] = merged[coverage_cols].apply(lambda x: (x >= x['coverage_ratio_rag']).sum(), axis=1)
         merged['coverage_rank_instructor'] = merged[coverage_cols].apply(lambda x: (x >= x['coverage_ratio_instructor']).sum(), axis=1)
         
-        # 计算每个模型在precision上的排名
+        # Ranking for precision
         precision_cols = ['precision_gpt', 'precision_rag', 'precision_instructor']
         merged['precision_rank_gpt'] = merged[precision_cols].apply(lambda x: (x >= x['precision_gpt']).sum(), axis=1)
         merged['precision_rank_rag'] = merged[precision_cols].apply(lambda x: (x >= x['precision_rag']).sum(), axis=1)
         merged['precision_rank_instructor'] = merged[precision_cols].apply(lambda x: (x >= x['precision_instructor']).sum(), axis=1)
         
-        # 判断每个模型是否获胜（排名为1）
+        # Determine winners (rank equals 1)
         merged['gpt_wins_coverage'] = merged['coverage_rank_gpt'] == 1
         merged['rag_wins_coverage'] = merged['coverage_rank_rag'] == 1
         merged['instructor_wins_coverage'] = merged['coverage_rank_instructor'] == 1
@@ -198,37 +198,37 @@ class CoverageComparator:
         return merged
     
     def generate_statistics_report(self) -> str:
-        """生成统计报告"""
+        """Generate statistics report"""
         overall_stats = self.calculate_overall_coverage()
         head_to_head = self.head_to_head_comparison()
         
         report = []
         report.append("=" * 60)
-        report.append("GPT vs RAG vs Instructor Coverage 对比报告")
+        report.append("GPT vs RAG vs Instructor Coverage Comparison Report")
         report.append("=" * 60)
         
-        # 整体统计
-        report.append("\n1. 整体Coverage统计:")
+        # Overall statistics
+        report.append("\n1. Overall Coverage Statistics:")
         report.append("-" * 60)
         
         for model_name, stats in overall_stats.items():
             report.append(f"\n{model_name}:")
-            report.append(f"  总覆盖数 (total_covered): {stats['total_covered']}")
-            report.append(f"  总项目数 (total_items): {stats['total_items']}")
-            report.append(f"  总生成concerns数: {stats['total_gen_concerns']}")
-            report.append(f"  整体召回率 (Overall Coverage Ratio): {stats['overall_coverage_ratio']:.4f} ({stats['overall_coverage_ratio']*100:.2f}%)")
-            report.append(f"  整体精确率 (Overall Precision): {stats['overall_precision']:.4f} ({stats['overall_precision']*100:.2f}%)")
-            report.append(f"  平均召回率: {stats['mean_coverage_ratio']:.4f}")
-            report.append(f"  平均精确率: {stats['mean_precision']:.4f}")
-            report.append(f"  召回率标准差: {stats['std_coverage_ratio']:.4f}")
-            report.append(f"  精确率标准差: {stats['std_precision']:.4f}")
-            report.append(f"  召回率中位数: {stats['median_coverage_ratio']:.4f}")
-            report.append(f"  精确率中位数: {stats['median_precision']:.4f}")
-            report.append(f"  召回率范围: [{stats['min_coverage_ratio']:.4f}, {stats['max_coverage_ratio']:.4f}]")
-            report.append(f"  精确率范围: [{stats['min_precision']:.4f}, {stats['max_precision']:.4f}]")
+            report.append(f"  Total covered (total_covered): {stats['total_covered']}")
+            report.append(f"  Total items (total_items): {stats['total_items']}")
+            report.append(f"  Total generated concerns: {stats['total_gen_concerns']}")
+            report.append(f"  Overall Coverage Ratio: {stats['overall_coverage_ratio']:.4f} ({stats['overall_coverage_ratio']*100:.2f}%)")
+            report.append(f"  Overall Precision: {stats['overall_precision']:.4f} ({stats['overall_precision']*100:.2f}%)")
+            report.append(f"  Mean Coverage Ratio: {stats['mean_coverage_ratio']:.4f}")
+            report.append(f"  Mean Precision: {stats['mean_precision']:.4f}")
+            report.append(f"  Std of Coverage Ratio: {stats['std_coverage_ratio']:.4f}")
+            report.append(f"  Std of Precision: {stats['std_precision']:.4f}")
+            report.append(f"  Median Coverage Ratio: {stats['median_coverage_ratio']:.4f}")
+            report.append(f"  Median Precision: {stats['median_precision']:.4f}")
+            report.append(f"  Coverage Ratio Range: [{stats['min_coverage_ratio']:.4f}, {stats['max_coverage_ratio']:.4f}]")
+            report.append(f"  Precision Range: [{stats['min_precision']:.4f}, {stats['max_precision']:.4f}]")
         
-        # 三方比较
-        report.append("\n2. 三方比较统计:")
+        # Head-to-head comparison
+        report.append("\n2. Head-to-Head Comparison:")
         report.append("-" * 60)
         
         gpt_wins_coverage = head_to_head['gpt_wins_coverage'].sum()
@@ -236,121 +236,120 @@ class CoverageComparator:
         instructor_wins_coverage = head_to_head['instructor_wins_coverage'].sum()
         total_comparisons = len(head_to_head)
         
-        report.append(f"总比较次数: {total_comparisons}")
-        report.append(f"\n召回率获胜统计:")
-        report.append(f"  GPT获胜: {gpt_wins_coverage} ({gpt_wins_coverage/total_comparisons*100:.1f}%)")
-        report.append(f"  RAG获胜: {rag_wins_coverage} ({rag_wins_coverage/total_comparisons*100:.1f}%)")
-        report.append(f"  Instructor获胜: {instructor_wins_coverage} ({instructor_wins_coverage/total_comparisons*100:.1f}%)")
+        report.append(f"Total comparisons: {total_comparisons}")
+        report.append(f"\nCoverage ratio wins:")
+        report.append(f"  GPT wins: {gpt_wins_coverage} ({gpt_wins_coverage/total_comparisons*100:.1f}%)")
+        report.append(f"  RAG wins: {rag_wins_coverage} ({rag_wins_coverage/total_comparisons*100:.1f}%)")
+        report.append(f"  Instructor wins: {instructor_wins_coverage} ({instructor_wins_coverage/total_comparisons*100:.1f}%)")
         
-        # 精确率三方比较
+        # Precision head-to-head comparison
         gpt_wins_precision = head_to_head['gpt_wins_precision'].sum()
         rag_wins_precision = head_to_head['rag_wins_precision'].sum()
         instructor_wins_precision = head_to_head['instructor_wins_precision'].sum()
         
-        report.append(f"\n精确率获胜统计:")
-        report.append(f"  GPT获胜: {gpt_wins_precision} ({gpt_wins_precision/total_comparisons*100:.1f}%)")
-        report.append(f"  RAG获胜: {rag_wins_precision} ({rag_wins_precision/total_comparisons*100:.1f}%)")
-        report.append(f"  Instructor获胜: {instructor_wins_precision} ({instructor_wins_precision/total_comparisons*100:.1f}%)")
+        report.append(f"\nPrecision wins:")
+        report.append(f"  GPT wins: {gpt_wins_precision} ({gpt_wins_precision/total_comparisons*100:.1f}%)")
+        report.append(f"  RAG wins: {rag_wins_precision} ({rag_wins_precision/total_comparisons*100:.1f}%)")
+        report.append(f"  Instructor wins: {instructor_wins_precision} ({instructor_wins_precision/total_comparisons*100:.1f}%)")
         
-        # 差异分析
-        report.append("\n3. 差异分析:")
+        # Difference analysis
+        report.append("\n3. Difference Analysis:")
         report.append("-" * 60)
         
-        # 两两比较差异
-        model_pairs = [('GPT', 'RAG'), ('GPT', 'RAG'), ('GPT', 'Instructor'), ('RAG', 'Instructor')]
+        # Pairwise differences
         for model1, model2 in [('GPT', 'RAG'), ('GPT', 'Instructor'), ('RAG', 'Instructor')]:
             col1 = f'coverage_ratio_{model1.lower()}'
             col2 = f'coverage_ratio_{model2.lower()}'
             if col1 in head_to_head.columns and col2 in head_to_head.columns:
                 coverage_diff = head_to_head[col1] - head_to_head[col2]
-                report.append(f"\n召回率差异 ({model1} - {model2}):")
-                report.append(f"  平均差异: {coverage_diff.mean():.4f}")
-                report.append(f"  差异标准差: {coverage_diff.std():.4f}")
+                report.append(f"\nCoverage ratio difference ({model1} - {model2}):")
+                report.append(f"  Mean difference: {coverage_diff.mean():.4f}")
+                report.append(f"  Std difference: {coverage_diff.std():.4f}")
             
             col1_p = f'precision_{model1.lower()}'
             col2_p = f'precision_{model2.lower()}'
             if col1_p in head_to_head.columns and col2_p in head_to_head.columns:
                 precision_diff = head_to_head[col1_p] - head_to_head[col2_p]
-                report.append(f"精确率差异 ({model1} - {model2}):")
-                report.append(f"  平均差异: {precision_diff.mean():.4f}")
-                report.append(f"  差异标准差: {precision_diff.std():.4f}")
+                report.append(f"Precision difference ({model1} - {model2}):")
+                report.append(f"  Mean difference: {precision_diff.mean():.4f}")
+                report.append(f"  Std difference: {precision_diff.std():.4f}")
         
-        # 显著性检验
-        report.append("\n4. 显著性检验:")
+        # Significance tests
+        report.append("\n4. Significance Tests:")
         report.append("-" * 60)
         try:
             from scipy.stats import wilcoxon, friedmanchisquare
             
-            # 对每对模型进行Wilcoxon检验
+            # Wilcoxon tests for each pair
             for model1, model2 in [('GPT', 'RAG'), ('GPT', 'Instructor'), ('RAG', 'Instructor')]:
                 col1 = f'coverage_ratio_{model1.lower()}'
                 col2 = f'coverage_ratio_{model2.lower()}'
                 if col1 in head_to_head.columns and col2 in head_to_head.columns:
                     w_stat, w_p = wilcoxon(head_to_head[col1], head_to_head[col2])
-                    report.append(f"\n召回率Wilcoxon检验 ({model1} vs {model2}):")
-                    report.append(f"  Wilcoxon统计量: {w_stat:.4f}")
-                    report.append(f"  p值: {w_p:.4f}")
-                    report.append(f"  显著性: {'显著' if w_p < 0.05 else '不显著'} (α=0.05)")
+                    report.append(f"\nCoverage ratio Wilcoxon test ({model1} vs {model2}):")
+                    report.append(f"  Wilcoxon statistic: {w_stat:.4f}")
+                    report.append(f"  p-value: {w_p:.4f}")
+                    report.append(f"  Significance: {'Significant' if w_p < 0.05 else 'Not significant'} (α=0.05)")
                 
                 col1_p = f'precision_{model1.lower()}'
                 col2_p = f'precision_{model2.lower()}'
                 if col1_p in head_to_head.columns and col2_p in head_to_head.columns:
                     w_stat_p, w_p_p = wilcoxon(head_to_head[col1_p], head_to_head[col2_p])
-                    report.append(f"精确率Wilcoxon检验 ({model1} vs {model2}):")
-                    report.append(f"  Wilcoxon统计量: {w_stat_p:.4f}")
-                    report.append(f"  p值: {w_p_p:.4f}")
-                    report.append(f"  显著性: {'显著' if w_p_p < 0.05 else '不显著'} (α=0.05)")
+                    report.append(f"Precision Wilcoxon test ({model1} vs {model2}):")
+                    report.append(f"  Wilcoxon statistic: {w_stat_p:.4f}")
+                    report.append(f"  p-value: {w_p_p:.4f}")
+                    report.append(f"  Significance: {'Significant' if w_p_p < 0.05 else 'Not significant'} (α=0.05)")
             
-            # Friedman检验（三个模型整体比较）
+            # Friedman test (overall comparison of three models)
             try:
                 f_stat_c, f_p_c = friedmanchisquare(
                     head_to_head['coverage_ratio_gpt'],
                     head_to_head['coverage_ratio_rag'],
                     head_to_head['coverage_ratio_instructor']
                 )
-                report.append(f"\n召回率Friedman检验 (三模型整体):")
-                report.append(f"  Friedman统计量: {f_stat_c:.4f}")
-                report.append(f"  p值: {f_p_c:.4f}")
-                report.append(f"  显著性: {'显著' if f_p_c < 0.05 else '不显著'} (α=0.05)")
+                report.append(f"\nCoverage ratio Friedman test (three models overall):")
+                report.append(f"  Friedman statistic: {f_stat_c:.4f}")
+                report.append(f"  p-value: {f_p_c:.4f}")
+                report.append(f"  Significance: {'Significant' if f_p_c < 0.05 else 'Not significant'} (α=0.05)")
                 
                 f_stat_p, f_p_p = friedmanchisquare(
                     head_to_head['precision_gpt'],
                     head_to_head['precision_rag'],
                     head_to_head['precision_instructor']
                 )
-                report.append(f"精确率Friedman检验 (三模型整体):")
-                report.append(f"  Friedman统计量: {f_stat_p:.4f}")
-                report.append(f"  p值: {f_p_p:.4f}")
-                report.append(f"  显著性: {'显著' if f_p_p < 0.05 else '不显著'} (α=0.05)")
+                report.append(f"Precision Friedman test (three models overall):")
+                report.append(f"  Friedman statistic: {f_stat_p:.4f}")
+                report.append(f"  p-value: {f_p_p:.4f}")
+                report.append(f"  Significance: {'Significant' if f_p_p < 0.05 else 'Not significant'} (α=0.05)")
             except Exception as e:
-                report.append(f"\nFriedman检验失败: {e}")
+                report.append(f"\nFriedman test failed: {e}")
         except ImportError:
-            report.append("\n注意: scipy未安装，跳过显著性检验")
+            report.append("\nNote: scipy not installed, skipping significance tests")
         
-        # 总结
-        report.append("\n5. 总结:")
+        # Summary
+        report.append("\n5. Summary:")
         report.append("-" * 60)
         
-        # 按召回率排序
+        # Sort by coverage ratio
         sorted_models_coverage = sorted(overall_stats.items(), 
                                         key=lambda x: x[1]['overall_coverage_ratio'], 
                                         reverse=True)
-        report.append(f"\n召回率排名:")
+        report.append(f"\nCoverage ratio ranking:")
         for rank, (model_name, stats) in enumerate(sorted_models_coverage, 1):
             report.append(f"  {rank}. {model_name}: {stats['overall_coverage_ratio']*100:.2f}%")
         
-        # 按精确率排序
+        # Sort by precision
         sorted_models_precision = sorted(overall_stats.items(), 
                                         key=lambda x: x[1]['overall_precision'], 
                                         reverse=True)
-        report.append(f"\n精确率排名:")
+        report.append(f"\nPrecision ranking:")
         for rank, (model_name, stats) in enumerate(sorted_models_precision, 1):
             report.append(f"  {rank}. {model_name}: {stats['overall_precision']*100:.2f}%")
         
         return "\n".join(report)
     
     def create_visualizations(self, output_dir: str = "coverage_comparison"):
-        """创建可视化图表 - 支持三个模型"""
+        """Create visualization charts - supports three models"""
         Path(output_dir).mkdir(exist_ok=True)
         
         overall_stats = self.calculate_overall_coverage()
@@ -359,27 +358,27 @@ class CoverageComparator:
         rag_df = self.extract_coverage_stats(self.rag_data)
         instructor_df = self.extract_coverage_stats(self.instructor_data)
         
-        # 定义颜色
+        # Define colors
         colors = ['lightcoral', 'lightgreen', 'skyblue']
         model_colors = {'GPT': 'lightcoral', 'RAG': 'lightgreen', 'Instructor': 'skyblue'}
         
-        # 1. 整体覆盖率和精确率对比
+        # 1. Overall coverage and precision comparison
         fig, axes = plt.subplots(2, 2, figsize=(15, 12))
         models = list(overall_stats.keys())
         
-        # 1.1 整体覆盖率柱状图
+        # 1.1 Overall coverage ratio bar chart
         overall_ratios = [overall_stats[model]['overall_coverage_ratio'] for model in models]
-        bars1 = axes[0, 0].bar(models, overall_ratios, color=colors)
+        axes[0, 0].bar(models, overall_ratios, color=colors)
         axes[0, 0].set_title('Overall Coverage Ratio Comparison', fontsize=14, fontweight='bold')
         axes[0, 0].set_ylabel('Coverage Ratio', fontsize=12)
         axes[0, 0].set_ylim(0, max(overall_ratios) * 1.15)
         axes[0, 0].grid(axis='y', alpha=0.3)
         
-        # 添加数值标签
+        # Value labels
         for i, v in enumerate(overall_ratios):
             axes[0, 0].text(i, v + 0.01, f'{v:.3f}\n({v*100:.1f}%)', ha='center', va='bottom', fontsize=11)
         
-        # 1.2 覆盖率分布对比
+        # 1.2 Coverage ratio distribution comparison
         axes[0, 1].hist(gpt_df['coverage_ratio'], bins=20, alpha=0.6, label='GPT', color=model_colors['GPT'], edgecolor='black')
         axes[0, 1].hist(rag_df['coverage_ratio'], bins=20, alpha=0.6, label='RAG', color=model_colors['RAG'], edgecolor='black')
         axes[0, 1].hist(instructor_df['coverage_ratio'], bins=20, alpha=0.6, label='Instructor', color=model_colors['Instructor'], edgecolor='black')
@@ -389,7 +388,7 @@ class CoverageComparator:
         axes[0, 1].legend(fontsize=11)
         axes[0, 1].grid(axis='y', alpha=0.3)
         
-        # 1.3 三方比较散点图矩阵（显示GPT vs RAG）
+        # 1.3 Scatter plot matrix (GPT vs RAG)
         axes[1, 0].scatter(head_to_head['coverage_ratio_gpt'], 
                           head_to_head['coverage_ratio_rag'], 
                           alpha=0.6, color='purple', s=50, label='GPT vs RAG')
@@ -404,7 +403,7 @@ class CoverageComparator:
         axes[1, 0].legend(fontsize=11)
         axes[1, 0].grid(alpha=0.3)
         
-        # 1.4 获胜者分布饼图
+        # 1.4 Winner distribution pie chart
         winner_counts = [
             head_to_head['gpt_wins_coverage'].sum(),
             head_to_head['rag_wins_coverage'].sum(),
@@ -418,25 +417,25 @@ class CoverageComparator:
         
         plt.tight_layout()
         plt.savefig(f'{output_dir}/coverage_comparison.png', dpi=300, bbox_inches='tight')
-        print(f"图表已保存: {output_dir}/coverage_comparison.png")
+        print(f"Figure saved: {output_dir}/coverage_comparison.png")
         plt.close()
         
-        # 2. 精确率对比图
+        # 2. Precision comparison plots
         fig, axes = plt.subplots(2, 2, figsize=(15, 12))
         
-        # 2.1 整体精确率对比
+        # 2.1 Overall precision comparison
         overall_precisions = [overall_stats[model]['overall_precision'] for model in models]
-        bars2 = axes[0, 0].bar(models, overall_precisions, color=colors)
+        axes[0, 0].bar(models, overall_precisions, color=colors)
         axes[0, 0].set_title('Overall Precision Comparison', fontsize=14, fontweight='bold')
         axes[0, 0].set_ylabel('Precision', fontsize=12)
         axes[0, 0].set_ylim(0, max(overall_precisions) * 1.15)
         axes[0, 0].grid(axis='y', alpha=0.3)
         
-        # 添加数值标签
+        # Value labels
         for i, v in enumerate(overall_precisions):
             axes[0, 0].text(i, v + 0.01, f'{v:.3f}\n({v*100:.1f}%)', ha='center', va='bottom', fontsize=11)
         
-        # 2.2 精确率分布对比
+        # 2.2 Precision distribution comparison
         axes[0, 1].hist(gpt_df['precision'], bins=20, alpha=0.6, label='GPT', color=model_colors['GPT'], edgecolor='black')
         axes[0, 1].hist(rag_df['precision'], bins=20, alpha=0.6, label='RAG', color=model_colors['RAG'], edgecolor='black')
         axes[0, 1].hist(instructor_df['precision'], bins=20, alpha=0.6, label='Instructor', color=model_colors['Instructor'], edgecolor='black')
@@ -446,12 +445,12 @@ class CoverageComparator:
         axes[0, 1].legend(fontsize=11)
         axes[0, 1].grid(axis='y', alpha=0.3)
         
-        # 2.3 精确率三方比较散点图（显示GPT vs RAG）
+        # 2.3 Precision scatter plot (GPT vs RAG)
         axes[1, 0].scatter(head_to_head['precision_gpt'], 
                           head_to_head['precision_rag'], 
                           alpha=0.6, color='purple', s=50, label='GPT vs RAG')
         
-        # 添加对角线
+        # Diagonal line
         min_val_p = min(head_to_head['precision_gpt'].min(), 
                        head_to_head['precision_rag'].min())
         max_val_p = max(head_to_head['precision_gpt'].max(), 
@@ -464,7 +463,7 @@ class CoverageComparator:
         axes[1, 0].legend(fontsize=11)
         axes[1, 0].grid(alpha=0.3)
         
-        # 2.4 精确率获胜者分布饼图
+        # 2.4 Precision winner distribution pie chart
         precision_winner_counts = [
             head_to_head['gpt_wins_precision'].sum(),
             head_to_head['rag_wins_precision'].sum(),
@@ -477,13 +476,13 @@ class CoverageComparator:
         
         plt.tight_layout()
         plt.savefig(f'{output_dir}/precision_comparison.png', dpi=300, bbox_inches='tight')
-        print(f"图表已保存: {output_dir}/precision_comparison.png")
+        print(f"Figure saved: {output_dir}/precision_comparison.png")
         plt.close()
         
-        # 3. 箱线图对比
+        # 3. Box plots comparison
         fig, axes = plt.subplots(1, 2, figsize=(14, 6))
         
-        # 3.1 召回率箱线图
+        # 3.1 Coverage ratio box plot
         coverage_data = [gpt_df['coverage_ratio'], rag_df['coverage_ratio'], instructor_df['coverage_ratio']]
         bp1 = axes[0].boxplot(coverage_data, labels=models, patch_artist=True, 
                              boxprops=dict(facecolor='white', alpha=0.8),
@@ -496,7 +495,7 @@ class CoverageComparator:
         axes[0].set_ylabel('Coverage Ratio', fontsize=12)
         axes[0].grid(axis='y', alpha=0.3)
         
-        # 3.2 精确率箱线图
+        # 3.2 Precision box plot
         precision_data = [gpt_df['precision'], rag_df['precision'], instructor_df['precision']]
         bp2 = axes[1].boxplot(precision_data, labels=models, patch_artist=True,
                              boxprops=dict(facecolor='white', alpha=0.8),
@@ -510,13 +509,13 @@ class CoverageComparator:
         
         plt.tight_layout()
         plt.savefig(f'{output_dir}/boxplot_comparison.png', dpi=300, bbox_inches='tight')
-        print(f"图表已保存: {output_dir}/boxplot_comparison.png")
+        print(f"Figure saved: {output_dir}/boxplot_comparison.png")
         plt.close()
         
-        # 4. 详细统计对比柱状图
+        # 4. Detailed statistics bar charts
         fig, axes = plt.subplots(2, 2, figsize=(15, 12))
         
-        # 4.1 平均值对比
+        # 4.1 Mean comparison
         metrics = ['Coverage Ratio', 'Precision']
         gpt_means = [overall_stats['GPT']['mean_coverage_ratio'], overall_stats['GPT']['mean_precision']]
         rag_means = [overall_stats['RAG']['mean_coverage_ratio'], overall_stats['RAG']['mean_precision']]
@@ -536,14 +535,14 @@ class CoverageComparator:
         axes[0, 0].legend(fontsize=11)
         axes[0, 0].grid(axis='y', alpha=0.3)
         
-        # 添加数值标签
+        # Value labels
         for bars in [bars1, bars2, bars3]:
             for bar in bars:
                 height = bar.get_height()
                 axes[0, 0].text(bar.get_x() + bar.get_width()/2., height + 0.01,
                               f'{height:.3f}', ha='center', va='bottom', fontsize=9)
         
-        # 4.2 中位数对比
+        # 4.2 Median comparison
         gpt_medians = [overall_stats['GPT']['median_coverage_ratio'], overall_stats['GPT']['median_precision']]
         rag_medians = [overall_stats['RAG']['median_coverage_ratio'], overall_stats['RAG']['median_precision']]
         instructor_medians = [overall_stats['Instructor']['median_coverage_ratio'], overall_stats['Instructor']['median_precision']]
@@ -565,8 +564,8 @@ class CoverageComparator:
                 axes[0, 1].text(bar.get_x() + bar.get_width()/2., height + 0.01,
                               f'{height:.3f}', ha='center', va='bottom', fontsize=9)
         
-        # 4.3 总数对比
-        totals_metrics = ['Total Covered', 'Total Items', 'Total Gen Concerns']
+        # 4.3 Totals comparison
+        totals_metrics = ['Total Covered', 'Total Items', 'Total Generated Concerns']
         gpt_totals = [
             overall_stats['GPT']['total_covered'],
             overall_stats['GPT']['total_items'],
@@ -584,9 +583,9 @@ class CoverageComparator:
         ]
         
         x2 = np.arange(len(totals_metrics))
-        bars7 = axes[1, 0].bar(x2 - width, gpt_totals, width, label='GPT', color=model_colors['GPT'])
-        bars8 = axes[1, 0].bar(x2, rag_totals, width, label='RAG', color=model_colors['RAG'])
-        bars9 = axes[1, 0].bar(x2 + width, instructor_totals, width, label='Instructor', color=model_colors['Instructor'])
+        axes[1, 0].bar(x2 - width, gpt_totals, width, label='GPT', color=model_colors['GPT'])
+        axes[1, 0].bar(x2, rag_totals, width, label='RAG', color=model_colors['RAG'])
+        axes[1, 0].bar(x2 + width, instructor_totals, width, label='Instructor', color=model_colors['Instructor'])
         
         axes[1, 0].set_ylabel('Count', fontsize=12)
         axes[1, 0].set_title('Total Count Comparison', fontsize=14, fontweight='bold')
@@ -594,9 +593,9 @@ class CoverageComparator:
         axes[1, 0].set_xticklabels(totals_metrics, fontsize=10, rotation=15, ha='right')
         axes[1, 0].legend(fontsize=11)
         axes[1, 0].grid(axis='y', alpha=0.3)
-        axes[1, 0].set_yscale('log')  # 使用对数刻度
+        axes[1, 0].set_yscale('log')  # Use logarithmic scale
         
-        # 4.4 差异分析（GPT - RAG）
+        # 4.4 Difference analysis (GPT - RAG)
         coverage_diff = head_to_head['coverage_ratio_gpt'] - head_to_head['coverage_ratio_rag']
         precision_diff = head_to_head['precision_gpt'] - head_to_head['precision_rag']
         
@@ -610,16 +609,16 @@ class CoverageComparator:
         
         plt.tight_layout()
         plt.savefig(f'{output_dir}/detailed_statistics.png', dpi=300, bbox_inches='tight')
-        print(f"图表已保存: {output_dir}/detailed_statistics.png")
+        print(f"Figure saved: {output_dir}/detailed_statistics.png")
         plt.close()
         
-        # 5. 覆盖率与精确率对比条形图（左右并排，纵轴从0.25开始）
+        # 5. Side-by-side bar charts for coverage and precision (y-axis starts at 0.25)
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
         
         models = list(overall_stats.keys())
         colors = ['lightcoral', 'lightgreen', 'skyblue']
         
-        # 5.1 左边：覆盖率（Coverage Ratio / 召回率）
+        # 5.1 Left: Coverage Ratio
         coverage_ratios = [overall_stats[model]['overall_coverage_ratio'] for model in models]
         bars1 = ax1.bar(models, coverage_ratios, color=colors, edgecolor='black', linewidth=1.5, alpha=0.8)
         ax1.set_title('Coverage Ratio', fontsize=24, fontweight='bold', pad=20)
@@ -627,25 +626,21 @@ class CoverageComparator:
         ax1.set_ylabel('Coverage Ratio', fontsize=20, fontweight='bold')
         ax1.tick_params(axis='both', labelsize=18)
         
-        # 确保纵轴从0.25开始，并设置合适的上限
+        # Ensure y-axis starts at 0.25 and set an appropriate upper limit
         max_coverage = max(coverage_ratios)
-        min_coverage = min(coverage_ratios)
-        ax1.set_ylim(0.25, max(max_coverage * 1.15, 0.3))  # 纵轴从0.25开始
+        ax1.set_ylim(0.25, max(max_coverage * 1.15, 0.3))  # y-axis starts at 0.25
         ax1.grid(axis='y', alpha=0.3, linestyle='--', linewidth=1)
         ax1.set_axisbelow(True)
         
-        # 添加数值标签
+        # Value labels
         for i, (bar, val) in enumerate(zip(bars1, coverage_ratios)):
             height = bar.get_height()
-            # 计算标签位置（相对于0.25的位置）
-            label_y = height
-            if height < 0.25:
-                label_y = 0.25 + 0.01
+            label_y = height if height >= 0.25 else 0.26
             ax1.text(bar.get_x() + bar.get_width()/2., label_y,
                     f'{val:.3f}\n({val*100:.1f}%)', 
                     ha='center', va='bottom', fontsize=18, fontweight='bold')
         
-        # 5.2 右边：精确率（Precision）
+        # 5.2 Right: Precision
         precisions = [overall_stats[model]['overall_precision'] for model in models]
         bars2 = ax2.bar(models, precisions, color=colors, edgecolor='black', linewidth=1.5, alpha=0.8)
         ax2.set_title('Precision', fontsize=24, fontweight='bold', pad=20)
@@ -653,87 +648,80 @@ class CoverageComparator:
         ax2.set_ylabel('Precision', fontsize=20, fontweight='bold')
         ax2.tick_params(axis='both', labelsize=18)
         
-        # 确保纵轴从0.25开始，并设置合适的上限
         max_precision = max(precisions)
-        min_precision = min(precisions)
-        ax2.set_ylim(0.25, max(max_precision * 1.15, 0.3))  # 纵轴从0.25开始
+        ax2.set_ylim(0.25, max(max_precision * 1.15, 0.3))  # y-axis starts at 0.25
         ax2.grid(axis='y', alpha=0.3, linestyle='--', linewidth=1)
         ax2.set_axisbelow(True)
         
-        # 添加数值标签
         for i, (bar, val) in enumerate(zip(bars2, precisions)):
             height = bar.get_height()
-            # 计算标签位置（相对于0.25的位置）
-            label_y = height
-            if height < 0.25:
-                label_y = 0.25 + 0.01
+            label_y = height if height >= 0.25 else 0.26
             ax2.text(bar.get_x() + bar.get_width()/2., label_y,
                     f'{val:.3f}\n({val*100:.1f}%)', 
                     ha='center', va='bottom', fontsize=18, fontweight='bold')
         
         plt.tight_layout()
         plt.savefig(f'{output_dir}/coverage_precision_bars.png', dpi=300, bbox_inches='tight')
-        print(f"图表已保存: {output_dir}/coverage_precision_bars.png")
+        print(f"Figure saved: {output_dir}/coverage_precision_bars.png")
         plt.close()
     
     def save_detailed_results(self, output_dir: str = "coverage_comparison"):
-        """保存详细结果到CSV文件"""
+        """Save detailed results to CSV and text files"""
         Path(output_dir).mkdir(exist_ok=True)
         
         overall_stats = self.calculate_overall_coverage()
         head_to_head = self.head_to_head_comparison()
         
-        # 保存头对头比较结果
+        # Save head-to-head comparison
         head_to_head.to_csv(f'{output_dir}/head_to_head_comparison.csv', index=False, encoding='utf-8')
         
-        # 保存整体统计
+        # Save overall statistics
         overall_df = pd.DataFrame(overall_stats).T
         overall_df.to_csv(f'{output_dir}/overall_statistics.csv', encoding='utf-8')
         
-        # 保存报告
+        # Save report
         report = self.generate_statistics_report()
         with open(f'{output_dir}/analysis_report.txt', 'w', encoding='utf-8') as f:
             f.write(report)
         
-        print(f"\n详细结果已保存到 {output_dir} 目录")
-        print(f"  - head_to_head_comparison.csv: 详细对比结果")
-        print(f"  - overall_statistics.csv: 整体统计")
-        print(f"  - analysis_report.txt: 分析报告")
+        print(f"\nDetailed results saved to directory: {output_dir}")
+        print(f"  - head_to_head_comparison.csv: Detailed comparison results")
+        print(f"  - overall_statistics.csv: Overall statistics")
+        print(f"  - analysis_report.txt: Analysis report")
 
 def main():
-    """主函数"""
-    parser = argparse.ArgumentParser(description='对比GPT、RAG和Instructor三个模型的concern coverage率和precision')
+    """Main function"""
+    parser = argparse.ArgumentParser(description='Compare concern coverage ratio and precision across GPT, RAG, and Instructor models')
     parser.add_argument('--gpt_file', 
                        default='Evaluation_feasibility/results/GPT/success_results.json',
-                       help='GPT结果文件路径')
+                       help='Path to GPT results file')
     parser.add_argument('--rag_file', 
                        default='Evaluation_feasibility/results/RAG_evidence_retrieval/success_results.json',
-                       help='RAG结果文件路径')
+                       help='Path to RAG results file')
     parser.add_argument('--instructor_file', 
                        default='Evaluation_feasibility/results/instructor/success_results.json',
-                       help='Instructor结果文件路径')
+                       help='Path to Instructor results file')
     parser.add_argument('--output_dir', 
                        default='Evaluation_feasibility/results/compare',
-                       help='输出目录')
+                       help='Output directory')
     
     args = parser.parse_args()
     
-    # 创建比较器
+    # Create comparator
     comparator = CoverageComparator(args.gpt_file, args.rag_file, args.instructor_file)
     
-    # 加载数据
+    # Load data
     comparator.load_data()
     
-    # 生成报告
+    # Generate report
     report = comparator.generate_statistics_report()
     print(report)
     
-    # 创建可视化
+    # Create visualizations
     comparator.create_visualizations(args.output_dir)
     
-    # 保存详细结果
+    # Save detailed results
     comparator.save_detailed_results(args.output_dir)
 
 if __name__ == "__main__":
     main()
-
